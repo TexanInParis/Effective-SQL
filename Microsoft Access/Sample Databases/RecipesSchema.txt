@@ -1,0 +1,109 @@
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Ingredient_Classes
+	IngredientClassID	smallint	2		0	Yes
+	IngredientClassDescription	nvarchar	255			
+ 
+Indexes for Ingredient_Classes
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	IngredientClassID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Ingredients
+	IngredientID	int	4		0	Yes
+	IngredientName	nvarchar	255			
+	IngredientClassID	smallint	2		0		Ingredient_Classes.IngredientClassID
+	MeasureAmountID	smallint	2		0		Measurements.MeasureAmountID
+ 
+Indexes for Ingredients
+Index Name	Attributes / Field Names
+Ingredient_ClassesIngredients	
+	IngredientClassID
+ 
+MeasurementsIngredients	
+	MeasureAmountID
+ 
+PrimaryKey	Primary
+	IngredientID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Measurements
+	MeasureAmountID	smallint	2		0	Yes
+	MeasurementDescription	nvarchar	255			
+ 
+Indexes for Measurements
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	MeasureAmountID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Recipe_Classes
+	RecipeClassID	smallint	2		0	Yes
+	RecipeClassDescription	nvarchar	255			
+ 
+Indexes for Recipe_Classes
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	RecipeClassID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Recipe_Ingredients
+	RecipeID	int	4		0	Yes	Recipes.RecipeID
+	RecipeSeqNo	smallint	2		0	Yes
+	IngredientID	int	4		0		Ingredients.IngredientID
+	MeasureAmountID	smallint	2		0		Measurements.MeasureAmountID
+	Amount	float(24)	4		0	
+ 
+Indexes for Recipe_Ingredients
+Index Name	Attributes / Field Names
+IngredientsRecipe_Ingredients	
+	IngredientID
+ 
+MeasurementsRecipe_Ingredients	
+	MeasureAmountID
+ 
+PrimaryKey	Primary
+	RecipeID
+	RecipeSeqNo
+ 
+RecipesRecipe_Ingredients	
+	RecipeID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Recipes
+	RecipeID	int	4		0	Yes
+	RecipeTitle	nvarchar	255			
+	RecipeClassID	smallint	2		0		Recipe_Classes.RecipeClassID
+	Preparation	nvarchar(max)	0			
+	Notes	nvarchar(max)	0			
+ 
+Indexes for Recipes
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	RecipeID
+ 
+Recipe_ClassesRecipes	
+	RecipeClassID
+ 
+ 
+Relationship Constraints:
+Name	Parent	Parent Fields	Child	Child Fields
+Ingredient_ClassesIngredients	Ingredient_Classes	IngredientClassID 	Ingredients	IngredientClassID 
+ 
+IngredientsRecipe_Ingredients	Ingredients	IngredientID 	Recipe_Ingredients	IngredientID 
+ 
+MeasurementsIngredients	Measurements	MeasureAmountID 	Ingredients	MeasureAmountID 
+ 
+MeasurementsRecipe_Ingredients	Measurements	MeasureAmountID 	Recipe_Ingredients	MeasureAmountID 
+ 
+Recipe_ClassesRecipes	Recipe_Classes	RecipeClassID 	Recipes	RecipeClassID 
+ 
+RecipesRecipe_Ingredients	Recipes	RecipeID 	Recipe_Ingredients	RecipeID 
+ 
+
+ 
