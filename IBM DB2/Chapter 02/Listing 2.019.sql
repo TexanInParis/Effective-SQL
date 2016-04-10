@@ -9,11 +9,8 @@ BEGIN
     WHERE OD.OrderNumber = Orders.OrderNumber
   )
   WHERE Orders.OrderNumber IN (
-    SELECT deleted.OrderNumber --FROM deleted
-    FROM (VALUES(''))
-    UNION
-    SELECT inserted.OrderNumber --FROM inserted
-    FROM (VALUES(''))
+  	deleted.OrderNumber,
+	inserted.OrderNumber
   );	
 END;
 
