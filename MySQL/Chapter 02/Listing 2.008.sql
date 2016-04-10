@@ -10,4 +10,4 @@ CREATE TABLE Customers (
 	CustPhoneNumber varchar (8) NULL 
 );
 
-CREATE INDEX CustState ON Customers2(CustState);
+CREATE INDEX CustState ON Customers(CustState);
