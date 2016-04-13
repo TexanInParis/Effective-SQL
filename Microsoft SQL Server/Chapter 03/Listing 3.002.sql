@@ -39,3 +39,14 @@ WHERE a.[Predecessor 5] IS NOT NULL;
 
 GO
 
+DROP VIEW vDrawings;
+
+GO
+
+DROP VIEW vPredecessors;
+
+GO
+
+DROP TABLE Assignments;
+
+GO

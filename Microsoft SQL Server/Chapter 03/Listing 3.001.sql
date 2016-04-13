@@ -31,3 +31,16 @@ FROM CustomerSales AS cs;
 
 GO
 
+DROP VIEW vCustomers;
+
+GO
+
+DROP VIEW vAutomobileModels;
+
+GO
+
+DROP VIEW vEmployees;
+
+GO
+
+DROP TABLE CustomerSales;

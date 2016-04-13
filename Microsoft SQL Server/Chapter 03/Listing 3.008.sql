@@ -20,3 +20,7 @@ SELECT Category, OctQuantity, OctSales
   FROM SalesSummary;
 
 GO
+
+DROP TABLE SalesSummary;
+
+GO

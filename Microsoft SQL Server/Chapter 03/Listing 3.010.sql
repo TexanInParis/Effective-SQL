@@ -30,3 +30,7 @@ SELECT Category, 'Feb', FebQuantity, FebSales
 FROM SalesSummary;
 
 GO
+
+DROP TABLE SalesSummary;
+
+GO
