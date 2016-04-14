@@ -1,0 +1,5 @@
+SELECT Orders.ShipDate, Sum(Orders.OrderTotal) AS SumOfOrderTotal
+FROM Orders
+GROUP BY Orders.ShipDate
+HAVING (((Orders.ShipDate) >= #9/1/2015# AND (Orders.ShipDate) < #10/1/2015#));
+
