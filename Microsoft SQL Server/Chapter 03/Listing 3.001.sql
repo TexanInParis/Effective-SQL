@@ -7,9 +7,18 @@ CREATE TABLE CustomerSales (
   Phone varchar(25) NULL,
   PurchaseDate datetime NULL,
   ModelYear smallint NULL,
-  Model varchar(25) NULL,
+  Model varchar(50) NULL,
   SalesPerson varchar(30) NULL
 );
+
+GO
+
+INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (1, 'Amy', 'Bacock', '111 Dover Lane', 'Chicago', '312-222-1111', 2016-02-14, 2016, 'Mercedes R231', 'Mariam Castro');
+INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (2, 'Tom', 'Frank', '7453 NE 20th St.', 'Bellevue', '425-888-9999', 2016-03-15, 2016, 'Land Rover', 'Donald Ash');
+INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (3, 'Debra', 'Sam', '3223 SE 12th Pl.', 'Seattle', '206-333-4444', 2016-01-20, 2016, 'Toyota Camry', 'Bill Baker');
+INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (4, 'Barney', 'Killjoy', '4655 Rainier Ave.', 'Auburn', '253-111-2222', 2015-12-22, 2016, 'Subaru Outback', 'Bill Baker');
+INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (5, 'Homer', 'Tyler', '1287 Grady Way', 'Renton', '425-777-8888', 2015-11-10, 2016, 'Ford Mustang GT Convertible', 'Mariam Castro');
+INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (6, 'Tom', 'Frank', '7435 NE 20th St.', 'Bellevue', '425-888-9999', 2015-05-25, 2015, 'Cadillac CT6 Sedan', 'Jessica Robin');
 
 GO
 
