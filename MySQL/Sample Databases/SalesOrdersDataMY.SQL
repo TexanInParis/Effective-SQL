@@ -1,6 +1,5 @@
 Use SalesOrdersSample;
-Set IDENTITY_INSERT Customers ON
-GO
+
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -170,11 +169,7 @@ INSERT INTO Customers
    CustPhoneNumber)
   VALUES (1028, 'Jeffrey', 'Tirekicker', '19541 104th Ave NE', 
    'Bothell', 'WA', '98006', 425, '555-9999');
-SET IDENTITY_INSERT Customers OFF
-GO
- 
-SET IDENTITY_INSERT Employees ON
-GO
+
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
@@ -232,11 +227,7 @@ INSERT INTO Employees
   VALUES (708, 'Susan', 'Smith', '511 Lenora Ave', 
    'Bellevue', 'WA', '98006', 425, '555-2301', '1967-10-15', 
    706);
-SET IDENTITY_INSERT Employees OFF
-GO
- 
-SET IDENTITY_INSERT Vendors ON
-GO
+
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
@@ -306,12 +297,7 @@ INSERT INTO Vendors
    VendWebPage, VendEMailAddress)
   VALUES (10, 'Armadillo Brand', '12330 Side Road Lane', 
    'Dallas', 'TX', '75137', '(214) 444-9876', '(214) 444-9877', 
-   '#http://www.DilloBikes.com/#', 'BikeProducts@DilloBikes.com');
-SET IDENTITY_INSERT Vendors OFF
-GO
- 
-SET IDENTITY_INSERT Categories ON
-GO
+
 INSERT INTO Categories
   (CategoryID, CategoryDescription)
   VALUES (1, 'Accessories');
@@ -333,11 +319,7 @@ INSERT INTO Categories
 INSERT INTO Categories
   (CategoryID, CategoryDescription)
   VALUES (7, 'Skateboards');
-SET IDENTITY_INSERT Categories OFF
-GO
- 
-SET IDENTITY_INSERT Products ON
-GO
+
 INSERT INTO Products
   (ProductNumber, ProductName, ProductDescription, 
    RetailPrice, QuantityOnHand, CategoryID)
@@ -534,11 +516,7 @@ INSERT INTO Products
    RetailPrice, QuantityOnHand, CategoryID)
   VALUES (40, 'Ultimate Export 2G Car Rack', NULL, 
    180, 8, 5);
-SET IDENTITY_INSERT Products OFF
-GO
- 
-SET IDENTITY_INSERT Orders ON
-GO
+
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
@@ -5259,8 +5237,6 @@ INSERT INTO Orders
    OrderTotal)
   VALUES (944, '2016-02-28', '2016-03-03', 1020, 702, 
    7768.9);
-SET IDENTITY_INSERT Orders OFF
-GO
  
 INSERT INTO Order_Details
   (OrderNumber, ProductNumber, QuotedPrice, QuantityOrdered)

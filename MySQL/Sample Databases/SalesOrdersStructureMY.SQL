@@ -1,6 +1,6 @@
 ﻿CREATE DATABASE SalesOrdersSample;
 
-use SalesOrdersSample;
+USE SalesOrdersSample;
 
 CREATE TABLE Categories (
 	CategoryID int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
@@ -28,7 +28,8 @@ CREATE TABLE Employees (
 	EmpState nvarchar (2) NULL ,
 	EmpZipCode nvarchar (10) NULL ,
 	EmpAreaCode smallint NULL DEFAULT 0 ,
-	EmpPhoneNumber nvarchar (8) NULL 
+	EmpPhoneNumber nvarchar (8) NULL ,
+	ManagerID int NULL
 	);
 
 CREATE TABLE Order_Details (

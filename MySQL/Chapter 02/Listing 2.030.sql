@@ -1,0 +1,14 @@
+ALTER TABLE Employees
+ADD EmpDOB date;
+
+CREATE FUNCTION CalculateAge(Date_of_Birth DATE) 
+RETURNS int 
+RETURN DATEDIFF(CURRENT_DATE, Date_of_Birth) / 365;	
+
+DROP FUNCTION CalculateAge;
+
+ALTER TABLE Employees
+DROP COLUMN EmpDOB;
+
+
+

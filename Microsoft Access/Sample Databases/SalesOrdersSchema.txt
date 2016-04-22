@@ -44,7 +44,8 @@ Employees
 	EmpZipCode	nvarchar	10			
 	EmpAreaCode	smallint	2		0	
 	EmpPhoneNumber	nvarchar	8			
-	EmpBirthDate	datetime	8			
+	EmpBirthDate	date	8			
+	ManagerID	int	4			
  
 Indexes for Employees
 Index Name	Attributes / Field Names
@@ -53,6 +54,9 @@ EmpAreaCode
  
 EmpZipCode	
 	EmpZipCode
+ 
+ManagerID	
+	ManagerID
  
 PrimaryKey	Primary
 	EmployeeID
@@ -81,8 +85,8 @@ ProductsOrder_Details1
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Orders
 	OrderNumber	int IDENTITY(1, 1)	4			Yes
-	OrderDate	datetime	8			
-	ShipDate	datetime	8			
+	OrderDate	date	8			
+	ShipDate	date	8			
 	CustomerID	int	4		0		Customers.CustomerID
 	EmployeeID	int	4		0		Employees.EmployeeID
 	OrderTotal	money	8			

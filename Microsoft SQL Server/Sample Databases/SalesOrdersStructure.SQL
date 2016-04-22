@@ -1,7 +1,7 @@
-CREATE DATABASE SalesOrdersEffective
+CREATE DATABASE SalesOrdersSample
 GO
 
-use SalesOrdersEffective
+USE SalesOrdersSample
 GO
 
 CREATE TABLE Categories (
@@ -33,7 +33,8 @@ CREATE TABLE Employees (
 	EmpZipCode nvarchar (10) NULL ,
 	EmpAreaCode smallint NULL ,
 	EmpPhoneNumber nvarchar (8) NULL ,
-	EmpBirthDate datetime NULL 
+	EmpBirthDate datetime NULL ,
+	ManagerID int NULL
 )
 GO
 
