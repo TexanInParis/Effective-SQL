@@ -1,0 +1,11 @@
+ALTER TABLE Products
+ADD COLUMN ProductUPC varchar(13);
+
+CREATE UNIQUE INDEX ProductUPC_IDX
+ON Products (ProductUPC ASC)
+EXCLUDE NULL KEYS;
+
+DROP INDEX ProductUPC_IDX;
+
+ALTER TABLE Products
+DROP COLUMN ProductUPC;
