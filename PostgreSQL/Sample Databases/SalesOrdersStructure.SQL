@@ -25,7 +25,8 @@ CREATE TABLE Employees (
 	EmpZipCode varchar (10) NULL ,
 	EmpAreaCode smallint NULL DEFAULT 0 ,
 	EmpPhoneNumber varchar (8) NULL ,
-	EmpBirthDate date NULL 
+	EmpBirthDate date NULL ,
+	ManagerID int NULL
 );
 
 CREATE TABLE Order_Details (
