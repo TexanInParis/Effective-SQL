@@ -1,0 +1,4 @@
+-- Listing 7.14 Get a list of tables and views
+
+SELECT T.TABLE_NAME, T.TABLE_TYPE
+FROM INFORMATION_SCHEMA.TABLES AS T;

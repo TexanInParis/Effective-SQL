@@ -1,1 +1,39 @@
 The folder contains samples and scripts for chapter 7.
+
+The listings in Item 44 were all DBMS-specific.
+
+Listing 7.001: IBM DB2
+Listing 7.002: IBM DB2
+Listing 7.003: Microsoft Access
+Listing 7.004: Microsoft Access
+Listing 7.005: Microsoft SQL Server
+Listing 7.006: Microsoft SQL Server
+Listing 7.007: MySQL
+Listing 7.008: MySQL
+Listing 7.009: Oracle
+Listing 7.010: Oracle
+Listing 7.011: PostgreSQL
+Listing 7.012: PostgreSQL
+
+There are 4 different versions each of Listing 7.003 and Listing 7.004
+
+Listing 7.003a: Registry Key to turn Show Plan on for Access 2013 on Windows x64
+Listing 7.003b: Registry Key to turn Show Plan on for Access 2013 on Windows x86
+Listing 7.003c: Registry Key to turn Show Plan on for Access 2010 on Windows x64
+Listing 7.003d: Registry Key to turn Show Plan on for Access 2010 on Windows x86
+
+Listing 7.004a: Registry Key to turn Show Plan off for Access 2013 on Windows x64
+Listing 7.004b: Registry Key to turn Show Plan off for Access 2013 on Windows x86
+Listing 7.004c: Registry Key to turn Show Plan off for Access 2010 on Windows x64
+Listing 7.004d: Registry Key to turn Show Plan off for Access 2010 on Windows x86
+
+Since Microsoft Access does not support INFORMATION_SCHEMA, the listings in 
+Item 45 are irrelevant, so are not included.
+
+Listing 7.014: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.015: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.016: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.017: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.018: CREATE VIEW statement should work on all DBMS.
+Listing 7.019: Microsoft SQL Server specific
+Listing 7.020: Microsoft SQL Server specific
