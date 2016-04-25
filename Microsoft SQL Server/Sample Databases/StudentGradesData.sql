@@ -1,3 +1,8 @@
+-- This requires that the tables from StudentsGradesStructure.sql be created first.
+
+USE StudentGradesExample;
+GO
+
 INSERT INTO Students (StudentID, StudentFirstNM, StudentLastNM) VALUES (1, 'Ben', 'Clothier');
 INSERT INTO Students (StudentID, StudentFirstNM, StudentLastNM) VALUES (2, 'John', 'Viescas');
 INSERT INTO Students (StudentID, StudentFirstNM, StudentLastNM) VALUES (3, 'Doug', 'Steele');
@@ -42,3 +47,17 @@ INSERT INTO GradeRanges (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoin
 INSERT INTO GradeRanges (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (12, 'D+', 67, 69.99)
 INSERT INTO GradeRanges (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (13, 'F', 0, 59.99)
 
+
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (1, 'A', 93, 97)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (2, 'A-', 90, 93)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (3, 'A+', 97, 120)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (4, 'B', 83, 87)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (5, 'B-', 80, 83)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (6, 'B+', 87, 90)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (7, 'C', 73, 77)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (8, 'C-', 70, 73)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (9, 'C+', 77, 80)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (10, 'D', 63, 67)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (11, 'D-', 60, 63)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (12, 'D+', 67, 70)
+INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (13, 'F', 0, 60)

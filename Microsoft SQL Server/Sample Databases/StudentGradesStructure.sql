@@ -1,10 +1,17 @@
-CREATE DATABASE StudentGrades;
+CREATE DATABASE StudentGradesExample;
 GO
 
-USE StudentGrades;
+USE StudentGradesExample;
 GO
 
 CREATE TABLE GradeRanges (
+  GradeRangeID int NOT NULL, 
+  LetterGrade varchar(5) NOT NULL, 
+  LowGradePoint float NOT NULL, 
+  HighGradePoint float NOT NULL
+);
+
+CREATE TABLE GradeRangesContinuous (
   GradeRangeID int NOT NULL, 
   LetterGrade varchar(5) NOT NULL, 
   LowGradePoint float NOT NULL, 
@@ -32,6 +39,9 @@ CREATE TABLE StudentSubjects (
 ALTER TABLE GradeRanges ADD 
   CONSTRAINT GradeRanges_PK PRIMARY KEY ( GradeRangeID );
 
+ALTER TABLE GradeRangesContinuous ADD 
+  CONSTRAINT GradeRangesContinuous_PK PRIMARY KEY ( GradeRangeID );
+
 ALTER TABLE Subjects ADD 
   CONSTRAINT Subjects_PK PRIMARY KEY ( SubjectID );
 
@@ -46,6 +56,9 @@ ALTER TABLE StudentSubjects ADD
  
 CREATE INDEX GradeLow ON GradeRanges(LowGradePoint);
 CREATE INDEX GradeHigh ON GradeRanges(HighGradePoint);
+
+CREATE INDEX GradeLowContinuous ON GradeRangesContinuous(LowGradePoint);
+CREATE INDEX GradeHighContinous ON GradeRangesContinuous(HighGradePoint);
 
 CREATE INDEX StudentSubjectsSubject ON StudentSubjects(SubjectID);
 
