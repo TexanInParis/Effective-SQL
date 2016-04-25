@@ -1,3 +1,8 @@
+-- Ensure Item44Structure.sql has been run first to be consistent with answers in the book.
+
+USE Item44Example;
+GO
+
 -- Listing 7.16 Get a list of tables without a primary key
 
 SELECT T.TABLE_NAME 
