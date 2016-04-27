@@ -1,0 +1,265 @@
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Agents
+	AgentID	int	4	Yes		Yes
+	AgtFirstName	nvarchar	25			
+	AgtLastName	nvarchar	25			
+	AgtStreetAddress	nvarchar	50			
+	AgtCity	nvarchar	30			
+	AgtState	nvarchar	2			
+	AgtZipCode	nvarchar	10			
+	AgtPhoneNumber	nvarchar	15			
+	DateHired	date	8			
+	Salary	money	8		0	
+	CommissionRate	float(24)	4		0	
+ 
+Indexes for Agents
+Index Name	Attributes / Field Names
+AgtZipCode	
+	AgtZipCode
+ 
+PrimaryKey	Primary
+	AgentID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Customers
+	CustomerID	int	4	Yes		Yes
+	CustFirstName	nvarchar	25			
+	CustLastName	nvarchar	25			
+	CustStreetAddress	nvarchar	50			
+	CustCity	nvarchar	30			
+	CustState	nvarchar	2			
+	CustZipCode	nvarchar	10			
+	CustPhoneNumber	nvarchar	15			
+ 
+Indexes for Customers
+Index Name	Attributes / Field Names
+CustZipCode	
+	CustZipCode
+ 
+PrimaryKey	Primary
+	CustomerID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Engagements
+	EngagementNumber	int	4	Yes	0	Yes
+	StartDate	date	8			
+	EndDate	date	8			
+	StartTime	time	8			
+	StopTime	time	8			
+	ContractPrice	money	8		0	
+	CustomerID	int	4		0		Customers.CustomerID
+	AgentID	int	4		0		Agents.AgentID
+	EntertainerID	int	4		0		Entertainers.EntertainerID
+ 
+Indexes for Engagements
+Index Name	Attributes / Field Names
+AgentsEngagements	
+	AgentID
+ 
+CustomersEngagements	
+	CustomerID
+ 
+EntertainersEngagements	
+	EntertainerID
+ 
+PrimaryKey	Primary
+	EngagementNumber
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Entertainer_Members
+	EntertainerID	int	4	Yes		Yes	Entertainers.EntertainerID
+	MemberID	int	4	Yes	0	Yes	Members.MemberID
+	Status	smallint	2		0	
+ 
+Indexes for Entertainer_Members
+Index Name	Attributes / Field Names
+EntertainersEntertainer_Members	
+	EntertainerID
+ 
+MembersEntertainer_Members	
+	MemberID
+ 
+PrimaryKey	Primary
+	EntertainerID
+	MemberID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Entertainer_Styles
+	EntertainerID	int	4	Yes		Yes	Entertainers.EntertainerID
+	StyleID	smallint	2	Yes	0	Yes	Musical_Styles.StyleID
+	StyleStrength	smallint	2			
+ 
+Indexes for Entertainer_Styles
+Index Name	Attributes / Field Names
+EntertainersEntertainer_Styles	
+	EntertainerID
+ 
+Musical_StylesEntertainer_Styles	
+	StyleID
+ 
+PrimaryKey	Primary
+	EntertainerID
+	StyleID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Entertainers
+	EntertainerID	int	4	Yes		Yes
+	EntStageName	nvarchar	50			
+	EntSSN	nvarchar	12			
+	EntStreetAddress	nvarchar	50			
+	EntCity	nvarchar	30			
+	EntState	nvarchar	2			
+	EntZipCode	nvarchar	10			
+	EntPhoneNumber	nvarchar	15			
+	EntWebPage	nvarchar	50			
+	EntEMailAddress	nvarchar	50			
+	DateEntered	date	8			
+ 
+Indexes for Entertainers
+Index Name	Attributes / Field Names
+EntZipCode	
+	EntZipCode
+ 
+PrimaryKey	Primary
+	EntertainerID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Members
+	MemberID	int	4	Yes	0	Yes
+	MbrFirstName	nvarchar	25			
+	MbrLastName	nvarchar	25			
+	MbrPhoneNumber	nvarchar	15			
+	Gender	nvarchar	2			
+ 
+Indexes for Members
+Index Name	Attributes / Field Names
+MemberID	
+	MemberID
+ 
+PrimaryKey	Primary
+	MemberID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Musical_Preferences
+	CustomerID	int	4	Yes	0	Yes	Customers.CustomerID
+	StyleID	smallint	2	Yes	0	Yes	Musical_Styles.StyleID
+	PreferenceSeq	smallint	2			
+ 
+Indexes for Musical_Preferences
+Index Name	Attributes / Field Names
+CustomersMusical_Preferences	
+	CustomerID
+ 
+Musical_StylesMusical_Preferences	
+	StyleID
+ 
+PrimaryKey	Primary
+	CustomerID
+	StyleID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+Musical_Styles
+	StyleID	smallint	2	Yes	0	Yes
+	StyleName	nvarchar	75			
+ 
+Indexes for Musical_Styles
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	StyleID
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+ztblDays
+	DateField	date	8	Yes		Yes
+ 
+Indexes for ztblDays
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	DateField
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+ztblMonths
+	MonthYear	nvarchar	15			
+	YearNumber	smallint	2	Yes		Yes
+	MonthNumber	smallint	2	Yes		Yes
+	MonthStart	date	8			
+	MonthEnd	date	8			
+	January	smallint	2		0	
+	February	smallint	2		0	
+	March	smallint	2		0	
+	April	smallint	2		0	
+	May	smallint	2		0	
+	June	smallint	2		0	
+	July	smallint	2		0	
+	August	smallint	2		0	
+	September	smallint	2		0	
+	October	smallint	2		0	
+	November	smallint	2		0	
+	December	smallint	2		0	
+ 
+Indexes for ztblMonths
+Index Name	Attributes / Field Names
+MonthEnd	Unique
+	MonthEnd
+ 
+MonthStart	Unique
+	MonthStart
+ 
+MonthYear	Unique
+	MonthYear
+ 
+PrimaryKey	Primary
+	YearNumber
+	MonthNumber
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+ztblSkipLabels
+	LabelCount	int	4	Yes		Yes
+ 
+Indexes for ztblSkipLabels
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	LabelCount
+ 
+ 
+Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
+ztblWeeks
+	WeekStart	date	8	Yes		Yes
+	WeekEnd	date	8			
+ 
+Indexes for ztblWeeks
+Index Name	Attributes / Field Names
+PrimaryKey	Primary
+	WeekStart
+ 
+ 
+Relationship Constraints:
+Name	Parent	Parent Fields	Child	Child Fields
+AgentsEngagements	Agents	AgentID 	Engagements	AgentID 
+ 
+CustomersEngagements	Customers	CustomerID 	Engagements	CustomerID 
+ 
+CustomersMusical_Preferences	Customers	CustomerID 	Musical_Preferences	CustomerID 
+ 
+EntertainersEngagements	Entertainers	EntertainerID 	Engagements	EntertainerID 
+ 
+EntertainersEntertainer_Members	Entertainers	EntertainerID 	Entertainer_Members	EntertainerID 
+ 
+EntertainersEntertainer_Styles	Entertainers	EntertainerID 	Entertainer_Styles	EntertainerID 
+ 
+MembersEntertainer_Members	Members	MemberID 	Entertainer_Members	MemberID 
+ 
+Musical_StylesEntertainer_Styles	Musical_Styles	StyleID 	Entertainer_Styles	StyleID 
+ 
+Musical_StylesMusical_Preferences	Musical_Styles	StyleID 	Musical_Preferences	StyleID 
+ 
