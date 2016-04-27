@@ -1,6 +1,6 @@
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Agents
-	AgentID	int IDENTITY(1, 1)	4			Yes
+	AgentID	int	4	Yes		Yes
 	AgtFirstName	nvarchar	25			
 	AgtLastName	nvarchar	25			
 	AgtStreetAddress	nvarchar	50			
@@ -23,7 +23,7 @@ PrimaryKey	Primary
  
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Customers
-	CustomerID	int IDENTITY(1, 1)	4			Yes
+	CustomerID	int	4	Yes		Yes
 	CustFirstName	nvarchar	25			
 	CustLastName	nvarchar	25			
 	CustStreetAddress	nvarchar	50			
@@ -43,7 +43,7 @@ PrimaryKey	Primary
  
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Engagements
-	EngagementNumber	int IDENTITY(1, 1)	4			Yes
+	EngagementNumber	int	4	Yes	0	Yes
 	StartDate	date	8			
 	EndDate	date	8			
 	StartTime	time	8			
@@ -90,7 +90,8 @@ PrimaryKey	Primary
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Entertainer_Styles
 	EntertainerID	int	4	Yes		Yes	Entertainers.EntertainerID
-	StyleID	int	4		0	Yes	Musical_Styles.StyleID
+	StyleID	smallint	2	Yes	0	Yes	Musical_Styles.StyleID
+	StyleStrength	smallint	2			
  
 Indexes for Entertainer_Styles
 Index Name	Attributes / Field Names
@@ -107,7 +108,7 @@ PrimaryKey	Primary
  
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Entertainers
-	EntertainerID	int IDENTITY(1, 1)	4			Yes
+	EntertainerID	int	4	Yes		Yes
 	EntStageName	nvarchar	50			
 	EntSSN	nvarchar	12			
 	EntStreetAddress	nvarchar	50			
@@ -118,7 +119,6 @@ Entertainers
 	EntWebPage	nvarchar	50			
 	EntEMailAddress	nvarchar	50			
 	DateEntered	date	8			
-	EntPricePerDay	money	8		0	
  
 Indexes for Entertainers
 Index Name	Attributes / Field Names
@@ -131,7 +131,7 @@ PrimaryKey	Primary
  
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Members
-	MemberID	int IDENTITY(1, 1)	4			Yes
+	MemberID	int	4	Yes	0	Yes
 	MbrFirstName	nvarchar	25			
 	MbrLastName	nvarchar	25			
 	MbrPhoneNumber	nvarchar	15			
@@ -139,14 +139,18 @@ Members
  
 Indexes for Members
 Index Name	Attributes / Field Names
+MemberID	
+	MemberID
+ 
 PrimaryKey	Primary
 	MemberID
  
  
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Musical_Preferences
-	CustomerID	int	4		0	Yes	Customers.CustomerID
-	StyleID	int	4		0	Yes	Musical_Styles.StyleID
+	CustomerID	int	4	Yes	0	Yes	Customers.CustomerID
+	StyleID	smallint	2	Yes	0	Yes	Musical_Styles.StyleID
+	PreferenceSeq	smallint	2			
  
 Indexes for Musical_Preferences
 Index Name	Attributes / Field Names
@@ -163,7 +167,7 @@ PrimaryKey	Primary
  
 Table Name	Fields	Data Type	Size	Required	Default	Primary Key	Foreign Key
 Musical_Styles
-	StyleID	int IDENTITY(1, 1)	4			Yes
+	StyleID	smallint	2	Yes	0	Yes
 	StyleName	nvarchar	75			
  
 Indexes for Musical_Styles

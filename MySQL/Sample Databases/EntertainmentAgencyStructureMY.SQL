@@ -47,7 +47,8 @@ CREATE TABLE Entertainer_Members (
 
 CREATE TABLE Entertainer_Styles (
 	EntertainerID int NOT NULL ,
-	StyleID int NOT NULL DEFAULT 0 
+	StyleID int NOT NULL DEFAULT 0 ,
+	StyleStrength small int NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Entertainers (
@@ -75,7 +76,8 @@ CREATE TABLE Members (
 
 CREATE TABLE Musical_Preferences (
 	CustomerID int NOT NULL DEFAULT 0 ,
-	StyleID int NOT NULL DEFAULT 0 
+	StyleID int NOT NULL DEFAULT 0 ,
+	PreferenceSeq small int NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Musical_Styles (
