@@ -1,1 +1,28 @@
 The folder contains samples and scripts for chapter 7.
+
+The listings in Item 44 were all DBMS-specific.
+
+Listing 7.001: IBM DB2
+Listing 7.002: IBM DB2
+Listing 7.003: Microsoft Access
+Listing 7.004: Microsoft Access
+Listing 7.005: Microsoft SQL Server
+Listing 7.006: Microsoft SQL Server
+Listing 7.007: MySQL
+Listing 7.008: MySQL
+Listing 7.009: Oracle
+Listing 7.010: Oracle
+Listing 7.011: PostgreSQL
+Listing 7.012: PostgreSQL
+Listing 7.013: PostgreSQL
+
+Since Oracle does not support INFORMATION_SCHEMA, the listings in 
+Item 45 are irrelevant, so are not included.
+
+Listing 7.014: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.015: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.016: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.017: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.018: CREATE VIEW statement should work on all DBMS.
+Listing 7.019: Microsoft SQL Server specific
+Listing 7.020: Microsoft SQL Server specific
