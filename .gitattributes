@@ -15,3 +15,9 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+*.mdb binary
+*.mde binary
+*.accdb binary
+*.accdc binary
+*.accde binary
+*.accdr binary
