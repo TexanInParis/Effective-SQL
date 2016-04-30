@@ -1,4 +1,4 @@
-USE RecipesExample;
+USE RecipesSample;
 INSERT INTO Ingredient_Classes
   VALUES (1, 'Spice');
 INSERT INTO Ingredient_Classes

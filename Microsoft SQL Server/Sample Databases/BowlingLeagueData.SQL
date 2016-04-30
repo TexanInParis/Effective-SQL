@@ -1,4 +1,4 @@
-Use BowlingLeagueExample;
+Use BowlingLeagueSample;
 SET IDENTITY_INSERT Tournaments ON
 GO
 INSERT INTO Tournaments
