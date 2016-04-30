@@ -105,6 +105,18 @@ CREATE TABLE ztblMonths (
         December smallint NULL DEFAULT 0 
 );
 
+CREATE TABLE ztblQuarters ( 
+        QuarterYear nvarchar (15) NULL ,
+        YearNumber smallint NOT NULL ,
+        QuarterNumber smallint NOT NULL ,
+        QuarterStart date NULL ,
+        QuarterEnd date NULL ,
+        Qtr_1st smallint NULL DEFAULT 0 ,
+        Qtr_2nd smallint NULL DEFAULT 0 ,
+        Qtr_3rd smallint NULL DEFAULT 0 ,
+        Qtr_4th smallint NULL DEFAULT 0 
+         
+);
 
 CREATE TABLE ztblSkipLabels (
         LabelCount int NOT NULL  
@@ -179,13 +191,30 @@ ALTER TABLE ztblMonths ADD
         );
 
 
- CREATE UNIQUE INDEX ztblMontths_MonthEnd ON ztblMonths(MonthEnd) ;
+ CREATE UNIQUE INDEX ztblMonths_MonthEnd ON ztblMonths(MonthEnd) ;
 
 
  CREATE UNIQUE INDEX ztblMonths_MonthStart ON ztblMonths(MonthStart) ;
 
 
  CREATE UNIQUE INDEX ztblMonths_MonthYear ON ztblMonths(MonthYear) ;
+
+
+ALTER TABLE ztblQuarters ADD 
+        CONSTRAINT ztblQuarters_PK PRIMARY KEY 
+        ( 
+                YearNumber, 
+                QuarterNumber
+        );
+
+
+ CREATE UNIQUE INDEX ztblQuarters_QuarterEnd ON ztblQuarters(QuarterEnd) ;
+
+
+ CREATE UNIQUE INDEX ztblQuarters_QuarterStart ON ztblQuarters(QuarterStart) ;
+
+
+ CREATE UNIQUE INDEX ztblQuarters_QuarterYear ON ztblQuarters(QuarterYear) ;
 
 
 ALTER TABLE ztblSkipLabels ADD 
