@@ -4855,6 +4855,67 @@ INSERT INTO ztblMonths
   VALUES ('December 2017', 2017, 12, '2017-12-01', 
    '2017-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
 
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q1 2015', 2015, 1, '2015-05-01', '2015-07-31', 
+   1, 0, 0, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q2 2015', 2015, 2, '2015-08-01', '2015-10-31', 
+   0, 1, 0, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q3 2015', 2015, 3, '2015-11-01', '2016-01-31', 
+   0, 0, 1, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q4 2015', 2015, 4, '2016-02-01', '2015-04-30', 
+   0, 0, 0, 1);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q1 2016', 2016, 1, '2016-05-01', '2016-07-31', 
+   1, 0, 0, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q2 2016', 2016, 2, '2016-08-01', '2016-10-31', 
+   0, 1, 0, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q3 2016', 2016, 3, '2016-11-01', '2017-01-31', 
+   0, 0, 1, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q4 2016', 2016, 4, '2017-02-01', '2016-04-30', 
+   0, 0, 0, 1);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q1 2017', 2017, 1, '2017-05-01', '2017-07-31', 
+   1, 0, 0, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q2 2017', 2017, 2, '2017-08-01', '2017-10-31', 
+   0, 1, 0, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q3 2017', 2017, 3, '2017-11-01', '2018-01-31', 
+   0, 0, 1, 0);
+INSERT INTO ztblQuarters
+  (QuarterYear, YearNumber, QuarterNumber, QuarterStart, 
+   QuarterEnd, Qtr_1st, Qtr_2nd, Qtr_3rd, Qtr_4th)
+  VALUES ('Q4 2017', 2017, 4, '2018-02-01', '2017-04-30', 
+   0, 0, 0, 1);
+ 
 INSERT INTO ztblSkipLabels
   (LabelCount)
   VALUES (1);
