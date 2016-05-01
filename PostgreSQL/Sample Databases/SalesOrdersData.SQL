@@ -17372,259 +17372,7 @@ INSERT INTO Product_Vendors
   (ProductNumber, VendorID, WholesalePrice, DaysToDeliver)
   VALUES (40, 9, 136.35, 14);
  
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('January 2012', 2012, 1, '2012-01-01', '2012-01-31', 
-   1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('February 2012', 2012, 2, '2012-02-01', '2012-02-29', 
-   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('March 2012', 2012, 3, '2012-03-01', '2012-03-31', 
-   0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('April 2012', 2012, 4, '2012-04-01', '2012-04-30', 
-   0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('May 2012', 2012, 5, '2012-05-01', '2012-05-31', 
-   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('June 2012', 2012, 6, '2012-06-01', '2012-06-30', 
-   0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('July 2012', 2012, 7, '2012-07-01', '2012-07-31', 
-   0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('August 2012', 2012, 8, '2012-08-01', '2012-08-31', 
-   0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('September 2012', 2012, 9, '2012-09-01', 
-   '2012-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('October 2012', 2012, 10, '2012-10-01', '2012-10-31', 
-   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('November 2012', 2012, 11, '2012-11-01', 
-   '2012-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('December 2012', 2012, 12, '2012-12-01', 
-   '2012-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('January 2013', 2013, 1, '2013-01-01', '2013-01-31', 
-   1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('February 2013', 2013, 2, '2013-02-01', '2013-02-28', 
-   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('March 2013', 2013, 3, '2013-03-01', '2013-03-31', 
-   0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('April 2013', 2013, 4, '2013-04-01', '2013-04-30', 
-   0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('May 2013', 2013, 5, '2013-05-01', '2013-05-31', 
-   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('June 2013', 2013, 6, '2013-06-01', '2013-06-30', 
-   0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('July 2013', 2013, 7, '2013-07-01', '2013-07-31', 
-   0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('August 2013', 2013, 8, '2013-08-01', '2013-08-31', 
-   0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('September 2013', 2013, 9, '2013-09-01', 
-   '2013-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('October 2013', 2013, 10, '2013-10-01', '2013-10-31', 
-   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('November 2013', 2013, 11, '2013-11-01', 
-   '2013-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('December 2013', 2013, 12, '2013-12-01', 
-   '2013-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('January 2014', 2014, 1, '2014-01-01', '2014-01-31', 
-   1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('February 2014', 2014, 2, '2014-02-01', '2014-02-28', 
-   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('March 2014', 2014, 3, '2014-03-01', '2014-03-31', 
-   0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('April 2014', 2014, 4, '2014-04-01', '2014-04-30', 
-   0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('May 2014', 2014, 5, '2014-05-01', '2014-05-31', 
-   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('June 2014', 2014, 6, '2014-06-01', '2014-06-30', 
-   0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('July 2014', 2014, 7, '2014-07-01', '2014-07-31', 
-   0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('August 2014', 2014, 8, '2014-08-01', '2014-08-31', 
-   0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('September 2014', 2014, 9, '2014-09-01', 
-   '2014-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('October 2014', 2014, 10, '2014-10-01', '2014-10-31', 
-   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('November 2014', 2014, 11, '2014-11-01', 
-   '2014-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
-INSERT INTO ztblMonths
-  (MonthYear, YearNumber, MonthNumber, MonthStart, 
-   MonthEnd, January, February, March, April, May, 
-   June, July, August, September, October, November, 
-   December)
-  VALUES ('December 2014', 2014, 12, '2014-12-01', 
-   '2014-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
- 
+INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('January 2015', 2015, 1, '2015-01-01', '2015-01-31',    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('February 2015', 2015, 2, '2015-02-01', '2015-02-28',    0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('March 2015', 2015, 3, '2015-03-01', '2015-03-31',    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('April 2015', 2015, 4, '2015-04-01', '2015-04-30',    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('May 2015', 2015, 5, '2015-05-01', '2015-05-31',    0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('June 2015', 2015, 6, '2015-06-01', '2015-06-30',    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('July 2015', 2015, 7, '2015-07-01', '2015-07-31',    0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('August 2015', 2015, 8, '2015-08-01', '2015-08-31',    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('September 2015', 2015, 9, '2015-09-01',    '2015-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('October 2015', 2015, 10, '2015-10-01', '2015-10-31',    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('November 2015', 2015, 11, '2015-11-01',    '2015-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('December 2015', 2015, 12, '2015-12-01',    '2015-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('January 2016', 2016, 1, '2016-01-01', '2016-01-31',    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('February 2016', 2016, 2, '2016-02-01', '2016-02-28',    0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('March 2016', 2016, 3, '2016-03-01', '2016-03-31',    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('April 2016', 2016, 4, '2016-04-01', '2016-04-30',    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('May 2016', 2016, 5, '2016-05-01', '2016-05-31',    0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('June 2016', 2016, 6, '2016-06-01', '2016-06-30',    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('July 2016', 2016, 7, '2016-07-01', '2016-07-31',    0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('August 2016', 2016, 8, '2016-08-01', '2016-08-31',    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('September 2016', 2016, 9, '2016-09-01',    '2016-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('October 2016', 2016, 10, '2016-10-01', '2016-10-31',    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('November 2016', 2016, 11, '2016-11-01',    '2016-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('December 2016', 2016, 12, '2016-12-01',    '2016-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('January 2017', 2017, 1, '2017-01-01', '2017-01-31',    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('February 2017', 2017, 2, '2017-02-01', '2017-02-28',    0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('March 2017', 2017, 3, '2017-03-01', '2017-03-31',    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('April 2017', 2017, 4, '2017-04-01', '2017-04-30',    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('May 2017', 2017, 5, '2017-05-01', '2017-05-31',    0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('June 2017', 2017, 6, '2017-06-01', '2017-06-30',    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('July 2017', 2017, 7, '2017-07-01', '2017-07-31',    0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('August 2017', 2017, 8, '2017-08-01', '2017-08-31',    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('September 2017', 2017, 9, '2017-09-01',    '2017-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('October 2017', 2017, 10, '2017-10-01', '2017-10-31',    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('November 2017', 2017, 11, '2017-11-01',    '2017-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('December 2017', 2017, 12, '2017-12-01',    '2017-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);  
 INSERT INTO ztblPriceRanges
   (PriceCategory, LowPrice, HighPrice)
   VALUES ('Affordable', 15.01, 50);
