@@ -1,0 +1,12 @@
+SELECT Employees.EmpFirstName, Employees.EmpLastName, 
+  Customers.CustFirstName, Customers.CustLastName, 
+  Customers.CustAreaCode, Customers.CustPhoneNumber, 
+  (CASE WHEN Customers.CustomerID IN 
+    (SELECT CustomerID 
+     FROM Orders 
+     WHERE Orders.EmployeeID = Employees.EmployeeID) 
+        THEN 'Ordered from you.' 
+        ELSE ' ' END) AS CustStatus
+FROM Employees 
+  INNER JOIN Customers
+    ON Employees.EmpState = Customers.CustState;
