@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 WITH CustProd AS 
    (SELECT DISTINCT Orders.CustomerID, Products.ProductName
     FROM Orders INNER JOIN Order_Details

@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 SELECT V.VendName, AVG(DateDiff(d, P.OrderDate, 
     P.DeliveryDate)) AS DeliveryDays
 FROM Vendors AS V 

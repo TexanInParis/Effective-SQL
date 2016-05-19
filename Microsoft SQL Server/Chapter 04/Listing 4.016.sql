@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 CREATE FUNCTION CustProd(@ProdName VarChar(50)) RETURNS Table
 AS 
 RETURN (SELECT Orders.CustomerID AS CustID
@@ -6,6 +13,7 @@ ON Orders.OrderNumber = Order_Details.OrderNumber
 INNER JOIN Products
 ON Products.ProductNumber = Order_Details.ProductNumber
 WHERE ProductName = @ProdName);
+GO
 
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
@@ -17,3 +25,7 @@ OR C.CustomerID NOT IN
   (SELECT CustID FROM CustProd('Gloves'))
 OR C.CustomerID NOT IN
   (SELECT CustID FROM CustProd('Knee Pads')));
+GO
+
+DROP FUNCTION CustProd;
+GO

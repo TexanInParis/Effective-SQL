@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 WITH CatProdData AS
 (SELECT C.CategoryID, C.CategoryDescription, P.ProductName, OD.QuotedPrice, OD.QuantityOrdered
 FROM Products AS P 

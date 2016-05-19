@@ -1,3 +1,10 @@
+-- Ensure you've run EntertainmentAgencyStructure.sql
+-- and EntertainmentAgencyData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE EntertainmentAgencySample;
+GO
+
 WITH CustPreferences AS
 (SELECT C.CustomerID, C.CustFirstName, C.CustLastName, 
        MAX((CASE WHEN MP.PreferenceSeq = 1  

@@ -1,3 +1,10 @@
+-- Ensure you've run BowlingLeagueStructure.sql
+-- and BowlingLeagueData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE BowlingLeagueSample;
+GO
+
 WITH TeamPairs AS 
   (SELECT 
     ROW_NUMBER() OVER (ORDER BY Teams1.TeamID, Teams2.TeamID) 

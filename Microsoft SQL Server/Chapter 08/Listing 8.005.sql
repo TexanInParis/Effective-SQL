@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 SELECT OD.ProductNumber,
   SUM(OD.QuantityOrdered * OD.QuotedPrice) AS ProductSales
 FROM Order_Details AS OD

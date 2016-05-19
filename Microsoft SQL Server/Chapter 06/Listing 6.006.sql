@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 SELECT Vendors.VendName, 
   AVG(Product_Vendors.DaysToDeliver) AS AvgDelivery
 FROM Vendors 

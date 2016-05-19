@@ -1,3 +1,10 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
+
 SELECT C.CategoryDescription, P.ProductName, 
   SUM(OD.QuotedPrice * OD.QuantityOrdered) AS TotalSales
 FROM Products AS P 

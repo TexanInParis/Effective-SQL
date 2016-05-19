@@ -1,7 +1,10 @@
--- Ensure you've run SalesOrdersStructure.sql and SalesOrdersData.sql in order to run this example. 
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
 
 USE SalesOrdersSample;
 GO
+
 
 -- Listing 8.1 Using a Cartesian Product to obtain a list of every customer and every product
 

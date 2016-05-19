@@ -1,3 +1,10 @@
+-- Ensure you've run RecipesStructure.sql
+-- and RecipesData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE RecipesSample;
+GO
+
 SELECT Recipes.RecipeTitle, 
   COUNT(Recipe_Ingredients.RecipeID) AS IngredCount
 FROM (((Recipe_Classes 

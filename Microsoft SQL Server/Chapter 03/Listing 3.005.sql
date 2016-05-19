@@ -1,3 +1,10 @@
+-- Ensure you've run Ch03.20.01.sql
+-- and Ch03.20.01.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE Ch03.20.01;
+GO
+
 SELECT CAST('2015-01-01' AS Date) AS SalesMonth, Jan AS SalesAmt
   FROM tblPostSales
 UNION ALL
