@@ -1,7 +1,7 @@
 CREATE DATABASE RecipesSample;
 GO
 
-USE RecipesExample
+USE RecipesSample;
 GO
 
 CREATE TABLE Ingredient_Classes (

@@ -1,4 +1,10 @@
 --Listing 3.3 Three view definitions
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
 
 CREATE VIEW vActiveCustomers AS
 SELECT c.CustomerID, c.CustFirstName, c.CustLastName, 

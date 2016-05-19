@@ -45,7 +45,7 @@ CREATE TABLE Employees (
 
 	EmpAreaCode smallint NULL DEFAULT 0 ,
 	EmpPhoneNumber varchar (8) NULL ,
-	EmpBirthDate date NULL ,
+	EmpDOB date NULL ,
 	ManagerID int Null
 );
 

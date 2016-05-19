@@ -1,4 +1,10 @@
 --Listing 3.4 Equivalent statement of combined views
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+GO
 
 SELECT c.CustomerID, c.CustFirstName, c.CustLastName, 
   s.LastOrderDate, s.GrandOrderTotal

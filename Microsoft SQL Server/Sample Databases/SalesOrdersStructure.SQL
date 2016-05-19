@@ -33,7 +33,7 @@ CREATE TABLE Employees (
 	EmpZipCode nvarchar (10) NULL ,
 	EmpAreaCode smallint NULL ,
 	EmpPhoneNumber nvarchar (8) NULL ,
-	EmpBirthDate datetime NULL ,
+	EmpDOB datetime NULL ,
 	ManagerID int NULL
 )
 GO

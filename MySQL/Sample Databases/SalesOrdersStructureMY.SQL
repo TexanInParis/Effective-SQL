@@ -29,6 +29,7 @@ CREATE TABLE Employees (
 	EmpZipCode nvarchar (10) NULL ,
 	EmpAreaCode smallint NULL DEFAULT 0 ,
 	EmpPhoneNumber nvarchar (8) NULL ,
+	EmpDOB datetime NULL ,
 	ManagerID int NULL
 	);
 
