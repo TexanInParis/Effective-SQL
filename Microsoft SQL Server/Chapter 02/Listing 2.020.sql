@@ -3,8 +3,9 @@
 -- The CREATE TABLE statement for Access was
 --
 -- CREATE TABLE OrgChart (
---   employeeID INTEGER NOT NULL UNIQUE,
+--   employeeID INTEGER NOT NULL PRIMARY KEY,
 --   manager_employeeID INTEGER
+-- CONSTRAINT SelfReference FOREIGN KEY (manager_employeeID)
 -- REFERENCES OrgChart (employeeID)
 -- ON DELETE SET NULL
 -- ON UPDATE CASCADE);
