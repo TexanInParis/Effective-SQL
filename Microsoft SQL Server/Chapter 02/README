@@ -5,5 +5,5 @@ The following listings are NOT included:
 2.003 -- Listing is Microsoft Access specific.
 2.005 -- Listing is Oracle specific.
 2.006 -- Listing is Oracle specific.
-2.007 -- Listing is PostgreSQL specific
-2.028 -- Microsoft SQL Server is case-insensitive, so creating a case-sensitive index makes no difference.
+2.007 -- Listing is PostgreSQL specific.
+2.028 -- Microsoft SQL Server is case-insensitive, so there's no need for this listing.
