@@ -5,6 +5,8 @@
 USE SalesOrdersSample;
 GO
 
+-- Listing 2.27 Sample SQL for case-sensitive RDBMS
+-- (Note that SQL Server is case-insensitive, so this is not necessary!)
 SELECT EmployeeID, EmpFirstName, EmpLastName
   FROM Employees
  WHERE UPPER(EmpLastName) = 'VIESCAS';

@@ -5,10 +5,8 @@
 USE SalesOrdersSample;
 GO
 
+-- Listing 2.24 Sample query that requires a sort operation
 SELECT ProductNumber, ProductName
-
-FROM Products
-
+  FROM Products
 WHERE CategoryID IN (1, 5, 9)
-
 ORDER BY ProductName;

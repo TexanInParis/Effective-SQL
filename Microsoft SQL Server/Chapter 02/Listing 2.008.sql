@@ -1,3 +1,12 @@
+-- Create a new database, to make it easier to cleanup afterwards.
+
+CREATE DATABASE Item11Example;
+GO
+
+USE Item11Example;
+GO
+
+-- Listing 2.8 Table Creation SQL
 CREATE TABLE Customers (
 	CustomerID int PRIMARY KEY ,
 	CustFirstName varchar (25) NULL ,
