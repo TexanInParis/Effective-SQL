@@ -6,7 +6,7 @@ ON Customers(CustFaxNumber)
 WHERE CustFaxNumber IS NOT NULL;
 
 DROP INDEX CustFax_IDX
-ON Customers;;
+ON Customers;
 
 ALTER TABLE Customers
 DROP COLUMN CustFaxNumber;

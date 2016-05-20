@@ -1,3 +1,11 @@
+-- Create a new database, to make it easier to cleanup afterward.
+
+CREATE DATABASE Item28Example;
+GO
+
+USE Item28Example;
+GO
+
 -- Listing 4.28 Table and Index creation DDL
 
 CREATE TABLE Employees (
