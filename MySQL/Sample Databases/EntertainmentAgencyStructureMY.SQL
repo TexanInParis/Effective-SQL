@@ -1,4 +1,4 @@
-﻿CREATE DATABASE EntertainmentAgencySample;
+CREATE DATABASE EntertainmentAgencySample;
 
 USE EntertainmentAgencySample;
 
