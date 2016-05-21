@@ -33,7 +33,7 @@ Item 45 are irrelevant, so are not included.
 Listing 7.014: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
 Listing 7.015: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
 Listing 7.016: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
-Listing 7.017: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
+Listing 7.017: Should work on IBM DB2, Microsoft SQL Server and PostgreSQL.
 Listing 7.018: CREATE VIEW statement should work on all DBMS.
 Listing 7.019: Microsoft SQL Server specific
 Listing 7.020: Microsoft SQL Server specific
