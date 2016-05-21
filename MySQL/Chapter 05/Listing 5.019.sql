@@ -1,10 +1,9 @@
--- Ensure you've run Item33StructureAndData.sql in the Sample Databases folder
+-- Ensure you've run Item33StructureAndDataMY.sql in the Sample Databases folder
 -- in order to create the Inventory table
 
 USE Item33Example;
-GO
 
---Listing 5.19 Joining the BeerStyles table to itself to compare MaxABV in each row.
+-- Listing 5.19 Joining the BeerStyles table to itself to compare MaxABV in each row.
 SELECT L.Category, L.MaxABV AS LeftMaxABV, R.MaxABV AS RightMaxABV
 FROM BeerStyles AS L
 LEFT JOIN BeerStyles AS R

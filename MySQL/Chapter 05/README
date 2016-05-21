@@ -1,1 +1,6 @@
 The folder contains samples and scripts for chapter 5.
+
+The following listings are NOT included:
+
+5.005 -- MySQL does not support GROUP BY CUBE
+5.006 -- MySQL does not support GROUP BY GROUPING SETS

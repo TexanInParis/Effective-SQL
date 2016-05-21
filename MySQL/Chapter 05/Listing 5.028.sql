@@ -1,10 +1,9 @@
--- Ensure you've run Item36StructureAndData.sql in the Sample Databases folder
+-- Ensure you've run Item36StructureAndDataMY.sql in the Sample Databases folder
 -- in order to create the Inventory table
 
 USE Item36Example;
-GO
 
---Listing 5.28 Multiple counts in a single query
+-- Listing 5.28 Multiple counts in a single query
 SELECT COUNT(*) AS TotalRows,
   COUNT(CustomerID) AS TotalOrdersWithCustomers,
   COUNT(EmployeeID) AS TotalOrdersWithEmployees,
