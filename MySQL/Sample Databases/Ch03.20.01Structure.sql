@@ -1,18 +1,18 @@
-CREATE DATABASE Ch03.20.01;
+CREATE DATABASE Ch03_20_01;
 
-USE Ch03.20.01;
+USE Ch03_20_01;
 
 CREATE TABLE tblPostSales(
     Product nvarchar (255), 
-    Jan money, 
-    Feb money, 
-    Mar money, 
-    Apr money, 
-    May money, 
-    Jun money, 
-    Jul money, 
-    Aug money, 
-    Sep money, 
-    Oct money, 
-    Nov money, 
-    Dec money);  
+    Jan decimal(15, 2), 
+    Feb decimal(15, 2), 
+    Mar decimal(15, 2), 
+    Apr decimal(15, 2), 
+    May decimal(15, 2), 
+    Jun decimal(15, 2), 
+    Jul decimal(15, 2), 
+    Aug decimal(15, 2), 
+    Sep decimal(15, 2), 
+    Oct decimal(15, 2), 
+    Nov decimal(15, 2), 
+    Decm decimal(15, 2));  
