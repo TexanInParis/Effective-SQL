@@ -1,3 +1,9 @@
+-- Ensure you've run SalesOrdersStructureMy.sql
+-- and SalesOrdersDataMy.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+
 CREATE PROCEDURE UpdateOrdersOrderTotalProc (
 	IN NewOrderNumber int,
 	IN OldOrderNumber int

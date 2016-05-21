@@ -1,4 +1,4 @@
-﻿CREATE DATABASE SalesOrdersSample;
+CREATE DATABASE SalesOrdersSample;
 
 USE SalesOrdersSample;
 
