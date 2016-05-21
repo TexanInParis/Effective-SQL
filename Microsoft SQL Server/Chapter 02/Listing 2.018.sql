@@ -5,7 +5,7 @@
 USE SalesOrdersSample;
 GO
 
--- Creating a Trigger to prevent orphan records in the child table
+-- Listing 2.18 Creating a Trigger to prevent orphan records in the child table
 CREATE TRIGGER DelCascadeTrig
   ON Orders
   FOR DELETE
@@ -15,4 +15,5 @@ AS
    WHERE Order_Details.OrderNumber = deleted.OrderNumber;
 
 -- Run the following if you do not wish to keep the trigger in the database.
---DROP TRIGGER DelCascadeTrig;
+-- DROP TRIGGER DelCascadeTrig;
+

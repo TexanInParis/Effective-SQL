@@ -2,7 +2,6 @@
 -- It was included in SalesOrdersStructureMY.sql, which 
 -- presumably you've already run. 
 
-
 -- Listing 2.13 Sample table creation SQL
  
 CREATE TABLE Orders (

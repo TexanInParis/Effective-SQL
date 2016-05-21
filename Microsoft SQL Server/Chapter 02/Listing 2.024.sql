@@ -1,8 +1,9 @@
--- Ensure you've run SalesOrdersStructureMy.sql
--- and SalesOrdersDataMy.sql in the Sample Databases folder
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
 USE SalesOrdersSample;
+GO
 
 -- Listing 2.24 Sample query that requires a sort operation
 SELECT ProductNumber, ProductName

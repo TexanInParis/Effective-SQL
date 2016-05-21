@@ -296,6 +296,7 @@ INSERT INTO Vendors
    VendWebPage, VendEMailAddress)
   VALUES (10, 'Armadillo Brand', '12330 Side Road Lane', 
    'Dallas', 'TX', '75137', '(214) 444-9876', '(214) 444-9877', 
+   '#http://www.DilloBikes.com/#', 'BikeProducts@DilloBikes.com');
 
 INSERT INTO Categories
   (CategoryID, CategoryDescription)

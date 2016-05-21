@@ -1,6 +1,6 @@
 ﻿CREATE DATABASE RecipesSample;
 
-use RecipesSample;
+USE RecipesSample;
 
 CREATE TABLE Ingredient_Classes (
         IngredientClassID smallint NOT NULL DEFAULT 0 ,
