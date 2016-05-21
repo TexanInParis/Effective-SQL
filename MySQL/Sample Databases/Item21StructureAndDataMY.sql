@@ -18,6 +18,7 @@ CREATE TABLE SalesSummary (
   FebSales float NULL
   );
 
+
 INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales, DecQuantity, DecSales, JanQuantity, JanSales, FebQuantity, FebSales) VALUES ('Accessories', 930, 61165.4, 923, 60883.03, 987, 62758.14, 1223, 80954.76, 979, 60242.47);
 INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales, DecQuantity, DecSales, JanQuantity, JanSales, FebQuantity, FebSales) VALUES ('Bikes', 413, 536590.5, 412, 546657, 332, 439831.5, 542, 705733.5, 450, 585130.5);
 INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales, DecQuantity, DecSales, JanQuantity, JanSales, FebQuantity, FebSales) VALUES ('Car racks', 138, 24077.15, 96, 16772.05, 115, 20137.05, 142, 24794.75, 124, 21763.3);

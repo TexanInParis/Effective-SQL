@@ -24,7 +24,6 @@ INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, 
 INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (5, 'Homer', 'Tyler', '1287 Grady Way', 'Renton', '425-777-8888', '2015-11-10', 2016, 'Ford Mustang GT Convertible', 'Mariam Castro');
 INSERT INTO CustomerSales (SalesID, CustFirstName, CustLastName, Address, City, Phone, PurchaseDate, ModelYear, Model, SalesPerson) VALUES (6, 'Tom', 'Frank', '7435 NE 20th St.', 'Bellevue', '425-888-9999', '2015-05-25', 2015, 'Cadillac CT6 Sedan', 'Jessica Robin');
 
-
 CREATE TABLE Assignments (
   ID int PRIMARY KEY NOT NULL,
   DrawingNumber varchar(25) NULL,
