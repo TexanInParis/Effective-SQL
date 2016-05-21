@@ -1,1 +1,11 @@
+-- Ensure you've run Listing 2.008.sql to create the Customers table
+
+USE Item11Example;
+
+-- If you've run Listing 2.009.sql, you'll need to drop the index created
+-- in that listing, since we re-used the index name.
+-- If you have not run Listing 2.009.sql, comment out the DROP INDEX statement.
+DROP INDEX CustName ON Customers;
+
+-- Listing 2.10 Less appropriate Index Creation SQL
 CREATE INDEX CustName ON Customers(CustFirstName, CustLastName);

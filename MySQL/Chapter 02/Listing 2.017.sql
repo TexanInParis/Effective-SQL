@@ -1,14 +1,13 @@
-ALTER TABLE Order_Details
-DROP FOREIGN KEY Order_Details_FK00;
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
 
+USE SalesOrdersSample;
+
+-- Listing 2.17 Using DRI to prevent orphan records in the child table
 ALTER TABLE Order_Details 
-ADD CONSTRAINT fkOrder 
-FOREIGN KEY (OrderNumber)
-REFERENCES Orders (OrderNumber) ON DELETE CASCADE;
+  ADD CONSTRAINT fkOrder FOREIGN KEY (OrderNumber) REFERENCES Orders (OrderNumber) ON DELETE CASCADE;
 
-ALTER TABLE Order_Details
-DROP FOREIGN KEY fkOrder;
+-- Run the following if you do not wish to keep the constraint in the database.
+-- ALTER TABLE Order_Details DROP CONSTRAINT fkOrder;
 
-ALTER TABLE Order_Details 
-ADD CONSTRAINT Order_Details_FK00 
-FOREIGN KEY (OrderNumber) REFERENCES Orders (OrderNumber);
