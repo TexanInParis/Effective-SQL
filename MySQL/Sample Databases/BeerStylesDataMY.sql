@@ -45,9 +45,9 @@ INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, Colour
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (24, 2, 4, 'Witbier', 2, 4, 4.5, 5.5, 10, 20);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (25, 2, 5, 'Gose', 2, 4, 4.5, 5.5, 4, 9);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (26, 2, 5, 'Berliner Weisse', 2, 4, 2.5, 3.5, 3, 8);
-INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (27, 2, 5, 'KÃ¶lsch', 3.5, 5, 4.4, 5.2, 20, 30);
+INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (27, 2, 5, 'Kölsch', 3.5, 5, 4.4, 5.2, 20, 30);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (28, 2, 4, 'Belgian Strong Pale Ale', 3.5, 5.5, 7, 9, 25, 45);
-INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (29, 2, 4, 'BiÃ¨re de Champagne', 3, 6, 9, 14, 10, 30);
+INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (29, 2, 4, 'Bière de Champagne', 3, 6, 9, 14, 10, 30);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (30, 2, 5, 'Kristalweizen', 2, 8, 4, 5.5, 10, 15);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (31, 2, 5, 'Weissbier', 2, 9, 4, 5.5, 10, 18);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (32, 2, 4, 'Tripel', 3.5, 7, 7.5, 9.5, 20, 40);
@@ -57,7 +57,7 @@ INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, Colour
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (36, 2, 4, 'Fruit Lambic', 3, 7, 5, 7, 0, 10);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (37, 2, 4, 'Belgian IPA', 3, 19, 6, 10.5, 50, 80);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (38, 2, 4, 'Saison', 5, 14, 4.5, 8, 20, 45);
-INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (39, 2, 6, 'BiÃ¨re de Garde', 6, 19, 6, 8.5, 18, 30);
+INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (39, 2, 6, 'Bière de Garde', 6, 19, 6, 8.5, 18, 30);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (40, 2, 5, 'Dunkelweizen', 9, 13, 4.5, 6, 10, 18);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (41, 2, 4, 'Flanders Red', 10, 16, 4.5, 6.5, 10, 25);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (42, 2, 5, 'Altbier', 11, 17, 4.5, 5.2, 35, 50);
@@ -72,7 +72,7 @@ INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, Colour
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (51, 3, 5, 'Helles', 3, 5, 4.7, 5.4, 16, 22);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (52, 3, 5, 'Dortmunder Export', 4, 6, 4.8, 6, 23, 30);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (53, 3, 5, 'Maibock', 6, 11, 6.3, 7.5, 23, 35);
-INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (54, 3, 5, 'MÃ¤rzen/Oktoberfest', 7, 14, 4.8, 5.9, 20, 28);
+INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (54, 3, 5, 'Märzen/Oktoberfest', 7, 14, 4.8, 5.9, 20, 28);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (55, 3, 8, 'Vienna Lager', 10, 16, 4.5, 5.9, 18, 30);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (56, 3, 5, 'Kellerbier', 10, 20, 5, 5.5, 25, 35);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (57, 3, 5, 'Rauchbier', 12, 22, 4.8, 6, 20, 30);
@@ -108,5 +108,3 @@ INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, Colour
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (87, 4, 9, 'Barrel-aged Beers', 10, 50, 5, 15, 40, 100);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (88, 4, 9, 'Imperial and Hyper Beers', 8, 55, 7, 40, 30, 100);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (89, 4, 9, 'American Stout', 30, 40, 5, 12, 35, 75);
-
-

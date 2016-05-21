@@ -34,17 +34,17 @@ CREATE TABLE StudentSubjects (
   FinalGrade float NULL
 );
 
-ALTER TABLE GradeRanges ADD 
-  CONSTRAINT GradeRanges_PK PRIMARY KEY ( GradeRangeID );
+ALTER TABLE GradeRanges  
+  ADD CONSTRAINT GradeRanges_PK PRIMARY KEY ( GradeRangeID );
 
-ALTER TABLE GradeRangesContinuous ADD 
-  CONSTRAINT GradeRangesContinuous_PK PRIMARY KEY ( GradeRangeID );
+ALTER TABLE GradeRangesContinuous  
+  ADD CONSTRAINT GradeRangesContinuous_PK PRIMARY KEY ( GradeRangeID );
 
-ALTER TABLE Subjects ADD 
-  CONSTRAINT Subjects_PK PRIMARY KEY ( SubjectID );
+ALTER TABLE Subjects 
+  ADD CONSTRAINT Subjects_PK PRIMARY KEY ( SubjectID );
 
-ALTER TABLE Students ADD 
-  CONSTRAINT Students_PK PRIMARY KEY ( StudentID );
+ALTER TABLE Students  
+  ADD CONSTRAINT Students_PK PRIMARY KEY ( StudentID );
 
 ALTER TABLE StudentSubjects 
   ADD CONSTRAINT StudentSubjects_FK00 

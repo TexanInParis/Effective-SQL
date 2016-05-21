@@ -12,4 +12,5 @@ SELECT EmployeeID, EmpFirstName, EmpLastName, dbo.CalculateAge(EmpDOB) AS EmpAge
   FROM Employees
 WHERE dbo.CalculateAge(EmpDOB) > 50;
 
-DROP FUNCTION CalculateAge;
+-- Run the following if you do not wish to keep the function in the database.
+-- DROP FUNCTION CalculateAge;

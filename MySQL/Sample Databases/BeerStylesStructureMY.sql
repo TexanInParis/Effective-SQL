@@ -26,13 +26,13 @@ CREATE TABLE Styles (
 );
 
 
-ALTER TABLE Categories ADD 
-  CONSTRAINT Categories_PK PRIMARY KEY ( CategoryID );
+ALTER TABLE Categories 
+  ADD CONSTRAINT Categories_PK PRIMARY KEY ( CategoryID );
 
-ALTER TABLE Countries ADD 
-  CONSTRAINT Countries_PK PRIMARY KEY ( CountryID );
+ALTER TABLE Countries
+  ADD CONSTRAINT Countries_PK PRIMARY KEY ( CountryID );
 
-ALTER TABLE Styles 
+ALTER TABLE Styles
   ADD CONSTRAINT Styles_FK00 FOREIGN KEY ( CategoryFK ) REFERENCES Categories (CategoryID),
   ADD CONSTRAINT Styles_FK01 FOREIGN KEY ( CountryFK ) REFERENCES Countries (CountryID),
   ADD CONSTRAINT Styles_PK PRIMARY KEY ( StyleID );
