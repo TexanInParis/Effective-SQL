@@ -5,9 +5,18 @@
 USE SalesOrdersSample;
 GO
 
+-- Listing 2.21 Sample SQL to create a filtered index on QuantityOnHand
 CREATE INDEX LowProducts
+<<<<<<< HEAD
 ON Products (ProductNumber)
 WHERE QuantityOnHand < 10;
 
 DROP INDEX LowProducts
 ON Products;
+=======
+  ON Products (ProductNumber)
+  WHERE QuantityOnHand < 10;
+
+-- Run the following if you do not wish to keep the index in the database.
+--DROP INDEX LowProducts ON Products;
+>>>>>>> origin/master

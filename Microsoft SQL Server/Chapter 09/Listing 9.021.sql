@@ -1,10 +1,9 @@
--- Listing 9.20 must be run first to create the Item56Example database
-
--- Listing 9.21 Table creation DDL for a Date table
+-- Ensure you've run Listing 9.020.sql to create the Item56Example database
 
 USE Item56Example;
 GO
 
+-- Listing 9.21 Table creation DDL for a Date table
 CREATE TABLE DimDate (
   DateKey int PRIMARY KEY ,
   FullDate date NOT NULL 

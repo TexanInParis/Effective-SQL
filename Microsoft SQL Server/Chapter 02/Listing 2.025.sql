@@ -5,8 +5,9 @@
 USE SalesOrdersSample;
 GO
 
+-- Listing 2.25 Sample SQL to create filtered indexes to eliminate sort
 CREATE INDEX SelectProducts ON Products(ProductName, ProductNumber)
 WHERE CategoryID IN (1, 5, 9);
 
-DROP INDEX SelectProducts
-ON Products;
+-- Run the following if you do not wish to keep the index in the database.
+--DROP INDEX SelectProducts ON Products;
