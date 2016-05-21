@@ -1,7 +1,7 @@
-CREATE DATABASE BowlingLeagueExample
+CREATE DATABASE BowlingLeagueSample
 GO
 
-use BowlingLeagueExample
+use BowlingLeagueSample
 GO
 
 CREATE TABLE Bowler_Scores (
