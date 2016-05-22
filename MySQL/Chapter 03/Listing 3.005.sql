@@ -3,7 +3,6 @@
 -- in order to run this example. 
 
 USE Ch03_20_01;
-GO
 
 SELECT CAST('2015-01-01' AS Date) AS SalesMonth, Product, Jan AS SalesAmt
   FROM tblPostSales
@@ -38,5 +37,5 @@ UNION ALL
 SELECT CAST('2015-11-01' AS Date) AS SalesMonth, Product, Nov AS SalesAmt
   FROM tblPostSales
 UNION ALL
-SELECT CAST('2015-12-01' AS Date) AS SalesMonth, Product, Dec AS SalesAmt
+SELECT CAST('2015-12-01' AS Date) AS SalesMonth, Product, Decm AS SalesAmt
   FROM tblPostSales;

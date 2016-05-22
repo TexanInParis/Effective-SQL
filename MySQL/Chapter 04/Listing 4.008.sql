@@ -4,7 +4,9 @@ CASE WHEN Students.Gender = 'M' THEN 'Mr.'
     ELSE 'Mrs.' END
 
 (Rate sales based by Product on quantity sold.)
-SELECT Products.ProductNumber, Products.ProductName
+Use Salesorderssample;
+
+SELECT Products.ProductNumber, Products.ProductName,
 CASE WHEN (SELECT SUM(QuantityOrdered)
     FROM Order_Details 
     WHERE (Order_Details.ProductNumber = 
