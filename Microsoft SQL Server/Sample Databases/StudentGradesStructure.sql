@@ -1,8 +1,6 @@
 CREATE DATABASE StudentGradesExample;
 GO
 
-
-
 USE StudentGradesExample;
 GO
 
@@ -25,15 +23,11 @@ CREATE TABLE Subjects (
   SubjectNM varchar(50) NULL
 );
 
-
-
 CREATE TABLE Students (
   StudentID int NOT NULL,
   StudentFirstNM varchar(50) NULL,
   StudentLastNM varchar(50) NULL
 );
-
-
 
 CREATE TABLE StudentSubjects (
   StudentSubjectID int NOT NULL, 
@@ -73,3 +67,11 @@ CREATE INDEX GradeLowContinuous ON GradeRangesContinuous(LowGradePoint);
 CREATE INDEX GradeHighContinous ON GradeRangesContinuous(HighGradePoint);
 
 CREATE INDEX StudentSubjectsSubject ON StudentSubjects(SubjectID);
+GO
+
+CREATE VIEW StudentGrades AS
+SELECT Stu.StudentFirstNM AS Student, Sub.SubjectNM AS Subject, SS.FinalGrade
+FROM StudentSubjects AS SS INNER JOIN Students AS Stu 
+  ON SS.StudentID = Stu.StudentID
+INNER JOIN Subjects AS Sub
+  ON SS.SubjectID = Sub.SubjectID;

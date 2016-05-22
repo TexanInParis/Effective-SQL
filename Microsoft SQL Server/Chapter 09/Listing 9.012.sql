@@ -5,13 +5,6 @@ GO
 
 -- Listing 9.12 Joining the GradeRangeContinuous Tally Table to convert continuous numeric grades to letter grades
 
-WITH StudentGrades (Student, Subject, FinalGrade) AS
-(SELECT Stu.StudentFirstNM AS Student, Sub.SubjectNM AS Subject, SS.FinalGrade
-FROM StudentSubjects AS SS INNER JOIN Students AS Stu 
-  ON SS.StudentID = Stu.StudentID
-INNER JOIN Subjects AS Sub
-  ON SS.SubjectID = Sub.SubjectID)
-
 SELECT SG.Subject, GR.LetterGrade, COUNT(*) AS NumberOfStudents
 FROM StudentGrades AS SG INNER JOIN GradeRangesContinuous AS GR 
   ON SG.FinalGrade >= GR.LowGradePoint

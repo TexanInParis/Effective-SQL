@@ -34,6 +34,7 @@ CREATE TABLE StudentSubjects (
   FinalGrade float NULL
 );
 
+
 ALTER TABLE GradeRanges  
   ADD CONSTRAINT GradeRanges_PK PRIMARY KEY ( GradeRangeID );
 
@@ -65,3 +66,10 @@ CREATE INDEX GradeLowContinuous ON GradeRangesContinuous(LowGradePoint);
 CREATE INDEX GradeHighContinous ON GradeRangesContinuous(HighGradePoint);
 
 CREATE INDEX StudentSubjectsSubject ON StudentSubjects(SubjectID);
+
+CREATE VIEW StudentGrades AS
+SELECT Stu.StudentFirstNM AS Student, Sub.SubjectNM AS Subject, SS.FinalGrade
+FROM StudentSubjects AS SS INNER JOIN Students AS Stu 
+  ON SS.StudentID = Stu.StudentID
+INNER JOIN Subjects AS Sub
+  ON SS.SubjectID = Sub.SubjectID;
