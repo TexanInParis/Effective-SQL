@@ -74,6 +74,13 @@ CREATE TABLE Vendors (
 	VendEMailAddress varchar (50) NULL 
 );
 
+CREATE TABLE PurchaseOrders (
+	PurchaseID number (11) NOT NULL ,
+	VendorID int NOT NULL ,
+	OrderDate date NOT NULL ,
+	DeliveryDate date NOT NULL
+);
+
 CREATE TABLE ztblMonths (
 	MonthYear varchar (15) NOT NULL ,
         YearNumber number (6) NOT NULL ,
@@ -192,6 +199,15 @@ ALTER TABLE Vendors ADD
 
 CREATE  INDEX VendZipCode ON Vendors(VendZipCode);
 
+ALTER TABLE PurchaseOrders ADD
+	CONSTRAINT PurchaseOrders_PK PRIMARY KEY
+	(
+		PurchaseID
+	)
+;
+
+CREATE INDEX VendorID ON PurchaseOrder(VendorID);
+
 ALTER TABLE ztblMonths ADD
  	CONSTRAINT ztblMonths_PK PRIMARY KEY 
 	(
@@ -292,6 +308,16 @@ ALTER TABLE Products ADD
 	)
 ;
 
+ALTER TABLE PurchaseOrders ADD 	
+	CONSTRAINT Purchase_Vendors_FK01 FOREIGN KEY 
+	(
+		VendorID
+	) REFERENCES Vendors (
+		VendorID
+	)
+;
+
+
 CREATE SEQUENCE Categories_Sequence;
 
 CREATE OR REPLACE TRIGGER Categories_Sequence_Trigger
@@ -375,3 +401,15 @@ BEGIN
 END;
 
 ALTER TRIGGER Vendors_Sequence_Trigger ENABLE ;
+
+CREATE OR REPLACE TRIGGER PurchaseOrders_Sequence_Trigger
+BEFORE INSERT ON PurchaseOrders
+FOR EACH ROW
+WHEN (new.PurchaseID IS NULL)
+BEGIN
+  SELECT PurchaseOrders_Sequence.NEXTVAL
+  INTO   :new.PurchaseID
+  FROM   dual;
+END;
+
+ALTER TRIGGER PurchaseOrders_Sequence_Trigger ENABLE ;

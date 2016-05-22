@@ -2,5 +2,9 @@ The folder contains samples and scripts for chapter 5.
 
 The following listings are NOT included:
 
+5.001 (not an SQL statement)
+5.002 (not an SQL statement)
+5.003 (not an SQL statement)
 5.005 -- MySQL does not support GROUP BY CUBE
 5.006 -- MySQL does not support GROUP BY GROUPING SETS
+5.016 -- MySQL does not support Common Table Expressions

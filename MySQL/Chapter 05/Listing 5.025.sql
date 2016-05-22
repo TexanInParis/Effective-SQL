@@ -3,7 +3,6 @@
 -- in order to run this example. 
 
 USE RecipesSample;
-GO
 
 SELECT Recipes.RecipeTitle, 
   COUNT(RI.RecipeID) AS IngredCount
@@ -12,7 +11,7 @@ FROM (Recipe_Classes
     ON Recipe_Classes.RecipeClassID = Recipes.RecipeClassID) 
   LEFT OUTER JOIN
      (SELECT Recipe_Ingredients.RecipeID, 
-	     Ingredient_Classes.IngredientClassDescription
+         Ingredient_Classes.IngredientClassDescription
       FROM (Recipe_Ingredients
         INNER JOIN Ingredients
           ON Recipe_Ingredients.IngredientID = 

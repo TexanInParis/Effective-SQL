@@ -90,6 +90,14 @@ CREATE TABLE Vendors (
 ) 
 GO
 
+CREATE TABLE PurchaseOrders (
+	PurchaseID int IDENTITY (1, 1) NOT NULL ,
+	VendorID int NOT NULL ,
+	OrderDate datetime NOT NULL ,
+	DeliveryDate datetime NOT NULL
+);
+GO
+
 CREATE TABLE ztblMonths (
 	MonthYear nvarchar (15) NOT NULL ,
         YearNumber smallint NOT NULL ,
@@ -241,6 +249,13 @@ GO
  CREATE  INDEX VendZipCode ON Vendors(VendZipCode)
 GO
 
+ALTER TABLE PurchaseOrders ADD
+	CONSTRAINT PurchaseOrders_PK PRIMARY KEY
+	(
+		PurchaseID
+	)
+GO
+
 ALTER TABLE ztblMonths ADD
         CONSTRAINT January_Default DEFAULT (0) FOR January,
         CONSTRAINT February_Default DEFAULT (0) FOR February,
@@ -350,3 +365,11 @@ ALTER TABLE Products ADD
 	)
 GO
 
+ALTER TABLE PurchaseOrders ADD 
+	CONSTRAINT Purchase_Vendors_FK01 FOREIGN KEY 
+	(
+		VendorID
+	) REFERENCES Vendors (
+		VendorID
+	)
+GO

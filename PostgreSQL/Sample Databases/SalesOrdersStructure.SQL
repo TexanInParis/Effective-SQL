@@ -74,6 +74,13 @@ CREATE TABLE Vendors (
 	VendEMailAddress varchar (50) NULL 
 );
 
+CREATE TABLE PurchaseOrders (
+	PurchaseID SERIAL NOT NULL ,
+	VendorID int NOT NULL ,
+	OrderDate date NOT NULL ,
+	DeliveryDate date NOT NULL
+);
+
 CREATE TABLE ztblMonths (
 	MonthYear varchar (15) NOT NULL ,
         YearNumber smallint NOT NULL ,
@@ -200,6 +207,24 @@ ALTER TABLE ztblMonths ADD
 	)
 ;
 
+ALTER TABLE PurchaseOrders ADD 
+	CONSTRAINT PurchaseOrders_PK PRIMARY KEY    
+	(
+		PurchaseID
+	)  
+;
+
+CREATE  INDEX VendorID ON PurchaseOrders(VendorID);
+
+ALTER TABLE ztblMonths ADD
+ 	CONSTRAINT ztblMonths_PK PRIMARY KEY 
+	(
+		YearNumber, 
+                MonthNumber
+	)
+;
+
+
 CREATE  UNIQUE INDEX Month_End ON ztblMonths(MonthEnd);
 
 CREATE  UNIQUE INDEX Month_Start ON ztblMonths(MonthStart);
@@ -291,3 +316,13 @@ ALTER TABLE Products ADD
 		CategoryID
 	)
 ;
+
+ALTER TABLE PurchaseOrders ADD 	
+	CONSTRAINT Purchase_Vendors_FK01 FOREIGN KEY 
+	(
+		VendorID
+	) REFERENCES Vendors (
+		VendorID
+	)
+;
+

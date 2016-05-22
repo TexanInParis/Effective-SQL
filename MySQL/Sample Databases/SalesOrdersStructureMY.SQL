@@ -77,6 +77,13 @@ CREATE TABLE Vendors (
 	VendWebPage text NULL ,
 	VendEMailAddress nvarchar (50) NULL
 	);
+	
+CREATE TABLE PurchaseOrders (
+	PurchaseID int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	VendorID int NOT NULL ,
+	OrderDate date NOT NULL ,
+	DeliveryDate date NOT NULL
+);
 
 CREATE TABLE ztblMonths (
 	MonthYear nvarchar (15) NOT NULL ,
@@ -155,6 +162,8 @@ CREATE  INDEX VendorID ON Product_Vendors(VendorID);
 CREATE  INDEX CategoryID ON Products(CategoryID);
 
 CREATE  INDEX VendZipCode ON Vendors(VendZipCode);
+
+CREATE 	INDEX VendorID ON PurchaseOrders(VendorID);
 
 ALTER TABLE ztblMonths ADD
  	CONSTRAINT ztblMonths_PK PRIMARY KEY 
@@ -245,4 +254,12 @@ ALTER TABLE Products
 		CategoryID
 	) REFERENCES Categories (
 		CategoryID
+	);
+	
+ALTER TABLE PurchaseOrders 
+	ADD CONSTRAINT Purchase_Vendors_FK01 FOREIGN KEY 
+	(
+		VendorID
+	) REFERENCES Vendors (
+		VendorID
 	);
