@@ -6,7 +6,7 @@ USE SalesOrdersSample;
 GO
 
 -- Listing 2.26 Sample SQL for case-insensitive RDBMS
--- (Note that SQL Server is case-insensitive)
+-- Note that SQL Server is usually case-insensitive
 SELECT EmployeeID, EmpFirstName, EmpLastName
   FROM Employees
  WHERE EmpLastName = 'Viescas';
