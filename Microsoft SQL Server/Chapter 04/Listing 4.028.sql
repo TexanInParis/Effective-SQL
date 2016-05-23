@@ -13,7 +13,7 @@ CREATE TABLE Employees (
   EmpFirstName nvarchar (25) NULL ,
   EmpLastName nvarchar (25) NULL ,
   EmpDOB date NULL ,
-  EmpSalary int NULL 
+  EmpSalary money NULL 
 );
 CREATE INDEX [EmpFirstName] ON [Employees]
 ([EmpFirstName] ASC);

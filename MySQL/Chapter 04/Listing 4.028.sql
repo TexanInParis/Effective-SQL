@@ -11,7 +11,7 @@ CREATE TABLE Employees (
   EmpFirstName nvarchar (25) NULL ,
   EmpLastName nvarchar (25) NULL ,
   EmpDOB date NULL ,
-  EmpSalary int NULL 
+  EmpSalary decimal (15,2) NULL 
 );
 CREATE INDEX EmpFirstName ON Employees (EmpFirstName ASC);
 CREATE INDEX EmpLastName ON Employees (EmpLastName ASC);
