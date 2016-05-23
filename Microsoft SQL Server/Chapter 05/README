@@ -1,9 +1,9 @@
-The folder contains samples and scripts for chapter 3.
+The folder contains samples and scripts for chapter 5.
 
 The following listings are not included:
 
-5.001 (not an SQL statement)
-5.002 (not an SQL statement)
-5.003 (not an SQL statement)
-5.008 (applies to Access only)
-5.009 (applies to Access only)
+5.001 -- Not an SQL statement
+5.002 -- Not an SQL statement
+5.003 -- Not an SQL statement
+5.008 -- Applies to Access only
+5.009 -- Applies to Access only
