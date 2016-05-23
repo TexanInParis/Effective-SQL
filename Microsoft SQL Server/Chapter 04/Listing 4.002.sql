@@ -7,7 +7,7 @@ GO
 
 SELECT C.CustFirstName, C.CustLastName
 FROM 
-  (SELECT Customers.CustomerFirstName, Customers.CustomerLastName
+  (SELECT Customers.CustFirstName, Customers.CustLastName
   FROM Customers INNER JOIN Orders
     ON Customers.CustomerID = Orders.CustomerID
   INNER JOIN Order_Details
@@ -16,7 +16,7 @@ FROM
     ON Products.ProductNumber = Order_Details.ProductNumber
   WHERE Products.ProductName = 'Bike') AS C
 INNER JOIN
-  (SELECT Customers.CustomerFirstName, Customers.CustomerLastName
+  (SELECT Customers.CustFirstName, Customers.CustLastName
   FROM Customers INNER JOIN Orders
     ON Customers.CustomerID = Orders.CustomerID
   INNER JOIN Order_Details
