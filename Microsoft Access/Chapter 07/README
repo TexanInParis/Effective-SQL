@@ -14,6 +14,7 @@ Listing 7.009: Oracle
 Listing 7.010: Oracle
 Listing 7.011: PostgreSQL
 Listing 7.012: PostgreSQL
+Listing 7.013: PostgreSQL
 
 There are 4 different versions each of Listing 7.003 and Listing 7.004
 
@@ -28,7 +29,7 @@ Listing 7.004c: Registry Key to turn Show Plan off for Access 2010 on Windows x6
 Listing 7.004d: Registry Key to turn Show Plan off for Access 2010 on Windows x86
 
 Since Microsoft Access does not support INFORMATION_SCHEMA, the listings in 
-Item 45 are irrelevant, so are not included.
+Item 45 (Listings 7.014 through 7.020 respective) are irrelevant, so are not included.
 
 Listing 7.014: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
 Listing 7.015: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.

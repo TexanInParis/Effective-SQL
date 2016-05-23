@@ -1,1 +1,27 @@
 The folder contains samples and scripts for chapter 3.
+
+Item18.accdb contains the following queries, corresponding to the listings in the book:
+  Listing 3-001: vAutomobileModels
+  Listing 3-001: vCustomers
+  Listing 3-001: vEmployees
+      Correspond to Listing 3.1, since Access doesn't allow more than one SQL statement at once.
+  Listing 3-002: vDrawings
+  Listing 3-002: vPredecessors
+      Correspond to Listing 3.2, since Access doesn't allow more than one SQL statement at once.
+  Listing 3-003: vActiveCustomers
+  Listing 3-003: vActiveCustomerStatistics
+  Listing 3-003: vCustomerStatistics
+      Correspond to Listing 3.3, since Access doesn't allow more than one SQL statement at once.
+  Listing 3-004
+
+Item21.accdb contains the following queries, corresponding to the listings in the book:
+  Listing 3-008
+  Listing 3-009
+  Listing 3-010
+  Listing 3-011
+
+
+The following listings are not included:
+
+Listing 3.006 -- Specific to DB2
+Listing 3.007 -- Specific to Oracle

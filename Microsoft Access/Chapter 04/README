@@ -1,1 +1,26 @@
 The folder contains samples and scripts for chapter 4.
+
+Item27.accdb contains the following queries, corresponding to the listings in the book:
+  Listing 4-021 -- Note that this creates the log table that already exists in the database
+  Listing 4-022
+  Listing 4-024
+  Listing 4-025
+  Listing 4-026
+  Listing 4-027
+
+Item28.accdb contains the following queries, corresponding to the listings in the book:
+  Listing 4-029
+  Listing 4-030
+  Listing 4-031
+  Listing 4-032
+  Listing 4-033
+  Listing 4-034
+  Listing 4-035
+  Listing 4-036
+  Listing 4-037
+
+
+The following listings are not included:
+
+Listing 4-023 -- Not relevant to Access
+Listing 4-028 -- The table and index already exist in the database- Access doesn't allow multiple statements together
