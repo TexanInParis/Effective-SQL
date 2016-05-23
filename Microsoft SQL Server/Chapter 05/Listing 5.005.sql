@@ -4,8 +4,8 @@
 USE Item30Example;
 GO
 
---Listing 5.5 CUBE sample query
-SELECT Color, Size, SUM(Quantity)
+-- Listing 5.5 CUBE sample query
+SELECT Color, Size, SUM(Quantity) AS TotalQuantity
 FROM Inventory 
 GROUP BY CUBE (Color, Size);
 

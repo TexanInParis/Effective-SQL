@@ -5,8 +5,8 @@ USE Item30Example;
 GO
 
 
---Listing 5.6 GROUPING SETS sample query
-SELECT Color, Size, SUM(Quantity)
+-- Listing 5.6 GROUPING SETS sample query
+SELECT Color, Size, SUM(Quantity) AS TotalQuantity
 FROM Inventory 
 GROUP BY GROUPING SETS ((Color), (Size), ());
 

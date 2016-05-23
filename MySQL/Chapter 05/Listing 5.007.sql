@@ -4,7 +4,7 @@
 USE Item30Example;
 
 -- Listing 5.7 Using simple GROUP BY instead of GROUPING SETS
-SELECT Color, NULL AS Size, SUM(Quantity)
+SELECT Color, NULL AS Size, SUM(Quantity) AS TotalQuantity
 FROM Inventory 
 GROUP BY Color
 UNION
