@@ -10,4 +10,4 @@ CREATE INDEX SelectProducts ON Products(ProductName, ProductNumber)
 WHERE CategoryID IN (1, 5, 9);
 
 -- Run the following if you do not wish to keep the index in the database.
---DROP INDEX SelectProducts ON Products;
+-- DROP INDEX SelectProducts ON Products;

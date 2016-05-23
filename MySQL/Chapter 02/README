@@ -1,13 +1,15 @@
+The folder contains samples and scripts for chapter 2.
+
 The following listings are NOT included:
 
-2.001
-2.002
-2.003
-2.004
-2.005
-2.006
-2.007
-2.021
-2.022
-2.023
-2.025
+2.001 -- DB2-specific example
+2.002 -- DB2-specific example
+2.003 -- Access-specific example
+2.004 -- SQL Server-specific example
+2.005 -- Oracle-specific example
+2.006 -- Oracle-specific example
+2.007 -- PostgreSQL-specific example
+2.021 -- MySQL doesn't support filtered indexes
+2.022 -- MySQL doesn't support filtered indexes
+2.023 -- MySQL doesn't support filtered indexes
+2.025 -- MySQL doesn't support filtered indexes
