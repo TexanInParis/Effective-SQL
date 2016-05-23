@@ -1,1 +1,6 @@
 The folder contains samples and scripts for chapter 3.
+
+The following are not included:
+
+3.006 -- Listing is DB2 specific.
+3.007 -- Listing is Oracle specific.
