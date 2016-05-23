@@ -1,15 +1,15 @@
 The following listings are NOT included:
 
-2.001
-2.002
-2.004
-2.005
-2.006
-2.007
-2.018
-2.019
-2.021
-2.022
-2.023
-2.025
-2.028
+2.001 -- Listing is DB2 specific.
+2.002 -- Listing is DB2 specific.
+2.004 -- Listing is SQL Server specific.
+2.005 -- Listing is Oracle specific.
+2.006 -- Listing is Oracle specific.
+2.007 -- Listing is PostgreSQL specific.
+2.018 -- Access does not allow triggers to be created using SQL.
+2.019 -- Access does not allow triggers to be created using SQL.
+2.021 -- Access doesn't support filtered indexes.
+2.022 -- Access doesn't support filtered indexes.
+2.023 -- Access doesn't support filtered indexes.
+2.025 -- Access doesn't support filtered indexes.
+2.028 -- Access is case-insensitive.
