@@ -1,5 +1,5 @@
 CREATE TABLE Sales (
-  SalesId int PRIMARY KEY,
+  SalesId int PRIMARY KEY NOT NULL,
   RetailerId int NULL,
   Sales int NULL,
   Cost float NULL,
@@ -10,7 +10,7 @@ CREATE TABLE Sales (
 );
 
 CREATE TABLE Retailer (
-  RetailerId int PRIMARY KEY, 
+  RetailerId int PRIMARY KEY NOT NULL, 
   RetailerName varchar (50) NULL,
   RetailerStreetAddress varchar (50) NULL,
   RetailerCity varchar (30) NULL,
@@ -22,7 +22,7 @@ CREATE TABLE Retailer (
 );
 
 CREATE TABLE Product (
-  ProductId int PRIMARY KEY, 
+  ProductId int PRIMARY KEY NOT NULL, 
   ProductTypeId int NULL,
   ProductName varchar (50) NULL,
   ProductDescription varchar (100) NULL,
@@ -31,7 +31,7 @@ CREATE TABLE Product (
 
 
 CREATE TABLE datTime (
-  DayKey date PRIMARY KEY,
+  DayKey date PRIMARY KEY NOT NULL,
   CurrentYear smallint NULL,
   CurrentQuarter smallint NULL,
   CurrentMonth smallint NULL
@@ -39,14 +39,14 @@ CREATE TABLE datTime (
 
 
 CREATE TABLE Region (
-  RegionId int PRIMARY KEY,
+  RegionId int PRIMARY KEY NOT NULL,
   RegionName varchar(25) NULL,
   CountryCode varchar (2) NULL
 );
 
 
 CREATE TABLE ProductType (
-  ProductTypeId int PRIMARY KEY, 
+  ProductTypeId int PRIMARY KEY NOT NULL, 
   ProductTypeCode varchar(15)
 );
 
@@ -60,8 +60,9 @@ SELECT SUM(T1.Sales) AS Sales,
   T6.ProductTypeCode AS ProductTypeCode,
   T4.CurrentYear AS CurrentYear,
   T4.CurrentQuarter AS CurrentQuarter,
-  T4.CurrentMonth AS CurrentMonth 
-FROM Sales AS T1 INNER JOIN Retailer AS T2
+  T4.CurrentMonth AS CurrentMonth
+FROM Sales AS T1 
+INNER JOIN Retailer AS T2
   ON T1.RetailerId = T2.RetailerId 
 INNER JOIN Product AS T3
   ON T1.ProductId = T3.ProductId
@@ -75,7 +76,7 @@ GROUP BY T5.RegionName, T5.CountryCode, T6.ProductTypeCode,
   T4.CurrentYear, T4.CurrentQuarter, T4.CurrentMonth
 )
 DATA INITIALLY DEFERRED
-REFRESH IMMEDIATE
+REFRESH DEFERRED
 ENABLE QUERY OPTIMIZATION
 MAINTAINED BY SYSTEM
 NOT LOGGED INITIALLY;
