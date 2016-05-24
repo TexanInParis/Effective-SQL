@@ -8,6 +8,7 @@ CREATE TABLE DimDate (
   DateKey int PRIMARY KEY ,
   FullDate date NOT NULL 
 );
+
 CREATE INDEX iFullDate
   ON DimDate (FullDate);
 
@@ -17,8 +18,7 @@ WITH SeqNumTbl AS
    SELECT DATEADD(DAY, 1, SeqNum)
    FROM SeqNumTbl
    WHERE SeqNum < DATEADD(DAY, -1, DATEFROMPARTS(YEAR(GETDATE())+2, 1,1)))
-
 INSERT DimDate(DateKey, FullDate )
-SELECT CONVERT(int, SeqNum, 112), SeqNum  
+SELECT CAST(SeqNum AS int), SeqNum  
 FROM SeqNumTbl
 OPTION (MAXRECURSION 0);
