@@ -1,5 +1,6 @@
 -- Listing 7.16 Get a list of tables without a primary key
 
+-- Not supported on DB2 For Linux, Unix, and Windows; only on DB2 for i Series. Untested.
 SELECT T.TABLE_NAME 
 FROM 
 (SELECT TABLE_NAME 

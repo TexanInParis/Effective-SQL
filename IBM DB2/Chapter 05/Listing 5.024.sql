@@ -17,7 +17,7 @@ FROM (((Recipe_Classes
   INNER JOIN Ingredient_Classes 
     ON Ingredients.IngredientClassID = 
     Ingredient_Classes.IngredientClassID
-WHERE Recipe_Classes.RecipeClassDescription = 'Main Course' 
+WHERE Recipe_Classes.RecipeClassDescription = 'Main course' 
   AND Ingredient_Classes.IngredientClassDescription = 'Spice'
 GROUP BY Recipes.RecipeTitle
 HAVING COUNT(Recipe_Ingredients.RecipeID) < 3;
