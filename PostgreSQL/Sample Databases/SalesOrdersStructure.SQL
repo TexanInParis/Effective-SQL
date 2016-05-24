@@ -30,8 +30,8 @@ CREATE TABLE Employees (
 );
 
 CREATE TABLE Order_Details (
-	OrderNumber int NOT NULL DEFAULT 0 ,
-	ProductNumber int NOT NULL DEFAULT 0 ,
+	OrderNumber int NOT NULL ,
+	ProductNumber int NOT NULL ,
 	QuotedPrice money NULL DEFAULT 0 ,
 	QuantityOrdered smallint NULL DEFAULT 0
 );
@@ -40,14 +40,14 @@ CREATE TABLE Orders (
 	OrderNumber SERIAL NOT NULL ,
 	OrderDate date NULL ,
 	ShipDate date NULL ,
-	CustomerID int NULL DEFAULT 0 ,
-	EmployeeID int NULL DEFAULT 0 ,
+	CustomerID int NULL ,
+	EmployeeID int NULL ,
 	OrderTotal money NULL DEFAULT 0 
 );
 
 CREATE TABLE Product_Vendors (
-	ProductNumber int NOT NULL DEFAULT 0 ,
-	VendorID int NOT NULL DEFAULT 0 ,
+	ProductNumber int NOT NULL ,
+	VendorID int NOT NULL ,
 	WholesalePrice money NULL DEFAULT 0 ,
 	DaysToDeliver smallint NULL DEFAULT 0 
 );
@@ -58,7 +58,7 @@ CREATE TABLE Products (
 	ProductDescription varchar (100) NULL ,
 	RetailPrice money NULL DEFAULT 0 ,
 	QuantityOnHand smallint NULL DEFAULT 0 ,
-	CategoryID int NULL DEFAULT 0 
+	CategoryID int NULL 
 );
 
 CREATE TABLE Vendors (
