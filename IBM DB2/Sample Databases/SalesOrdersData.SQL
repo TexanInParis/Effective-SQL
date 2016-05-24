@@ -1,3 +1,5 @@
+SET SCHEMA SalesOrdersSample;
+
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -45,7 +47,7 @@ INSERT INTO Customers
    CustCity, CustState, CustZipCode, CustAreaCode, 
    CustPhoneNumber)
   VALUES (1008, 'Neil', 'Patterson', '233 West Valley Hwy', 
-   'San Diego', 'CA', '92199', 619, '555-2541');
+   'San Die', 'CA', '92199', 619, '555-2541');
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -76,7 +78,7 @@ INSERT INTO Customers
    CustCity, CustState, CustZipCode, CustAreaCode, 
    CustPhoneNumber)
   VALUES (1013, 'Rachel', 'Patterson', '2114 Longview Lane', 
-   'San Diego', 'CA', '92199', 619, '555-2546');
+   'San Die', 'CA', '92199', 619, '555-2546');
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -173,56 +175,56 @@ INSERT INTO Employees
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (701, 'Ann', 'Patterson', '16 Maple Lane', 
-   'Auburn', 'WA', '98002', 253, '555-2591', '1958-03-18', 
+   'Auburn', 'WA', '98002', 253, '555-2591', DATE '1958-03-18', 
    NULL);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (702, 'Mary', 'Thompson', '122 Spring River Drive', 
-   'Duvall', 'WA', '98019', 425, '555-2516', '1990-06-21', 
+   'Duvall', 'WA', '98019', 425, '555-2516', DATE '1990-06-21', 
    701);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (703, 'Jim', 'Smith', '908 W. Capital Way', 
-   'Tacoma', 'WA', '98413', 253, '555-2581', '1964-11-02', 
+   'Tacoma', 'WA', '98413', 253, '555-2581', DATE '1964-11-02', 
    701);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (704, 'Carol', 'Viescas', '722 Moss Bay Blvd.', 
-   'Kirkland', 'WA', '98033', 425, '555-2576', '1987-12-23', 
+   'Kirkland', 'WA', '98033', 425, '555-2576', DATE '1987-12-23', 
    NULL);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (705, 'Michael', 'Johnson', '455 West Palm Ave', 
-   'San Antonio', 'TX', '78284', 210, '5552311', '1985-10-05', 
+   'San Antonio', 'TX', '78284', 210, '5552311', DATE '1985-10-05', 
    704);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (706, 'David', 'Viescas', '16679 NE 42nd Court', 
-   'Redmond', 'WA', '98052', 425, '555-2661', '1968-01-01', 
+   'Redmond', 'WA', '98052', 425, '555-2661', DATE '1968-01-01', 
    704);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (707, 'Kathryn', 'Patterson', '554 E. Wilshire Apt. 2A', 
-   'Seattle', 'WA', '98105', 206, '555-2697', '1982-12-12', 
+   'Seattle', 'WA', '98105', 206, '555-2697', DATE '1982-12-12', 
    704);
 INSERT INTO Employees
   (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
    EmpDOB, ManagerID)
   VALUES (708, 'Susan', 'Smith', '511 Lenora Ave', 
-   'Bellevue', 'WA', '98006', 425, '555-2301', '1967-10-15', 
+   'Bellevue', 'WA', '98006', 425, '555-2301', DATE '1967-10-15', 
    706);
 
 INSERT INTO Vendors
@@ -5235,7 +5237,7 @@ INSERT INTO Orders
    OrderTotal)
   VALUES (944, DATE '2016-02-28', DATE '2016-03-03', 1020, 702, 
    7768.9);
-
+ 
 INSERT INTO Order_Details
   (OrderNumber, ProductNumber, QuotedPrice, QuantityOrdered)
   VALUES (1, 1, 1200, 2);
@@ -17426,7 +17428,7 @@ INSERT INTO Product_Vendors
 INSERT INTO Product_Vendors
   (ProductNumber, VendorID, WholesalePrice, DaysToDeliver)
   VALUES (40, 9, 136.35, 14);
-  
+
 INSERT INTO PurchaseOrders
   (PurchaseID, VendorID, OrderDate, DeliveryDate)
   VALUES (1, 4, DATE '2015-08-02', DATE '2015-08-13');
@@ -18580,7 +18582,8 @@ INSERT INTO ztblMonths
    December)
   VALUES ('December 2017', 2017, 12, DATE '2017-12-01', 
    DATE '2017-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
- INSERT INTO ztblPriceRanges
+ 
+INSERT INTO ztblPriceRanges
   (PriceCategory, LowPrice, HighPrice)
   VALUES ('Affordable', 15.01, 50);
 INSERT INTO ztblPriceRanges
@@ -18792,3 +18795,4 @@ INSERT INTO ztblSeqNumbers
 INSERT INTO ztblSeqNumbers
   (Sequence)
   VALUES (60);
+ 
