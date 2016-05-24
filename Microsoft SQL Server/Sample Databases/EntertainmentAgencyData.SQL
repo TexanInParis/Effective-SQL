@@ -1107,211 +1107,212 @@ INSERT INTO Musical_Styles
   VALUES (25, '90''s Music');
 SET IDENTITY_INSERT Musical_Styles OFF
 GO
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1001, 10);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1001, 20);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1001, 21);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1002, 17);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1002, 19);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1002, 23);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1003, 3);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1003, 8);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1004, 13);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1005, 15);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1005, 19);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1005, 24);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1006, 22);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1006, 23);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1006, 24);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1007, 6);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1007, 11);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1008, 3);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1008, 6);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1009, 7);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1009, 14);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1009, 21);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1010, 4);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1010, 21);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1010, 22);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1011, 7);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1011, 14);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1011, 20);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1012, 7);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1012, 13);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1013, 10);
-INSERT INTO Entertainer_Styles
-  (EntertainerID, StyleID)
-  VALUES (1013, 15);
 
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1001, 10, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1001, 20, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1001, 21, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1002, 17, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1002, 19, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1002, 23, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1003, 3, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1003, 8, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1004, 13, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1005, 15, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1005, 19, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1005, 24, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1006, 22, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1006, 23, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1006, 24, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1007, 6, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1007, 11, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1008, 3, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1008, 6, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1009, 7, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1009, 14, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1009, 21, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1010, 4, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1010, 21, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1010, 22, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1011, 7, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1011, 14, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1011, 20, 3);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1012, 7, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1012, 13, 1);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1013, 10, 2);
+INSERT INTO Entertainer_Styles
+  (EntertainerID, StyleID, StyleStrength)
+  VALUES (1013, 15, 1);
+ 
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10001, 10);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10001, 10, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10001, 22);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10001, 22, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10002, 3);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10002, 3, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10002, 8);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10002, 8, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10003, 17);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10003, 17, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10003, 19);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10003, 19, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10004, 15);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10004, 15, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10004, 21);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10004, 21, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10005, 7);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10005, 7, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10005, 14);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10005, 14, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10006, 13);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10006, 13, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10006, 23);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10006, 23, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10007, 4);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10007, 4, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10007, 8);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10007, 8, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10007, 19);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10007, 19, 3);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10008, 10);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10008, 10, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10008, 21);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10008, 21, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10009, 6);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10009, 6, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10009, 11);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10009, 11, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10009, 18);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10009, 18, 3);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10010, 15);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10010, 15, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10010, 19);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10010, 19, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10010, 24);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10010, 24, 3);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10011, 1);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10011, 1, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10011, 7);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10011, 7, 3);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10011, 21);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10011, 21, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10012, 10);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10012, 10, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10012, 20);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10012, 20, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10013, 15);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10013, 15, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10013, 24);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10013, 24, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10014, 5);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10014, 5, 3);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10014, 18);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10014, 18, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10014, 22);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10014, 22, 1);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10015, 1);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10015, 1, 3);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10015, 20);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10015, 20, 2);
 INSERT INTO Musical_Preferences
-  (CustomerID, StyleID)
-  VALUES (10015, 21);
+  (CustomerID, StyleID, PreferenceSeq)
+  VALUES (10015, 21, 1);
 
 INSERT INTO ztblDays
   (DateField)

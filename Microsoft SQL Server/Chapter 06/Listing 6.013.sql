@@ -18,7 +18,7 @@ WITH CustProd AS
 , HelmetOrders AS 
     (SELECT CustomerID
     FROM CustProd
-    WHERE Products.ProductName = 'Helmet')
+    WHERE ProductName = 'Helmet')
 , KneepadsOrders AS 
     (SELECT CustomerID
     FROM CustProd

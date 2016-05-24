@@ -53,7 +53,8 @@ GO
 
 CREATE TABLE Entertainer_Styles (
 	EntertainerID int NOT NULL ,
-	StyleID int NOT NULL 
+	StyleID int NOT NULL  ,
+	StyleStrength smallint NOT NULL
 )
 GO
 
@@ -84,7 +85,8 @@ GO
 
 CREATE TABLE Musical_Preferences (
 	CustomerID int NOT NULL ,
-	StyleID int NOT NULL 
+	StyleID int NOT NULL ,
+	PreferenceSeq smallint NOT NULL 
 )
 GO
 
@@ -203,6 +205,7 @@ GO
 GO
 
 ALTER TABLE Entertainer_Styles ADD 
+	CONSTANT StyleStrength_Default DEFAULT (0) FOR StyleStrength ,
 	CONSTRAINT Entertainer_Styles_PK PRIMARY KEY   
 	(
 		EntertainerID,
@@ -240,6 +243,7 @@ GO
 GO
 
 ALTER TABLE Musical_Preferences ADD 
+	CONSTRAINT Pref_Seq_Default DEFAULT (0) FOR PreferenceSeq ,
 	CONSTRAINT Musical_Preferences_PK PRIMARY KEY   
 	(
 		CustomerID,
