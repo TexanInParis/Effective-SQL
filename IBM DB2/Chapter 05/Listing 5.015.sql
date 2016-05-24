@@ -4,7 +4,7 @@
 
 SET SCHEMA SalesOrdersSample;
 
--- Cannot use nested subqueries with direct references so CTEs is used instead.
+-- Cannot use nested subqueries with direct references so CTEs are used instead.
 WITH TotalPerProductNumber AS (
   SELECT 
   	P2.CategoryID, P2.ProductNumber,
