@@ -205,7 +205,7 @@ GO
 GO
 
 ALTER TABLE Entertainer_Styles ADD 
-	CONSTANT StyleStrength_Default DEFAULT (0) FOR StyleStrength ,
+	CONSTRAINT StyleStrength_Default DEFAULT (0) FOR StyleStrength ,
 	CONSTRAINT Entertainer_Styles_PK PRIMARY KEY   
 	(
 		EntertainerID,
