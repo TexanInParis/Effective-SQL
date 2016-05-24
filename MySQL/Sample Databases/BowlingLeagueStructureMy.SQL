@@ -3,16 +3,16 @@ CREATE DATABASE BowlingLeagueSample;
 USE BowlingLeagueSample;
 
 CREATE TABLE Bowler_Scores (
-	MatchID int NOT NULL DEFAULT 0 ,
+	MatchID int NOT NULL ,
 	GameNumber smallint NOT NULL DEFAULT 0 ,
-	BowlerID int NOT NULL DEFAULT 0 ,
+	BowlerID int NOT NULL ,
 	RawScore smallint NULL DEFAULT 0 ,
 	HandiCapScore smallint NULL DEFAULT 0 ,
 	WonGame bit NOT NULL DEFAULT 0 
 ) ;
 
 CREATE TABLE Bowlers (
-	BowlerID int NOT NULL DEFAULT 0 ,
+	BowlerID int NOT NULL ,
 	BowlerLastName nvarchar (50) NULL ,
 	BowlerFirstName nvarchar (50) NULL ,
 	BowlerMiddleInit nvarchar (1) NULL ,
@@ -25,29 +25,29 @@ CREATE TABLE Bowlers (
 ) ;
 
 CREATE TABLE Match_Games (
-	MatchID int NOT NULL DEFAULT 0 ,
+	MatchID int NOT NULL ,
 	GameNumber smallint NOT NULL DEFAULT 0 ,
-	WinningTeamID int NULL DEFAULT 0 
+	WinningTeamID int NULL 
 ) ;
 
 CREATE TABLE Teams (
-	TeamID int NOT NULL DEFAULT 0 ,
+	TeamID int NOT NULL ,
 	TeamName nvarchar (50) NOT NULL ,
 	CaptainID int NULL 
 ) ;
 
 CREATE TABLE Tournaments (
-	TourneyID int NOT NULL DEFAULT 0 ,
+	TourneyID int NOT NULL ,
 	TourneyDate date NULL ,
 	TourneyLocation nvarchar (50) NULL 
 ) ;
 
 CREATE TABLE Tourney_Matches (
-	MatchID int NOT NULL DEFAULT 0 ,
-	TourneyID int NULL DEFAULT 0 ,
+	MatchID int NOT NULL ,
+	TourneyID int NULL ,
 	Lanes nvarchar (5) NULL ,
-	OddLaneTeamID int NULL DEFAULT 0 ,
-	EvenLaneTeamID int NULL DEFAULT 0 
+	OddLaneTeamID int NULL ,
+	EvenLaneTeamID int NULL 
 ) ;
 
 CREATE TABLE ztblBowlerRatings (

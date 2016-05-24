@@ -174,8 +174,6 @@ GO
 GO
 
 ALTER TABLE Order_Details ADD 
-	CONSTRAINT OD_Order_Number_Default DEFAULT (0) FOR OrderNumber,
-	CONSTRAINT OD_Product_Number_Default DEFAULT (0) FOR ProductNumber,
 	CONSTRAINT Quoted_Price_Default DEFAULT (0) FOR QuotedPrice,
 	CONSTRAINT Quantity_Ordered_Default DEFAULT (0) FOR QuantityOrdered,
 	CONSTRAINT Order_Details_PK PRIMARY KEY    
@@ -192,8 +190,6 @@ GO
 GO
 
 ALTER TABLE Orders ADD 
-	CONSTRAINT O_Customer_ID_Default DEFAULT (0) FOR CustomerID,
-	CONSTRAINT O_Employee_ID_Default DEFAULT (0) FOR EmployeeID,
 	CONSTRAINT Order_Total_Default DEFAULT (0) FOR OrderTotal,
 	CONSTRAINT Orders_PK PRIMARY KEY    
 	(
@@ -209,8 +205,6 @@ GO
 
 
 ALTER TABLE Product_Vendors ADD 
-	CONSTRAINT PV_Product_Number_Default DEFAULT (0) FOR ProductNumber,
-	CONSTRAINT PV_Vendor_ID_Default DEFAULT (0) FOR VendorID,
 	CONSTRAINT Wholesale_Price_Default DEFAULT (0) FOR WholesalePrice,
 	CONSTRAINT Days_To_Deliver_Default DEFAULT (0) FOR DaysToDeliver,
 	CONSTRAINT Product_Vendors_PK PRIMARY KEY    
@@ -229,7 +223,6 @@ GO
 ALTER TABLE Products ADD 
 	CONSTRAINT Retail_Price_Default DEFAULT (0) FOR RetailPrice,
 	CONSTRAINT Quantity_On_Hand_Default DEFAULT (0) FOR QuantityOnHand,
-	CONSTRAINT P_Category_ID_Default DEFAULT (0) FOR CategoryID,
 	CONSTRAINT Products_PK PRIMARY KEY    
 	(
 		ProductNumber

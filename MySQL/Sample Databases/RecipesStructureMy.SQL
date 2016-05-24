@@ -3,39 +3,39 @@ CREATE DATABASE RecipesSample;
 USE RecipesSample;
 
 CREATE TABLE Ingredient_Classes (
-        IngredientClassID smallint NOT NULL DEFAULT 0 ,
+        IngredientClassID smallint NOT NULL ,
         IngredientClassDescription nvarchar (255) NULL 
 );
 
 CREATE TABLE Ingredients (
-        IngredientID int NOT NULL DEFAULT 0 ,
+        IngredientID int NOT NULL ,
         IngredientName nvarchar (255) NULL ,
-        IngredientClassID smallint NULL DEFAULT 0 ,
-        MeasureAmountID smallint NULL DEFAULT 0 
+        IngredientClassID smallint NULL ,
+        MeasureAmountID smallint NULL 
 );
 
 CREATE TABLE Measurements (
-        MeasureAmountID smallint NOT NULL DEFAULT 0 ,
+        MeasureAmountID smallint NOT NULL ,
         MeasurementDescription nvarchar (255) NULL 
 );
 
 CREATE TABLE Recipe_Classes (
-        RecipeClassID smallint NOT NULL DEFAULT 0 ,
+        RecipeClassID smallint NOT NULL ,
         RecipeClassDescription nvarchar (255) NULL 
 );
 
 CREATE TABLE Recipe_Ingredients (
-        RecipeID int NOT NULL DEFAULT 0 ,
+        RecipeID int NOT NULL ,
         RecipeSeqNo smallint NOT NULL DEFAULT 0 ,
-        IngredientID int NULL DEFAULT 0 ,
-        MeasureAmountID smallint NULL DEFAULT 0 ,
+        IngredientID int NULL ,
+        MeasureAmountID smallint NULL ,
         Amount real NULL DEFAULT 0
 );
 
 CREATE TABLE Recipes (
-        RecipeID int NOT NULL DEFAULT 0 ,
+        RecipeID int NOT NULL ,
         RecipeTitle nvarchar (255) NULL ,
-        RecipeClassID smallint NULL DEFAULT 0 ,
+        RecipeClassID smallint NULL ,
         Preparation text NULL ,
         Notes text NULL
 );

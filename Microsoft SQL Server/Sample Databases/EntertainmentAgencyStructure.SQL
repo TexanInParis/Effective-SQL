@@ -169,9 +169,6 @@ GO
 
 ALTER TABLE Engagements ADD 
 	CONSTRAINT Contract_Price_Default DEFAULT (0) FOR ContractPrice,
-	CONSTRAINT EN_Customer_ID_Default DEFAULT (0) FOR CustomerID,
-	CONSTRAINT EN_Agent_ID_Default DEFAULT (0) FOR AgentID,
-	CONSTRAINT EN_Entertainer_ID_Default DEFAULT (0) FOR EntertainerID,
 	CONSTRAINT Engagements_PK PRIMARY KEY   
 	(
 		EngagementNumber
@@ -191,7 +188,6 @@ GO
 GO
 
 ALTER TABLE Entertainer_Members ADD 
-	CONSTRAINT EM_Member_ID_Default DEFAULT (0) FOR MemberID,
 	CONSTRAINT EM_Status_Default DEFAULT (0) FOR Status,
 	CONSTRAINT Entertainer_Members_PK PRIMARY KEY   
 	(
@@ -207,7 +203,6 @@ GO
 GO
 
 ALTER TABLE Entertainer_Styles ADD 
-	CONSTRAINT ES_Style_ID_Default DEFAULT (0) FOR StyleID,
 	CONSTRAINT Entertainer_Styles_PK PRIMARY KEY   
 	(
 		EntertainerID,
@@ -245,8 +240,6 @@ GO
 GO
 
 ALTER TABLE Musical_Preferences ADD 
-	CONSTRAINT MP_Customer_ID_Default DEFAULT (0) FOR CustomerID,
-	CONSTRAINT MP_Style_ID_Default DEFAULT (0) FOR StyleID,
 	CONSTRAINT Musical_Preferences_PK PRIMARY KEY   
 	(
 		CustomerID,

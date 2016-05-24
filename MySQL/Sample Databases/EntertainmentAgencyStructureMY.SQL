@@ -34,20 +34,20 @@ CREATE TABLE Engagements (
 	StartTime time NULL ,
 	StopTime time NULL ,
 	ContractPrice decimal(15,2) NULL DEFAULT 0 ,
-	CustomerID int NULL DEFAULT 0 ,
-	AgentID int NULL DEFAULT 0 ,
-	EntertainerID int NULL DEFAULT 0 
+	CustomerID int NULL ,
+	AgentID int NULL ,
+	EntertainerID int NULL 
 );
 
 CREATE TABLE Entertainer_Members (
 	EntertainerID int NOT NULL ,
-	MemberID int NOT NULL DEFAULT 0 ,
+	MemberID int NOT NULL ,
 	Status smallint NULL DEFAULT 0 
 );
 
 CREATE TABLE Entertainer_Styles (
 	EntertainerID int NOT NULL ,
-	StyleID int NOT NULL DEFAULT 0 ,
+	StyleID int NOT NULL ,
 	StyleStrength smallint NOT NULL DEFAULT 0
 );
 
@@ -75,8 +75,8 @@ CREATE TABLE Members (
 );
 
 CREATE TABLE Musical_Preferences (
-	CustomerID int NOT NULL DEFAULT 0 ,
-	StyleID int NOT NULL DEFAULT 0 ,
+	CustomerID int NOT NULL ,
+	StyleID int NOT NULL ,
 	PreferenceSeq smallint NOT NULL DEFAULT 0
 );
 

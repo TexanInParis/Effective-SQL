@@ -49,7 +49,6 @@ CREATE TABLE Recipes (
 GO
 
 ALTER TABLE Ingredient_Classes ADD 
-	CONSTRAINT Ingredient_Class_ID_Default DEFAULT (0) FOR IngredientClassID,
 	CONSTRAINT Ingredient_Classes_PK PRIMARY KEY   
 	(
 		IngredientClassID
@@ -57,9 +56,6 @@ ALTER TABLE Ingredient_Classes ADD
 GO
 
 ALTER TABLE Ingredients ADD 
-	CONSTRAINT Ingredient_ID_Default DEFAULT (0) FOR IngredientID,
-	CONSTRAINT IN_Ingredient_Class_ID_Default DEFAULT (0) FOR IngredientClassID,
-	CONSTRAINT IN_Measure_Amount_ID_Default DEFAULT (0) FOR MeasureAmountID,
 	CONSTRAINT Ingredients_PK PRIMARY KEY   
 	(
 		IngredientID
@@ -73,7 +69,6 @@ GO
 GO
 
 ALTER TABLE Measurements ADD 
-	CONSTRAINT Measure_ID_Default DEFAULT (0) FOR MeasureAmountID,
 	CONSTRAINT Measurements_PK PRIMARY KEY   
 	(
 		MeasureAmountID
@@ -81,7 +76,6 @@ ALTER TABLE Measurements ADD
 GO
 
 ALTER TABLE Recipe_Classes ADD 
-	CONSTRAINT Recipe_Class_ID_Default DEFAULT (0) FOR RecipeClassID,
 	CONSTRAINT Recipe_Classes_PK PRIMARY KEY   
 	(
 		RecipeClassID
@@ -89,10 +83,7 @@ ALTER TABLE Recipe_Classes ADD
 GO
 
 ALTER TABLE Recipe_Ingredients ADD 
-	CONSTRAINT RI_Recipe_ID_Default DEFAULT (0) FOR RecipeID,
 	CONSTRAINT Recipe_Seq_No_Default DEFAULT (0) FOR RecipeSeqNo,
-	CONSTRAINT RI_Ingredient_ID_Default DEFAULT (0) FOR IngredientID,
-	CONSTRAINT RI_Measure_Amount_ID_Default DEFAULT (0) FOR MeasureAmountID,
 	CONSTRAINT Amount_Default DEFAULT (0) FOR Amount,
 	CONSTRAINT Recipe_Ingredients_PK PRIMARY KEY   
 	(
@@ -111,8 +102,6 @@ GO
 GO
 
 ALTER TABLE Recipes ADD 
-	CONSTRAINT Recipe_ID_Default DEFAULT (0) FOR RecipeID,
-	CONSTRAINT R_Recipe_Class_ID_Default DEFAULT (0) FOR RecipeClassID,
 	CONSTRAINT Recipes_PK PRIMARY KEY   
 	(
 		RecipeID

@@ -77,9 +77,6 @@ CREATE TABLE ztblWeeks (
 GO
 
 ALTER TABLE Bowler_Scores ADD 
-	CONSTRAINT BS_Match_ID_Default DEFAULT (0) FOR MatchID,
-	CONSTRAINT BS_Game_Number_Default DEFAULT (0) FOR GameNumber,
-	CONSTRAINT BS_Bowler_ID_Default DEFAULT (0) FOR BowlerID,
 	CONSTRAINT BS_Raw_Score_Default DEFAULT (0) FOR RawScore,
 	CONSTRAINT BS_HandiCap_Score_Default DEFAULT (0) FOR HandiCapScore,
 	CONSTRAINT BS_Won_Game_Default DEFAULT (0) FOR WonGame,
@@ -98,7 +95,6 @@ CREATE  INDEX MatchGamesBowlerScores ON Bowler_Scores(MatchID, GameNumber)
 GO
 
 ALTER TABLE Bowlers ADD 
-	CONSTRAINT Bowler_ID_Default DEFAULT (0) FOR BowlerID,
 	CONSTRAINT Bowlers_PK PRIMARY KEY   
 	(
 		BowlerID
@@ -112,9 +108,6 @@ CREATE  INDEX BowlersTeamID ON Bowlers(TeamID)
 GO
 
 ALTER TABLE Match_Games ADD 
-	CONSTRAINT MG_Match_ID_Default DEFAULT (0) FOR MatchID,
-	CONSTRAINT MG_Game_Number_Default DEFAULT (0) FOR GameNumber,
-	CONSTRAINT MD_Winning_Team_Default DEFAULT (0) FOR WinningTeamID,
 	CONSTRAINT Match_Games_PK PRIMARY KEY   
 	(
 		MatchID,
@@ -129,7 +122,6 @@ CREATE  INDEX TourneyMatchesMatchGames ON Match_Games(MatchID)
 GO
 
 ALTER TABLE Teams ADD 
-        CONSTRAINT Team_ID_Default DEFAULT (0) FOR TeamID,
 	CONSTRAINT Teams_PK PRIMARY KEY   
 	(
 		TeamID
@@ -137,7 +129,6 @@ ALTER TABLE Teams ADD
 GO
 
 ALTER TABLE Tournaments ADD 
-	CONSTRAINT Tourney_ID_Default DEFAULT (0) FOR TourneyID,
 	CONSTRAINT Tournaments_PK PRIMARY KEY   
 	(
 		TourneyID
@@ -145,10 +136,6 @@ ALTER TABLE Tournaments ADD
 GO
 
 ALTER TABLE Tourney_Matches ADD 
-	CONSTRAINT TM_Match_ID_Default DEFAULT (0) FOR MatchID,
-	CONSTRAINT TM_Tourney_ID_Default DEFAULT (0) FOR TourneyID,
-	CONSTRAINT TM_Odd_Lane_Team_Default DEFAULT (0) FOR OddLaneTeamID,
-	CONSTRAINT TM_Even_Lane_Team_Default DEFAULT (0) FOR EvenLaneTeamID,
 	CONSTRAINT Tourney_Matches_PK PRIMARY KEY   
 	(
 		MatchID
