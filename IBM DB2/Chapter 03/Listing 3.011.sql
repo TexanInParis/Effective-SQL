@@ -20,9 +20,6 @@ SELECT Category, 'Feb', FebQuantity, FebSales
 FROM SalesSummary
 ORDER BY SalesMonth, Category;
 
-GO
-
-
 
 
 

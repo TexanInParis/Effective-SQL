@@ -17,6 +17,3 @@ FROM SalesSummary
 UNION
 SELECT Category, 'Feb', FebQuantity, FebSales
 FROM SalesSummary;
-
-GO
-
