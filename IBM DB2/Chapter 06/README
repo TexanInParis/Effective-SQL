@@ -1,1 +1,5 @@
 The folder contains samples and scripts for chapter 6.
+
+The following listings are NOT included:
+
+6.015 -- DB2 does not permit use of functions or joins for recursive common table expressions.
