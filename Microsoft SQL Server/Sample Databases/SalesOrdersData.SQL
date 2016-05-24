@@ -1,6 +1,7 @@
 Use SalesOrdersSample;
 Set IDENTITY_INSERT Customers ON
 GO
+
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -242,35 +243,35 @@ INSERT INTO Vendors
    VendWebPage, VendEMailAddress)
   VALUES (1, 'Shinoman, Incorporated', '3042 19th Avenue South', 
    'Bellevue', 'WA', '98001', '(425) 888-1234', '(425) 888-1235', 
-   '#http://www.shinoman.com/#', 'Sales@Shiniman.com');
+   'http://www.shinoman.com/', 'Sales@Shiniman.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (2, 'Viscount', '1911 Commerce Way', 'St. Louis', 
    'MO', '63127', '(314) 777-1234', '(314) 777-1235', 
-   '#http://www.viscountbikes.com/#', 'Orders@ViscountBikes.com');
+   'http://www.viscountbikes.com/', 'Orders@ViscountBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (3, 'Nikoma of America', '88 Old North Road Ave', 
    'Ballard', 'WA', '91324', '(206) 666-1234', '(314) 666-1235', 
-   '#http://www.nikomabikes.com/#', 'BuyBikes@NikomaBikes.com');
+   'http://www.nikomabikes.com/', 'BuyBikes@NikomaBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (4, 'ProFormance', '29 N. Quail St.', 'Albany', 
    'NY', '12012', '(518) 444-1234', '(518) 444-1235', 
-   '#http://www.ProFormBikes.com/#', 'Sales@ProFormBikes.com');
+   'http://www.ProFormBikes.com/', 'Sales@ProFormBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (5, 'Kona, Incorporated', 'PO Box 10429', 
    'Redmond', 'WA', '98052', '(425) 333-1234', '(425) 333-1235', 
-   '#http://www.konabikes.com/#', 'Sales@KonaBikes.com');
+   'http://www.konabikes.com/', 'Sales@KonaBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
@@ -305,7 +306,7 @@ INSERT INTO Vendors
    VendWebPage, VendEMailAddress)
   VALUES (10, 'Armadillo Brand', '12330 Side Road Lane', 
    'Dallas', 'TX', '75137', '(214) 444-9876', '(214) 444-9877', 
-   '#http://www.DilloBikes.com/#', 'BikeProducts@DilloBikes.com');
+   'http://www.DilloBikes.com/', 'BikeProducts@DilloBikes.com');
 SET IDENTITY_INSERT Vendors OFF
 GO
  
