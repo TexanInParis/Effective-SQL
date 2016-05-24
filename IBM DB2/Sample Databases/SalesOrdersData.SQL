@@ -47,7 +47,7 @@ INSERT INTO Customers
    CustCity, CustState, CustZipCode, CustAreaCode, 
    CustPhoneNumber)
   VALUES (1008, 'Neil', 'Patterson', '233 West Valley Hwy', 
-   'San Die', 'CA', '92199', 619, '555-2541');
+   'San Diego', 'CA', '92199', 619, '555-2541');
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -78,7 +78,7 @@ INSERT INTO Customers
    CustCity, CustState, CustZipCode, CustAreaCode, 
    CustPhoneNumber)
   VALUES (1013, 'Rachel', 'Patterson', '2114 Longview Lane', 
-   'San Die', 'CA', '92199', 619, '555-2546');
+   'San Diego', 'CA', '92199', 619, '555-2546');
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -18329,7 +18329,7 @@ INSERT INTO PurchaseOrders
 INSERT INTO PurchaseOrders
   (PurchaseID, VendorID, OrderDate, DeliveryDate)
   VALUES (300, 10, DATE '2016-03-01', DATE '2016-03-18');
-
+   
 INSERT INTO ztblMonths
   (MonthYear, YearNumber, MonthNumber, MonthStart, 
    MonthEnd, January, February, March, April, May, 
@@ -18795,4 +18795,3 @@ INSERT INTO ztblSeqNumbers
 INSERT INTO ztblSeqNumbers
   (Sequence)
   VALUES (60);
- 
