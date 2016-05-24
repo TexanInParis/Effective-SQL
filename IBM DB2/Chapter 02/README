@@ -1,7 +1,7 @@
 The following listings are NOT included:
 
-2.003
-2.004
-2.005
-2.006
-2.007
+2.003 -- Specific to Microsoft Access
+2.004 -- Specific to SQL Server
+2.005 -- Specific to Oracle
+2.006 -- Specific to Oracle
+2.007 -- Specific to PostgreSQL
