@@ -19,6 +19,6 @@ WITH SeqNumTbl AS
    FROM SeqNumTbl
    WHERE SeqNum < DATEADD(DAY, -1, DATEFROMPARTS(YEAR(GETDATE())+2, 1,1)))
 INSERT DimDate(DateKey, FullDate )
-SELECT CAST(SeqNum AS int), SeqNum  
+SELECT YEAR(SeqNum)*10000 + MONTH(SeqNum)*100 + DAY(SeqNum), SeqNum  
 FROM SeqNumTbl
 OPTION (MAXRECURSION 0);

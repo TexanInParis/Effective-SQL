@@ -1,7 +1,7 @@
 The folder contains samples and scripts for chapter 4.
 
 Item27.accdb contains the following queries, corresponding to the listings in the book:
-  Listing 4-021 -- Note that this creates the log table that already exists in the database
+  Listing 4-021
   Listing 4-022
   Listing 4-024
   Listing 4-025
@@ -9,6 +9,12 @@ Item27.accdb contains the following queries, corresponding to the listings in th
   Listing 4-027
 
 Item28.accdb contains the following queries, corresponding to the listings in the book:
+  Listing 4-028a: CREATE TABLE
+  Listing 4-028b: CREATE INDEX ixEmpFirstName
+  Listing 4-028c: CREATE INDEX ixEmpLastName
+  Listing 4-028d: CREATE INDEX ixEmpDOB
+  Listing 4-028e: CREATE INDEX ixEmpSalary
+      Correspond to Listing 4.28, since Access doesn't allow more than one SQL statement at once.
   Listing 4-029
   Listing 4-030
   Listing 4-031
@@ -23,4 +29,3 @@ Item28.accdb contains the following queries, corresponding to the listings in th
 The following listings are not included:
 
 Listing 4-023 -- Not relevant to Access
-Listing 4-028 -- The table and index already exist in the database- Access doesn't allow multiple statements together

@@ -1,1 +1,15 @@
 The folder contains samples and scripts for chapter 9.
+
+Item54.accdb contains the following queries, corresponding to the listing in the book:
+  Listing 9-009
+  Listing 9-010
+  Listing 9-011
+  Listing 9-021
+     (Note that it also contains query StudentGrades, which is essentially a view on tables Students, StudentSubjects and Subjects)
+
+Item56.accdb contains the following queries, corresponding to the listings in the book:
+  Listing 9-020
+  Listing 9-021a: CREATE TABLE
+  Listing 9-021b: CREATE INDEX
+      The above correspond to Listing 9.21, since Access doesn't allow more than one SQL statement at once
+  Listing 9-022

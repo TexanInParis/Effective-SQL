@@ -2,6 +2,8 @@ The folder contains samples and scripts for chapter 5.
 
 Item30.accdb contains the following query, corresponding to the listing in the book:
   Listing 5-007
+  Listing 5-008
+  Listing 5-009
 
 Item33.accdb contains the following queries, corresponding to the listings in the book:
   Listing 5-017
@@ -19,6 +21,6 @@ The following listings are NOT included:
 5-001 -- Not an SQL statement
 5-002 -- Not an SQL statement
 5-003 -- Not an SQL statement
-5-004 -- Access does not support ROLLUP
-5-005 -- Access does not support CUBE
-5-006 -- Access does not support GROUPING SETS
+5-004 -- Access does not support GROUP BY ROLLUP
+5-005 -- Access does not support GROUP BY CUBE
+5-006 -- Access does not support GROUP BY GROUPING SETS
