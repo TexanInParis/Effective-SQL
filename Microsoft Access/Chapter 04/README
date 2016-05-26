@@ -1,11 +1,11 @@
 This folder contains samples and scripts for chapter 4.
 
 4-001 -- Not included: Access does not support INTERSECT
-4-002 -- Contained as query Listing 4-002 in SalesOrders.accdb (in the Sample Databases folder)
+4-002 -- Contained as query Listing 4-002 in SalesOrdersSample.accdb (in the Sample Databases folder)
 4-003
-4-004 -- Contained as query Listing 4-004 in SalesOrders.accdb (in the Sample Databases folder)
-4-005 -- Contained as query Listing 4-005 in SalesOrders.accdb (in the Sample Databases folder)
-4-006 -- Contained as query Listing 4-006 in SalesOrders.accdb (in the Sample Databases folder)
+4-004 -- Contained as query Listing 4-004 in SalesOrdersSample.accdb (in the Sample Databases folder)
+4-005 -- Contained as query Listing 4-005 in SalesOrdersSample.accdb (in the Sample Databases folder)
+4-006 -- Contained as query Listing 4-006 in SalesOrdersSample.accdb (in the Sample Databases folder)
 4-007
 4-008
 4-009
