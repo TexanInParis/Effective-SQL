@@ -27,11 +27,13 @@ This folder contains samples and scripts for chapter 4.
 4-025 -- Contained as query Listing 4-025 in Item27.accdb
 4-026 -- Contained as query Listing 4-026 in Item27.accdb
 4-027 -- Contained as query Listing 4-027 in Item27.accdb
-4-028 -- Contained as queries Listing 4-028a: CREATE TABLE, 
-         Listing 4-028b: CREATE INDEX ixEmpFirstName, 
-		 Listing 4-028c: CREATE INDEX ixEmpLastName, 
-		 Listing 4-028d: CREATE INDEX ixEmpDOB and 
-		 Listing 4-028e: CREATE INDEX ixEmpSalary in Item28.accdb
+4-028 -- Contained as queries 
+            Listing 4-028a: CREATE TABLE, 
+            Listing 4-028b: CREATE INDEX ixEmpFirstName, 
+            Listing 4-028c: CREATE INDEX ixEmpLastName, 
+            Listing 4-028d: CREATE INDEX ixEmpDOB and 
+            Listing 4-028e: CREATE INDEX ixEmpSalary 
+         in Item28.accdb
 4-029 -- Contained as query Listing 4-029 in Item28.accdb
 4-030 -- Contained as query Listing 4-030 in Item28.accdb
 4-031 -- Contained as query Listing 4-031 in Item28.accdb

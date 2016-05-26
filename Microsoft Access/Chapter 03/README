@@ -1,8 +1,19 @@
 This folder contains samples and scripts for chapter 3.
 
-3-001 -- Contained as queries Listing 3-001: vAutomobileModels, Listing 3-001: vCustomers and Listing 3-001: vEmployees in Item18.accdb
-3-002 -- Contained as queries Listing 3-002: vDrawings and Listing 3-002: vDrawings in Item18.accdb
-3-003 -- Contained as queries Listing 3-003: vActiveCustomer, Listing 3-003: vActiveCustomerStatistics and Listing 3-003: vCustomerStatistics in Item18.accdb
+3-001 -- Contained as queries 
+            Listing 3-001: vAutomobileModels
+            Listing 3-001: vCustomers
+            Listing 3-001: vEmployees
+         in Item18.accdb
+3-002 -- Contained as queries 
+            Listing 3-002: vDrawings
+            Listing 3-002: vDrawings
+         in Item18.accdb
+3-003 -- Contained as queries
+            Listing 3-003: vActiveCustomer
+            Listing 3-003: vActiveCustomerStatistics
+            Listing 3-003: vCustomerStatistics
+         in Item18.accdb
 3-004 -- Contained as query Listing 3-004 in Item18.accdb
 3-005
 3-006 -- Not included: listing is DB2 specific

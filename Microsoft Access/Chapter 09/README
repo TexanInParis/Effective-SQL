@@ -19,9 +19,12 @@ This folder contains samples and scripts for chapter 9.
 9-017
 9-018
 9-019
-9-020 -- Contained as query 9-020 in Item56.accdb
-9-021 -- Contained as queries 9-032s: CREATE TABLE and Listing 9-021b: CREATE INDEX in Item56.accdb 
-9-022 -- Contained as query 9-022 in Item56.accdb
+9-020 -- Contained as query Listing 9-020 in Item56.accdb
+9-021 -- Contained as queries 
+            Listing 9-021a: CREATE TABLE
+            Listing 9-021b: CREATE INDEX
+         in Item56.accdb 
+9-022 -- Contained as query Listing 9-022 in Item56.accdb
 9-023
 9-024
 9-025

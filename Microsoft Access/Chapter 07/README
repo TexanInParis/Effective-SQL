@@ -2,8 +2,16 @@ This folder contains samples and scripts for chapter 7.
 
 7-001 -- Not included: listing is DB2 specific
 7-002 -- Not included: listing is DB2 specific
-7-003 -- Contained as registry entry files Listings 7.003a, 7.003b, 7.003c and 7.003d. (The file title explains the difference)
-7-004 -- Contained as registry entry files Listings 7.004a, 7.004b, 7.004c and 7.004d. (The file title explains the difference)
+7-003 -- Contained as registry entry files 
+            Listing 7.003a -- Registry Key to turn Show Plan on for Access 2013 on Windows x64.reg
+            Listing 7.003b -- Registry Key to turn Show Plan on for Access 2013 on Windows x86.reg
+            Listing 7.003c -- Registry Key to turn Show Plan on for Access 2010 on Windows x64.reg
+            Listing 7.003d -- Registry Key to turn Show Plan on for Access 2010 on Windows x86.reg
+7-004 -- Contained as registry entry files 
+            Listing 7.004a -- Registry Key to turn Show Plan off for Access 2013 on Windows x64.reg
+            Listing 7.004b -- Registry Key to turn Show Plan off for Access 2013 on Windows x86.reg
+            Listing 7.004c -- Registry Key to turn Show Plan off for Access 2010 on Windows x64.reg
+            Listing 7.004d -- Registry Key to turn Show Plan off for Access 2010 on Windows x86.reg
 7-005 -- Not included: listing is SQL Server specific
 7-006 -- Not included: listing is SQL Server specific
 7-007 -- Not included: listing is MySQL specific
