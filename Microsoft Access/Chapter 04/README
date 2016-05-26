@@ -1,31 +1,44 @@
-The folder contains samples and scripts for chapter 4.
+This folder contains samples and scripts for chapter 4.
 
-Item27.accdb contains the following queries, corresponding to the listings in the book:
-  Listing 4-021
-  Listing 4-022
-  Listing 4-024
-  Listing 4-025
-  Listing 4-026
-  Listing 4-027
+4-001 -- Not included: Access does not support INTERSECT
+4-002 -- Contained as query Listing 4-002 in SalesOrders.accdb (in the Sample Databases folder)
+4-003
+4-004 -- Contained as query Listing 4-004 in SalesOrders.accdb (in the Sample Databases folder)
+4-005 -- Contained as query Listing 4-005 in SalesOrders.accdb (in the Sample Databases folder)
+4-006 -- Contained as query Listing 4-006 in SalesOrders.accdb (in the Sample Databases folder)
+4-007
+4-008
+4-009
+4-010
+4-011
+4-012
+4-013
+4-014
+4-015
+4-016
+4-017
+4-018
+4-019
+4-020
+4-021 -- Contained as query Listing 4-021 in Item27.accdb
+4-022 -- Contained as query Listing 4-022 in Item27.accdb
+4-023 -- Not included: not relevant to Access
+4-024 -- Contained as query Listing 4-024 in Item27.accdb
+4-025 -- Contained as query Listing 4-025 in Item27.accdb
+4-026 -- Contained as query Listing 4-026 in Item27.accdb
+4-027 -- Contained as query Listing 4-027 in Item27.accdb
+4-028 -- Contained as queries Listing 4-028a: CREATE TABLE, Listing 4-028b: CREATE INDEX ixEmpFirstName, Listing 4-028c: CREATE INDEX ixEmpLastName, Listing 4-028d: CREATE INDEX ixEmpDOB and Listing 4-028e: CREATE INDEX ixEmpSalary in Item28.accdb
+4-029 -- Contained as query Listing 4-029 in Item28.accdb
+4-030 -- Contained as query Listing 4-030 in Item28.accdb
+4-031 -- Contained as query Listing 4-031 in Item28.accdb
+4-032 -- Contained as query Listing 4-032 in Item28.accdb
+4-033 -- Contained as query Listing 4-033 in Item28.accdb
+4-034 -- Contained as query Listing 4-034 in Item28.accdb
+4-035 -- Contained as query Listing 4-035 in Item28.accdb
+4-036 -- Contained as query Listing 4-036 in Item28.accdb
+4-037 -- Contained as query Listing 4-037 in Item28.accdb
+4-038
+4-039
+4-040
 
-Item28.accdb contains the following queries, corresponding to the listings in the book:
-  Listing 4-028a: CREATE TABLE
-  Listing 4-028b: CREATE INDEX ixEmpFirstName
-  Listing 4-028c: CREATE INDEX ixEmpLastName
-  Listing 4-028d: CREATE INDEX ixEmpDOB
-  Listing 4-028e: CREATE INDEX ixEmpSalary
-      Correspond to Listing 4.28, since Access doesn't allow more than one SQL statement at once.
-  Listing 4-029
-  Listing 4-030
-  Listing 4-031
-  Listing 4-032
-  Listing 4-033
-  Listing 4-034
-  Listing 4-035
-  Listing 4-036
-  Listing 4-037
 
-
-The following listings are not included:
-
-Listing 4-023 -- Not relevant to Access

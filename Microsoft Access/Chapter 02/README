@@ -1,4 +1,4 @@
-The folder contains selected samples and scripts for chapter 2.
+This folder contains selected samples and scripts for chapter 2.
 
 2.001 -- Not included: listing is DB2 specific.
 2.002 -- Not included: listing is DB2 specific.
@@ -7,7 +7,7 @@ The folder contains selected samples and scripts for chapter 2.
 2.005 -- Not included: listing is Oracle specific.
 2.006 -- Not included: listing is Oracle specific.
 2.007 -- Not included: listing is PostgreSQL specific.
-2.008 -- Contained as query Listing 2-008a: CREATE TABLE and Listing 2-008b: CREATE INDEX in Item11.accdb
+2.008 -- Contained as queries Listing 2-008a: CREATE TABLE and Listing 2-008b: CREATE INDEX in Item11.accdb
 2.009 -- Contained as query Listing 2-009 in Item11.accdb
 2.010 -- Contained as query Listing 2-010 in Item11.accdb
 2.011 -- Contained as query Listing 2-011 in SalesOrders.accdb (in the Sample Databases folder) 
