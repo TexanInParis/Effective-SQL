@@ -8,5 +8,5 @@ GO
 -- Listing 2.11 Sample query SQL
 SELECT EmployeeID, EmpFirstName, EmpLastName
 FROM Employees
-WHERE EmpState = 'CA'
-AND EmpCity LIKE '%EEL%';
+WHERE EmpState = 'WA'
+AND EmpCity LIKE '%ELLE%';

@@ -1,40 +1,33 @@
-The folder contains samples and scripts for chapter 2.
+The folder contains selected samples and scripts for chapter 2.
 
-Item11.accdb contains the following queries, corresponding to the listings in the book:
-  Listing 2-008a: CREATE TABLE
-  Listing 2-008b: CREATE INDEX
-      The above correspond to Listing 2.8, since Access doesn't allow more than one SQL statement at once
-  Listing 2-009
-  Listing 2-010
+2.001 -- Not included: listing is DB2 specific.
+2.002 -- Not included: listing is DB2 specific.
+2.003 -- ???
+2.004 -- Not included: listing is SQL Server specific.
+2.005 -- Not included: listing is Oracle specific.
+2.006 -- Not included: listing is Oracle specific.
+2.007 -- Not included: listing is PostgreSQL specific.
+2.008 -- Contained as query Listing 2-008a: CREATE TABLE and Listing 2-008b: CREATE INDEX in Item11.accdb
+2.009 -- Contained as query Listing 2-009 in Item11.accdb
+2.010 -- Contained as query Listing 2-010 in Item11.accdb
+2.011 -- Contained as query Listing 2-011 in SalesOrders.accdb (in the Sample Databases folder) 
+2.012 -- Contained as query Listing 2-012 in SalesOrders.accdb (in the Sample Databases folder)
+2.013 -- Contained as query Listing 2-013 in SalesOrders.accdb (in the Sample Databases folder)
+2.014 -- Contained as query Listing 2-014 in SalesOrders.accdb (in the Sample Databases folder)
+2.015 -- Contained as query Listing 2-015 in SalesOrders.accdb (in the Sample Databases folder)
+2.016 -- Contained as query Listing 2-016 in SalesOrders.accdb (in the Sample Databases folder)
+2.017 -- Contained as query Listing 2-017 in SalesOrders.accdb (in the Sample Databases folder)
+2.018 -- Not included: Access does not allow triggers to be created using SQL.
+2.019 -- Not included: Access does not allow triggers to be created using SQL.
+2.020 -- Contained as query Listing 2-020 in Item13.accdb
+2.021 -- Not included: Access doesn't support filtered indexes.
+2.022 -- Not included: Access doesn't support filtered indexes.
+2.023 -- Not included: Access doesn't support filtered indexes.
+2.024 -- Not included: Didn't seem relevant (since it's related to filtered indexes)
+2.025 -- Not included: Access doesn't support filtered indexes.
+2.026 -- Contained as query Listing 2-026 in SalesOrders.accdb (in the Sample Databases folder)
+2.027 -- Contained as query Listing 2-027 in SalesOrders.accdb (in the Sample Databases folder)
+2.028 -- Not included: Access is case-insensitive
+2.029 -- Contained as module Listing 2-029 (Access doesn't allow functions to be created using SQL.)
+2.030 -- Contained as query Listing 2-030 in SalesOrders.accdb (in the Sample Databases folder)
 
-Item13.accdb contains the following query, corresponding to the listing in the book:
-  Listing 2-020
-
-The following listings are contained in SalesOrders.accdb, in the Sample Databases folder:
-  Listing 2-011
-  Listing 2-012
-  Listing 2-013
-  Listing 2-014
-  Listing 2-015
-  Listing 2-016
-  Listing 2-017
-  Listing 2-026
-  Listing 2-027
-  Listing 2-029
-  Listing 2-030
-
-The following listings are NOT included:
-
-2.001 -- Listing is DB2 specific.
-2.002 -- Listing is DB2 specific.
-2.004 -- Listing is SQL Server specific.
-2.005 -- Listing is Oracle specific.
-2.006 -- Listing is Oracle specific.
-2.007 -- Listing is PostgreSQL specific.
-2.018 -- Access does not allow triggers to be created using SQL.
-2.019 -- Access does not allow triggers to be created using SQL.
-2.021 -- Access doesn't support filtered indexes.
-2.022 -- Access doesn't support filtered indexes.
-2.023 -- Access doesn't support filtered indexes.
-2.025 -- Access doesn't support filtered indexes.
-2.028 -- Access is case-insensitive.
