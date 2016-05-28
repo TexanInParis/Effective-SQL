@@ -10,9 +10,9 @@ This folder contains selected samples and scripts for chapter 2.
 2.008 -- Contained as queries 
             Listing 2-008a: CREATE TABLE
             Listing 2-008b: CREATE INDEX
-         in Item11.accdb
-2.009 -- Contained as query Listing 2-009 in Item11.accdb
-2.010 -- Contained as query Listing 2-010 in Item11.accdb
+         in Item11Example.accdb (in the Sample Databases folder)
+2.009 -- Contained as query Listing 2-009 in Item11Example.accdb (in the Sample Databases folder)
+2.010 -- Contained as query Listing 2-010 in Item11Example.accdb (in the Sample Databases folder)
 2.011 -- Contained as query Listing 2-011 in SalesOrdersSample.accdb (in the Sample Databases folder) 
 2.012 -- Contained as query Listing 2-012 in SalesOrdersSample.accdb (in the Sample Databases folder)
 2.013 -- Contained as query Listing 2-013 in SalesOrdersSample.accdb (in the Sample Databases folder)
@@ -22,7 +22,7 @@ This folder contains selected samples and scripts for chapter 2.
 2.017 -- Contained as query Listing 2-017 in SalesOrdersSample.accdb (in the Sample Databases folder)
 2.018 -- Not included: Access does not allow triggers to be created using SQL.
 2.019 -- Not included: Access does not allow triggers to be created using SQL.
-2.020 -- Contained as query Listing 2-020 in Item13.accdb
+2.020 -- Contained as query Listing 2-020 in Item13Example.accdb (in the Sample Databases folder)
 2.021 -- Not included: Access doesn't support filtered indexes.
 2.022 -- Not included: Access doesn't support filtered indexes.
 2.023 -- Not included: Access doesn't support filtered indexes.
