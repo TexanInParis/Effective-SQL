@@ -5,15 +5,5 @@ The following listings are NOT included:
 5.001 -- Not executable SQL
 5.002 -- Not executable SQL
 5.003 -- Not executable SQL
-5.008 --
-5.009 --
-5.010 --
-5.011 --
-5.012 --
-5.013 --
-5.029 --
-5.030 --
-5.031 --
-5.032 --
-5.033 --
-5.034 --
+5.011 -- Not valid in IBM DB2, Microsoft Access, Microsoft SQL Server, Oracle Database
+5.013 -- Not executable SQL
