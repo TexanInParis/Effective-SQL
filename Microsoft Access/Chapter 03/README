@@ -1,14 +1,25 @@
 This folder contains samples and scripts for chapter 3.
 
-3-001 -- Contained as queries Listing 3-001: vAutomobileModels, Listing 3-001: vCustomers and Listing 3-001: vEmployees in Item18.accdb
-3-002 -- Contained as queries Listing 3-002: vDrawings and Listing 3-002: vDrawings in Item18.accdb
-3-003 -- Contained as queries Listing 3-003: vActiveCustomer, Listing 3-003: vActiveCustomerStatistics and Listing 3-003: vCustomerStatistics in Item18.accdb
-3-004 -- Contained as query Listing 3-004 in Item18.accdb
+3-001 -- Contained as queries 
+            Listing 3-001: vAutomobileModels
+            Listing 3-001: vCustomers
+            Listing 3-001: vEmployees
+         in Item18Example.accdb (in the Sample Databases folder)
+3-002 -- Contained as queries 
+            Listing 3-002: vDrawings
+            Listing 3-002: vDrawings
+         in Item18Example.accdb (in the Sample Databases folder)
+3-003 -- Contained as queries
+            Listing 3-003: vActiveCustomer
+            Listing 3-003: vActiveCustomerStatistics
+            Listing 3-003: vCustomerStatistics
+         in Item18Example.accdb (in the Sample Databases folder)
+3-004 -- Contained as query Listing 3-004 in Item18Example.accdb (in the Sample Databases folder)
 3-005
 3-006 -- Not included: listing is DB2 specific
 3-007 -- Not included: listing is Oracle specific
-3-008 -- Contained as query Listing 3-008 in Item 21.accdb
-3-009 -- Contained as query Listing 3-009 in Item 21.accdb
-3-010 -- Contained as query Listing 3-010 in Item 21.accdb
-3-011 -- Contained as query Listing 3-011 in Item 21.accdb
+3-008 -- Contained as query Listing 3-008 in Item 21.accdb (in the Sample Databases folder)
+3-009 -- Contained as query Listing 3-009 in Item 21.accdb (in the Sample Databases folder)
+3-010 -- Contained as query Listing 3-010 in Item 21.accdb (in the Sample Databases folder)
+3-011 -- Contained as query Listing 3-011 in Item 21.accdb (in the Sample Databases folder)
 

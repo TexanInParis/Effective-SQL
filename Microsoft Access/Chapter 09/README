@@ -8,10 +8,10 @@ This folder contains samples and scripts for chapter 9.
 9-006
 9-007
 9-008
-9-009 -- Contained as query Listing 9-009 in Item54.accdb
-9-010 -- Contained as query Listing 9-010 in Item54.accdb
-9-011 -- Contained as query Listing 9-011 in Item54.accdb
-9-012 -- Contained as query Listing 9-012 in Item54.accdb
+9-009 -- Contained as query Listing 9-009 in Item54Example.accdb (in the Sample Databases folder)
+9-010 -- Contained as query Listing 9-010 in Item54Example.accdb (in the Sample Databases folder)
+9-011 -- Contained as query Listing 9-011 in Item54Example.accdb (in the Sample Databases folder)
+9-012 -- Contained as query Listing 9-012 in Item54Example.accdb (in the Sample Databases folder)
 9-013
 9-014
 9-015
@@ -19,13 +19,16 @@ This folder contains samples and scripts for chapter 9.
 9-017
 9-018
 9-019
-9-020 -- Contained as query 9-020 in Item56.accdb
-9-021 -- Contained as queries 9-032s: CREATE TABLE and Listing 9-021b: CREATE INDEX in Item56.accdb 
-9-022 -- Contained as query 9-022 in Item56.accdb
+9-020 -- Contained as query Listing 9-020 in Item56Example.accdb (in the Sample Databases folder)
+9-021 -- Contained as queries 
+            Listing 9-021a: CREATE TABLE
+            Listing 9-021b: CREATE INDEX
+         in Item56Example.accdb (in the Sample Databases folder)
+9-022 -- Contained as query Listing 9-022 in Item56Example.accdb (in the Sample Databases folder)
 9-023
 9-024
 9-025
 
-Note that Item54.accdb also contains query StudentGrades, not included in the book. 
+Note that Item54Example.accdb also contains query StudentGrades, not included in the book. 
 StudentGrades acts as a view on tables Students, StudentSubjects and Subjects.
 
