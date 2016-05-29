@@ -2,7 +2,7 @@
 -- and Ch03.20.01Data.sql in the Sample Databases folder
 -- in order to run this example. 
 
-SET SCHEMA Ch03_20_01;
+SET SCHEMA Item19Example;
 
 SELECT CAST('2015-01-01' AS Date) AS SalesMonth, Product, Jan AS SalesAmt
   FROM tblPostSales

@@ -2,9 +2,6 @@
 -- and Ch03.20.01Data.sql in the Sample Databases folder
 -- in order to run this example. 
 
-USE Item19Example;
-GO
-
 SELECT CAST('2015-01-01' AS Date) AS SalesMonth, Product, Jan AS SalesAmt
   FROM tblPostSales
 UNION ALL
@@ -38,5 +35,5 @@ UNION ALL
 SELECT CAST('2015-11-01' AS Date) AS SalesMonth, Product, Nov AS SalesAmt
   FROM tblPostSales
 UNION ALL
-SELECT CAST('2015-12-01' AS Date) AS SalesMonth, Product, Dec AS SalesAmt
+SELECT CAST('2015-12-01' AS Date) AS SalesMonth, Product, Decm AS SalesAmt
   FROM tblPostSales;
