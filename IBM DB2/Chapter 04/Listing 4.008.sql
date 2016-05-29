@@ -1,9 +1,14 @@
+-- NOTE that some are code snippets that are not executable.
+
 --(Generate a salutation based on gender and marital status.)
 CASE WHEN Students.Gender = 'M' THEN 'Mr.'
   WHEN Students.MaritalStatus = 'S' THEN 'Ms.'
     ELSE 'Mrs.' END
 
 --(Rate sales based by Product on quantity sold.)
+-- It is possible to run the following in the Sales Orders database
+SET SCHEMA SalesOrdersSample;
+
 SELECT Products.ProductNumber, Products.ProductName,
 CASE WHEN (SELECT SUM(QuantityOrdered)
     FROM Order_Details 

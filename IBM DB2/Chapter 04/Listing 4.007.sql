@@ -1,4 +1,6 @@
---(Replace a code with a word � two examples.)
+-- NOTE that these are code snippets that are not executable.
+
+--(Replace a code with a word - two examples.)
 CASE Students.Gender WHEN 'M' THEN 'Male' ELSE 'Female' END
 
 CASE Students.Gender
