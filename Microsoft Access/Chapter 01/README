@@ -2,19 +2,18 @@ This folder contains samples and scripts for chapter 1.
 
 1-001 -- Contained as query Listing 1-001 in Item02Example.accdb (in the Sample Databases folder)
 1-002 -- Contained as query Listing 1-002 in Item03Example.accdb (in the Sample Databases folder)
-1-003 -- Contained as queries
-            Listing 1-003a
-            Listing 1-003b
-            Listing 1-003c
-            Listing 1-003d
-            Listing 1-003e
+1-003 -- Contained as queries in Item04Example.accdb (in the Sample Databases folder)
+            Listing 1-003a  (Create table)
+            Listing 1-003b  (Insert first row)
+            Listing 1-003c  (Insert second row)
+            Listing 1-003d  (Insert third row)
+            Listing 1-003e  (Insert fourth row)
          in Item04Example.accdb (in the Sample Databases folder)
-1-004 -- Contained as queries
-            Listing 1-004
-            Listing 1-004a
-         in Item04Example.accdb (in the Sample Databases folder)
-1-005
-1-006
+1-004 -- Contained as queries in Item04Example.accdb (in the Sample Databases folder)
+            Listing 1-004   (Reconstruct original unnormalized view)
+            Listing 1-004a  (Drop table)
+1-005 -- Already included in the SalesOrdersSample.accdb file (in the Sample Databases folder)
+1-006 -- NOT include - specific to SQL Server
 1-007
 1-008
 1-009
