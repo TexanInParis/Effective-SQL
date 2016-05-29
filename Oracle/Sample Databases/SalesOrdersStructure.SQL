@@ -56,6 +56,7 @@ CREATE TABLE Products (
 	ProductNumber number (11) NOT NULL ,
 	ProductName varchar (50) NULL ,
 	ProductDescription varchar (100) NULL ,
+	ProductUPD varchar (120) NULL ,
 	RetailPrice number(19, 4) DEFAULT 0 NULL ,
 	QuantityOnHand number (6) DEFAULT 0 NULL ,
 	CategoryID number (11) NULL 

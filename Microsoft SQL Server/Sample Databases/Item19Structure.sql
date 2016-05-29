@@ -1,3 +1,9 @@
+CREATE DATABASE Item19Example;
+GO
+
+USE Item19Example;
+GO
+
 CREATE TABLE tblPostSales(
     Product nvarchar (255), 
     Jan money, 

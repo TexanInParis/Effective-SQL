@@ -60,6 +60,7 @@ CREATE TABLE Products (
 	ProductNumber int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 	ProductName nvarchar (50) NULL ,
 	ProductDescription nvarchar (100) NULL ,
+	ProductUPD nvarchar (12) NULL ,
 	RetailPrice decimal (15,2) NULL DEFAULT 0 ,
 	QuantityOnHand smallint NULL DEFAULT 0 ,
 	CategoryID int NULL 

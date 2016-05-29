@@ -1,8 +1,4 @@
-CREATE DATABASE Ch03_20_01;
-GO
-
-USE Ch03_20_01;
-GO
+CREATE DATABASE Item19Example;
 
 CREATE TABLE tblPostSales(
     Product nvarchar (255), 

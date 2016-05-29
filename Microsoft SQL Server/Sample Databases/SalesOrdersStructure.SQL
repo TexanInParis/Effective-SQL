@@ -70,6 +70,7 @@ CREATE TABLE Products (
 	ProductNumber int IDENTITY (1, 1) NOT NULL ,
 	ProductName nvarchar (50) NULL ,
 	ProductDescription nvarchar (100) NULL ,
+	ProductUPC nvarchar (12) NULL ,
 	RetailPrice money NULL ,
 	QuantityOnHand smallint NULL ,
 	CategoryID int NULL 

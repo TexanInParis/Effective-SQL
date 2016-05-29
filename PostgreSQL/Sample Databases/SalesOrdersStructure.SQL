@@ -56,6 +56,7 @@ CREATE TABLE Products (
 	ProductNumber SERIAL NOT NULL ,
 	ProductName varchar (50) NULL ,
 	ProductDescription varchar (100) NULL ,
+	ProductUPC varchar (12) NULL ,
 	RetailPrice money NULL DEFAULT 0 ,
 	QuantityOnHand smallint NULL DEFAULT 0 ,
 	CategoryID int NULL 

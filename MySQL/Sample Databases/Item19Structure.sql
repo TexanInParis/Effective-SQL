@@ -1,6 +1,6 @@
-CREATE DATABASE Ch03_20_01;
+CREATE DATABASE Item19Example;
 
-USE Ch03_20_01;
+USE Item19Example;
 
 CREATE TABLE tblPostSales(
     Product nvarchar (255), 

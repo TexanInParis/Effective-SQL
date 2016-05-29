@@ -1,10 +1,9 @@
-ALTER TABLE Customers
-ADD COLUMN CustFaxNumber varchar(10);
+-- Ensure you've run SalesOrdersStructure.sql and SalesOrdersData.sql 
+-- in the Sample Databases folder in order to run this example. 
 
-CREATE INDEX CustFax_IDX
-ON Customers(CustFaxNumber) EXCLUDE NULL KEYS;
+SET SCHEMA SalesOrdersSample;
 
-DROP INDEX CustFax_IDX;
+CREATE INDEX CustPhone_IDX
+ON Customers(CustPhoneNumber) EXCLUDE NULL KEYS;
 
-ALTER TABLE Customers
-DROP COLUMN CustFaxNumber;
+DROP INDEX CustPhone_IDX;
