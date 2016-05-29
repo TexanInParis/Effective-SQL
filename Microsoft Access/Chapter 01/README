@@ -12,11 +12,13 @@ This folder contains samples and scripts for chapter 1.
 1-004 -- Contained as queries in Item04Example.accdb (in the Sample Databases folder)
             Listing 1-004   (Reconstruct original unnormalized view)
             Listing 1-004a  (Drop table)
-1-005 -- Already included in the SalesOrdersSample.accdb file (in the Sample Databases folder)
-1-006 -- NOT include - specific to SQL Server
-1-007
-1-008
-1-009
-1-010
-1-011
-1-012
+1-005 -- Contained as query Listing 1-005 in the SalesOrdersSample.accdb file (in the Sample Databases folder)
+1-006 -- NOT included - specific to SQL Server
+1-007 -- NOT included - specific to DB2
+1-008 -- NOT included - specific to Oracle
+1-009 -- Contained as query Listing 1-009 in the SalesOrdersSample.accdb file (in the Sample Databases folder)
+1-010 -- Contained as queries in the SalesOrdersSample.accdb file (in the Sample Databases folder)
+            Listing 1-010a  (Create Orders table)
+			Listing 1-010b  (Define FOREIGN KEY constraint)
+1-011 -- NOT included - Access does not support defining a FOREIGN KEY constraint in a CREATE TABLE statement.
+1-012 -- Contained as query Listing 1-012 in the SalesOrdersSample.accdb file (in the Sample Databases folder)
