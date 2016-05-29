@@ -1,6 +1,21 @@
-The folder contains samples and scripts for chapter 1.
+This folder contains samples and scripts for chapter 1.
 
-The following listings are NOT included:
-
-1.006 -- Specific to SQL Server
-1.008 -- Specific to Oracle
+1-001 -- Contained as query Listing 1-001 in Item02StructureAndData.sql (in the Sample Databases folder)
+1-002 -- Contained as query Listing 1-002 in Item03StructureAndData.sql (in the Sample Databases folder)
+1-003 -- Contained as queries in Item04Example.accdb (in the Sample Databases folder)
+            Listing 1-003a  (Create table)
+            Listing 1-003b  (Insert first row)
+            Listing 1-003c  (Insert second row)
+            Listing 1-003d  (Insert third row)
+            Listing 1-003e  (Insert fourth row)
+1-004 -- Contained as queries in Item04Example.accdb (in the Sample Databases folder)
+            Listing 1-004   (Reconstruct original unnormalized view)
+            Listing 1-004a  (Drop table)
+1-005 -- Already included in the SalesOrdersStructure.sql (in the Sample Databases folder)
+1-006 -- NOT included - specific to SQL Server
+1-007 -- Table Orders already exists in the Sales Orders sample. Listing included for reference.
+1-008 -- NOT included - specific to Oracle
+1-009
+1-010
+1-011
+1-012

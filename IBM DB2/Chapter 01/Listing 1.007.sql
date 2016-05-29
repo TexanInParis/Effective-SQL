@@ -8,10 +8,10 @@ CREATE FUNCTION calcOrderTotal(orderId int)
 RETURNS decimal (15, 2)	
 AS
 BEGIN
-    DECLARE r decimal (15, 2)
-    SELECT r = SUM(Quantity * Price) 
-        FROM Order_Details WHERE OrderNumber = orderId
-    RETURN r
+    DECLARE r decimal (15, 2);
+    SET (r) = SELECT SUM(Quantity * Price) 
+        FROM Order_Details WHERE OrderNumber = orderId;
+    RETURN r;
 END;
 
 -- The Orders table already exists, so you will get an
