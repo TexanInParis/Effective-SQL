@@ -13,8 +13,9 @@ This folder contains samples and scripts for chapter 5.
 5-011
 5-012
 5-013
-5-014
-5-015
+5-014 -- Contained as query Listing 5-014 in SalesOrdersSample.accdb (in the Sample Databases folder)
+5-015 -- Contained as queries Listing 5-015a, Listing 5-015b, and Listing 5-015 in 
+          SalesOrdersSample.accdb (in the Sample Databases folder)
 5-016
 5-017 -- Contained as query Listing 5-017 in Item33Example.accdb (in the Sample Databases folder)
 5-018 -- Contained as query Listing 5-018 in Item33Example.accdb (in the Sample Databases folder)
