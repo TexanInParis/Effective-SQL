@@ -4,24 +4,17 @@
 
 SET SCHEMA SalesOrdersSample;
 
-CREATE FUNCTION calcOrderTotal(orderId int)
-RETURNS decimal (15, 2)	
-AS
+CREATE FUNCTION CalcExtended (quantity smallint, price decimal(15,2))
+RETURNS decimal (15, 2)
 BEGIN
     DECLARE r decimal (15, 2);
-    SET (r) = SELECT SUM(Quantity * Price) 
-        FROM Order_Details WHERE OrderNumber = orderId;
+    SET r = quantity * price;
     RETURN r;
-END;
+END
+ 
+ALTER TABLE Order_Details
+  ADD COLUMN ExtendedPrice decimal (15, 2)
+GENERATED ALWAYS AS (CalcExtended(QuantityOrdered, QuotedPrice));
 
--- The Orders table already exists, so you will get an
---  error if you try to run the following.
--- Included as comments for reference.
--- CREATE TABLE Orders (
---   OrderNumber int NOT NULL ,
---   OrderDate date NULL ,
---   ShipDate date NULL ,
---   CustomerID int NULL ,
---   EmployeeID int NULL ,
---   OrderTotal decimal (15,2) 
---   GENERATED ALWAYS AS (calcOrderTotal(OrderNumber));
+ALTER TABLE Order_Details
+  DROP COLUMN ExtendedPrice;
