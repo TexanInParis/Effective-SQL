@@ -6,5 +6,5 @@ USE SalesOrdersSample;
 
 SELECT Orders.ShipDate, SUM(Orders.OrderTotal) AS SumOfOrderTotal
 FROM Orders
-WHERE Orders.ShipDate >= '2016-09-01' AND Orders.ShipDate < '2016-10-01'
+WHERE Orders.ShipDate >= '2015-09-01' AND Orders.ShipDate < '2015-10-01'
 GROUP BY Orders.ShipDate;
