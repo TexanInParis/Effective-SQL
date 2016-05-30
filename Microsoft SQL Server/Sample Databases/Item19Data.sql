@@ -1,4 +1,4 @@
-Use Ch03_20_01;
+Use Item19Example;
 GO
 
 INSERT INTO tblPostSales
