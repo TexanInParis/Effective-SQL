@@ -8,12 +8,12 @@ This folder contains samples and scripts for chapter 4.
 4-006 -- Contained as query Listing 4-006 in SalesOrdersSample.accdb (in the Sample Databases folder)
 4-007 -- Not included: non-executable code snippets
 4-008 -- Not included: non-executable code snippets
-4-009
-4-010
-4-011
-4-012
-4-013
-4-014
+4-009 -- Similar query saved in SalesOrdersSample.accdb (in the Sample Databases folder)
+4-010 -- Not included: Not possible to emulate the sample CASE statement in Access.
+4-011 -- Contained as queries Listing 4-011 and 4-011a in SalesOrdersSample.accdb (In the Sample Databases folder)
+4-012 -- Contained as queries Listing 4-012 and 4-012a in SalesOrdersSample.accdb (In the Sample Databases folder)
+4-013 -- Not included: Access does not support Functions.
+4-014 -- Contained as queries Listing 4-014 and 4-014a in SalesOrdersSample.accdb (In the Sample Databases folder)
 4-015
 4-016
 4-017

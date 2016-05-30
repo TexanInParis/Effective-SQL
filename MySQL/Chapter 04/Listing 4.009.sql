@@ -1,4 +1,15 @@
 -- NOTE: Sample table Students does not exist.
+CREATE DATABASE StudentsTest;
+
+CREATE TABLE Students (
+	StudentID int PRIMARY KEY NOT NULL,
+	LastName varchar(50),
+	FirstName varchar(50),
+	BirthDate date
+);
+
+USE StudentsTest;
+
 SELECT Students.StudentID, Students.LastName, Students.FirstName, 
    YEAR(CURDATE()) - YEAR(Students.BirthDate) - 
     CASE WHEN MONTH(Students.BirthDate) < MONTH(CURDATE()) 
@@ -9,6 +20,8 @@ SELECT Students.StudentID, Students.LastName, Students.FirstName,
     THEN 1  
     ELSE 0 END AS Age
   FROM Students;
+  
+DROP DATABASE StudentsTest;
   
 -- Similar code using EmpDOB in the Employees table in SalesOrdersSample
 -- Ensure you've run SalesOrdersStructure.sql
