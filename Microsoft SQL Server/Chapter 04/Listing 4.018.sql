@@ -14,3 +14,17 @@ GO
 
 DROP VIEW ProdsOfInterest;
 GO
+
+-- Sample query that searches products correctly:
+CREATE VIEW ProdsOfInterest AS
+SELECT Products.ProductName
+FROM Products
+WHERE ProductName LIKE '%Skateboard%'
+   OR ProductName LIKE '%Helmet%' 
+   OR ProductName LIKE '%Knee Pads%' 
+   OR ProductName LIKE '%Gloves%';
+GO
+
+DROP VIEW ProdsOfInterest;
+GO
+

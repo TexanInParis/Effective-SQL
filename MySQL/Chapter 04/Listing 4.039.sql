@@ -1,3 +1,9 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+USE SalesOrdersSample;
+
 SELECT Customers.CustomerID, Customers.CustFirstName, 
   Customers.CustLastName, Orders.OrderNumber, Orders.OrderDate,
   Orders.OrderTotal

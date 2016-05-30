@@ -12,6 +12,6 @@ FROM Customers LEFT JOIN
   (SELECT Orders.OrderNumber, Orders.CustomerID, 
     Orders.OrderDate, Orders.OrderTotal
   FROM Orders
-  WHERE Orders.OrderDate BETWEEN CAST('2015-10-01' AS DATETIME)
-    AND CAST('2015-12-31' AS DATETime)) AS OFiltered
+  WHERE Orders.OrderDate BETWEEN CAST('2015-10-01' AS DATE)
+    AND CAST('2015-12-31' AS DATE)) AS OFiltered
   ON Customers.CustomerID = OFiltered.CustomerID;

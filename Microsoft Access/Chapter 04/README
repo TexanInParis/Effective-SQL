@@ -15,11 +15,11 @@ This folder contains samples and scripts for chapter 4.
 4-013 -- Not included: Access does not support Functions.
 4-014 -- Contained as queries Listing 4-014 and 4-014a in SalesOrdersSample.accdb (In the Sample Databases folder)
 4-015 -- Contained as queries Listing 4-015 and 4-015a in SalesOrdersSample.accdb (In the Sample Databases folder)
-4-016
-4-017
-4-018
-4-019
-4-020
+4-016 -- Not included: Access does not support Functions.
+4-017 -- Contained as query CustomerProducts in SalesOrdersSample.accdb (In the Sample Databases folder)
+4-018 -- Contained as queries ProdsOfInterest and ProdsOfInterestLIKE in SalesOrdersSample.accdb (In the Sample Databases folder)
+4-019 -- Contained as queries Listing 4-019 and 4-019a in SalesOrdersSample.accdb (In the Sample Databases folder)
+4-020 -- Contained as queries Listing 4-020 and 4-020a in SalesOrdersSample.accdb (In the Sample Databases folder)
 4-021 -- Contained as query Listing 4-021 in Item27Example.accdb (in the Sample Databases folder)
 4-022 -- Contained as query Listing 4-022 in Item27Example.accdb (in the Sample Databases folder)
 4-023 -- Not included: no real equivalent to Access
@@ -43,8 +43,8 @@ This folder contains samples and scripts for chapter 4.
 4-035 -- Contained as query Listing 4-035 in Item28Example.accdb (in the Sample Databases folder)
 4-036 -- Contained as query Listing 4-036 in Item28Example.accdb (in the Sample Databases folder)
 4-037 -- Contained as query Listing 4-037 in Item28Example.accdb (in the Sample Databases folder)
-4-038
-4-039
-4-040
+4-038 -- Contained as query Listing 4-038 in SalesOrdersSample.accdb (in the Sample Databases folder)
+4-039 -- Contained as query Listing 4-039 in SalesOrdersSample.accdb (in the Sample Databases folder)
+4-040 -- Contained as query Listing 4-040 in SalesOrdersSample.accdb (in the Sample Databases folder)
 
 
