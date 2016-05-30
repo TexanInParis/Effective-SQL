@@ -39,7 +39,7 @@ AND EXISTS
   WHERE Products.ProductName = 'Gloves'
   AND Orders.CustomerID = C.CustomerID);
   
-  -- Sample query that returns results:
+-- Sample query that returns results:
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
 WHERE EXISTS
