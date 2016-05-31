@@ -1,10 +1,7 @@
-CREATE TABLE Orders (
+CREATE TABLE Order_Details (
   OrderNumber int NOT NULL ,
-  OrderDate date NULL ,
-  ShipDate date NULL ,
-  CustomerID int NULL ,
-  EmployeeID int NULL ,
-  OrderTotal decimal (15,2) 
-  COMPUTED BY (SELECT SUM(Quantity * Price)
-  FROM Order_Details
-  WHERE Order_Details.OrderNumber = Orders.OrderNumber));
+  ProductNumber int NOT NULL ,
+  QuotedPrice decimal(15,2) DEFAULT 0 NULL ,
+  QuantityOrdered smallint DEFAULT 0 NULL ,
+  ExtendedPrice decimal(15,2) 
+    GENERATED ALWAYS AS (QuotedPrice * QuantityOrdered));
