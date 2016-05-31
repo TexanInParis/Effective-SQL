@@ -1,20 +1,20 @@
 This folder contains samples and scripts for chapter 6.
 
 6-001 -- Contained as query Listing 6-001 in RecipesSample.accdb (in the Sample Databases folder)
-6-002 -- Contained as query Listing 6-002 and Listing 6-002a in SalesOrdersSample.accdb (in the Sample Databases folder)
+6-002 -- Contained as queries Listing 6-002 & Listing 6-002a in SalesOrdersSample.accdb (in the Sample Databases folder)
 6-003 -- Contained as query Listing 6-003 in SalesOrdersSample.accdb (in the Sample Databases folder)
 6-004 -- Contained as query Listing 6-004 in SalesOrdersSample.accdb (in the Sample Databases folder)
-6-005 -- Contained as query Listing 6-004 in SalesOrdersSample.accdb (in the Sample Databases folder)
-6-006
-6-007
-6-008
-6-009
-6-010
-6-011
-6-012
-6-013
-6-014
-6-015
+6-005 -- Contained as query Listing 6-005 in SalesOrdersSample.accdb (in the Sample Databases folder)
+6-006 -- Contained as query Listing 6-006 in RecipesSample.accdb (in the Sample Databases folder)
+6-007 -- Contained as query Listing 6-007 in RecipesSample.accdb (in the Sample Databases folder)
+6-008 -- Contained as query Listing 6-008 in RecipesSample.accdb (in the Sample Databases folder)
+6-009 -- Contained as query Listing 6-009 in RecipesSample.accdb (in the Sample Databases folder)
+6-010 -- Contained as query Listing 6-010 in RecipesSample.accdb (in the Sample Databases folder)
+6-011 -- Contained as query Listing 6-011 in RecipesSample.accdb (in the Sample Databases folder)
+6-012 -- Contained as queries Listing 6-012 & Listing 6-012a in SalesOrdersSample.accdb (in the Sample Databases folder)
+6-013 -- NOT included: Access does not support Common Table Expressions.
+6-014 -- NOT included: Access does not support Common Table Expressions.
+6-015 -- NOT included: Access does not support Common Table Expressions.
 6-016 -- Contained as query Listing 6-016 in Item43Example.accdb (in the Sample Databases folder)
 6-017 -- Contained as query Listing 6-017 in Item43Example.accdb (in the Sample Databases folder)
 6-018 -- Contained as query Listing 6-018 in Item43Example.accdb (in the Sample Databases folder)

@@ -1,3 +1,9 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+SET SCHEMA SalesOrdersSample;
+
 WITH SeqNumTbl(SeqNum) AS 
   (VALUES (1)
    UNION ALL
