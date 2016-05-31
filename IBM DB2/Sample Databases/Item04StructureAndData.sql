@@ -1,6 +1,5 @@
--- Database and sample data for Item04.
-
-CREATE DATABASE Item04Example;
+-- Schema and sample data for Item04.
+CREATE SCHEMA Item04Example;
 
 SET SCHEMA Item04Example;
 

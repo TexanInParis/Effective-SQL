@@ -1,4 +1,4 @@
-CREATE DATABASE Item19Example;
+CREATE SCHEMA Item19Example;
 
 SET SCHEMA Item19Example;
 

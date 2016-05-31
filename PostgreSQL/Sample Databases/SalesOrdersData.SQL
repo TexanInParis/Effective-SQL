@@ -1,3 +1,5 @@
+SET search_path TO SalesOrdersSample;
+
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustAreaCode, 
@@ -168,7 +170,62 @@ INSERT INTO Customers
   VALUES (1028, 'Jeffrey', 'Tirekicker', '19541 104th Ave NE', 
    'Bothell', 'WA', '98006', 425, '555-9999');
 
-INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (701, 'Ann', 'Patterson', '16 Maple Lane',    'Auburn', 'WA', '98002', 253, '555-2591', '1958-03-18',    NULL);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (702, 'Mary', 'Thompson', '122 Spring River Drive',    'Duvall', 'WA', '98019', 425, '555-2516', '1990-06-21',    701);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (703, 'Jim', 'Smith', '908 W. Capital Way',    'Tacoma', 'WA', '98413', 253, '555-2581', '1964-11-02',    701);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (704, 'Carol', 'Viescas', '722 Moss Bay Blvd.',    'Kirkland', 'WA', '98033', 425, '555-2576', '1987-12-23',    NULL);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (705, 'Michael', 'Johnson', '455 West Palm Ave',    'San Antonio', 'TX', '78284', 210, '5552311', '1985-10-05',    704);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (706, 'David', 'Viescas', '16679 NE 42nd Court',    'Redmond', 'WA', '98052', 425, '555-2661', '1968-01-01',    704);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (707, 'Kathryn', 'Patterson', '554 E. Wilshire Apt. 2A',    'Seattle', 'WA', '98105', 206, '555-2697', '1982-12-12',    704);INSERT INTO Employees  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress,    EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber,    EmpDOB, ManagerID)  VALUES (708, 'Susan', 'Smith', '511 Lenora Ave',    'Bellevue', 'WA', '98006', 425, '555-2301', '1967-10-15',    706);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (701, 'Ann', 'Patterson', '16 Maple Lane', 
+   'Auburn', 'WA', '98002', 253, '555-2591', DATE '1958-03-18', 
+   NULL);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (702, 'Mary', 'Thompson', '122 Spring River Drive', 
+   'Duvall', 'WA', '98019', 425, '555-2516', DATE '1990-06-21', 
+   701);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (703, 'Jim', 'Smith', '908 W. Capital Way', 
+   'Tacoma', 'WA', '98413', 253, '555-2581', DATE '1964-11-02', 
+   701);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (704, 'Carol', 'Viescas', '722 Moss Bay Blvd.', 
+   'Kirkland', 'WA', '98033', 425, '555-2576', DATE '1987-12-23', 
+   NULL);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (705, 'Michael', 'Johnson', '455 West Palm Ave', 
+   'San Antonio', 'TX', '78284', 210, '5552311', DATE '1985-10-05', 
+   704);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (706, 'David', 'Viescas', '16679 NE 42nd Court', 
+   'Redmond', 'WA', '98052', 425, '555-2661', DATE '1968-01-01', 
+   704);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (707, 'Kathryn', 'Patterson', '554 E. Wilshire Apt. 2A', 
+   'Seattle', 'WA', '98105', 206, '555-2697', DATE '1982-12-12', 
+   704);
+INSERT INTO Employees
+  (EmployeeID, EmpFirstName, EmpLastName, EmpStreetAddress, 
+   EmpCity, EmpState, EmpZipCode, EmpAreaCode, EmpPhoneNumber, 
+   EmpDOB, ManagerID)
+  VALUES (708, 'Susan', 'Smith', '511 Lenora Ave', 
+   'Bellevue', 'WA', '98006', 425, '555-2301', DATE '1967-10-15', 
+   706);
 
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
@@ -176,35 +233,35 @@ INSERT INTO Vendors
    VendWebPage, VendEMailAddress)
   VALUES (1, 'Shinoman, Incorporated', '3042 19th Avenue South', 
    'Bellevue', 'WA', '98001', '(425) 888-1234', '(425) 888-1235', 
-   'http://www.shinoman.com/', 'Sales@Shiniman.com');
+   '#http://www.shinoman.com/#', 'Sales@Shiniman.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (2, 'Viscount', '1911 Commerce Way', 'St. Louis', 
    'MO', '63127', '(314) 777-1234', '(314) 777-1235', 
-   'http://www.viscountbikes.com/', 'Orders@ViscountBikes.com');
+   '#http://www.viscountbikes.com/#', 'Orders@ViscountBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (3, 'Nikoma of America', '88 Old North Road Ave', 
    'Ballard', 'WA', '91324', '(206) 666-1234', '(314) 666-1235', 
-   'http://www.nikomabikes.com/', 'BuyBikes@NikomaBikes.com');
+   '#http://www.nikomabikes.com/#', 'BuyBikes@NikomaBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (4, 'ProFormance', '29 N. Quail St.', 'Albany', 
    'NY', '12012', '(518) 444-1234', '(518) 444-1235', 
-   'http://www.ProFormBikes.com/', 'Sales@ProFormBikes.com');
+   '#http://www.ProFormBikes.com/#', 'Sales@ProFormBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
    VendWebPage, VendEMailAddress)
   VALUES (5, 'Kona, Incorporated', 'PO Box 10429', 
    'Redmond', 'WA', '98052', '(425) 333-1234', '(425) 333-1235', 
-   'http://www.konabikes.com/', 'Sales@KonaBikes.com');
+   '#http://www.konabikes.com/#', 'Sales@KonaBikes.com');
 INSERT INTO Vendors
   (VendorID, VendName, VendStreetAddress, VendCity, 
    VendState, VendZipCode, VendPhoneNumber, VendFaxNumber, 
@@ -239,7 +296,7 @@ INSERT INTO Vendors
    VendWebPage, VendEMailAddress)
   VALUES (10, 'Armadillo Brand', '12330 Side Road Lane', 
    'Dallas', 'TX', '75137', '(214) 444-9876', '(214) 444-9877', 
-   'http://www.DilloBikes.com/', 'BikeProducts@DilloBikes.com');
+   '#http://www.DilloBikes.com/#', 'BikeProducts@DilloBikes.com');
 
 INSERT INTO Categories
   (CategoryID, CategoryDescription)
@@ -463,4724 +520,4724 @@ INSERT INTO Products
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (1, '2015-09-01', '2015-09-04', 1018, 707, 
+  VALUES (1, DATE '2015-09-01', DATE '2015-09-04', 1018, 707, 
    12751.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (2, '2015-09-01', '2015-09-03', 1001, 703, 
+  VALUES (2, DATE '2015-09-01', DATE '2015-09-03', 1001, 703, 
    816);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (3, '2015-09-01', '2015-09-04', 1002, 707, 
+  VALUES (3, DATE '2015-09-01', DATE '2015-09-04', 1002, 707, 
    11912.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (4, '2015-09-01', '2015-09-03', 1009, 703, 
+  VALUES (4, DATE '2015-09-01', DATE '2015-09-03', 1009, 703, 
    6601.73);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (5, '2015-09-01', '2015-09-01', 1024, 708, 
+  VALUES (5, DATE '2015-09-01', DATE '2015-09-01', 1024, 708, 
    5544.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (6, '2015-09-01', '2015-09-05', 1014, 702, 
+  VALUES (6, DATE '2015-09-01', DATE '2015-09-05', 1014, 702, 
    9820.29);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (7, '2015-09-01', '2015-09-04', 1001, 708, 
+  VALUES (7, DATE '2015-09-01', DATE '2015-09-04', 1001, 708, 
    467.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (8, '2015-09-01', '2015-09-01', 1003, 703, 
+  VALUES (8, DATE '2015-09-01', DATE '2015-09-01', 1003, 703, 
    1492.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (9, '2015-09-01', '2015-09-04', 1007, 708, 
+  VALUES (9, DATE '2015-09-01', DATE '2015-09-04', 1007, 708, 
    69);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (10, '2015-09-01', '2015-09-04', 1012, 701, 
+  VALUES (10, DATE '2015-09-01', DATE '2015-09-04', 1012, 701, 
    2607);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (11, '2015-09-02', '2015-09-04', 1020, 706, 
+  VALUES (11, DATE '2015-09-02', DATE '2015-09-04', 1020, 706, 
    11070.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (12, '2015-09-02', '2015-09-05', 1024, 706, 
+  VALUES (12, DATE '2015-09-02', DATE '2015-09-05', 1024, 706, 
    72);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (13, '2015-09-02', '2015-09-02', 1024, 704, 
+  VALUES (13, DATE '2015-09-02', DATE '2015-09-02', 1024, 704, 
    7545);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (14, '2015-09-02', '2015-09-03', 1013, 704, 
+  VALUES (14, DATE '2015-09-02', DATE '2015-09-03', 1013, 704, 
    6819.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (15, '2015-09-02', '2015-09-06', 1004, 701, 
+  VALUES (15, DATE '2015-09-02', DATE '2015-09-06', 1004, 701, 
    2974.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (16, '2015-09-02', '2015-09-06', 1001, 707, 
+  VALUES (16, DATE '2015-09-02', DATE '2015-09-06', 1001, 707, 
    2007.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (17, '2015-09-02', '2015-09-03', 1014, 702, 
+  VALUES (17, DATE '2015-09-02', DATE '2015-09-03', 1014, 702, 
    4834.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (18, '2015-09-02', '2015-09-03', 1016, 708, 
+  VALUES (18, DATE '2015-09-02', DATE '2015-09-03', 1016, 708, 
    807.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (19, '2015-09-02', '2015-09-06', 1027, 707, 
+  VALUES (19, DATE '2015-09-02', DATE '2015-09-06', 1027, 707, 
    15278.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (20, '2015-09-02', '2015-09-02', 1011, 706, 
+  VALUES (20, DATE '2015-09-02', DATE '2015-09-02', 1011, 706, 
    4699.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (21, '2015-09-03', '2015-09-03', 1014, 702, 
+  VALUES (21, DATE '2015-09-03', DATE '2015-09-03', 1014, 702, 
    709.97);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (22, '2015-09-03', '2015-09-07', 1026, 702, 
+  VALUES (22, DATE '2015-09-03', DATE '2015-09-07', 1026, 702, 
    6456.16);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (23, '2015-09-03', '2015-09-04', 1017, 705, 
+  VALUES (23, DATE '2015-09-03', DATE '2015-09-04', 1017, 705, 
    16331.91);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (24, '2015-09-03', '2015-09-05', 1010, 705, 
+  VALUES (24, DATE '2015-09-03', DATE '2015-09-05', 1010, 705, 
    864.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (25, '2015-09-03', '2015-09-04', 1017, 708, 
+  VALUES (25, DATE '2015-09-03', DATE '2015-09-04', 1017, 708, 
    10142.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (26, '2015-09-04', '2015-09-08', 1013, 707, 
+  VALUES (26, DATE '2015-09-04', DATE '2015-09-08', 1013, 707, 
    7266.93);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (27, '2015-09-04', '2015-09-05', 1014, 703, 
+  VALUES (27, DATE '2015-09-04', DATE '2015-09-05', 1014, 703, 
    8002.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (28, '2015-09-04', '2015-09-08', 1004, 703, 
+  VALUES (28, DATE '2015-09-04', DATE '2015-09-08', 1004, 703, 
    335.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (29, '2015-09-04', '2015-09-08', 1015, 707, 
+  VALUES (29, DATE '2015-09-04', DATE '2015-09-08', 1015, 707, 
    664);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (30, '2015-09-04', '2015-09-08', 1010, 708, 
+  VALUES (30, DATE '2015-09-04', DATE '2015-09-08', 1010, 708, 
    7268.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (31, '2015-09-05', '2015-09-09', 1014, 701, 
+  VALUES (31, DATE '2015-09-05', DATE '2015-09-09', 1014, 701, 
    162.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (32, '2015-09-05', '2015-09-09', 1012, 704, 
+  VALUES (32, DATE '2015-09-05', DATE '2015-09-09', 1012, 704, 
    8743.63);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (33, '2015-09-05', '2015-09-06', 1024, 704, 
+  VALUES (33, DATE '2015-09-05', DATE '2015-09-06', 1024, 704, 
    2369.53);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (34, '2015-09-06', '2015-09-07', 1010, 705, 
+  VALUES (34, DATE '2015-09-06', DATE '2015-09-07', 1010, 705, 
    411.28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (35, '2015-09-06', '2015-09-06', 1012, 701, 
+  VALUES (35, DATE '2015-09-06', DATE '2015-09-06', 1012, 701, 
    5095.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (36, '2015-09-06', '2015-09-07', 1007, 705, 
+  VALUES (36, DATE '2015-09-06', DATE '2015-09-07', 1007, 705, 
    7.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (37, '2015-09-07', '2015-09-11', 1027, 702, 
+  VALUES (37, DATE '2015-09-07', DATE '2015-09-11', 1027, 702, 
    1718.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (38, '2015-09-07', '2015-09-11', 1017, 702, 
+  VALUES (38, DATE '2015-09-07', DATE '2015-09-11', 1017, 702, 
    700);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (39, '2015-09-07', '2015-09-10', 1004, 704, 
+  VALUES (39, DATE '2015-09-07', DATE '2015-09-10', 1004, 704, 
    20221.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (40, '2015-09-07', '2015-09-07', 1017, 703, 
+  VALUES (40, DATE '2015-09-07', DATE '2015-09-07', 1017, 703, 
    1018.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (41, '2015-09-07', '2015-09-07', 1008, 706, 
+  VALUES (41, DATE '2015-09-07', DATE '2015-09-07', 1008, 706, 
    1723.42);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (42, '2015-09-07', '2015-09-10', 1012, 704, 
+  VALUES (42, DATE '2015-09-07', DATE '2015-09-10', 1012, 704, 
    6174);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (43, '2015-09-07', '2015-09-11', 1020, 705, 
+  VALUES (43, DATE '2015-09-07', DATE '2015-09-11', 1020, 705, 
    7140.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (44, '2015-09-07', '2015-09-08', 1005, 701, 
+  VALUES (44, DATE '2015-09-07', DATE '2015-09-08', 1005, 701, 
    2365.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (45, '2015-09-08', '2015-09-08', 1008, 708, 
+  VALUES (45, DATE '2015-09-08', DATE '2015-09-08', 1008, 708, 
    17889.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (46, '2015-09-08', '2015-09-09', 1018, 707, 
+  VALUES (46, DATE '2015-09-08', DATE '2015-09-09', 1018, 707, 
    78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (47, '2015-09-08', '2015-09-10', 1023, 708, 
+  VALUES (47, DATE '2015-09-08', DATE '2015-09-10', 1023, 708, 
    5820);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (48, '2015-09-08', '2015-09-11', 1004, 707, 
+  VALUES (48, DATE '2015-09-08', DATE '2015-09-11', 1004, 707, 
    1397.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (49, '2015-09-08', '2015-09-08', 1015, 704, 
+  VALUES (49, DATE '2015-09-08', DATE '2015-09-08', 1015, 704, 
    1254.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (50, '2015-09-08', '2015-09-12', 1002, 704, 
+  VALUES (50, DATE '2015-09-08', DATE '2015-09-12', 1002, 704, 
    477.94);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (51, '2015-09-08', '2015-09-08', 1018, 707, 
+  VALUES (51, DATE '2015-09-08', DATE '2015-09-08', 1018, 707, 
    1200);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (52, '2015-09-09', '2015-09-11', 1001, 701, 
+  VALUES (52, DATE '2015-09-09', DATE '2015-09-11', 1001, 701, 
    261.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (53, '2015-09-09', '2015-09-09', 1004, 706, 
+  VALUES (53, DATE '2015-09-09', DATE '2015-09-09', 1004, 706, 
    19615);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (54, '2015-09-09', '2015-09-09', 1007, 707, 
+  VALUES (54, DATE '2015-09-09', DATE '2015-09-09', 1007, 707, 
    72);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (55, '2015-09-09', '2015-09-11', 1001, 707, 
+  VALUES (55, DATE '2015-09-09', DATE '2015-09-11', 1001, 707, 
    36);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (56, '2015-09-09', '2015-09-12', 1014, 702, 
+  VALUES (56, DATE '2015-09-09', DATE '2015-09-12', 1014, 702, 
    3380.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (57, '2015-09-09', '2015-09-10', 1009, 703, 
+  VALUES (57, DATE '2015-09-09', DATE '2015-09-10', 1009, 703, 
    4214.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (58, '2015-09-09', '2015-09-13', 1006, 701, 
+  VALUES (58, DATE '2015-09-09', DATE '2015-09-13', 1006, 701, 
    3172.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (59, '2015-09-09', '2015-09-09', 1004, 704, 
+  VALUES (59, DATE '2015-09-09', DATE '2015-09-09', 1004, 704, 
    15504.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (60, '2015-09-09', '2015-09-13', 1013, 708, 
+  VALUES (60, DATE '2015-09-09', DATE '2015-09-13', 1013, 708, 
    10135.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (61, '2015-09-09', '2015-09-10', 1009, 706, 
+  VALUES (61, DATE '2015-09-09', DATE '2015-09-10', 1009, 706, 
    4372.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (62, '2015-09-10', '2015-09-13', 1003, 703, 
+  VALUES (62, DATE '2015-09-10', DATE '2015-09-13', 1003, 703, 
    1335.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (63, '2015-09-10', '2015-09-13', 1023, 708, 
+  VALUES (63, DATE '2015-09-10', DATE '2015-09-13', 1023, 708, 
    7032);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (64, '2015-09-10', '2015-09-14', 1027, 708, 
+  VALUES (64, DATE '2015-09-10', DATE '2015-09-14', 1027, 708, 
    8453.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (65, '2015-09-10', '2015-09-13', 1021, 703, 
+  VALUES (65, DATE '2015-09-10', DATE '2015-09-13', 1021, 703, 
    13550.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (66, '2015-09-10', '2015-09-11', 1026, 703, 
+  VALUES (66, DATE '2015-09-10', DATE '2015-09-11', 1026, 703, 
    14541.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (67, '2015-09-10', '2015-09-11', 1025, 702, 
+  VALUES (67, DATE '2015-09-10', DATE '2015-09-11', 1025, 702, 
    877);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (68, '2015-09-11', '2015-09-12', 1027, 702, 
+  VALUES (68, DATE '2015-09-11', DATE '2015-09-12', 1027, 702, 
    273.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (69, '2015-09-11', '2015-09-13', 1021, 705, 
+  VALUES (69, DATE '2015-09-11', DATE '2015-09-13', 1021, 705, 
    3034.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (70, '2015-09-12', '2015-09-16', 1016, 706, 
+  VALUES (70, DATE '2015-09-12', DATE '2015-09-16', 1016, 706, 
    595.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (71, '2015-09-12', '2015-09-14', 1016, 708, 
+  VALUES (71, DATE '2015-09-12', DATE '2015-09-14', 1016, 708, 
    1849.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (72, '2015-09-12', '2015-09-16', 1003, 708, 
+  VALUES (72, DATE '2015-09-12', DATE '2015-09-16', 1003, 708, 
    1484.13);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (73, '2015-09-12', '2015-09-15', 1005, 705, 
+  VALUES (73, DATE '2015-09-12', DATE '2015-09-15', 1005, 705, 
    7159.38);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (74, '2015-09-12', '2015-09-13', 1002, 703, 
+  VALUES (74, DATE '2015-09-12', DATE '2015-09-13', 1002, 703, 
    14103.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (75, '2015-09-12', '2015-09-14', 1014, 706, 
+  VALUES (75, DATE '2015-09-12', DATE '2015-09-14', 1014, 706, 
    6691.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (76, '2015-09-12', '2015-09-15', 1012, 703, 
+  VALUES (76, DATE '2015-09-12', DATE '2015-09-15', 1012, 703, 
    868.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (77, '2015-09-12', '2015-09-13', 1008, 706, 
+  VALUES (77, DATE '2015-09-12', DATE '2015-09-13', 1008, 706, 
    2157.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (78, '2015-09-13', '2015-09-16', 1007, 701, 
+  VALUES (78, DATE '2015-09-13', DATE '2015-09-16', 1007, 701, 
    13498.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (79, '2015-09-13', '2015-09-17', 1006, 703, 
+  VALUES (79, DATE '2015-09-13', DATE '2015-09-17', 1006, 703, 
    7507);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (80, '2015-09-13', '2015-09-16', 1025, 708, 
+  VALUES (80, DATE '2015-09-13', DATE '2015-09-16', 1025, 708, 
    14394.43);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (81, '2015-09-13', '2015-09-13', 1006, 705, 
+  VALUES (81, DATE '2015-09-13', DATE '2015-09-13', 1006, 705, 
    1018.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (82, '2015-09-13', '2015-09-16', 1005, 701, 
+  VALUES (82, DATE '2015-09-13', DATE '2015-09-16', 1005, 701, 
    12861.28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (83, '2015-09-13', '2015-09-16', 1021, 708, 
+  VALUES (83, DATE '2015-09-13', DATE '2015-09-16', 1021, 708, 
    639);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (84, '2015-09-13', '2015-09-13', 1022, 707, 
+  VALUES (84, DATE '2015-09-13', DATE '2015-09-13', 1022, 707, 
    1278.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (85, '2015-09-13', '2015-09-15', 1015, 705, 
+  VALUES (85, DATE '2015-09-13', DATE '2015-09-15', 1015, 705, 
    1807.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (86, '2015-09-13', '2015-09-16', 1009, 701, 
+  VALUES (86, DATE '2015-09-13', DATE '2015-09-16', 1009, 701, 
    9285.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (87, '2015-09-13', '2015-09-14', 1002, 704, 
+  VALUES (87, DATE '2015-09-13', DATE '2015-09-14', 1002, 704, 
    6121);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (88, '2015-09-14', '2015-09-17', 1026, 707, 
+  VALUES (88, DATE '2015-09-14', DATE '2015-09-17', 1026, 707, 
    960.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (89, '2015-09-14', '2015-09-17', 1003, 703, 
+  VALUES (89, DATE '2015-09-14', DATE '2015-09-17', 1003, 703, 
    642.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (90, '2015-09-14', '2015-09-15', 1017, 706, 
+  VALUES (90, DATE '2015-09-14', DATE '2015-09-15', 1017, 706, 
    57);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (91, '2015-09-14', '2015-09-18', 1010, 703, 
+  VALUES (91, DATE '2015-09-14', DATE '2015-09-18', 1010, 703, 
    14834.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (92, '2015-09-14', '2015-09-17', 1011, 704, 
+  VALUES (92, DATE '2015-09-14', DATE '2015-09-17', 1011, 704, 
    4433.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (93, '2015-09-14', '2015-09-17', 1023, 707, 
+  VALUES (93, DATE '2015-09-14', DATE '2015-09-17', 1023, 707, 
    75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (94, '2015-09-14', '2015-09-14', 1010, 701, 
+  VALUES (94, DATE '2015-09-14', DATE '2015-09-14', 1010, 701, 
    4134.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (95, '2015-09-15', '2015-09-19', 1021, 704, 
+  VALUES (95, DATE '2015-09-15', DATE '2015-09-19', 1021, 704, 
    9959.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (96, '2015-09-15', '2015-09-16', 1025, 703, 
+  VALUES (96, DATE '2015-09-15', DATE '2015-09-16', 1025, 703, 
    5574);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (97, '2015-09-15', '2015-09-18', 1026, 703, 
+  VALUES (97, DATE '2015-09-15', DATE '2015-09-18', 1026, 703, 
    2584.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (98, '2015-09-15', '2015-09-16', 1009, 706, 
+  VALUES (98, DATE '2015-09-15', DATE '2015-09-16', 1009, 706, 
    4857);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (99, '2015-09-15', '2015-09-18', 1002, 703, 
+  VALUES (99, DATE '2015-09-15', DATE '2015-09-18', 1002, 703, 
    5078);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (100, '2015-09-15', '2015-09-16', 1002, 707, 
+  VALUES (100, DATE '2015-09-15', DATE '2015-09-16', 1002, 707, 
    3844.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (101, '2015-09-15', '2015-09-18', 1023, 707, 
+  VALUES (101, DATE '2015-09-15', DATE '2015-09-18', 1023, 707, 
    1389.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (102, '2015-09-15', '2015-09-17', 1010, 705, 
+  VALUES (102, DATE '2015-09-15', DATE '2015-09-17', 1010, 705, 
    4869.81);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (103, '2015-09-15', '2015-09-16', 1025, 702, 
+  VALUES (103, DATE '2015-09-15', DATE '2015-09-16', 1025, 702, 
    9373.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (104, '2015-09-15', '2015-09-15', 1017, 708, 
+  VALUES (104, DATE '2015-09-15', DATE '2015-09-15', 1017, 708, 
    4699.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (105, '2015-09-16', '2015-09-18', 1005, 704, 
+  VALUES (105, DATE '2015-09-16', DATE '2015-09-18', 1005, 704, 
    9345.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (106, '2015-09-16', '2015-09-20', 1020, 708, 
+  VALUES (106, DATE '2015-09-16', DATE '2015-09-20', 1020, 708, 
    128);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (107, '2015-09-16', '2015-09-20', 1001, 703, 
+  VALUES (107, DATE '2015-09-16', DATE '2015-09-20', 1001, 703, 
    1240.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (108, '2015-09-16', '2015-09-19', 1004, 701, 
+  VALUES (108, DATE '2015-09-16', DATE '2015-09-19', 1004, 701, 
    88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (109, '2015-09-16', '2015-09-16', 1013, 703, 
+  VALUES (109, DATE '2015-09-16', DATE '2015-09-16', 1013, 703, 
    700);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (110, '2015-09-17', '2015-09-19', 1015, 708, 
+  VALUES (110, DATE '2015-09-17', DATE '2015-09-19', 1015, 708, 
    641.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (111, '2015-09-17', '2015-09-21', 1021, 707, 
+  VALUES (111, DATE '2015-09-17', DATE '2015-09-21', 1021, 707, 
    11811.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (112, '2015-09-18', '2015-09-19', 1009, 703, 
+  VALUES (112, DATE '2015-09-18', DATE '2015-09-19', 1009, 703, 
    414);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (113, '2015-09-18', '2015-09-22', 1010, 702, 
+  VALUES (113, DATE '2015-09-18', DATE '2015-09-22', 1010, 702, 
    5744.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (114, '2015-09-18', '2015-09-22', 1011, 706, 
+  VALUES (114, DATE '2015-09-18', DATE '2015-09-22', 1011, 706, 
    353.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (115, '2015-09-19', '2015-09-21', 1003, 704, 
+  VALUES (115, DATE '2015-09-19', DATE '2015-09-21', 1003, 704, 
    799);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (116, '2015-09-19', '2015-09-21', 1004, 701, 
+  VALUES (116, DATE '2015-09-19', DATE '2015-09-21', 1004, 701, 
    4477.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (117, '2015-09-20', '2015-09-22', 1005, 705, 
+  VALUES (117, DATE '2015-09-20', DATE '2015-09-22', 1005, 705, 
    10579);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (118, '2015-09-20', '2015-09-22', 1021, 708, 
+  VALUES (118, DATE '2015-09-20', DATE '2015-09-22', 1021, 708, 
    110.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (119, '2015-09-20', '2015-09-20', 1013, 701, 
+  VALUES (119, DATE '2015-09-20', DATE '2015-09-20', 1013, 701, 
    17607);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (120, '2015-09-20', '2015-09-21', 1024, 702, 
+  VALUES (120, DATE '2015-09-20', DATE '2015-09-21', 1024, 702, 
    3904.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (121, '2015-09-20', '2015-09-21', 1025, 701, 
+  VALUES (121, DATE '2015-09-20', DATE '2015-09-21', 1025, 701, 
    2737.83);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (122, '2015-09-20', '2015-09-24', 1009, 707, 
+  VALUES (122, DATE '2015-09-20', DATE '2015-09-24', 1009, 707, 
    4633.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (123, '2015-09-20', '2015-09-22', 1004, 704, 
+  VALUES (123, DATE '2015-09-20', DATE '2015-09-22', 1004, 704, 
    4134.23);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (124, '2015-09-21', '2015-09-23', 1007, 705, 
+  VALUES (124, DATE '2015-09-21', DATE '2015-09-23', 1007, 705, 
    7094.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (125, '2015-09-21', '2015-09-21', 1011, 707, 
+  VALUES (125, DATE '2015-09-21', DATE '2015-09-21', 1011, 707, 
    3951.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (126, '2015-09-22', '2015-09-24', 1016, 708, 
+  VALUES (126, DATE '2015-09-22', DATE '2015-09-24', 1016, 708, 
    2417.89);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (127, '2015-09-22', '2015-09-25', 1009, 705, 
+  VALUES (127, DATE '2015-09-22', DATE '2015-09-25', 1009, 705, 
    8383.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (128, '2015-09-22', '2015-09-26', 1022, 708, 
+  VALUES (128, DATE '2015-09-22', DATE '2015-09-26', 1022, 708, 
    377.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (129, '2015-09-22', '2015-09-22', 1007, 708, 
+  VALUES (129, DATE '2015-09-22', DATE '2015-09-22', 1007, 708, 
    69);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (130, '2015-09-22', '2015-09-24', 1011, 705, 
+  VALUES (130, DATE '2015-09-22', DATE '2015-09-24', 1011, 705, 
    10388.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (131, '2015-09-22', '2015-09-22', 1014, 706, 
+  VALUES (131, DATE '2015-09-22', DATE '2015-09-22', 1014, 706, 
    7164);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (132, '2015-09-22', '2015-09-25', 1007, 705, 
+  VALUES (132, DATE '2015-09-22', DATE '2015-09-25', 1007, 705, 
    3316.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (133, '2015-09-22', '2015-09-22', 1027, 706, 
+  VALUES (133, DATE '2015-09-22', DATE '2015-09-22', 1027, 706, 
    66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (134, '2015-09-22', '2015-09-24', 1003, 703, 
+  VALUES (134, DATE '2015-09-22', DATE '2015-09-24', 1003, 703, 
    2291.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (135, '2015-09-23', '2015-09-26', 1005, 701, 
+  VALUES (135, DATE '2015-09-23', DATE '2015-09-26', 1005, 701, 
    4404.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (136, '2015-09-23', '2015-09-26', 1008, 707, 
+  VALUES (136, DATE '2015-09-23', DATE '2015-09-26', 1008, 707, 
    11845.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (137, '2015-09-23', '2015-09-23', 1001, 706, 
+  VALUES (137, DATE '2015-09-23', DATE '2015-09-23', 1001, 706, 
    1235.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (138, '2015-09-24', '2015-09-27', 1001, 702, 
+  VALUES (138, DATE '2015-09-24', DATE '2015-09-27', 1001, 702, 
    1122.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (139, '2015-09-24', '2015-09-26', 1024, 704, 
+  VALUES (139, DATE '2015-09-24', DATE '2015-09-26', 1024, 704, 
    128);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (140, '2015-09-24', '2015-09-24', 1002, 706, 
+  VALUES (140, DATE '2015-09-24', DATE '2015-09-24', 1002, 706, 
    16779.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (141, '2015-09-24', '2015-09-27', 1014, 706, 
+  VALUES (141, DATE '2015-09-24', DATE '2015-09-27', 1014, 706, 
    3696.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (142, '2015-09-25', '2015-09-29', 1018, 702, 
+  VALUES (142, DATE '2015-09-25', DATE '2015-09-29', 1018, 702, 
    3624);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (143, '2015-09-25', '2015-09-28', 1021, 706, 
+  VALUES (143, DATE '2015-09-25', DATE '2015-09-28', 1021, 706, 
    180);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (144, '2015-09-25', '2015-09-29', 1018, 704, 
+  VALUES (144, DATE '2015-09-25', DATE '2015-09-29', 1018, 704, 
    7846.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (145, '2015-09-26', '2015-09-30', 1027, 701, 
+  VALUES (145, DATE '2015-09-26', DATE '2015-09-30', 1027, 701, 
    4260);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (146, '2015-09-26', '2015-09-26', 1021, 708, 
+  VALUES (146, DATE '2015-09-26', DATE '2015-09-26', 1021, 708, 
    358);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (147, '2015-09-26', '2015-09-26', 1026, 708, 
+  VALUES (147, DATE '2015-09-26', DATE '2015-09-26', 1026, 708, 
    4178.73);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (148, '2015-09-26', '2015-09-30', 1027, 704, 
+  VALUES (148, DATE '2015-09-26', DATE '2015-09-30', 1027, 704, 
    8742.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (149, '2015-09-27', '2015-09-28', 1004, 707, 
+  VALUES (149, DATE '2015-09-27', DATE '2015-09-28', 1004, 707, 
    5298);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (150, '2015-09-27', '2015-09-27', 1024, 701, 
+  VALUES (150, DATE '2015-09-27', DATE '2015-09-27', 1024, 701, 
    10572.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (151, '2015-09-27', '2015-09-28', 1001, 707, 
+  VALUES (151, DATE '2015-09-27', DATE '2015-09-28', 1001, 707, 
    276);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (152, '2015-09-28', '2015-10-02', 1017, 704, 
+  VALUES (152, DATE '2015-09-28', DATE '2015-10-02', 1017, 704, 
    6067.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (153, '2015-09-29', '2015-09-30', 1003, 702, 
+  VALUES (153, DATE '2015-09-29', DATE '2015-09-30', 1003, 702, 
    1328.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (154, '2015-09-29', '2015-10-02', 1001, 703, 
+  VALUES (154, DATE '2015-09-29', DATE '2015-10-02', 1001, 703, 
    1360.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (155, '2015-09-29', '2015-10-03', 1004, 703, 
+  VALUES (155, DATE '2015-09-29', DATE '2015-10-03', 1004, 703, 
    1044);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (156, '2015-09-29', '2015-09-30', 1004, 703, 
+  VALUES (156, DATE '2015-09-29', DATE '2015-09-30', 1004, 703, 
    9004.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (157, '2015-09-29', '2015-10-01', 1010, 707, 
+  VALUES (157, DATE '2015-09-29', DATE '2015-10-01', 1010, 707, 
    16926.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (158, '2015-09-29', '2015-10-03', 1021, 705, 
+  VALUES (158, DATE '2015-09-29', DATE '2015-10-03', 1021, 705, 
    320.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (159, '2015-09-29', '2015-10-03', 1005, 707, 
+  VALUES (159, DATE '2015-09-29', DATE '2015-10-03', 1005, 707, 
    1104.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (160, '2015-09-30', '2015-09-30', 1021, 706, 
+  VALUES (160, DATE '2015-09-30', DATE '2015-09-30', 1021, 706, 
    11569.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (161, '2015-09-30', '2015-09-30', 1011, 707, 
+  VALUES (161, DATE '2015-09-30', DATE '2015-09-30', 1011, 707, 
    3088);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (162, '2015-09-30', '2015-10-01', 1021, 704, 
+  VALUES (162, DATE '2015-09-30', DATE '2015-10-01', 1021, 704, 
    8024.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (163, '2015-09-30', '2015-09-30', 1004, 707, 
+  VALUES (163, DATE '2015-09-30', DATE '2015-09-30', 1004, 707, 
    8359.59);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (164, '2015-10-01', '2015-10-04', 1021, 707, 
+  VALUES (164, DATE '2015-10-01', DATE '2015-10-04', 1021, 707, 
    7318.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (165, '2015-10-02', '2015-10-02', 1017, 702, 
+  VALUES (165, DATE '2015-10-02', DATE '2015-10-02', 1017, 702, 
    21674.63);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (166, '2015-10-03', '2015-10-06', 1022, 706, 
+  VALUES (166, DATE '2015-10-03', DATE '2015-10-06', 1022, 706, 
    1904.69);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (167, '2015-10-03', '2015-10-03', 1017, 706, 
+  VALUES (167, DATE '2015-10-03', DATE '2015-10-03', 1017, 706, 
    7386.94);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (168, '2015-10-03', '2015-10-05', 1027, 706, 
+  VALUES (168, DATE '2015-10-03', DATE '2015-10-05', 1027, 706, 
    1882.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (169, '2015-10-03', '2015-10-06', 1025, 708, 
+  VALUES (169, DATE '2015-10-03', DATE '2015-10-06', 1025, 708, 
    2181.92);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (170, '2015-10-04', '2015-10-04', 1004, 704, 
+  VALUES (170, DATE '2015-10-04', DATE '2015-10-04', 1004, 704, 
    5309.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (171, '2015-10-04', '2015-10-05', 1026, 707, 
+  VALUES (171, DATE '2015-10-04', DATE '2015-10-05', 1026, 707, 
    664);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (172, '2015-10-04', '2015-10-07', 1018, 704, 
+  VALUES (172, DATE '2015-10-04', DATE '2015-10-07', 1018, 704, 
    5891);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (173, '2015-10-04', '2015-10-04', 1015, 704, 
+  VALUES (173, DATE '2015-10-04', DATE '2015-10-04', 1015, 704, 
    472.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (174, '2015-10-04', '2015-10-08', 1006, 703, 
+  VALUES (174, DATE '2015-10-04', DATE '2015-10-08', 1006, 703, 
    7149);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (175, '2015-10-04', '2015-10-07', 1013, 706, 
+  VALUES (175, DATE '2015-10-04', DATE '2015-10-07', 1013, 706, 
    15909.66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (176, '2015-10-04', '2015-10-04', 1025, 701, 
+  VALUES (176, DATE '2015-10-04', DATE '2015-10-04', 1025, 701, 
    1671.53);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (177, '2015-10-04', '2015-10-08', 1008, 706, 
+  VALUES (177, DATE '2015-10-04', DATE '2015-10-08', 1008, 706, 
    5755);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (178, '2015-10-04', '2015-10-07', 1022, 702, 
+  VALUES (178, DATE '2015-10-04', DATE '2015-10-07', 1022, 702, 
    927.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (179, '2015-10-04', '2015-10-08', 1017, 708, 
+  VALUES (179, DATE '2015-10-04', DATE '2015-10-08', 1017, 708, 
    10745.71);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (180, '2015-10-05', '2015-10-08', 1015, 708, 
+  VALUES (180, DATE '2015-10-05', DATE '2015-10-08', 1015, 708, 
    760);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (181, '2015-10-05', '2015-10-05', 1017, 708, 
+  VALUES (181, DATE '2015-10-05', DATE '2015-10-05', 1017, 708, 
    5759.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (182, '2015-10-05', '2015-10-06', 1002, 702, 
+  VALUES (182, DATE '2015-10-05', DATE '2015-10-06', 1002, 702, 
    11539.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (183, '2015-10-05', '2015-10-05', 1020, 708, 
+  VALUES (183, DATE '2015-10-05', DATE '2015-10-05', 1020, 708, 
    4517.19);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (184, '2015-10-05', '2015-10-09', 1023, 707, 
+  VALUES (184, DATE '2015-10-05', DATE '2015-10-09', 1023, 707, 
    14414.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (185, '2015-10-05', '2015-10-09', 1017, 702, 
+  VALUES (185, DATE '2015-10-05', DATE '2015-10-09', 1017, 702, 
    5938);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (186, '2015-10-05', '2015-10-05', 1002, 704, 
+  VALUES (186, DATE '2015-10-05', DATE '2015-10-05', 1002, 704, 
    321.38);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (187, '2015-10-06', '2015-10-07', 1022, 702, 
+  VALUES (187, DATE '2015-10-06', DATE '2015-10-07', 1022, 702, 
    624.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (188, '2015-10-06', '2015-10-07', 1002, 706, 
+  VALUES (188, DATE '2015-10-06', DATE '2015-10-07', 1002, 706, 
    7362);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (189, '2015-10-06', '2015-10-07', 1012, 702, 
+  VALUES (189, DATE '2015-10-06', DATE '2015-10-07', 1012, 702, 
    808.26);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (190, '2015-10-06', '2015-10-10', 1024, 708, 
+  VALUES (190, DATE '2015-10-06', DATE '2015-10-10', 1024, 708, 
    197.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (191, '2015-10-06', '2015-10-07', 1015, 701, 
+  VALUES (191, DATE '2015-10-06', DATE '2015-10-07', 1015, 701, 
    1552.43);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (192, '2015-10-06', '2015-10-09', 1022, 702, 
+  VALUES (192, DATE '2015-10-06', DATE '2015-10-09', 1022, 702, 
    1245.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (193, '2015-10-06', '2015-10-06', 1025, 708, 
+  VALUES (193, DATE '2015-10-06', DATE '2015-10-06', 1025, 708, 
    6137.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (194, '2015-10-06', '2015-10-08', 1017, 708, 
+  VALUES (194, DATE '2015-10-06', DATE '2015-10-08', 1017, 708, 
    4406.79);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (195, '2015-10-07', '2015-10-10', 1025, 703, 
+  VALUES (195, DATE '2015-10-07', DATE '2015-10-10', 1025, 703, 
    700);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (196, '2015-10-07', '2015-10-11', 1009, 707, 
+  VALUES (196, DATE '2015-10-07', DATE '2015-10-11', 1009, 707, 
    3421.48);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (197, '2015-10-07', '2015-10-10', 1002, 703, 
+  VALUES (197, DATE '2015-10-07', DATE '2015-10-10', 1002, 703, 
    179);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (198, '2015-10-07', '2015-10-09', 1002, 703, 
+  VALUES (198, DATE '2015-10-07', DATE '2015-10-09', 1002, 703, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (199, '2015-10-07', '2015-10-09', 1008, 707, 
+  VALUES (199, DATE '2015-10-07', DATE '2015-10-09', 1008, 707, 
    1002.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (200, '2015-10-07', '2015-10-08', 1026, 706, 
+  VALUES (200, DATE '2015-10-07', DATE '2015-10-08', 1026, 706, 
    7551.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (201, '2015-10-07', '2015-10-08', 1018, 701, 
+  VALUES (201, DATE '2015-10-07', DATE '2015-10-08', 1018, 701, 
    43.38);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (202, '2015-10-07', '2015-10-09', 1020, 705, 
+  VALUES (202, DATE '2015-10-07', DATE '2015-10-09', 1020, 705, 
    525);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (203, '2015-10-08', '2015-10-08', 1023, 708, 
+  VALUES (203, DATE '2015-10-08', DATE '2015-10-08', 1023, 708, 
    6057.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (204, '2015-10-08', '2015-10-08', 1026, 701, 
+  VALUES (204, DATE '2015-10-08', DATE '2015-10-08', 1026, 701, 
    334.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (205, '2015-10-08', '2015-10-12', 1006, 706, 
+  VALUES (205, DATE '2015-10-08', DATE '2015-10-12', 1006, 706, 
    17794.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (206, '2015-10-08', '2015-10-12', 1021, 704, 
+  VALUES (206, DATE '2015-10-08', DATE '2015-10-12', 1021, 704, 
    4247.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (207, '2015-10-08', '2015-10-10', 1015, 704, 
+  VALUES (207, DATE '2015-10-08', DATE '2015-10-10', 1015, 704, 
    647.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (208, '2015-10-09', '2015-10-11', 1019, 704, 
+  VALUES (208, DATE '2015-10-09', DATE '2015-10-11', 1019, 704, 
    1828.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (209, '2015-10-10', '2015-10-11', 1002, 703, 
+  VALUES (209, DATE '2015-10-10', DATE '2015-10-11', 1002, 703, 
    289);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (210, '2015-10-10', '2015-10-12', 1024, 701, 
+  VALUES (210, DATE '2015-10-10', DATE '2015-10-12', 1024, 701, 
    12508.28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (211, '2015-10-10', '2015-10-13', 1014, 701, 
+  VALUES (211, DATE '2015-10-10', DATE '2015-10-13', 1014, 701, 
    3079.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (212, '2015-10-10', '2015-10-11', 1007, 704, 
+  VALUES (212, DATE '2015-10-10', DATE '2015-10-11', 1007, 704, 
    150);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (213, '2015-10-11', '2015-10-12', 1001, 707, 
+  VALUES (213, DATE '2015-10-11', DATE '2015-10-12', 1001, 707, 
    492.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (214, '2015-10-11', '2015-10-11', 1021, 703, 
+  VALUES (214, DATE '2015-10-11', DATE '2015-10-11', 1021, 703, 
    1470.32);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (215, '2015-10-11', '2015-10-11', 1002, 708, 
+  VALUES (215, DATE '2015-10-11', DATE '2015-10-11', 1002, 708, 
    6297.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (216, '2015-10-11', '2015-10-11', 1016, 707, 
+  VALUES (216, DATE '2015-10-11', DATE '2015-10-11', 1016, 707, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (217, '2015-10-12', '2015-10-14', 1020, 703, 
+  VALUES (217, DATE '2015-10-12', DATE '2015-10-14', 1020, 703, 
    9687);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (218, '2015-10-12', '2015-10-15', 1014, 707, 
+  VALUES (218, DATE '2015-10-12', DATE '2015-10-15', 1014, 707, 
    7183.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (219, '2015-10-12', '2015-10-13', 1018, 706, 
+  VALUES (219, DATE '2015-10-12', DATE '2015-10-13', 1018, 706, 
    3300.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (220, '2015-10-12', '2015-10-14', 1014, 705, 
+  VALUES (220, DATE '2015-10-12', DATE '2015-10-14', 1014, 705, 
    14137.66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (221, '2015-10-12', '2015-10-14', 1008, 705, 
+  VALUES (221, DATE '2015-10-12', DATE '2015-10-14', 1008, 705, 
    2633.21);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (222, '2015-10-12', '2015-10-16', 1007, 703, 
+  VALUES (222, DATE '2015-10-12', DATE '2015-10-16', 1007, 703, 
    8749.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (223, '2015-10-12', '2015-10-15', 1025, 708, 
+  VALUES (223, DATE '2015-10-12', DATE '2015-10-15', 1025, 708, 
    17005);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (224, '2015-10-12', '2015-10-15', 1011, 705, 
+  VALUES (224, DATE '2015-10-12', DATE '2015-10-15', 1011, 705, 
    6775.06);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (225, '2015-10-13', '2015-10-13', 1017, 704, 
+  VALUES (225, DATE '2015-10-13', DATE '2015-10-13', 1017, 704, 
    5140.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (226, '2015-10-13', '2015-10-15', 1023, 705, 
+  VALUES (226, DATE '2015-10-13', DATE '2015-10-15', 1023, 705, 
    510);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (227, '2015-10-14', '2015-10-17', 1006, 704, 
+  VALUES (227, DATE '2015-10-14', DATE '2015-10-17', 1006, 704, 
    11126.18);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (228, '2015-10-15', '2015-10-15', 1017, 701, 
+  VALUES (228, DATE '2015-10-15', DATE '2015-10-15', 1017, 701, 
    45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (229, '2015-10-15', '2015-10-18', 1024, 707, 
+  VALUES (229, DATE '2015-10-15', DATE '2015-10-18', 1024, 707, 
    3686);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (230, '2015-10-15', '2015-10-19', 1008, 708, 
+  VALUES (230, DATE '2015-10-15', DATE '2015-10-19', 1008, 708, 
    727.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (231, '2015-10-15', '2015-10-17', 1016, 706, 
+  VALUES (231, DATE '2015-10-15', DATE '2015-10-17', 1016, 706, 
    1544.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (232, '2015-10-15', '2015-10-16', 1017, 703, 
+  VALUES (232, DATE '2015-10-15', DATE '2015-10-16', 1017, 703, 
    1676.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (233, '2015-10-16', '2015-10-18', 1014, 708, 
+  VALUES (233, DATE '2015-10-16', DATE '2015-10-18', 1014, 708, 
    4001.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (234, '2015-10-16', '2015-10-19', 1010, 702, 
+  VALUES (234, DATE '2015-10-16', DATE '2015-10-19', 1010, 702, 
    402);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (235, '2015-10-16', '2015-10-19', 1015, 705, 
+  VALUES (235, DATE '2015-10-16', DATE '2015-10-19', 1015, 705, 
    657);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (236, '2015-10-17', '2015-10-19', 1021, 704, 
+  VALUES (236, DATE '2015-10-17', DATE '2015-10-19', 1021, 704, 
    1678.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (237, '2015-10-17', '2015-10-19', 1027, 702, 
+  VALUES (237, DATE '2015-10-17', DATE '2015-10-19', 1027, 702, 
    4732.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (238, '2015-10-17', '2015-10-20', 1005, 705, 
+  VALUES (238, DATE '2015-10-17', DATE '2015-10-20', 1005, 705, 
    4654.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (239, '2015-10-17', '2015-10-18', 1012, 703, 
+  VALUES (239, DATE '2015-10-17', DATE '2015-10-18', 1012, 703, 
    11239.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (240, '2015-10-18', '2015-10-18', 1022, 701, 
+  VALUES (240, DATE '2015-10-18', DATE '2015-10-18', 1022, 701, 
    1151.16);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (241, '2015-10-18', '2015-10-18', 1008, 705, 
+  VALUES (241, DATE '2015-10-18', DATE '2015-10-18', 1008, 705, 
    915.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (242, '2015-10-18', '2015-10-20', 1010, 705, 
+  VALUES (242, DATE '2015-10-18', DATE '2015-10-20', 1010, 705, 
    10778.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (243, '2015-10-18', '2015-10-21', 1020, 708, 
+  VALUES (243, DATE '2015-10-18', DATE '2015-10-21', 1020, 708, 
    6729);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (244, '2015-10-18', '2015-10-21', 1014, 708, 
+  VALUES (244, DATE '2015-10-18', DATE '2015-10-21', 1014, 708, 
    9603);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (245, '2015-10-18', '2015-10-19', 1015, 704, 
+  VALUES (245, DATE '2015-10-18', DATE '2015-10-19', 1015, 704, 
    1639.77);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (246, '2015-10-19', '2015-10-22', 1004, 703, 
+  VALUES (246, DATE '2015-10-19', DATE '2015-10-22', 1004, 703, 
    6480.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (247, '2015-10-19', '2015-10-22', 1005, 702, 
+  VALUES (247, DATE '2015-10-19', DATE '2015-10-22', 1005, 702, 
    3010.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (248, '2015-10-19', '2015-10-20', 1021, 705, 
+  VALUES (248, DATE '2015-10-19', DATE '2015-10-20', 1021, 705, 
    5978);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (249, '2015-10-19', '2015-10-22', 1016, 703, 
+  VALUES (249, DATE '2015-10-19', DATE '2015-10-22', 1016, 703, 
    7313.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (250, '2015-10-19', '2015-10-21', 1023, 707, 
+  VALUES (250, DATE '2015-10-19', DATE '2015-10-21', 1023, 707, 
    1867.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (251, '2015-10-19', '2015-10-22', 1005, 705, 
+  VALUES (251, DATE '2015-10-19', DATE '2015-10-22', 1005, 705, 
    10205.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (252, '2015-10-19', '2015-10-20', 1010, 702, 
+  VALUES (252, DATE '2015-10-19', DATE '2015-10-20', 1010, 702, 
    4853.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (253, '2015-10-20', '2015-10-20', 1024, 706, 
+  VALUES (253, DATE '2015-10-20', DATE '2015-10-20', 1024, 706, 
    7032);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (254, '2015-10-21', '2015-10-25', 1002, 703, 
+  VALUES (254, DATE '2015-10-21', DATE '2015-10-25', 1002, 703, 
    1493.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (255, '2015-10-21', '2015-10-21', 1008, 707, 
+  VALUES (255, DATE '2015-10-21', DATE '2015-10-21', 1008, 707, 
    28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (256, '2015-10-21', '2015-10-21', 1016, 705, 
+  VALUES (256, DATE '2015-10-21', DATE '2015-10-21', 1016, 705, 
    18384.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (257, '2015-10-21', '2015-10-21', 1007, 708, 
+  VALUES (257, DATE '2015-10-21', DATE '2015-10-21', 1007, 708, 
    8275.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (258, '2015-10-22', '2015-10-22', 1016, 705, 
+  VALUES (258, DATE '2015-10-22', DATE '2015-10-22', 1016, 705, 
    12279.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (259, '2015-10-22', '2015-10-22', 1009, 702, 
+  VALUES (259, DATE '2015-10-22', DATE '2015-10-22', 1009, 702, 
    960.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (260, '2015-10-22', '2015-10-22', 1006, 701, 
+  VALUES (260, DATE '2015-10-22', DATE '2015-10-22', 1006, 701, 
    4716.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (261, '2015-10-22', '2015-10-26', 1020, 708, 
+  VALUES (261, DATE '2015-10-22', DATE '2015-10-26', 1020, 708, 
    1291.99);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (262, '2015-10-22', '2015-10-24', 1020, 707, 
+  VALUES (262, DATE '2015-10-22', DATE '2015-10-24', 1020, 707, 
    162.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (263, '2015-10-22', '2015-10-25', 1011, 705, 
+  VALUES (263, DATE '2015-10-22', DATE '2015-10-25', 1011, 705, 
    15781.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (264, '2015-10-22', '2015-10-22', 1002, 702, 
+  VALUES (264, DATE '2015-10-22', DATE '2015-10-22', 1002, 702, 
    266.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (265, '2015-10-22', '2015-10-25', 1014, 702, 
+  VALUES (265, DATE '2015-10-22', DATE '2015-10-25', 1014, 702, 
    8652.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (266, '2015-10-22', '2015-10-26', 1021, 708, 
+  VALUES (266, DATE '2015-10-22', DATE '2015-10-26', 1021, 708, 
    7814);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (267, '2015-10-22', '2015-10-23', 1004, 706, 
+  VALUES (267, DATE '2015-10-22', DATE '2015-10-23', 1004, 706, 
    4376);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (268, '2015-10-23', '2015-10-24', 1021, 704, 
+  VALUES (268, DATE '2015-10-23', DATE '2015-10-24', 1021, 704, 
    15715.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (269, '2015-10-23', '2015-10-24', 1016, 706, 
+  VALUES (269, DATE '2015-10-23', DATE '2015-10-24', 1016, 706, 
    4243.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (270, '2015-10-23', '2015-10-26', 1007, 703, 
+  VALUES (270, DATE '2015-10-23', DATE '2015-10-26', 1007, 703, 
    1406.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (271, '2015-10-24', '2015-10-24', 1010, 702, 
+  VALUES (271, DATE '2015-10-24', DATE '2015-10-24', 1010, 702, 
    3021);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (272, '2015-10-24', '2015-10-26', 1005, 701, 
+  VALUES (272, DATE '2015-10-24', DATE '2015-10-26', 1005, 701, 
    8306.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (273, '2015-10-24', '2015-10-24', 1024, 704, 
+  VALUES (273, DATE '2015-10-24', DATE '2015-10-24', 1024, 704, 
    5811.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (274, '2015-10-24', '2015-10-26', 1004, 703, 
+  VALUES (274, DATE '2015-10-24', DATE '2015-10-26', 1004, 703, 
    537);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (275, '2015-10-24', '2015-10-28', 1009, 701, 
+  VALUES (275, DATE '2015-10-24', DATE '2015-10-28', 1009, 701, 
    14.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (276, '2015-10-24', '2015-10-24', 1018, 702, 
+  VALUES (276, DATE '2015-10-24', DATE '2015-10-24', 1018, 702, 
    14804);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (277, '2015-10-24', '2015-10-24', 1012, 701, 
+  VALUES (277, DATE '2015-10-24', DATE '2015-10-24', 1012, 701, 
    333.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (278, '2015-10-24', '2015-10-25', 1024, 707, 
+  VALUES (278, DATE '2015-10-24', DATE '2015-10-25', 1024, 707, 
    2506.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (279, '2015-10-25', '2015-10-29', 1017, 706, 
+  VALUES (279, DATE '2015-10-25', DATE '2015-10-29', 1017, 706, 
    8635.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (280, '2015-10-25', '2015-10-27', 1016, 702, 
+  VALUES (280, DATE '2015-10-25', DATE '2015-10-27', 1016, 702, 
    6127.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (281, '2015-10-25', '2015-10-27', 1006, 708, 
+  VALUES (281, DATE '2015-10-25', DATE '2015-10-27', 1006, 708, 
    13621.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (282, '2015-10-26', '2015-10-28', 1005, 702, 
+  VALUES (282, DATE '2015-10-26', DATE '2015-10-28', 1005, 702, 
    3142.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (283, '2015-10-26', '2015-10-27', 1015, 702, 
+  VALUES (283, DATE '2015-10-26', DATE '2015-10-27', 1015, 702, 
    895.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (284, '2015-10-26', '2015-10-30', 1016, 701, 
+  VALUES (284, DATE '2015-10-26', DATE '2015-10-30', 1016, 701, 
    13837.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (285, '2015-10-26', '2015-10-27', 1024, 705, 
+  VALUES (285, DATE '2015-10-26', DATE '2015-10-27', 1024, 705, 
    1836);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (286, '2015-10-26', '2015-10-27', 1019, 705, 
+  VALUES (286, DATE '2015-10-26', DATE '2015-10-27', 1019, 705, 
    5956);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (287, '2015-10-26', '2015-10-29', 1018, 708, 
+  VALUES (287, DATE '2015-10-26', DATE '2015-10-29', 1018, 708, 
    197.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (288, '2015-10-26', '2015-10-30', 1027, 704, 
+  VALUES (288, DATE '2015-10-26', DATE '2015-10-30', 1027, 704, 
    383.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (289, '2015-10-27', '2015-10-31', 1002, 708, 
+  VALUES (289, DATE '2015-10-27', DATE '2015-10-31', 1002, 708, 
    1123.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (290, '2015-10-28', '2015-10-28', 1018, 706, 
+  VALUES (290, DATE '2015-10-28', DATE '2015-10-28', 1018, 706, 
    2625);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (291, '2015-10-28', '2015-11-01', 1025, 705, 
+  VALUES (291, DATE '2015-10-28', DATE '2015-11-01', 1025, 705, 
    5341.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (292, '2015-10-28', '2015-10-28', 1013, 708, 
+  VALUES (292, DATE '2015-10-28', DATE '2015-10-28', 1013, 708, 
    2858.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (293, '2015-10-28', '2015-10-29', 1025, 706, 
+  VALUES (293, DATE '2015-10-28', DATE '2015-10-29', 1025, 706, 
    4787.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (294, '2015-10-29', '2015-10-30', 1017, 706, 
+  VALUES (294, DATE '2015-10-29', DATE '2015-10-30', 1017, 706, 
    5338.79);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (295, '2015-10-29', '2015-10-29', 1012, 701, 
+  VALUES (295, DATE '2015-10-29', DATE '2015-10-29', 1012, 701, 
    6983.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (296, '2015-10-29', '2015-10-29', 1014, 707, 
+  VALUES (296, DATE '2015-10-29', DATE '2015-10-29', 1014, 707, 
    2454);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (297, '2015-10-29', '2015-11-01', 1008, 701, 
+  VALUES (297, DATE '2015-10-29', DATE '2015-11-01', 1008, 701, 
    1876.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (298, '2015-10-29', '2015-11-01', 1005, 701, 
+  VALUES (298, DATE '2015-10-29', DATE '2015-11-01', 1005, 701, 
    7484);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (299, '2015-10-30', '2015-11-03', 1021, 704, 
+  VALUES (299, DATE '2015-10-30', DATE '2015-11-03', 1021, 704, 
    402.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (300, '2015-10-30', '2015-10-30', 1011, 706, 
+  VALUES (300, DATE '2015-10-30', DATE '2015-10-30', 1011, 706, 
    15969.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (301, '2015-10-30', '2015-11-03', 1025, 704, 
+  VALUES (301, DATE '2015-10-30', DATE '2015-11-03', 1025, 704, 
    3798.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (302, '2015-10-30', '2015-11-01', 1007, 702, 
+  VALUES (302, DATE '2015-10-30', DATE '2015-11-01', 1007, 702, 
    5880.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (303, '2015-10-31', '2015-11-03', 1011, 705, 
+  VALUES (303, DATE '2015-10-31', DATE '2015-11-03', 1011, 705, 
    2105.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (304, '2015-10-31', '2015-11-04', 1015, 701, 
+  VALUES (304, DATE '2015-10-31', DATE '2015-11-04', 1015, 701, 
    923.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (305, '2015-10-31', '2015-11-04', 1013, 708, 
+  VALUES (305, DATE '2015-10-31', DATE '2015-11-04', 1013, 708, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (306, '2015-10-31', '2015-11-02', 1026, 701, 
+  VALUES (306, DATE '2015-10-31', DATE '2015-11-02', 1026, 701, 
    4940.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (307, '2015-10-31', '2015-11-01', 1013, 704, 
+  VALUES (307, DATE '2015-10-31', DATE '2015-11-01', 1013, 704, 
    5785);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (308, '2015-10-31', '2015-11-01', 1002, 701, 
+  VALUES (308, DATE '2015-10-31', DATE '2015-11-01', 1002, 701, 
    5441.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (309, '2015-10-31', '2015-11-03', 1020, 707, 
+  VALUES (309, DATE '2015-10-31', DATE '2015-11-03', 1020, 707, 
    1295.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (310, '2015-10-31', '2015-11-02', 1025, 703, 
+  VALUES (310, DATE '2015-10-31', DATE '2015-11-02', 1025, 703, 
    13709.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (311, '2015-11-01', '2015-11-03', 1003, 708, 
+  VALUES (311, DATE '2015-11-01', DATE '2015-11-03', 1003, 708, 
    1072.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (312, '2015-11-01', '2015-11-01', 1003, 707, 
+  VALUES (312, DATE '2015-11-01', DATE '2015-11-01', 1003, 707, 
    1019.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (313, '2015-11-01', '2015-11-01', 1024, 701, 
+  VALUES (313, DATE '2015-11-01', DATE '2015-11-01', 1024, 701, 
    6112.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (314, '2015-11-01', '2015-11-03', 1007, 706, 
+  VALUES (314, DATE '2015-11-01', DATE '2015-11-03', 1007, 706, 
    432.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (315, '2015-11-01', '2015-11-05', 1024, 702, 
+  VALUES (315, DATE '2015-11-01', DATE '2015-11-05', 1024, 702, 
    8799.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (316, '2015-11-01', '2015-11-05', 1018, 705, 
+  VALUES (316, DATE '2015-11-01', DATE '2015-11-05', 1018, 705, 
    966.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (317, '2015-11-01', '2015-11-01', 1012, 703, 
+  VALUES (317, DATE '2015-11-01', DATE '2015-11-01', 1012, 703, 
    4141.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (318, '2015-11-01', '2015-11-02', 1024, 703, 
+  VALUES (318, DATE '2015-11-01', DATE '2015-11-02', 1024, 703, 
    3695.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (319, '2015-11-02', '2015-11-03', 1005, 701, 
+  VALUES (319, DATE '2015-11-02', DATE '2015-11-03', 1005, 701, 
    3064);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (320, '2015-11-02', '2015-11-06', 1001, 707, 
+  VALUES (320, DATE '2015-11-02', DATE '2015-11-06', 1001, 707, 
    220);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (321, '2015-11-02', '2015-11-04', 1011, 701, 
+  VALUES (321, DATE '2015-11-02', DATE '2015-11-04', 1011, 701, 
    6824.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (322, '2015-11-02', '2015-11-03', 1001, 701, 
+  VALUES (322, DATE '2015-11-02', DATE '2015-11-03', 1001, 701, 
    660);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (323, '2015-11-02', '2015-11-04', 1011, 706, 
+  VALUES (323, DATE '2015-11-02', DATE '2015-11-04', 1011, 706, 
    5577.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (324, '2015-11-02', '2015-11-03', 1016, 704, 
+  VALUES (324, DATE '2015-11-02', DATE '2015-11-03', 1016, 704, 
    50);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (325, '2015-11-02', '2015-11-03', 1002, 706, 
+  VALUES (325, DATE '2015-11-02', DATE '2015-11-03', 1002, 706, 
    6780.39);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (326, '2015-11-02', '2015-11-06', 1024, 704, 
+  VALUES (326, DATE '2015-11-02', DATE '2015-11-06', 1024, 704, 
    242.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (327, '2015-11-02', '2015-11-02', 1012, 703, 
+  VALUES (327, DATE '2015-11-02', DATE '2015-11-02', 1012, 703, 
    2942.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (328, '2015-11-02', '2015-11-05', 1009, 702, 
+  VALUES (328, DATE '2015-11-02', DATE '2015-11-05', 1009, 702, 
    960.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (329, '2015-11-03', '2015-11-05', 1004, 708, 
+  VALUES (329, DATE '2015-11-03', DATE '2015-11-05', 1004, 708, 
    11384.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (330, '2015-11-03', '2015-11-06', 1021, 708, 
+  VALUES (330, DATE '2015-11-03', DATE '2015-11-06', 1021, 708, 
    949.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (331, '2015-11-03', '2015-11-05', 1018, 702, 
+  VALUES (331, DATE '2015-11-03', DATE '2015-11-05', 1018, 702, 
    12105.31);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (332, '2015-11-04', '2015-11-04', 1006, 704, 
+  VALUES (332, DATE '2015-11-04', DATE '2015-11-04', 1006, 704, 
    4831);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (333, '2015-11-04', '2015-11-06', 1003, 708, 
+  VALUES (333, DATE '2015-11-04', DATE '2015-11-06', 1003, 708, 
    1854.66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (334, '2015-11-04', '2015-11-08', 1009, 707, 
+  VALUES (334, DATE '2015-11-04', DATE '2015-11-08', 1009, 707, 
    4173.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (335, '2015-11-04', '2015-11-05', 1020, 703, 
+  VALUES (335, DATE '2015-11-04', DATE '2015-11-05', 1020, 703, 
    13055.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (336, '2015-11-05', '2015-11-06', 1020, 703, 
+  VALUES (336, DATE '2015-11-05', DATE '2015-11-06', 1020, 703, 
    15047.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (337, '2015-11-05', '2015-11-06', 1011, 706, 
+  VALUES (337, DATE '2015-11-05', DATE '2015-11-06', 1011, 706, 
    3142.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (338, '2015-11-05', '2015-11-05', 1009, 708, 
+  VALUES (338, DATE '2015-11-05', DATE '2015-11-05', 1009, 708, 
    8173.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (339, '2015-11-05', '2015-11-09', 1005, 705, 
+  VALUES (339, DATE '2015-11-05', DATE '2015-11-09', 1005, 705, 
    14842.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (340, '2015-11-05', '2015-11-09', 1026, 707, 
+  VALUES (340, DATE '2015-11-05', DATE '2015-11-09', 1026, 707, 
    4020.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (341, '2015-11-06', '2015-11-07', 1022, 704, 
+  VALUES (341, DATE '2015-11-06', DATE '2015-11-07', 1022, 704, 
    81);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (342, '2015-11-07', '2015-11-09', 1013, 702, 
+  VALUES (342, DATE '2015-11-07', DATE '2015-11-09', 1013, 702, 
    4589.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (343, '2015-11-07', '2015-11-10', 1025, 708, 
+  VALUES (343, DATE '2015-11-07', DATE '2015-11-10', 1025, 708, 
    8323.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (344, '2015-11-07', '2015-11-11', 1005, 702, 
+  VALUES (344, DATE '2015-11-07', DATE '2015-11-11', 1005, 702, 
    7060.28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (345, '2015-11-07', '2015-11-10', 1008, 701, 
+  VALUES (345, DATE '2015-11-07', DATE '2015-11-10', 1008, 701, 
    5809);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (346, '2015-11-07', '2015-11-11', 1001, 702, 
+  VALUES (346, DATE '2015-11-07', DATE '2015-11-11', 1001, 702, 
    1253.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (347, '2015-11-08', '2015-11-08', 1020, 705, 
+  VALUES (347, DATE '2015-11-08', DATE '2015-11-08', 1020, 705, 
    7254);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (348, '2015-11-08', '2015-11-10', 1015, 703, 
+  VALUES (348, DATE '2015-11-08', DATE '2015-11-10', 1015, 703, 
    1724.07);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (349, '2015-11-08', '2015-11-09', 1001, 703, 
+  VALUES (349, DATE '2015-11-08', DATE '2015-11-09', 1001, 703, 
    725.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (350, '2015-11-08', '2015-11-10', 1019, 703, 
+  VALUES (350, DATE '2015-11-08', DATE '2015-11-10', 1019, 703, 
    3079.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (351, '2015-11-09', '2015-11-13', 1012, 704, 
+  VALUES (351, DATE '2015-11-09', DATE '2015-11-13', 1012, 704, 
    8363.06);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (352, '2015-11-09', '2015-11-10', 1020, 706, 
+  VALUES (352, DATE '2015-11-09', DATE '2015-11-10', 1020, 706, 
    523.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (353, '2015-11-09', '2015-11-13', 1026, 704, 
+  VALUES (353, DATE '2015-11-09', DATE '2015-11-13', 1026, 704, 
    16167.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (354, '2015-11-10', '2015-11-11', 1021, 706, 
+  VALUES (354, DATE '2015-11-10', DATE '2015-11-11', 1021, 706, 
    5003.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (355, '2015-11-10', '2015-11-11', 1014, 702, 
+  VALUES (355, DATE '2015-11-10', DATE '2015-11-11', 1014, 702, 
    7710);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (356, '2015-11-10', '2015-11-14', 1018, 702, 
+  VALUES (356, DATE '2015-11-10', DATE '2015-11-14', 1018, 702, 
    2189);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (357, '2015-11-10', '2015-11-12', 1003, 705, 
+  VALUES (357, DATE '2015-11-10', DATE '2015-11-12', 1003, 705, 
    1350.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (358, '2015-11-10', '2015-11-14', 1012, 701, 
+  VALUES (358, DATE '2015-11-10', DATE '2015-11-14', 1012, 701, 
    11468.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (359, '2015-11-11', '2015-11-12', 1024, 707, 
+  VALUES (359, DATE '2015-11-11', DATE '2015-11-12', 1024, 707, 
    17772.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (360, '2015-11-11', '2015-11-13', 1013, 707, 
+  VALUES (360, DATE '2015-11-11', DATE '2015-11-13', 1013, 707, 
    17692.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (361, '2015-11-11', '2015-11-12', 1016, 706, 
+  VALUES (361, DATE '2015-11-11', DATE '2015-11-12', 1016, 706, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (362, '2015-11-11', '2015-11-12', 1012, 701, 
+  VALUES (362, DATE '2015-11-11', DATE '2015-11-12', 1012, 701, 
    16241.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (363, '2015-11-11', '2015-11-12', 1010, 706, 
+  VALUES (363, DATE '2015-11-11', DATE '2015-11-12', 1010, 706, 
    11173.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (364, '2015-11-11', '2015-11-14', 1010, 705, 
+  VALUES (364, DATE '2015-11-11', DATE '2015-11-14', 1010, 705, 
    571);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (365, '2015-11-11', '2015-11-12', 1011, 705, 
+  VALUES (365, DATE '2015-11-11', DATE '2015-11-12', 1011, 705, 
    267.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (366, '2015-11-11', '2015-11-12', 1004, 708, 
+  VALUES (366, DATE '2015-11-11', DATE '2015-11-12', 1004, 708, 
    9126.31);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (367, '2015-11-11', '2015-11-11', 1011, 703, 
+  VALUES (367, DATE '2015-11-11', DATE '2015-11-11', 1011, 703, 
    13222.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (368, '2015-11-12', '2015-11-13', 1017, 708, 
+  VALUES (368, DATE '2015-11-12', DATE '2015-11-13', 1017, 708, 
    5277.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (369, '2015-11-12', '2015-11-13', 1003, 707, 
+  VALUES (369, DATE '2015-11-12', DATE '2015-11-13', 1003, 707, 
    108);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (370, '2015-11-12', '2015-11-12', 1025, 708, 
+  VALUES (370, DATE '2015-11-12', DATE '2015-11-12', 1025, 708, 
    2951.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (371, '2015-11-12', '2015-11-15', 1009, 701, 
+  VALUES (371, DATE '2015-11-12', DATE '2015-11-15', 1009, 701, 
    816.74);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (372, '2015-11-12', '2015-11-14', 1025, 707, 
+  VALUES (372, DATE '2015-11-12', DATE '2015-11-14', 1025, 707, 
    9125.21);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (373, '2015-11-12', '2015-11-15', 1014, 701, 
+  VALUES (373, DATE '2015-11-12', DATE '2015-11-15', 1014, 701, 
    9835.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (374, '2015-11-12', '2015-11-12', 1005, 701, 
+  VALUES (374, DATE '2015-11-12', DATE '2015-11-12', 1005, 701, 
    6428.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (375, '2015-11-13', '2015-11-15', 1004, 704, 
+  VALUES (375, DATE '2015-11-13', DATE '2015-11-15', 1004, 704, 
    4392.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (376, '2015-11-13', '2015-11-13', 1015, 704, 
+  VALUES (376, DATE '2015-11-13', DATE '2015-11-13', 1015, 704, 
    1715.49);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (377, '2015-11-13', '2015-11-17', 1019, 705, 
+  VALUES (377, DATE '2015-11-13', DATE '2015-11-17', 1019, 705, 
    2227.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (378, '2015-11-13', '2015-11-14', 1014, 707, 
+  VALUES (378, DATE '2015-11-13', DATE '2015-11-14', 1014, 707, 
    8562.73);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (379, '2015-11-13', '2015-11-17', 1025, 706, 
+  VALUES (379, DATE '2015-11-13', DATE '2015-11-17', 1025, 706, 
    11509.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (380, '2015-11-13', '2015-11-16', 1023, 704, 
+  VALUES (380, DATE '2015-11-13', DATE '2015-11-16', 1023, 704, 
    207);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (381, '2015-11-14', '2015-11-16', 1012, 701, 
+  VALUES (381, DATE '2015-11-14', DATE '2015-11-16', 1012, 701, 
    5449.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (382, '2015-11-15', '2015-11-15', 1017, 705, 
+  VALUES (382, DATE '2015-11-15', DATE '2015-11-15', 1017, 705, 
    559.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (383, '2015-11-16', '2015-11-19', 1017, 702, 
+  VALUES (383, DATE '2015-11-16', DATE '2015-11-19', 1017, 702, 
    12039.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (384, '2015-11-16', '2015-11-16', 1021, 708, 
+  VALUES (384, DATE '2015-11-16', DATE '2015-11-16', 1021, 708, 
    3248.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (385, '2015-11-17', '2015-11-20', 1019, 701, 
+  VALUES (385, DATE '2015-11-17', DATE '2015-11-20', 1019, 701, 
    13850.94);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (386, '2015-11-17', '2015-11-17', 1021, 705, 
+  VALUES (386, DATE '2015-11-17', DATE '2015-11-17', 1021, 705, 
    8210.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (387, '2015-11-17', '2015-11-21', 1010, 708, 
+  VALUES (387, DATE '2015-11-17', DATE '2015-11-21', 1010, 708, 
    16587.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (388, '2015-11-17', '2015-11-21', 1008, 705, 
+  VALUES (388, DATE '2015-11-17', DATE '2015-11-21', 1008, 705, 
    4654.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (389, '2015-11-17', '2015-11-20', 1005, 706, 
+  VALUES (389, DATE '2015-11-17', DATE '2015-11-20', 1005, 706, 
    1447.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (390, '2015-11-17', '2015-11-20', 1016, 708, 
+  VALUES (390, DATE '2015-11-17', DATE '2015-11-20', 1016, 708, 
    13641.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (391, '2015-11-17', '2015-11-17', 1024, 702, 
+  VALUES (391, DATE '2015-11-17', DATE '2015-11-17', 1024, 702, 
    5478.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (392, '2015-11-17', '2015-11-21', 1006, 708, 
+  VALUES (392, DATE '2015-11-17', DATE '2015-11-21', 1006, 708, 
    9156.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (393, '2015-11-18', '2015-11-20', 1011, 704, 
+  VALUES (393, DATE '2015-11-18', DATE '2015-11-20', 1011, 704, 
    3687);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (394, '2015-11-18', '2015-11-21', 1001, 702, 
+  VALUES (394, DATE '2015-11-18', DATE '2015-11-21', 1001, 702, 
    130.97);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (395, '2015-11-19', '2015-11-23', 1014, 703, 
+  VALUES (395, DATE '2015-11-19', DATE '2015-11-23', 1014, 703, 
    3079.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (396, '2015-11-19', '2015-11-20', 1019, 706, 
+  VALUES (396, DATE '2015-11-19', DATE '2015-11-20', 1019, 706, 
    495.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (397, '2015-11-19', '2015-11-19', 1020, 701, 
+  VALUES (397, DATE '2015-11-19', DATE '2015-11-19', 1020, 701, 
    500);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (398, '2015-11-20', '2015-11-22', 1004, 708, 
+  VALUES (398, DATE '2015-11-20', DATE '2015-11-22', 1004, 708, 
    14283);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (399, '2015-11-20', '2015-11-23', 1007, 704, 
+  VALUES (399, DATE '2015-11-20', DATE '2015-11-23', 1007, 704, 
    18260.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (400, '2015-11-20', '2015-11-24', 1026, 705, 
+  VALUES (400, DATE '2015-11-20', DATE '2015-11-24', 1026, 705, 
    7251.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (401, '2015-11-20', '2015-11-21', 1003, 702, 
+  VALUES (401, DATE '2015-11-20', DATE '2015-11-21', 1003, 702, 
    1014.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (402, '2015-11-20', '2015-11-22', 1017, 704, 
+  VALUES (402, DATE '2015-11-20', DATE '2015-11-22', 1017, 704, 
    2779);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (403, '2015-11-20', '2015-11-20', 1006, 702, 
+  VALUES (403, DATE '2015-11-20', DATE '2015-11-20', 1006, 702, 
    19676.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (404, '2015-11-20', '2015-11-21', 1019, 708, 
+  VALUES (404, DATE '2015-11-20', DATE '2015-11-21', 1019, 708, 
    8730);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (405, '2015-11-20', '2015-11-23', 1023, 702, 
+  VALUES (405, DATE '2015-11-20', DATE '2015-11-23', 1023, 702, 
    6988.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (406, '2015-11-21', '2015-11-25', 1012, 706, 
+  VALUES (406, DATE '2015-11-21', DATE '2015-11-25', 1012, 706, 
    7209.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (407, '2015-11-22', '2015-11-25', 1001, 701, 
+  VALUES (407, DATE '2015-11-22', DATE '2015-11-25', 1001, 701, 
    188.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (408, '2015-11-23', '2015-11-27', 1001, 703, 
+  VALUES (408, DATE '2015-11-23', DATE '2015-11-27', 1001, 703, 
    261.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (409, '2015-11-23', '2015-11-24', 1024, 704, 
+  VALUES (409, DATE '2015-11-23', DATE '2015-11-24', 1024, 704, 
    5956);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (410, '2015-11-23', '2015-11-24', 1008, 702, 
+  VALUES (410, DATE '2015-11-23', DATE '2015-11-24', 1008, 702, 
    2698);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (411, '2015-11-24', '2015-11-25', 1002, 708, 
+  VALUES (411, DATE '2015-11-24', DATE '2015-11-25', 1002, 708, 
    6984);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (412, '2015-11-24', '2015-11-27', 1026, 708, 
+  VALUES (412, DATE '2015-11-24', DATE '2015-11-27', 1026, 708, 
    1178.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (413, '2015-11-24', '2015-11-25', 1001, 708, 
+  VALUES (413, DATE '2015-11-24', DATE '2015-11-25', 1001, 708, 
    402);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (414, '2015-11-24', '2015-11-28', 1020, 703, 
+  VALUES (414, DATE '2015-11-24', DATE '2015-11-28', 1020, 703, 
    16345.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (415, '2015-11-24', '2015-11-27', 1013, 705, 
+  VALUES (415, DATE '2015-11-24', DATE '2015-11-27', 1013, 705, 
    4851.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (416, '2015-11-24', '2015-11-25', 1024, 705, 
+  VALUES (416, DATE '2015-11-24', DATE '2015-11-25', 1024, 705, 
    4618.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (417, '2015-11-24', '2015-11-27', 1017, 703, 
+  VALUES (417, DATE '2015-11-24', DATE '2015-11-27', 1017, 703, 
    166);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (418, '2015-11-24', '2015-11-24', 1012, 705, 
+  VALUES (418, DATE '2015-11-24', DATE '2015-11-24', 1012, 705, 
    2443.08);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (419, '2015-11-25', '2015-11-25', 1006, 708, 
+  VALUES (419, DATE '2015-11-25', DATE '2015-11-25', 1006, 708, 
    8002.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (420, '2015-11-25', '2015-11-25', 1024, 704, 
+  VALUES (420, DATE '2015-11-25', DATE '2015-11-25', 1024, 704, 
    3505.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (421, '2015-11-25', '2015-11-28', 1022, 704, 
+  VALUES (421, DATE '2015-11-25', DATE '2015-11-28', 1022, 704, 
    441.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (422, '2015-11-25', '2015-11-26', 1027, 707, 
+  VALUES (422, DATE '2015-11-25', DATE '2015-11-26', 1027, 707, 
    5901);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (423, '2015-11-25', '2015-11-29', 1010, 708, 
+  VALUES (423, DATE '2015-11-25', DATE '2015-11-29', 1010, 708, 
    2010.02);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (424, '2015-11-25', '2015-11-27', 1025, 706, 
+  VALUES (424, DATE '2015-11-25', DATE '2015-11-27', 1025, 706, 
    39);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (425, '2015-11-26', '2015-11-30', 1001, 707, 
+  VALUES (425, DATE '2015-11-26', DATE '2015-11-30', 1001, 707, 
    286);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (426, '2015-11-26', '2015-11-29', 1001, 707, 
+  VALUES (426, DATE '2015-11-26', DATE '2015-11-29', 1001, 707, 
    1294);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (427, '2015-11-26', '2015-11-29', 1020, 702, 
+  VALUES (427, DATE '2015-11-26', DATE '2015-11-29', 1020, 702, 
    767.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (428, '2015-11-26', '2015-11-27', 1024, 703, 
+  VALUES (428, DATE '2015-11-26', DATE '2015-11-27', 1024, 703, 
    2340.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (429, '2015-11-26', '2015-11-29', 1016, 701, 
+  VALUES (429, DATE '2015-11-26', DATE '2015-11-29', 1016, 701, 
    567);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (430, '2015-11-26', '2015-11-30', 1009, 707, 
+  VALUES (430, DATE '2015-11-26', DATE '2015-11-30', 1009, 707, 
    102);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (431, '2015-11-27', '2015-11-30', 1016, 705, 
+  VALUES (431, DATE '2015-11-27', DATE '2015-11-30', 1016, 705, 
    2344.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (432, '2015-11-27', '2015-11-30', 1022, 702, 
+  VALUES (432, DATE '2015-11-27', DATE '2015-11-30', 1022, 702, 
    1088.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (433, '2015-11-27', '2015-11-27', 1017, 708, 
+  VALUES (433, DATE '2015-11-27', DATE '2015-11-27', 1017, 708, 
    10291.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (434, '2015-11-27', '2015-11-29', 1012, 703, 
+  VALUES (434, DATE '2015-11-27', DATE '2015-11-29', 1012, 703, 
    9343.79);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (435, '2015-11-27', '2015-11-29', 1016, 706, 
+  VALUES (435, DATE '2015-11-27', DATE '2015-11-29', 1016, 706, 
    47);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (436, '2015-11-27', '2015-11-30', 1014, 703, 
+  VALUES (436, DATE '2015-11-27', DATE '2015-11-30', 1014, 703, 
    180.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (437, '2015-11-27', '2015-11-29', 1002, 705, 
+  VALUES (437, DATE '2015-11-27', DATE '2015-11-29', 1002, 705, 
    5832.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (438, '2015-11-27', '2015-12-01', 1020, 708, 
+  VALUES (438, DATE '2015-11-27', DATE '2015-12-01', 1020, 708, 
    1026.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (439, '2015-11-28', '2015-12-02', 1025, 703, 
+  VALUES (439, DATE '2015-11-28', DATE '2015-12-02', 1025, 703, 
    6457);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (440, '2015-11-28', '2015-11-29', 1027, 708, 
+  VALUES (440, DATE '2015-11-28', DATE '2015-11-29', 1027, 708, 
    1695);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (441, '2015-11-28', '2015-11-28', 1010, 701, 
+  VALUES (441, DATE '2015-11-28', DATE '2015-11-28', 1010, 701, 
    19325.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (442, '2015-11-28', '2015-12-01', 1002, 705, 
+  VALUES (442, DATE '2015-11-28', DATE '2015-12-01', 1002, 705, 
    662);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (443, '2015-11-29', '2015-12-02', 1001, 704, 
+  VALUES (443, DATE '2015-11-29', DATE '2015-12-02', 1001, 704, 
    2123.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (444, '2015-11-29', '2015-11-30', 1002, 706, 
+  VALUES (444, DATE '2015-11-29', DATE '2015-11-30', 1002, 706, 
    2135.47);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (445, '2015-11-29', '2015-11-30', 1007, 705, 
+  VALUES (445, DATE '2015-11-29', DATE '2015-11-30', 1007, 705, 
    12313);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (446, '2015-11-29', '2015-12-03', 1010, 708, 
+  VALUES (446, DATE '2015-11-29', DATE '2015-12-03', 1010, 708, 
    87.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (447, '2015-11-29', '2015-11-30', 1018, 702, 
+  VALUES (447, DATE '2015-11-29', DATE '2015-11-30', 1018, 702, 
    6020.94);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (448, '2015-11-29', '2015-12-01', 1001, 701, 
+  VALUES (448, DATE '2015-11-29', DATE '2015-12-01', 1001, 701, 
    301.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (449, '2015-11-29', '2015-11-29', 1025, 707, 
+  VALUES (449, DATE '2015-11-29', DATE '2015-11-29', 1025, 707, 
    16673.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (450, '2015-11-30', '2015-12-04', 1004, 705, 
+  VALUES (450, DATE '2015-11-30', DATE '2015-12-04', 1004, 705, 
    4232.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (451, '2015-11-30', '2015-12-02', 1003, 706, 
+  VALUES (451, DATE '2015-11-30', DATE '2015-12-02', 1003, 706, 
    220);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (452, '2015-11-30', '2015-12-02', 1001, 702, 
+  VALUES (452, DATE '2015-11-30', DATE '2015-12-02', 1001, 702, 
    1018.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (453, '2015-11-30', '2015-12-04', 1027, 708, 
+  VALUES (453, DATE '2015-11-30', DATE '2015-12-04', 1027, 708, 
    1854.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (454, '2015-11-30', '2015-12-02', 1010, 703, 
+  VALUES (454, DATE '2015-11-30', DATE '2015-12-02', 1010, 703, 
    1248.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (455, '2015-11-30', '2015-12-01', 1005, 702, 
+  VALUES (455, DATE '2015-11-30', DATE '2015-12-01', 1005, 702, 
    1705.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (456, '2015-12-01', '2015-12-02', 1015, 705, 
+  VALUES (456, DATE '2015-12-01', DATE '2015-12-02', 1015, 705, 
    375);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (457, '2015-12-01', '2015-12-05', 1019, 701, 
+  VALUES (457, DATE '2015-12-01', DATE '2015-12-05', 1019, 701, 
    2811);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (458, '2015-12-02', '2015-12-02', 1003, 702, 
+  VALUES (458, DATE '2015-12-02', DATE '2015-12-02', 1003, 702, 
    654.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (459, '2015-12-02', '2015-12-03', 1007, 707, 
+  VALUES (459, DATE '2015-12-02', DATE '2015-12-03', 1007, 707, 
    1682.62);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (460, '2015-12-03', '2015-12-05', 1013, 704, 
+  VALUES (460, DATE '2015-12-03', DATE '2015-12-05', 1013, 704, 
    1905);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (461, '2015-12-03', '2015-12-07', 1021, 703, 
+  VALUES (461, DATE '2015-12-03', DATE '2015-12-07', 1021, 703, 
    2852.86);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (462, '2015-12-03', '2015-12-03', 1004, 705, 
+  VALUES (462, DATE '2015-12-03', DATE '2015-12-03', 1004, 705, 
    254.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (463, '2015-12-04', '2015-12-07', 1015, 705, 
+  VALUES (463, DATE '2015-12-04', DATE '2015-12-07', 1015, 705, 
    477.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (464, '2015-12-04', '2015-12-07', 1020, 705, 
+  VALUES (464, DATE '2015-12-04', DATE '2015-12-07', 1020, 705, 
    5346);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (465, '2015-12-04', '2015-12-04', 1012, 706, 
+  VALUES (465, DATE '2015-12-04', DATE '2015-12-04', 1012, 706, 
    10361.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (466, '2015-12-05', '2015-12-06', 1026, 704, 
+  VALUES (466, DATE '2015-12-05', DATE '2015-12-06', 1026, 704, 
    6257.99);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (467, '2015-12-05', '2015-12-05', 1013, 706, 
+  VALUES (467, DATE '2015-12-05', DATE '2015-12-05', 1013, 706, 
    9826);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (468, '2015-12-05', '2015-12-06', 1010, 708, 
+  VALUES (468, DATE '2015-12-05', DATE '2015-12-06', 1010, 708, 
    6546.06);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (469, '2015-12-05', '2015-12-05', 1011, 708, 
+  VALUES (469, DATE '2015-12-05', DATE '2015-12-05', 1011, 708, 
    8792.99);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (470, '2015-12-05', '2015-12-08', 1014, 703, 
+  VALUES (470, DATE '2015-12-05', DATE '2015-12-08', 1014, 703, 
    709.32);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (471, '2015-12-05', '2015-12-07', 1025, 701, 
+  VALUES (471, DATE '2015-12-05', DATE '2015-12-07', 1025, 701, 
    130.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (472, '2015-12-05', '2015-12-09', 1023, 707, 
+  VALUES (472, DATE '2015-12-05', DATE '2015-12-09', 1023, 707, 
    7648);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (473, '2015-12-05', '2015-12-08', 1016, 702, 
+  VALUES (473, DATE '2015-12-05', DATE '2015-12-08', 1016, 702, 
    1832.18);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (474, '2015-12-05', '2015-12-08', 1006, 703, 
+  VALUES (474, DATE '2015-12-05', DATE '2015-12-08', 1006, 703, 
    842.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (475, '2015-12-06', '2015-12-10', 1001, 702, 
+  VALUES (475, DATE '2015-12-06', DATE '2015-12-10', 1001, 702, 
    1109.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (476, '2015-12-06', '2015-12-10', 1014, 705, 
+  VALUES (476, DATE '2015-12-06', DATE '2015-12-10', 1014, 705, 
    1201);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (477, '2015-12-06', '2015-12-06', 1009, 708, 
+  VALUES (477, DATE '2015-12-06', DATE '2015-12-06', 1009, 708, 
    6594.19);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (478, '2015-12-06', '2015-12-10', 1004, 707, 
+  VALUES (478, DATE '2015-12-06', DATE '2015-12-10', 1004, 707, 
    1352.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (479, '2015-12-06', '2015-12-09', 1024, 705, 
+  VALUES (479, DATE '2015-12-06', DATE '2015-12-09', 1024, 705, 
    7708);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (480, '2015-12-06', '2015-12-06', 1011, 703, 
+  VALUES (480, DATE '2015-12-06', DATE '2015-12-06', 1011, 703, 
    4265);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (481, '2015-12-07', '2015-12-10', 1009, 702, 
+  VALUES (481, DATE '2015-12-07', DATE '2015-12-10', 1009, 702, 
    637.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (482, '2015-12-07', '2015-12-07', 1011, 705, 
+  VALUES (482, DATE '2015-12-07', DATE '2015-12-07', 1011, 705, 
    207);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (483, '2015-12-07', '2015-12-08', 1005, 704, 
+  VALUES (483, DATE '2015-12-07', DATE '2015-12-08', 1005, 704, 
    4814.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (484, '2015-12-08', '2015-12-09', 1021, 707, 
+  VALUES (484, DATE '2015-12-08', DATE '2015-12-09', 1021, 707, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (485, '2015-12-08', '2015-12-10', 1003, 707, 
+  VALUES (485, DATE '2015-12-08', DATE '2015-12-10', 1003, 707, 
    2107.74);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (486, '2015-12-08', '2015-12-09', 1022, 705, 
+  VALUES (486, DATE '2015-12-08', DATE '2015-12-09', 1022, 705, 
    956);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (487, '2015-12-08', '2015-12-10', 1009, 704, 
+  VALUES (487, DATE '2015-12-08', DATE '2015-12-10', 1009, 704, 
    3241);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (488, '2015-12-08', '2015-12-10', 1025, 703, 
+  VALUES (488, DATE '2015-12-08', DATE '2015-12-10', 1025, 703, 
    171);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (489, '2015-12-08', '2015-12-08', 1005, 701, 
+  VALUES (489, DATE '2015-12-08', DATE '2015-12-08', 1005, 701, 
    710.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (490, '2015-12-08', '2015-12-10', 1009, 702, 
+  VALUES (490, DATE '2015-12-08', DATE '2015-12-10', 1009, 702, 
    2781.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (491, '2015-12-08', '2015-12-09', 1007, 708, 
+  VALUES (491, DATE '2015-12-08', DATE '2015-12-09', 1007, 708, 
    5643.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (492, '2015-12-09', '2015-12-11', 1008, 702, 
+  VALUES (492, DATE '2015-12-09', DATE '2015-12-11', 1008, 702, 
    3035.62);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (493, '2015-12-09', '2015-12-13', 1005, 708, 
+  VALUES (493, DATE '2015-12-09', DATE '2015-12-13', 1005, 708, 
    3861.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (494, '2015-12-09', '2015-12-13', 1012, 701, 
+  VALUES (494, DATE '2015-12-09', DATE '2015-12-13', 1012, 701, 
    108);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (495, '2015-12-09', '2015-12-10', 1012, 702, 
+  VALUES (495, DATE '2015-12-09', DATE '2015-12-10', 1012, 702, 
    6843.49);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (496, '2015-12-10', '2015-12-10', 1014, 701, 
+  VALUES (496, DATE '2015-12-10', DATE '2015-12-10', 1014, 701, 
    1949.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (497, '2015-12-10', '2015-12-11', 1002, 701, 
+  VALUES (497, DATE '2015-12-10', DATE '2015-12-11', 1002, 701, 
    1882.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (498, '2015-12-10', '2015-12-12', 1018, 708, 
+  VALUES (498, DATE '2015-12-10', DATE '2015-12-12', 1018, 708, 
    7862.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (499, '2015-12-10', '2015-12-14', 1016, 704, 
+  VALUES (499, DATE '2015-12-10', DATE '2015-12-14', 1016, 704, 
    16909.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (500, '2015-12-10', '2015-12-10', 1007, 705, 
+  VALUES (500, DATE '2015-12-10', DATE '2015-12-10', 1007, 705, 
    3037);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (501, '2015-12-11', '2015-12-14', 1001, 702, 
+  VALUES (501, DATE '2015-12-11', DATE '2015-12-14', 1001, 702, 
    548.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (502, '2015-12-11', '2015-12-14', 1025, 707, 
+  VALUES (502, DATE '2015-12-11', DATE '2015-12-14', 1025, 707, 
    10964.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (503, '2015-12-11', '2015-12-13', 1026, 706, 
+  VALUES (503, DATE '2015-12-11', DATE '2015-12-13', 1026, 706, 
    3638.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (504, '2015-12-11', '2015-12-14', 1004, 707, 
+  VALUES (504, DATE '2015-12-11', DATE '2015-12-14', 1004, 707, 
    189);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (505, '2015-12-11', '2015-12-15', 1006, 707, 
+  VALUES (505, DATE '2015-12-11', DATE '2015-12-15', 1006, 707, 
    7268.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (506, '2015-12-11', '2015-12-13', 1016, 704, 
+  VALUES (506, DATE '2015-12-11', DATE '2015-12-13', 1016, 704, 
    6195);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (507, '2015-12-11', '2015-12-11', 1017, 705, 
+  VALUES (507, DATE '2015-12-11', DATE '2015-12-11', 1017, 705, 
    1252.71);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (508, '2015-12-11', '2015-12-14', 1012, 704, 
+  VALUES (508, DATE '2015-12-11', DATE '2015-12-14', 1012, 704, 
    16688.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (509, '2015-12-12', '2015-12-13', 1010, 701, 
+  VALUES (509, DATE '2015-12-12', DATE '2015-12-13', 1010, 701, 
    6058.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (510, '2015-12-12', '2015-12-13', 1015, 703, 
+  VALUES (510, DATE '2015-12-12', DATE '2015-12-13', 1015, 703, 
    973.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (511, '2015-12-12', '2015-12-12', 1026, 706, 
+  VALUES (511, DATE '2015-12-12', DATE '2015-12-12', 1026, 706, 
    9576.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (512, '2015-12-12', '2015-12-14', 1027, 708, 
+  VALUES (512, DATE '2015-12-12', DATE '2015-12-14', 1027, 708, 
    291);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (513, '2015-12-12', '2015-12-15', 1012, 707, 
+  VALUES (513, DATE '2015-12-12', DATE '2015-12-15', 1012, 707, 
    9682.48);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (514, '2015-12-12', '2015-12-14', 1025, 705, 
+  VALUES (514, DATE '2015-12-12', DATE '2015-12-14', 1025, 705, 
    8441.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (515, '2015-12-12', '2015-12-15', 1003, 705, 
+  VALUES (515, DATE '2015-12-12', DATE '2015-12-15', 1003, 705, 
    1191);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (516, '2015-12-12', '2015-12-16', 1021, 703, 
+  VALUES (516, DATE '2015-12-12', DATE '2015-12-16', 1021, 703, 
    3845.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (517, '2015-12-13', '2015-12-15', 1007, 706, 
+  VALUES (517, DATE '2015-12-13', DATE '2015-12-15', 1007, 706, 
    1210.41);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (518, '2015-12-13', '2015-12-14', 1007, 704, 
+  VALUES (518, DATE '2015-12-13', DATE '2015-12-14', 1007, 704, 
    194.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (519, '2015-12-13', '2015-12-15', 1018, 701, 
+  VALUES (519, DATE '2015-12-13', DATE '2015-12-15', 1018, 701, 
    424.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (520, '2015-12-13', '2015-12-17', 1027, 704, 
+  VALUES (520, DATE '2015-12-13', DATE '2015-12-17', 1027, 704, 
    2949.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (521, '2015-12-13', '2015-12-17', 1009, 708, 
+  VALUES (521, DATE '2015-12-13', DATE '2015-12-17', 1009, 708, 
    2466);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (522, '2015-12-13', '2015-12-17', 1009, 708, 
+  VALUES (522, DATE '2015-12-13', DATE '2015-12-17', 1009, 708, 
    4.99);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (523, '2015-12-14', '2015-12-16', 1003, 704, 
+  VALUES (523, DATE '2015-12-14', DATE '2015-12-16', 1003, 704, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (524, '2015-12-15', '2015-12-19', 1002, 701, 
+  VALUES (524, DATE '2015-12-15', DATE '2015-12-19', 1002, 701, 
    136);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (525, '2015-12-15', '2015-12-18', 1019, 705, 
+  VALUES (525, DATE '2015-12-15', DATE '2015-12-18', 1019, 705, 
    560.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (526, '2015-12-15', '2015-12-18', 1011, 705, 
+  VALUES (526, DATE '2015-12-15', DATE '2015-12-18', 1011, 705, 
    228.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (527, '2015-12-15', '2015-12-19', 1009, 707, 
+  VALUES (527, DATE '2015-12-15', DATE '2015-12-19', 1009, 707, 
    49);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (528, '2015-12-16', '2015-12-17', 1026, 701, 
+  VALUES (528, DATE '2015-12-16', DATE '2015-12-17', 1026, 701, 
    5646);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (529, '2015-12-16', '2015-12-18', 1013, 703, 
+  VALUES (529, DATE '2015-12-16', DATE '2015-12-18', 1013, 703, 
    7951.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (530, '2015-12-16', '2015-12-18', 1009, 701, 
+  VALUES (530, DATE '2015-12-16', DATE '2015-12-18', 1009, 701, 
    14227.36);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (531, '2015-12-16', '2015-12-16', 1012, 707, 
+  VALUES (531, DATE '2015-12-16', DATE '2015-12-16', 1012, 707, 
    5428.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (532, '2015-12-17', '2015-12-18', 1027, 706, 
+  VALUES (532, DATE '2015-12-17', DATE '2015-12-18', 1027, 706, 
    7190.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (533, '2015-12-17', '2015-12-20', 1017, 702, 
+  VALUES (533, DATE '2015-12-17', DATE '2015-12-20', 1017, 702, 
    15235.23);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (534, '2015-12-17', '2015-12-17', 1017, 706, 
+  VALUES (534, DATE '2015-12-17', DATE '2015-12-17', 1017, 706, 
    570.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (535, '2015-12-17', '2015-12-18', 1020, 703, 
+  VALUES (535, DATE '2015-12-17', DATE '2015-12-18', 1020, 703, 
    6234.63);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (536, '2015-12-17', '2015-12-20', 1020, 702, 
+  VALUES (536, DATE '2015-12-17', DATE '2015-12-20', 1020, 702, 
    1719.87);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (537, '2015-12-17', '2015-12-20', 1003, 703, 
+  VALUES (537, DATE '2015-12-17', DATE '2015-12-20', 1003, 703, 
    1004.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (538, '2015-12-18', '2015-12-19', 1008, 703, 
+  VALUES (538, DATE '2015-12-18', DATE '2015-12-19', 1008, 703, 
    9710.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (539, '2015-12-19', '2015-12-23', 1008, 701, 
+  VALUES (539, DATE '2015-12-19', DATE '2015-12-23', 1008, 701, 
    9069.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (540, '2015-12-19', '2015-12-23', 1007, 707, 
+  VALUES (540, DATE '2015-12-19', DATE '2015-12-23', 1007, 707, 
    7422.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (541, '2015-12-20', '2015-12-22', 1006, 701, 
+  VALUES (541, DATE '2015-12-20', DATE '2015-12-22', 1006, 701, 
    17369.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (542, '2015-12-21', '2015-12-24', 1008, 704, 
+  VALUES (542, DATE '2015-12-21', DATE '2015-12-24', 1008, 704, 
    3897.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (543, '2015-12-21', '2015-12-24', 1005, 707, 
+  VALUES (543, DATE '2015-12-21', DATE '2015-12-24', 1005, 707, 
    334.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (544, '2015-12-21', '2015-12-21', 1009, 704, 
+  VALUES (544, DATE '2015-12-21', DATE '2015-12-21', 1009, 704, 
    7996.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (545, '2015-12-21', '2015-12-25', 1010, 707, 
+  VALUES (545, DATE '2015-12-21', DATE '2015-12-25', 1010, 707, 
    10489.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (546, '2015-12-21', '2015-12-21', 1013, 702, 
+  VALUES (546, DATE '2015-12-21', DATE '2015-12-21', 1013, 702, 
    407.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (547, '2015-12-21', '2015-12-21', 1011, 708, 
+  VALUES (547, DATE '2015-12-21', DATE '2015-12-21', 1011, 708, 
    2271.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (548, '2015-12-21', '2015-12-23', 1004, 707, 
+  VALUES (548, DATE '2015-12-21', DATE '2015-12-23', 1004, 707, 
    6109.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (549, '2015-12-21', '2015-12-21', 1024, 703, 
+  VALUES (549, DATE '2015-12-21', DATE '2015-12-21', 1024, 703, 
    140.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (550, '2015-12-22', '2015-12-24', 1003, 706, 
+  VALUES (550, DATE '2015-12-22', DATE '2015-12-24', 1003, 706, 
    797);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (551, '2015-12-23', '2015-12-27', 1010, 705, 
+  VALUES (551, DATE '2015-12-23', DATE '2015-12-27', 1010, 705, 
    1696.03);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (552, '2015-12-23', '2015-12-26', 1023, 705, 
+  VALUES (552, DATE '2015-12-23', DATE '2015-12-26', 1023, 705, 
    17551.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (553, '2015-12-23', '2015-12-27', 1002, 705, 
+  VALUES (553, DATE '2015-12-23', DATE '2015-12-27', 1002, 705, 
    6317);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (554, '2015-12-23', '2015-12-24', 1002, 701, 
+  VALUES (554, DATE '2015-12-23', DATE '2015-12-24', 1002, 701, 
    6872.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (555, '2015-12-23', '2015-12-26', 1003, 703, 
+  VALUES (555, DATE '2015-12-23', DATE '2015-12-26', 1003, 703, 
    1658.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (556, '2015-12-23', '2015-12-27', 1019, 701, 
+  VALUES (556, DATE '2015-12-23', DATE '2015-12-27', 1019, 701, 
    6504.03);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (557, '2015-12-23', '2015-12-23', 1026, 702, 
+  VALUES (557, DATE '2015-12-23', DATE '2015-12-23', 1026, 702, 
    8430.09);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (558, '2015-12-24', '2015-12-25', 1009, 708, 
+  VALUES (558, DATE '2015-12-24', DATE '2015-12-25', 1009, 708, 
    10842.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (559, '2015-12-24', '2015-12-26', 1011, 706, 
+  VALUES (559, DATE '2015-12-24', DATE '2015-12-26', 1011, 706, 
    5559.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (560, '2015-12-24', '2015-12-28', 1016, 707, 
+  VALUES (560, DATE '2015-12-24', DATE '2015-12-28', 1016, 707, 
    6769.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (561, '2015-12-24', '2015-12-27', 1025, 704, 
+  VALUES (561, DATE '2015-12-24', DATE '2015-12-27', 1025, 704, 
    3600);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (562, '2015-12-24', '2015-12-27', 1006, 705, 
+  VALUES (562, DATE '2015-12-24', DATE '2015-12-27', 1006, 705, 
    147);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (563, '2015-12-24', '2015-12-25', 1020, 704, 
+  VALUES (563, DATE '2015-12-24', DATE '2015-12-25', 1020, 704, 
    4783.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (564, '2015-12-24', '2015-12-26', 1001, 706, 
+  VALUES (564, DATE '2015-12-24', DATE '2015-12-26', 1001, 706, 
    214);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (565, '2015-12-25', '2015-12-27', 1014, 705, 
+  VALUES (565, DATE '2015-12-25', DATE '2015-12-27', 1014, 705, 
    2429);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (566, '2015-12-25', '2015-12-26', 1007, 706, 
+  VALUES (566, DATE '2015-12-25', DATE '2015-12-26', 1007, 706, 
    985.21);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (567, '2015-12-25', '2015-12-27', 1001, 703, 
+  VALUES (567, DATE '2015-12-25', DATE '2015-12-27', 1001, 703, 
    882.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (568, '2015-12-25', '2015-12-26', 1024, 704, 
+  VALUES (568, DATE '2015-12-25', DATE '2015-12-26', 1024, 704, 
    197.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (569, '2015-12-25', '2015-12-27', 1004, 707, 
+  VALUES (569, DATE '2015-12-25', DATE '2015-12-27', 1004, 707, 
    6354.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (570, '2015-12-25', '2015-12-29', 1022, 707, 
+  VALUES (570, DATE '2015-12-25', DATE '2015-12-29', 1022, 707, 
    742.19);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (571, '2015-12-26', '2015-12-29', 1019, 704, 
+  VALUES (571, DATE '2015-12-26', DATE '2015-12-29', 1019, 704, 
    2423.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (572, '2015-12-26', '2015-12-26', 1003, 703, 
+  VALUES (572, DATE '2015-12-26', DATE '2015-12-26', 1003, 703, 
    1397.36);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (573, '2015-12-26', '2015-12-28', 1019, 701, 
+  VALUES (573, DATE '2015-12-26', DATE '2015-12-28', 1019, 701, 
    10102.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (574, '2015-12-26', '2015-12-26', 1003, 704, 
+  VALUES (574, DATE '2015-12-26', DATE '2015-12-26', 1003, 704, 
    160.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (575, '2015-12-26', '2015-12-30', 1027, 707, 
+  VALUES (575, DATE '2015-12-26', DATE '2015-12-30', 1027, 707, 
    12368.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (576, '2015-12-27', '2015-12-27', 1005, 705, 
+  VALUES (576, DATE '2015-12-27', DATE '2015-12-27', 1005, 705, 
    56);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (577, '2015-12-27', '2015-12-27', 1014, 706, 
+  VALUES (577, DATE '2015-12-27', DATE '2015-12-27', 1014, 706, 
    678.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (578, '2015-12-27', '2015-12-28', 1026, 708, 
+  VALUES (578, DATE '2015-12-27', DATE '2015-12-28', 1026, 708, 
    1861.62);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (579, '2015-12-27', '2015-12-31', 1012, 707, 
+  VALUES (579, DATE '2015-12-27', DATE '2015-12-31', 1012, 707, 
    15391);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (580, '2015-12-27', '2015-12-27', 1011, 705, 
+  VALUES (580, DATE '2015-12-27', DATE '2015-12-27', 1011, 705, 
    1112.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (581, '2015-12-28', '2015-12-28', 1003, 704, 
+  VALUES (581, DATE '2015-12-28', DATE '2015-12-28', 1003, 704, 
    1268.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (582, '2015-12-28', '2015-12-31', 1004, 703, 
+  VALUES (582, DATE '2015-12-28', DATE '2015-12-31', 1004, 703, 
    3727.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (583, '2015-12-28', '2015-12-28', 1003, 702, 
+  VALUES (583, DATE '2015-12-28', DATE '2015-12-28', 1003, 702, 
    1345.22);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (584, '2015-12-29', '2015-12-31', 1004, 707, 
+  VALUES (584, DATE '2015-12-29', DATE '2015-12-31', 1004, 707, 
    5508.48);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (585, '2015-12-29', '2015-12-29', 1009, 704, 
+  VALUES (585, DATE '2015-12-29', DATE '2015-12-29', 1009, 704, 
    1865.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (586, '2015-12-29', '2015-12-30', 1023, 707, 
+  VALUES (586, DATE '2015-12-29', DATE '2015-12-30', 1023, 707, 
    1270);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (587, '2015-12-29', '2016-01-02', 1001, 701, 
+  VALUES (587, DATE '2015-12-29', DATE '2016-01-02', 1001, 701, 
    264);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (588, '2015-12-29', '2015-12-29', 1003, 701, 
+  VALUES (588, DATE '2015-12-29', DATE '2015-12-29', 1003, 701, 
    1271.13);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (589, '2015-12-29', '2015-12-29', 1013, 708, 
+  VALUES (589, DATE '2015-12-29', DATE '2015-12-29', 1013, 708, 
    1169.82);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (590, '2015-12-29', '2016-01-02', 1018, 708, 
+  VALUES (590, DATE '2015-12-29', DATE '2016-01-02', 1018, 708, 
    16509.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (591, '2015-12-30', '2016-01-02', 1023, 702, 
+  VALUES (591, DATE '2015-12-30', DATE '2016-01-02', 1023, 702, 
    2991.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (592, '2015-12-30', '2016-01-01', 1005, 707, 
+  VALUES (592, DATE '2015-12-30', DATE '2016-01-01', 1005, 707, 
    14408.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (593, '2015-12-30', '2016-01-02', 1026, 701, 
+  VALUES (593, DATE '2015-12-30', DATE '2016-01-02', 1026, 701, 
    270);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (594, '2015-12-30', '2015-12-30', 1017, 706, 
+  VALUES (594, DATE '2015-12-30', DATE '2015-12-30', 1017, 706, 
    6142.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (595, '2015-12-31', '2016-01-03', 1015, 703, 
+  VALUES (595, DATE '2015-12-31', DATE '2016-01-03', 1015, 703, 
    273.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (596, '2015-12-31', '2016-01-04', 1001, 702, 
+  VALUES (596, DATE '2015-12-31', DATE '2016-01-04', 1001, 702, 
    1793.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (597, '2015-12-31', '2015-12-31', 1006, 707, 
+  VALUES (597, DATE '2015-12-31', DATE '2015-12-31', 1006, 707, 
    18502.66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (598, '2015-12-31', '2016-01-01', 1013, 701, 
+  VALUES (598, DATE '2015-12-31', DATE '2016-01-01', 1013, 701, 
    7688.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (599, '2016-01-01', '2016-01-01', 1011, 703, 
+  VALUES (599, DATE '2016-01-01', DATE '2016-01-01', 1011, 703, 
    5367);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (600, '2016-01-01', '2016-01-05', 1006, 704, 
+  VALUES (600, DATE '2016-01-01', DATE '2016-01-05', 1006, 704, 
    7952.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (601, '2016-01-01', '2016-01-02', 1011, 706, 
+  VALUES (601, DATE '2016-01-01', DATE '2016-01-02', 1011, 706, 
    136.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (602, '2016-01-01', '2016-01-05', 1025, 708, 
+  VALUES (602, DATE '2016-01-01', DATE '2016-01-05', 1025, 708, 
    8002.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (603, '2016-01-01', '2016-01-03', 1015, 707, 
+  VALUES (603, DATE '2016-01-01', DATE '2016-01-03', 1015, 707, 
    1168.83);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (604, '2016-01-01', '2016-01-02', 1006, 702, 
+  VALUES (604, DATE '2016-01-01', DATE '2016-01-02', 1006, 702, 
    7287.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (605, '2016-01-01', '2016-01-02', 1020, 701, 
+  VALUES (605, DATE '2016-01-01', DATE '2016-01-02', 1020, 701, 
    7739.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (606, '2016-01-02', '2016-01-03', 1007, 702, 
+  VALUES (606, DATE '2016-01-02', DATE '2016-01-03', 1007, 702, 
    7855.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (607, '2016-01-02', '2016-01-05', 1012, 704, 
+  VALUES (607, DATE '2016-01-02', DATE '2016-01-05', 1012, 704, 
    7062);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (608, '2016-01-02', '2016-01-06', 1001, 706, 
+  VALUES (608, DATE '2016-01-02', DATE '2016-01-06', 1001, 706, 
    633.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (609, '2016-01-02', '2016-01-06', 1017, 705, 
+  VALUES (609, DATE '2016-01-02', DATE '2016-01-06', 1017, 705, 
    5036.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (610, '2016-01-02', '2016-01-02', 1020, 704, 
+  VALUES (610, DATE '2016-01-02', DATE '2016-01-02', 1020, 704, 
    14975.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (611, '2016-01-02', '2016-01-04', 1005, 706, 
+  VALUES (611, DATE '2016-01-02', DATE '2016-01-04', 1005, 706, 
    6176.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (612, '2016-01-02', '2016-01-03', 1005, 705, 
+  VALUES (612, DATE '2016-01-02', DATE '2016-01-03', 1005, 705, 
    6286.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (613, '2016-01-03', '2016-01-05', 1015, 706, 
+  VALUES (613, DATE '2016-01-03', DATE '2016-01-05', 1015, 706, 
    110);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (614, '2016-01-04', '2016-01-05', 1004, 704, 
+  VALUES (614, DATE '2016-01-04', DATE '2016-01-05', 1004, 704, 
    2774.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (615, '2016-01-05', '2016-01-06', 1027, 707, 
+  VALUES (615, DATE '2016-01-05', DATE '2016-01-06', 1027, 707, 
    9788);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (616, '2016-01-05', '2016-01-06', 1022, 705, 
+  VALUES (616, DATE '2016-01-05', DATE '2016-01-06', 1022, 705, 
    856);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (617, '2016-01-05', '2016-01-05', 1012, 702, 
+  VALUES (617, DATE '2016-01-05', DATE '2016-01-05', 1012, 702, 
    11589);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (618, '2016-01-05', '2016-01-09', 1026, 707, 
+  VALUES (618, DATE '2016-01-05', DATE '2016-01-09', 1026, 707, 
    12288.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (619, '2016-01-05', '2016-01-06', 1008, 707, 
+  VALUES (619, DATE '2016-01-05', DATE '2016-01-06', 1008, 707, 
    225);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (620, '2016-01-05', '2016-01-07', 1023, 702, 
+  VALUES (620, DATE '2016-01-05', DATE '2016-01-07', 1023, 702, 
    8927.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (621, '2016-01-05', '2016-01-08', 1007, 707, 
+  VALUES (621, DATE '2016-01-05', DATE '2016-01-08', 1007, 707, 
    135);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (622, '2016-01-06', '2016-01-06', 1002, 707, 
+  VALUES (622, DATE '2016-01-06', DATE '2016-01-06', 1002, 707, 
    6984.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (623, '2016-01-06', '2016-01-08', 1007, 708, 
+  VALUES (623, DATE '2016-01-06', DATE '2016-01-08', 1007, 708, 
    259.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (624, '2016-01-06', '2016-01-09', 1014, 701, 
+  VALUES (624, DATE '2016-01-06', DATE '2016-01-09', 1014, 701, 
    538);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (625, '2016-01-06', '2016-01-08', 1006, 708, 
+  VALUES (625, DATE '2016-01-06', DATE '2016-01-08', 1006, 708, 
    7205.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (626, '2016-01-06', '2016-01-10', 1023, 702, 
+  VALUES (626, DATE '2016-01-06', DATE '2016-01-10', 1023, 702, 
    6612);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (627, '2016-01-06', '2016-01-08', 1027, 705, 
+  VALUES (627, DATE '2016-01-06', DATE '2016-01-08', 1027, 705, 
    1308);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (628, '2016-01-06', '2016-01-07', 1026, 704, 
+  VALUES (628, DATE '2016-01-06', DATE '2016-01-07', 1026, 704, 
    1047.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (629, '2016-01-07', '2016-01-11', 1014, 704, 
+  VALUES (629, DATE '2016-01-07', DATE '2016-01-11', 1014, 704, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (630, '2016-01-07', '2016-01-09', 1026, 702, 
+  VALUES (630, DATE '2016-01-07', DATE '2016-01-09', 1026, 702, 
    13851.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (631, '2016-01-07', '2016-01-07', 1012, 707, 
+  VALUES (631, DATE '2016-01-07', DATE '2016-01-07', 1012, 707, 
    5863.83);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (632, '2016-01-07', '2016-01-11', 1001, 706, 
+  VALUES (632, DATE '2016-01-07', DATE '2016-01-11', 1001, 706, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (633, '2016-01-07', '2016-01-09', 1021, 705, 
+  VALUES (633, DATE '2016-01-07', DATE '2016-01-09', 1021, 705, 
    4989.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (634, '2016-01-07', '2016-01-11', 1002, 703, 
+  VALUES (634, DATE '2016-01-07', DATE '2016-01-11', 1002, 703, 
    3591.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (635, '2016-01-07', '2016-01-10', 1002, 703, 
+  VALUES (635, DATE '2016-01-07', DATE '2016-01-10', 1002, 703, 
    1970);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (636, '2016-01-07', '2016-01-10', 1002, 703, 
+  VALUES (636, DATE '2016-01-07', DATE '2016-01-10', 1002, 703, 
    10146.71);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (637, '2016-01-07', '2016-01-10', 1008, 702, 
+  VALUES (637, DATE '2016-01-07', DATE '2016-01-10', 1008, 702, 
    17024.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (638, '2016-01-07', '2016-01-09', 1003, 705, 
+  VALUES (638, DATE '2016-01-07', DATE '2016-01-09', 1003, 705, 
    340.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (639, '2016-01-08', '2016-01-10', 1019, 705, 
+  VALUES (639, DATE '2016-01-08', DATE '2016-01-10', 1019, 705, 
    8523.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (640, '2016-01-08', '2016-01-11', 1008, 706, 
+  VALUES (640, DATE '2016-01-08', DATE '2016-01-11', 1008, 706, 
    1529.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (641, '2016-01-08', '2016-01-11', 1012, 701, 
+  VALUES (641, DATE '2016-01-08', DATE '2016-01-11', 1012, 701, 
    10991);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (642, '2016-01-08', '2016-01-10', 1012, 708, 
+  VALUES (642, DATE '2016-01-08', DATE '2016-01-10', 1012, 708, 
    2990);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (643, '2016-01-08', '2016-01-11', 1011, 701, 
+  VALUES (643, DATE '2016-01-08', DATE '2016-01-11', 1011, 701, 
    5588.31);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (644, '2016-01-08', '2016-01-09', 1021, 706, 
+  VALUES (644, DATE '2016-01-08', DATE '2016-01-09', 1021, 706, 
    431.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (645, '2016-01-08', '2016-01-12', 1024, 703, 
+  VALUES (645, DATE '2016-01-08', DATE '2016-01-12', 1024, 703, 
    339.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (646, '2016-01-08', '2016-01-09', 1017, 705, 
+  VALUES (646, DATE '2016-01-08', DATE '2016-01-09', 1017, 705, 
    664);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (647, '2016-01-09', '2016-01-13', 1014, 703, 
+  VALUES (647, DATE '2016-01-09', DATE '2016-01-13', 1014, 703, 
    161.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (648, '2016-01-09', '2016-01-10', 1015, 701, 
+  VALUES (648, DATE '2016-01-09', DATE '2016-01-10', 1015, 701, 
    132);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (649, '2016-01-09', '2016-01-13', 1001, 707, 
+  VALUES (649, DATE '2016-01-09', DATE '2016-01-13', 1001, 707, 
    686.76);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (650, '2016-01-09', '2016-01-09', 1005, 706, 
+  VALUES (650, DATE '2016-01-09', DATE '2016-01-09', 1005, 706, 
    6662.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (651, '2016-01-09', '2016-01-12', 1025, 704, 
+  VALUES (651, DATE '2016-01-09', DATE '2016-01-12', 1025, 704, 
    3601.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (652, '2016-01-10', '2016-01-10', 1024, 701, 
+  VALUES (652, DATE '2016-01-10', DATE '2016-01-10', 1024, 701, 
    2020.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (653, '2016-01-10', '2016-01-13', 1015, 701, 
+  VALUES (653, DATE '2016-01-10', DATE '2016-01-13', 1015, 701, 
    373.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (654, '2016-01-10', '2016-01-14', 1024, 704, 
+  VALUES (654, DATE '2016-01-10', DATE '2016-01-14', 1024, 704, 
    10560.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (655, '2016-01-10', '2016-01-14', 1007, 701, 
+  VALUES (655, DATE '2016-01-10', DATE '2016-01-14', 1007, 701, 
    7215.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (656, '2016-01-10', '2016-01-10', 1024, 707, 
+  VALUES (656, DATE '2016-01-10', DATE '2016-01-10', 1024, 707, 
    609.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (657, '2016-01-10', '2016-01-13', 1001, 706, 
+  VALUES (657, DATE '2016-01-10', DATE '2016-01-13', 1001, 706, 
    773);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (658, '2016-01-10', '2016-01-10', 1010, 701, 
+  VALUES (658, DATE '2016-01-10', DATE '2016-01-10', 1010, 701, 
    5801);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (659, '2016-01-10', '2016-01-12', 1023, 705, 
+  VALUES (659, DATE '2016-01-10', DATE '2016-01-12', 1023, 705, 
    2851.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (660, '2016-01-11', '2016-01-14', 1027, 702, 
+  VALUES (660, DATE '2016-01-11', DATE '2016-01-14', 1027, 702, 
    2937.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (661, '2016-01-11', '2016-01-15', 1011, 706, 
+  VALUES (661, DATE '2016-01-11', DATE '2016-01-15', 1011, 706, 
    5453.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (662, '2016-01-11', '2016-01-13', 1006, 706, 
+  VALUES (662, DATE '2016-01-11', DATE '2016-01-13', 1006, 706, 
    6383.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (663, '2016-01-11', '2016-01-14', 1025, 707, 
+  VALUES (663, DATE '2016-01-11', DATE '2016-01-14', 1025, 707, 
    5242);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (664, '2016-01-11', '2016-01-11', 1015, 707, 
+  VALUES (664, DATE '2016-01-11', DATE '2016-01-11', 1015, 707, 
    276);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (665, '2016-01-11', '2016-01-11', 1020, 704, 
+  VALUES (665, DATE '2016-01-11', DATE '2016-01-11', 1020, 704, 
    8042);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (666, '2016-01-11', '2016-01-13', 1012, 707, 
+  VALUES (666, DATE '2016-01-11', DATE '2016-01-13', 1012, 707, 
    5564);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (667, '2016-01-11', '2016-01-14', 1009, 708, 
+  VALUES (667, DATE '2016-01-11', DATE '2016-01-14', 1009, 708, 
    1360.63);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (668, '2016-01-11', '2016-01-14', 1018, 708, 
+  VALUES (668, DATE '2016-01-11', DATE '2016-01-14', 1018, 708, 
    7313.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (669, '2016-01-11', '2016-01-14', 1017, 708, 
+  VALUES (669, DATE '2016-01-11', DATE '2016-01-14', 1017, 708, 
    7919);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (670, '2016-01-12', '2016-01-16', 1021, 701, 
+  VALUES (670, DATE '2016-01-12', DATE '2016-01-16', 1021, 701, 
    1593.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (671, '2016-01-12', '2016-01-12', 1008, 707, 
+  VALUES (671, DATE '2016-01-12', DATE '2016-01-12', 1008, 707, 
    14898.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (672, '2016-01-12', '2016-01-15', 1005, 707, 
+  VALUES (672, DATE '2016-01-12', DATE '2016-01-15', 1005, 707, 
    6834.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (673, '2016-01-12', '2016-01-12', 1026, 708, 
+  VALUES (673, DATE '2016-01-12', DATE '2016-01-12', 1026, 708, 
    3508.49);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (674, '2016-01-12', '2016-01-12', 1016, 705, 
+  VALUES (674, DATE '2016-01-12', DATE '2016-01-12', 1016, 705, 
    2618.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (675, '2016-01-12', '2016-01-13', 1016, 702, 
+  VALUES (675, DATE '2016-01-12', DATE '2016-01-13', 1016, 702, 
    6602.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (676, '2016-01-12', '2016-01-15', 1002, 701, 
+  VALUES (676, DATE '2016-01-12', DATE '2016-01-15', 1002, 701, 
    6253.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (677, '2016-01-13', '2016-01-16', 1005, 708, 
+  VALUES (677, DATE '2016-01-13', DATE '2016-01-16', 1005, 708, 
    5893.45);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (678, '2016-01-13', '2016-01-16', 1013, 704, 
+  VALUES (678, DATE '2016-01-13', DATE '2016-01-16', 1013, 704, 
    7207.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (679, '2016-01-13', '2016-01-14', 1026, 707, 
+  VALUES (679, DATE '2016-01-13', DATE '2016-01-14', 1026, 707, 
    15778.29);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (680, '2016-01-13', '2016-01-16', 1013, 703, 
+  VALUES (680, DATE '2016-01-13', DATE '2016-01-16', 1013, 703, 
    1716.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (681, '2016-01-13', '2016-01-14', 1015, 702, 
+  VALUES (681, DATE '2016-01-13', DATE '2016-01-14', 1015, 702, 
    1409.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (682, '2016-01-13', '2016-01-15', 1018, 704, 
+  VALUES (682, DATE '2016-01-13', DATE '2016-01-15', 1018, 704, 
    7312.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (683, '2016-01-13', '2016-01-13', 1018, 702, 
+  VALUES (683, DATE '2016-01-13', DATE '2016-01-13', 1018, 702, 
    375);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (684, '2016-01-14', '2016-01-17', 1027, 708, 
+  VALUES (684, DATE '2016-01-14', DATE '2016-01-17', 1027, 708, 
    13458.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (685, '2016-01-14', '2016-01-15', 1005, 704, 
+  VALUES (685, DATE '2016-01-14', DATE '2016-01-15', 1005, 704, 
    15372.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (686, '2016-01-14', '2016-01-18', 1026, 701, 
+  VALUES (686, DATE '2016-01-14', DATE '2016-01-18', 1026, 701, 
    7311);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (687, '2016-01-14', '2016-01-16', 1021, 705, 
+  VALUES (687, DATE '2016-01-14', DATE '2016-01-16', 1021, 705, 
    5490);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (688, '2016-01-14', '2016-01-18', 1002, 702, 
+  VALUES (688, DATE '2016-01-14', DATE '2016-01-18', 1002, 702, 
    6739.79);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (689, '2016-01-14', '2016-01-15', 1015, 705, 
+  VALUES (689, DATE '2016-01-14', DATE '2016-01-15', 1015, 705, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (690, '2016-01-14', '2016-01-14', 1016, 702, 
+  VALUES (690, DATE '2016-01-14', DATE '2016-01-14', 1016, 702, 
    6582);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (691, '2016-01-14', '2016-01-18', 1004, 707, 
+  VALUES (691, DATE '2016-01-14', DATE '2016-01-18', 1004, 707, 
    14516.47);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (692, '2016-01-15', '2016-01-18', 1019, 701, 
+  VALUES (692, DATE '2016-01-15', DATE '2016-01-18', 1019, 701, 
    296.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (693, '2016-01-15', '2016-01-18', 1002, 705, 
+  VALUES (693, DATE '2016-01-15', DATE '2016-01-18', 1002, 705, 
    9937);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (694, '2016-01-15', '2016-01-16', 1019, 708, 
+  VALUES (694, DATE '2016-01-15', DATE '2016-01-16', 1019, 708, 
    2457.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (695, '2016-01-15', '2016-01-17', 1010, 708, 
+  VALUES (695, DATE '2016-01-15', DATE '2016-01-17', 1010, 708, 
    7122);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (696, '2016-01-15', '2016-01-16', 1002, 708, 
+  VALUES (696, DATE '2016-01-15', DATE '2016-01-16', 1002, 708, 
    15105.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (697, '2016-01-15', '2016-01-15', 1005, 704, 
+  VALUES (697, DATE '2016-01-15', DATE '2016-01-15', 1005, 704, 
    3687);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (698, '2016-01-16', '2016-01-17', 1022, 705, 
+  VALUES (698, DATE '2016-01-16', DATE '2016-01-17', 1022, 705, 
    1279.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (699, '2016-01-17', '2016-01-18', 1013, 701, 
+  VALUES (699, DATE '2016-01-17', DATE '2016-01-18', 1013, 701, 
    503.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (700, '2016-01-17', '2016-01-17', 1013, 707, 
+  VALUES (700, DATE '2016-01-17', DATE '2016-01-17', 1013, 707, 
    3658);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (701, '2016-01-17', '2016-01-19', 1001, 707, 
+  VALUES (701, DATE '2016-01-17', DATE '2016-01-19', 1001, 707, 
    917.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (702, '2016-01-17', '2016-01-20', 1020, 704, 
+  VALUES (702, DATE '2016-01-17', DATE '2016-01-20', 1020, 704, 
    6966.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (703, '2016-01-17', '2016-01-19', 1007, 704, 
+  VALUES (703, DATE '2016-01-17', DATE '2016-01-19', 1007, 704, 
    570);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (704, '2016-01-17', '2016-01-21', 1024, 704, 
+  VALUES (704, DATE '2016-01-17', DATE '2016-01-21', 1024, 704, 
    1466.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (705, '2016-01-17', '2016-01-20', 1015, 706, 
+  VALUES (705, DATE '2016-01-17', DATE '2016-01-20', 1015, 706, 
    650.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (706, '2016-01-17', '2016-01-17', 1016, 703, 
+  VALUES (706, DATE '2016-01-17', DATE '2016-01-17', 1016, 703, 
    2326.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (707, '2016-01-17', '2016-01-18', 1002, 707, 
+  VALUES (707, DATE '2016-01-17', DATE '2016-01-18', 1002, 707, 
    556);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (708, '2016-01-18', '2016-01-21', 1009, 708, 
+  VALUES (708, DATE '2016-01-18', DATE '2016-01-21', 1009, 708, 
    4828.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (709, '2016-01-18', '2016-01-18', 1018, 702, 
+  VALUES (709, DATE '2016-01-18', DATE '2016-01-18', 1018, 702, 
    1633.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (710, '2016-01-19', '2016-01-21', 1007, 702, 
+  VALUES (710, DATE '2016-01-19', DATE '2016-01-21', 1007, 702, 
    7317);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (711, '2016-01-19', '2016-01-21', 1019, 704, 
+  VALUES (711, DATE '2016-01-19', DATE '2016-01-21', 1019, 704, 
    6070.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (712, '2016-01-19', '2016-01-22', 1024, 705, 
+  VALUES (712, DATE '2016-01-19', DATE '2016-01-22', 1024, 705, 
    4244.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (713, '2016-01-19', '2016-01-23', 1007, 701, 
+  VALUES (713, DATE '2016-01-19', DATE '2016-01-23', 1007, 701, 
    808.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (714, '2016-01-19', '2016-01-23', 1019, 707, 
+  VALUES (714, DATE '2016-01-19', DATE '2016-01-23', 1019, 707, 
    12895.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (715, '2016-01-19', '2016-01-23', 1020, 707, 
+  VALUES (715, DATE '2016-01-19', DATE '2016-01-23', 1020, 707, 
    3330.33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (716, '2016-01-20', '2016-01-24', 1016, 701, 
+  VALUES (716, DATE '2016-01-20', DATE '2016-01-24', 1016, 701, 
    846);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (717, '2016-01-20', '2016-01-20', 1008, 701, 
+  VALUES (717, DATE '2016-01-20', DATE '2016-01-20', 1008, 701, 
    4689.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (718, '2016-01-20', '2016-01-21', 1010, 705, 
+  VALUES (718, DATE '2016-01-20', DATE '2016-01-21', 1010, 705, 
    976.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (719, '2016-01-20', '2016-01-23', 1027, 703, 
+  VALUES (719, DATE '2016-01-20', DATE '2016-01-23', 1027, 703, 
    1833.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (720, '2016-01-21', '2016-01-25', 1010, 707, 
+  VALUES (720, DATE '2016-01-21', DATE '2016-01-25', 1010, 707, 
    836.22);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (721, '2016-01-21', '2016-01-22', 1015, 705, 
+  VALUES (721, DATE '2016-01-21', DATE '2016-01-22', 1015, 705, 
    1755.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (722, '2016-01-21', '2016-01-22', 1006, 703, 
+  VALUES (722, DATE '2016-01-21', DATE '2016-01-22', 1006, 703, 
    13914.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (723, '2016-01-21', '2016-01-24', 1001, 707, 
+  VALUES (723, DATE '2016-01-21', DATE '2016-01-24', 1001, 707, 
    1276.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (724, '2016-01-22', '2016-01-22', 1017, 704, 
+  VALUES (724, DATE '2016-01-22', DATE '2016-01-22', 1017, 704, 
    5397);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (725, '2016-01-22', '2016-01-24', 1009, 702, 
+  VALUES (725, DATE '2016-01-22', DATE '2016-01-24', 1009, 702, 
    6086.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (726, '2016-01-22', '2016-01-26', 1015, 703, 
+  VALUES (726, DATE '2016-01-22', DATE '2016-01-26', 1015, 703, 
    1123.97);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (727, '2016-01-22', '2016-01-23', 1017, 706, 
+  VALUES (727, DATE '2016-01-22', DATE '2016-01-23', 1017, 706, 
    8463.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (728, '2016-01-22', '2016-01-24', 1008, 706, 
+  VALUES (728, DATE '2016-01-22', DATE '2016-01-24', 1008, 706, 
    220);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (729, '2016-01-22', '2016-01-24', 1021, 704, 
+  VALUES (729, DATE '2016-01-22', DATE '2016-01-24', 1021, 704, 
    8022.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (730, '2016-01-22', '2016-01-24', 1023, 706, 
+  VALUES (730, DATE '2016-01-22', DATE '2016-01-24', 1023, 706, 
    5377.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (731, '2016-01-22', '2016-01-26', 1014, 702, 
+  VALUES (731, DATE '2016-01-22', DATE '2016-01-26', 1014, 702, 
    7145.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (732, '2016-01-23', '2016-01-25', 1001, 707, 
+  VALUES (732, DATE '2016-01-23', DATE '2016-01-25', 1001, 707, 
    933);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (733, '2016-01-23', '2016-01-24', 1011, 706, 
+  VALUES (733, DATE '2016-01-23', DATE '2016-01-24', 1011, 706, 
    1070.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (734, '2016-01-24', '2016-01-26', 1016, 706, 
+  VALUES (734, DATE '2016-01-24', DATE '2016-01-26', 1016, 706, 
    4800);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (735, '2016-01-24', '2016-01-24', 1027, 708, 
+  VALUES (735, DATE '2016-01-24', DATE '2016-01-24', 1027, 708, 
    3625.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (736, '2016-01-24', '2016-01-28', 1003, 708, 
+  VALUES (736, DATE '2016-01-24', DATE '2016-01-28', 1003, 708, 
    1274.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (737, '2016-01-24', '2016-01-27', 1020, 708, 
+  VALUES (737, DATE '2016-01-24', DATE '2016-01-27', 1020, 708, 
    261.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (738, '2016-01-24', '2016-01-26', 1017, 704, 
+  VALUES (738, DATE '2016-01-24', DATE '2016-01-26', 1017, 704, 
    12380.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (739, '2016-01-24', '2016-01-25', 1022, 703, 
+  VALUES (739, DATE '2016-01-24', DATE '2016-01-25', 1022, 703, 
    606.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (740, '2016-01-25', '2016-01-26', 1011, 708, 
+  VALUES (740, DATE '2016-01-25', DATE '2016-01-26', 1011, 708, 
    17533.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (741, '2016-01-25', '2016-01-25', 1024, 707, 
+  VALUES (741, DATE '2016-01-25', DATE '2016-01-25', 1024, 707, 
    8267.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (742, '2016-01-25', '2016-01-28', 1013, 706, 
+  VALUES (742, DATE '2016-01-25', DATE '2016-01-28', 1013, 706, 
    1591.82);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (743, '2016-01-25', '2016-01-27', 1008, 708, 
+  VALUES (743, DATE '2016-01-25', DATE '2016-01-27', 1008, 708, 
    12275.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (744, '2016-01-25', '2016-01-28', 1027, 703, 
+  VALUES (744, DATE '2016-01-25', DATE '2016-01-28', 1027, 703, 
    15390.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (745, '2016-01-25', '2016-01-29', 1027, 706, 
+  VALUES (745, DATE '2016-01-25', DATE '2016-01-29', 1027, 706, 
    11156.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (746, '2016-01-25', '2016-01-29', 1013, 702, 
+  VALUES (746, DATE '2016-01-25', DATE '2016-01-29', 1013, 702, 
    5496.92);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (747, '2016-01-25', '2016-01-28', 1016, 703, 
+  VALUES (747, DATE '2016-01-25', DATE '2016-01-28', 1016, 703, 
    8395.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (748, '2016-01-25', '2016-01-28', 1021, 703, 
+  VALUES (748, DATE '2016-01-25', DATE '2016-01-28', 1021, 703, 
    1663.62);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (749, '2016-01-25', '2016-01-29', 1021, 702, 
+  VALUES (749, DATE '2016-01-25', DATE '2016-01-29', 1021, 702, 
    200);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (750, '2016-01-26', '2016-01-30', 1018, 708, 
+  VALUES (750, DATE '2016-01-26', DATE '2016-01-30', 1018, 708, 
    3640.11);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (751, '2016-01-26', '2016-01-30', 1025, 707, 
+  VALUES (751, DATE '2016-01-26', DATE '2016-01-30', 1025, 707, 
    7610.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (752, '2016-01-27', '2016-01-31', 1005, 702, 
+  VALUES (752, DATE '2016-01-27', DATE '2016-01-31', 1005, 702, 
    8002.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (753, '2016-01-27', '2016-01-29', 1013, 701, 
+  VALUES (753, DATE '2016-01-27', DATE '2016-01-29', 1013, 701, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (754, '2016-01-27', '2016-01-31', 1014, 708, 
+  VALUES (754, DATE '2016-01-27', DATE '2016-01-31', 1014, 708, 
    498);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (755, '2016-01-28', '2016-01-31', 1010, 708, 
+  VALUES (755, DATE '2016-01-28', DATE '2016-01-31', 1010, 708, 
    6820.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (756, '2016-01-28', '2016-01-28', 1005, 706, 
+  VALUES (756, DATE '2016-01-28', DATE '2016-01-28', 1005, 706, 
    1800);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (757, '2016-01-28', '2016-01-30', 1014, 702, 
+  VALUES (757, DATE '2016-01-28', DATE '2016-01-30', 1014, 702, 
    13619.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (758, '2016-01-28', '2016-01-30', 1020, 708, 
+  VALUES (758, DATE '2016-01-28', DATE '2016-01-30', 1020, 708, 
    168.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (759, '2016-01-28', '2016-01-28', 1016, 703, 
+  VALUES (759, DATE '2016-01-28', DATE '2016-01-28', 1016, 703, 
    467.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (760, '2016-01-28', '2016-01-31', 1014, 707, 
+  VALUES (760, DATE '2016-01-28', DATE '2016-01-31', 1014, 707, 
    11683.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (761, '2016-01-29', '2016-01-30', 1016, 708, 
+  VALUES (761, DATE '2016-01-29', DATE '2016-01-30', 1016, 708, 
    2989.63);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (762, '2016-01-29', '2016-02-02', 1013, 705, 
+  VALUES (762, DATE '2016-01-29', DATE '2016-02-02', 1013, 705, 
    19689.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (763, '2016-01-29', '2016-02-01', 1009, 701, 
+  VALUES (763, DATE '2016-01-29', DATE '2016-02-01', 1009, 701, 
    3765);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (764, '2016-01-29', '2016-01-29', 1003, 702, 
+  VALUES (764, DATE '2016-01-29', DATE '2016-01-29', 1003, 702, 
    403.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (765, '2016-01-29', '2016-01-31', 1016, 703, 
+  VALUES (765, DATE '2016-01-29', DATE '2016-01-31', 1016, 703, 
    5465.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (766, '2016-01-29', '2016-01-30', 1026, 707, 
+  VALUES (766, DATE '2016-01-29', DATE '2016-01-30', 1026, 707, 
    5985);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (767, '2016-01-30', '2016-01-31', 1017, 706, 
+  VALUES (767, DATE '2016-01-30', DATE '2016-01-31', 1017, 706, 
    6173.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (768, '2016-01-30', '2016-02-03', 1003, 706, 
+  VALUES (768, DATE '2016-01-30', DATE '2016-02-03', 1003, 706, 
    135);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (769, '2016-01-30', '2016-02-01', 1020, 705, 
+  VALUES (769, DATE '2016-01-30', DATE '2016-02-01', 1020, 705, 
    17759.66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (770, '2016-01-30', '2016-01-30', 1019, 702, 
+  VALUES (770, DATE '2016-01-30', DATE '2016-01-30', 1019, 702, 
    144);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (771, '2016-01-30', '2016-02-01', 1017, 707, 
+  VALUES (771, DATE '2016-01-30', DATE '2016-02-01', 1017, 707, 
    7022);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (772, '2016-01-30', '2016-01-31', 1024, 704, 
+  VALUES (772, DATE '2016-01-30', DATE '2016-01-31', 1024, 704, 
    11468);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (773, '2016-01-30', '2016-02-02', 1019, 705, 
+  VALUES (773, DATE '2016-01-30', DATE '2016-02-02', 1019, 705, 
    401.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (774, '2016-01-31', '2016-02-02', 1013, 704, 
+  VALUES (774, DATE '2016-01-31', DATE '2016-02-02', 1013, 704, 
    2891);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (775, '2016-01-31', '2016-01-31', 1010, 704, 
+  VALUES (775, DATE '2016-01-31', DATE '2016-01-31', 1010, 704, 
    813.74);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (776, '2016-01-31', '2016-01-31', 1006, 708, 
+  VALUES (776, DATE '2016-01-31', DATE '2016-01-31', 1006, 708, 
    15371.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (777, '2016-01-31', '2016-02-02', 1026, 708, 
+  VALUES (777, DATE '2016-01-31', DATE '2016-02-02', 1026, 708, 
    2019);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (778, '2016-01-31', '2016-01-31', 1025, 707, 
+  VALUES (778, DATE '2016-01-31', DATE '2016-01-31', 1025, 707, 
    1314.18);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (779, '2016-01-31', '2016-01-31', 1004, 705, 
+  VALUES (779, DATE '2016-01-31', DATE '2016-01-31', 1004, 705, 
    1388.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (780, '2016-01-31', '2016-01-31', 1003, 701, 
+  VALUES (780, DATE '2016-01-31', DATE '2016-01-31', 1003, 701, 
    2008.69);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (781, '2016-01-31', '2016-02-04', 1021, 704, 
+  VALUES (781, DATE '2016-01-31', DATE '2016-02-04', 1021, 704, 
    4994.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (782, '2016-01-31', '2016-02-03', 1016, 702, 
+  VALUES (782, DATE '2016-01-31', DATE '2016-02-03', 1016, 702, 
    848.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (783, '2016-01-31', '2016-02-04', 1013, 704, 
+  VALUES (783, DATE '2016-01-31', DATE '2016-02-04', 1013, 704, 
    7058.67);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (784, '2016-02-01', '2016-02-04', 1018, 707, 
+  VALUES (784, DATE '2016-02-01', DATE '2016-02-04', 1018, 707, 
    6545.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (785, '2016-02-01', '2016-02-05', 1027, 706, 
+  VALUES (785, DATE '2016-02-01', DATE '2016-02-05', 1027, 706, 
    7660.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (786, '2016-02-01', '2016-02-01', 1015, 704, 
+  VALUES (786, DATE '2016-02-01', DATE '2016-02-01', 1015, 704, 
    1216);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (787, '2016-02-01', '2016-02-03', 1009, 707, 
+  VALUES (787, DATE '2016-02-01', DATE '2016-02-03', 1009, 707, 
    13876.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (788, '2016-02-01', '2016-02-01', 1026, 704, 
+  VALUES (788, DATE '2016-02-01', DATE '2016-02-01', 1026, 704, 
    4332);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (789, '2016-02-01', '2016-02-05', 1021, 707, 
+  VALUES (789, DATE '2016-02-01', DATE '2016-02-05', 1021, 707, 
    4951.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (790, '2016-02-01', '2016-02-01', 1004, 707, 
+  VALUES (790, DATE '2016-02-01', DATE '2016-02-01', 1004, 707, 
    6214.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (791, '2016-02-01', '2016-02-02', 1017, 706, 
+  VALUES (791, DATE '2016-02-01', DATE '2016-02-02', 1017, 706, 
    3934.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (792, '2016-02-02', '2016-02-05', 1027, 707, 
+  VALUES (792, DATE '2016-02-02', DATE '2016-02-05', 1027, 707, 
    5026.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (793, '2016-02-02', '2016-02-03', 1026, 706, 
+  VALUES (793, DATE '2016-02-02', DATE '2016-02-03', 1026, 706, 
    619.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (794, '2016-02-02', '2016-02-04', 1016, 703, 
+  VALUES (794, DATE '2016-02-02', DATE '2016-02-04', 1016, 703, 
    6845);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (795, '2016-02-03', '2016-02-05', 1024, 707, 
+  VALUES (795, DATE '2016-02-03', DATE '2016-02-05', 1024, 707, 
    1754.98);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (796, '2016-02-03', '2016-02-07', 1007, 703, 
+  VALUES (796, DATE '2016-02-03', DATE '2016-02-07', 1007, 703, 
    5695.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (797, '2016-02-03', '2016-02-06', 1018, 705, 
+  VALUES (797, DATE '2016-02-03', DATE '2016-02-06', 1018, 705, 
    10544.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (798, '2016-02-03', '2016-02-04', 1003, 702, 
+  VALUES (798, DATE '2016-02-03', DATE '2016-02-04', 1003, 702, 
    576.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (799, '2016-02-04', '2016-02-05', 1010, 704, 
+  VALUES (799, DATE '2016-02-04', DATE '2016-02-05', 1010, 704, 
    2970.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (800, '2016-02-04', '2016-02-07', 1027, 707, 
+  VALUES (800, DATE '2016-02-04', DATE '2016-02-07', 1027, 707, 
    3441.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (801, '2016-02-04', '2016-02-08', 1002, 707, 
+  VALUES (801, DATE '2016-02-04', DATE '2016-02-08', 1002, 707, 
    6486.12);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (802, '2016-02-04', '2016-02-04', 1021, 707, 
+  VALUES (802, DATE '2016-02-04', DATE '2016-02-04', 1021, 707, 
    67);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (803, '2016-02-05', '2016-02-08', 1004, 704, 
+  VALUES (803, DATE '2016-02-05', DATE '2016-02-08', 1004, 704, 
    1342.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (804, '2016-02-05', '2016-02-05', 1014, 708, 
+  VALUES (804, DATE '2016-02-05', DATE '2016-02-05', 1014, 708, 
    8316.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (805, '2016-02-05', '2016-02-05', 1009, 702, 
+  VALUES (805, DATE '2016-02-05', DATE '2016-02-05', 1009, 702, 
    7493.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (806, '2016-02-05', '2016-02-07', 1019, 707, 
+  VALUES (806, DATE '2016-02-05', DATE '2016-02-07', 1019, 707, 
    5759.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (807, '2016-02-06', '2016-02-07', 1016, 705, 
+  VALUES (807, DATE '2016-02-06', DATE '2016-02-07', 1016, 705, 
    8591.79);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (808, '2016-02-06', '2016-02-07', 1004, 704, 
+  VALUES (808, DATE '2016-02-06', DATE '2016-02-07', 1004, 704, 
    544);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (809, '2016-02-07', '2016-02-11', 1004, 701, 
+  VALUES (809, DATE '2016-02-07', DATE '2016-02-11', 1004, 701, 
    2762.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (810, '2016-02-07', '2016-02-07', 1022, 705, 
+  VALUES (810, DATE '2016-02-07', DATE '2016-02-07', 1022, 705, 
    409.97);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (811, '2016-02-07', '2016-02-11', 1008, 707, 
+  VALUES (811, DATE '2016-02-07', DATE '2016-02-11', 1008, 707, 
    1123.26);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (812, '2016-02-07', '2016-02-07', 1005, 707, 
+  VALUES (812, DATE '2016-02-07', DATE '2016-02-07', 1005, 707, 
    6260.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (813, '2016-02-08', '2016-02-08', 1013, 705, 
+  VALUES (813, DATE '2016-02-08', DATE '2016-02-08', 1013, 705, 
    14345.1);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (814, '2016-02-08', '2016-02-08', 1013, 706, 
+  VALUES (814, DATE '2016-02-08', DATE '2016-02-08', 1013, 706, 
    33);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (815, '2016-02-08', '2016-02-12', 1007, 702, 
+  VALUES (815, DATE '2016-02-08', DATE '2016-02-12', 1007, 702, 
    11197.55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (816, '2016-02-08', '2016-02-11', 1011, 701, 
+  VALUES (816, DATE '2016-02-08', DATE '2016-02-11', 1011, 701, 
    NULL);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (817, '2016-02-08', '2016-02-08', 1001, 705, 
+  VALUES (817, DATE '2016-02-08', DATE '2016-02-08', 1001, 705, 
    1530.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (818, '2016-02-08', '2016-02-10', 1023, 704, 
+  VALUES (818, DATE '2016-02-08', DATE '2016-02-10', 1023, 704, 
    3483.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (819, '2016-02-08', '2016-02-12', 1013, 707, 
+  VALUES (819, DATE '2016-02-08', DATE '2016-02-12', 1013, 707, 
    9208.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (820, '2016-02-08', '2016-02-09', 1019, 704, 
+  VALUES (820, DATE '2016-02-08', DATE '2016-02-09', 1019, 704, 
    401.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (821, '2016-02-08', '2016-02-12', 1023, 708, 
+  VALUES (821, DATE '2016-02-08', DATE '2016-02-12', 1023, 708, 
    3688);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (822, '2016-02-08', '2016-02-09', 1004, 701, 
+  VALUES (822, DATE '2016-02-08', DATE '2016-02-09', 1004, 701, 
    2095.06);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (823, '2016-02-09', '2016-02-10', 1003, 703, 
+  VALUES (823, DATE '2016-02-09', DATE '2016-02-10', 1003, 703, 
    68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (824, '2016-02-09', '2016-02-10', 1006, 701, 
+  VALUES (824, DATE '2016-02-09', DATE '2016-02-10', 1006, 701, 
    6217.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (825, '2016-02-09', '2016-02-09', 1025, 708, 
+  VALUES (825, DATE '2016-02-09', DATE '2016-02-09', 1025, 708, 
    1979.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (826, '2016-02-09', '2016-02-09', 1005, 707, 
+  VALUES (826, DATE '2016-02-09', DATE '2016-02-09', 1005, 707, 
    5973.81);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (827, '2016-02-10', '2016-02-14', 1013, 706, 
+  VALUES (827, DATE '2016-02-10', DATE '2016-02-14', 1013, 706, 
    1159.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (828, '2016-02-10', '2016-02-10', 1014, 701, 
+  VALUES (828, DATE '2016-02-10', DATE '2016-02-10', 1014, 701, 
    6333.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (829, '2016-02-10', '2016-02-11', 1027, 701, 
+  VALUES (829, DATE '2016-02-10', DATE '2016-02-11', 1027, 701, 
    3607.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (830, '2016-02-11', '2016-02-13', 1020, 703, 
+  VALUES (830, DATE '2016-02-11', DATE '2016-02-13', 1020, 703, 
    4516.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (831, '2016-02-11', '2016-02-14', 1012, 705, 
+  VALUES (831, DATE '2016-02-11', DATE '2016-02-14', 1012, 705, 
    5014);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (832, '2016-02-11', '2016-02-15', 1012, 707, 
+  VALUES (832, DATE '2016-02-11', DATE '2016-02-15', 1012, 707, 
    175);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (833, '2016-02-11', '2016-02-15', 1007, 706, 
+  VALUES (833, DATE '2016-02-11', DATE '2016-02-15', 1007, 706, 
    2801.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (834, '2016-02-11', '2016-02-11', 1021, 704, 
+  VALUES (834, DATE '2016-02-11', DATE '2016-02-11', 1021, 704, 
    1901.82);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (835, '2016-02-11', '2016-02-13', 1012, 703, 
+  VALUES (835, DATE '2016-02-11', DATE '2016-02-13', 1012, 703, 
    7398.19);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (836, '2016-02-11', '2016-02-14', 1007, 708, 
+  VALUES (836, DATE '2016-02-11', DATE '2016-02-14', 1007, 708, 
    4563.66);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (837, '2016-02-11', '2016-02-13', 1012, 701, 
+  VALUES (837, DATE '2016-02-11', DATE '2016-02-13', 1012, 701, 
    17096.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (838, '2016-02-11', '2016-02-13', 1014, 706, 
+  VALUES (838, DATE '2016-02-11', DATE '2016-02-13', 1014, 706, 
    13591);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (839, '2016-02-12', '2016-02-12', 1012, 702, 
+  VALUES (839, DATE '2016-02-12', DATE '2016-02-12', 1012, 702, 
    7438);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (840, '2016-02-12', '2016-02-12', 1001, 701, 
+  VALUES (840, DATE '2016-02-12', DATE '2016-02-12', 1001, 701, 
    995);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (841, '2016-02-12', '2016-02-16', 1017, 707, 
+  VALUES (841, DATE '2016-02-12', DATE '2016-02-16', 1017, 707, 
    11499.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (842, '2016-02-12', '2016-02-14', 1013, 707, 
+  VALUES (842, DATE '2016-02-12', DATE '2016-02-14', 1013, 707, 
    3127.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (843, '2016-02-12', '2016-02-14', 1008, 705, 
+  VALUES (843, DATE '2016-02-12', DATE '2016-02-14', 1008, 705, 
    2607);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (844, '2016-02-12', '2016-02-14', 1014, 708, 
+  VALUES (844, DATE '2016-02-12', DATE '2016-02-14', 1014, 708, 
    7274.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (845, '2016-02-12', '2016-02-15', 1020, 701, 
+  VALUES (845, DATE '2016-02-12', DATE '2016-02-15', 1020, 701, 
    716);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (846, '2016-02-13', '2016-02-17', 1012, 704, 
+  VALUES (846, DATE '2016-02-13', DATE '2016-02-17', 1012, 704, 
    1167.88);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (847, '2016-02-13', '2016-02-15', 1027, 706, 
+  VALUES (847, DATE '2016-02-13', DATE '2016-02-15', 1027, 706, 
    14221);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (848, '2016-02-13', '2016-02-16', 1014, 706, 
+  VALUES (848, DATE '2016-02-13', DATE '2016-02-16', 1014, 706, 
    2902);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (849, '2016-02-13', '2016-02-15', 1026, 708, 
+  VALUES (849, DATE '2016-02-13', DATE '2016-02-15', 1026, 708, 
    7123.68);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (850, '2016-02-13', '2016-02-13', 1003, 701, 
+  VALUES (850, DATE '2016-02-13', DATE '2016-02-13', 1003, 701, 
    846.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (851, '2016-02-13', '2016-02-13', 1001, 702, 
+  VALUES (851, DATE '2016-02-13', DATE '2016-02-13', 1001, 702, 
    1502.4);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (852, '2016-02-13', '2016-02-16', 1002, 707, 
+  VALUES (852, DATE '2016-02-13', DATE '2016-02-16', 1002, 707, 
    15152.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (853, '2016-02-13', '2016-02-16', 1023, 708, 
+  VALUES (853, DATE '2016-02-13', DATE '2016-02-16', 1023, 708, 
    13971.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (854, '2016-02-13', '2016-02-16', 1004, 706, 
+  VALUES (854, DATE '2016-02-13', DATE '2016-02-16', 1004, 706, 
    8730);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (855, '2016-02-14', '2016-02-15', 1001, 704, 
+  VALUES (855, DATE '2016-02-14', DATE '2016-02-15', 1001, 704, 
    117);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (856, '2016-02-14', '2016-02-14', 1026, 703, 
+  VALUES (856, DATE '2016-02-14', DATE '2016-02-14', 1026, 703, 
    3635.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (857, '2016-02-14', '2016-02-14', 1017, 708, 
+  VALUES (857, DATE '2016-02-14', DATE '2016-02-14', 1017, 708, 
    139);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (858, '2016-02-15', '2016-02-19', 1023, 701, 
+  VALUES (858, DATE '2016-02-15', DATE '2016-02-19', 1023, 701, 
    2346.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (859, '2016-02-16', '2016-02-16', 1016, 703, 
+  VALUES (859, DATE '2016-02-16', DATE '2016-02-16', 1016, 703, 
    2773.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (860, '2016-02-16', '2016-02-19', 1003, 703, 
+  VALUES (860, DATE '2016-02-16', DATE '2016-02-19', 1003, 703, 
    585.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (861, '2016-02-16', '2016-02-16', 1026, 708, 
+  VALUES (861, DATE '2016-02-16', DATE '2016-02-16', 1026, 708, 
    7129.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (862, '2016-02-16', '2016-02-20', 1010, 702, 
+  VALUES (862, DATE '2016-02-16', DATE '2016-02-20', 1010, 702, 
    10818);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (863, '2016-02-16', '2016-02-17', 1025, 704, 
+  VALUES (863, DATE '2016-02-16', DATE '2016-02-17', 1025, 704, 
    5820);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (864, '2016-02-16', '2016-02-16', 1008, 707, 
+  VALUES (864, DATE '2016-02-16', DATE '2016-02-16', 1008, 707, 
    9204.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (865, '2016-02-16', '2016-02-20', 1024, 703, 
+  VALUES (865, DATE '2016-02-16', DATE '2016-02-20', 1024, 703, 
    11540.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (866, '2016-02-16', '2016-02-17', 1022, 706, 
+  VALUES (866, DATE '2016-02-16', DATE '2016-02-17', 1022, 706, 
    674.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (867, '2016-02-16', '2016-02-20', 1017, 708, 
+  VALUES (867, DATE '2016-02-16', DATE '2016-02-20', 1017, 708, 
    3751.21);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (868, '2016-02-16', '2016-02-18', 1021, 702, 
+  VALUES (868, DATE '2016-02-16', DATE '2016-02-18', 1021, 702, 
    1231.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (869, '2016-02-17', '2016-02-19', 1024, 708, 
+  VALUES (869, DATE '2016-02-17', DATE '2016-02-19', 1024, 708, 
    2732);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (870, '2016-02-17', '2016-02-20', 1005, 704, 
+  VALUES (870, DATE '2016-02-17', DATE '2016-02-20', 1005, 704, 
    17137.93);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (871, '2016-02-17', '2016-02-19', 1021, 708, 
+  VALUES (871, DATE '2016-02-17', DATE '2016-02-19', 1021, 708, 
    6386.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (872, '2016-02-17', '2016-02-21', 1017, 702, 
+  VALUES (872, DATE '2016-02-17', DATE '2016-02-21', 1017, 702, 
    13953.96);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (873, '2016-02-17', '2016-02-18', 1020, 702, 
+  VALUES (873, DATE '2016-02-17', DATE '2016-02-18', 1020, 702, 
    7168.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (874, '2016-02-18', '2016-02-21', 1005, 702, 
+  VALUES (874, DATE '2016-02-18', DATE '2016-02-21', 1005, 702, 
    5255.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (875, '2016-02-18', '2016-02-22', 1017, 702, 
+  VALUES (875, DATE '2016-02-18', DATE '2016-02-22', 1017, 702, 
    551);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (876, '2016-02-18', '2016-02-18', 1005, 708, 
+  VALUES (876, DATE '2016-02-18', DATE '2016-02-18', 1005, 708, 
    911.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (877, '2016-02-18', '2016-02-18', 1017, 708, 
+  VALUES (877, DATE '2016-02-18', DATE '2016-02-18', 1017, 708, 
    138);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (878, '2016-02-18', '2016-02-21', 1008, 706, 
+  VALUES (878, DATE '2016-02-18', DATE '2016-02-21', 1008, 706, 
    6296.85);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (879, '2016-02-18', '2016-02-19', 1013, 705, 
+  VALUES (879, DATE '2016-02-18', DATE '2016-02-19', 1013, 705, 
    15745.14);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (880, '2016-02-18', '2016-02-22', 1006, 704, 
+  VALUES (880, DATE '2016-02-18', DATE '2016-02-22', 1006, 704, 
    4876);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (881, '2016-02-18', '2016-02-20', 1016, 707, 
+  VALUES (881, DATE '2016-02-18', DATE '2016-02-20', 1016, 707, 
    2784.31);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (882, '2016-02-18', '2016-02-22', 1008, 707, 
+  VALUES (882, DATE '2016-02-18', DATE '2016-02-22', 1008, 707, 
    4215.2);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (883, '2016-02-19', '2016-02-22', 1011, 704, 
+  VALUES (883, DATE '2016-02-19', DATE '2016-02-22', 1011, 704, 
    7646);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (884, '2016-02-19', '2016-02-22', 1027, 704, 
+  VALUES (884, DATE '2016-02-19', DATE '2016-02-22', 1027, 704, 
    2400);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (885, '2016-02-20', '2016-02-23', 1009, 701, 
+  VALUES (885, DATE '2016-02-20', DATE '2016-02-23', 1009, 701, 
    173);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (886, '2016-02-20', '2016-02-21', 1027, 708, 
+  VALUES (886, DATE '2016-02-20', DATE '2016-02-21', 1027, 708, 
    2487.02);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (887, '2016-02-20', '2016-02-23', 1001, 705, 
+  VALUES (887, DATE '2016-02-20', DATE '2016-02-23', 1001, 705, 
    1493.6);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (888, '2016-02-20', '2016-02-23', 1007, 707, 
+  VALUES (888, DATE '2016-02-20', DATE '2016-02-23', 1007, 707, 
    7724.78);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (889, '2016-02-20', '2016-02-24', 1023, 702, 
+  VALUES (889, DATE '2016-02-20', DATE '2016-02-24', 1023, 702, 
    136);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (890, '2016-02-20', '2016-02-24', 1022, 705, 
+  VALUES (890, DATE '2016-02-20', DATE '2016-02-24', 1022, 705, 
    332);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (891, '2016-02-20', '2016-02-21', 1006, 706, 
+  VALUES (891, DATE '2016-02-20', DATE '2016-02-21', 1006, 706, 
    9913.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (892, '2016-02-21', '2016-02-22', 1010, 703, 
+  VALUES (892, DATE '2016-02-21', DATE '2016-02-22', 1010, 703, 
    156);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (893, '2016-02-21', '2016-02-25', 1022, 705, 
+  VALUES (893, DATE '2016-02-21', DATE '2016-02-25', 1022, 705, 
    550.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (894, '2016-02-21', '2016-02-23', 1024, 704, 
+  VALUES (894, DATE '2016-02-21', DATE '2016-02-23', 1024, 704, 
    3932);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (895, '2016-02-21', '2016-02-21', 1011, 705, 
+  VALUES (895, DATE '2016-02-21', DATE '2016-02-21', 1011, 705, 
    16062.35);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (896, '2016-02-21', '2016-02-24', 1025, 702, 
+  VALUES (896, DATE '2016-02-21', DATE '2016-02-24', 1025, 702, 
    6634);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (897, '2016-02-21', '2016-02-24', 1027, 701, 
+  VALUES (897, DATE '2016-02-21', DATE '2016-02-24', 1027, 701, 
    1808.64);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (898, '2016-02-21', '2016-02-24', 1001, 708, 
+  VALUES (898, DATE '2016-02-21', DATE '2016-02-24', 1001, 708, 
    727.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (899, '2016-02-21', '2016-02-25', 1009, 705, 
+  VALUES (899, DATE '2016-02-21', DATE '2016-02-25', 1009, 705, 
    5071.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (900, '2016-02-22', '2016-02-24', 1020, 701, 
+  VALUES (900, DATE '2016-02-22', DATE '2016-02-24', 1020, 701, 
    6576.8);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (901, '2016-02-22', '2016-02-24', 1013, 707, 
+  VALUES (901, DATE '2016-02-22', DATE '2016-02-24', 1013, 707, 
    3177);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (902, '2016-02-22', '2016-02-23', 1006, 702, 
+  VALUES (902, DATE '2016-02-22', DATE '2016-02-23', 1006, 702, 
    7597.7);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (903, '2016-02-22', '2016-02-23', 1021, 707, 
+  VALUES (903, DATE '2016-02-22', DATE '2016-02-23', 1021, 707, 
    5224.46);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (904, '2016-02-22', '2016-02-26', 1009, 708, 
+  VALUES (904, DATE '2016-02-22', DATE '2016-02-26', 1009, 708, 
    7673);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (905, '2016-02-22', '2016-02-24', 1024, 704, 
+  VALUES (905, DATE '2016-02-22', DATE '2016-02-24', 1024, 704, 
    4369.56);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (906, '2016-02-22', '2016-02-22', 1012, 707, 
+  VALUES (906, DATE '2016-02-22', DATE '2016-02-22', 1012, 707, 
    3396);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (907, '2016-02-23', '2016-02-23', 1014, 702, 
+  VALUES (907, DATE '2016-02-23', DATE '2016-02-23', 1014, 702, 
    615.24);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (908, '2016-02-23', '2016-02-24', 1025, 705, 
+  VALUES (908, DATE '2016-02-23', DATE '2016-02-24', 1025, 705, 
    1459.95);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (909, '2016-02-24', '2016-02-24', 1024, 705, 
+  VALUES (909, DATE '2016-02-24', DATE '2016-02-24', 1024, 705, 
    7947.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (910, '2016-02-24', '2016-02-27', 1019, 702, 
+  VALUES (910, DATE '2016-02-24', DATE '2016-02-27', 1019, 702, 
    10665.9);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (911, '2016-02-24', '2016-02-26', 1023, 702, 
+  VALUES (911, DATE '2016-02-24', DATE '2016-02-26', 1023, 702, 
    705.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (912, '2016-02-24', '2016-02-28', 1025, 706, 
+  VALUES (912, DATE '2016-02-24', DATE '2016-02-28', 1025, 706, 
    7097);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (913, '2016-02-24', '2016-02-25', 1025, 707, 
+  VALUES (913, DATE '2016-02-24', DATE '2016-02-25', 1025, 707, 
    2540.65);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (914, '2016-02-24', '2016-02-24', 1022, 707, 
+  VALUES (914, DATE '2016-02-24', DATE '2016-02-24', 1022, 707, 
    55);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (915, '2016-02-24', '2016-02-25', 1016, 705, 
+  VALUES (915, DATE '2016-02-24', DATE '2016-02-25', 1016, 705, 
    28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (916, '2016-02-24', '2016-02-24', 1025, 705, 
+  VALUES (916, DATE '2016-02-24', DATE '2016-02-24', 1025, 705, 
    1813.28);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (917, '2016-02-24', '2016-02-26', 1013, 703, 
+  VALUES (917, DATE '2016-02-24', DATE '2016-02-26', 1013, 703, 
    5808.05);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (918, '2016-02-25', '2016-02-28', 1025, 703, 
+  VALUES (918, DATE '2016-02-25', DATE '2016-02-28', 1025, 703, 
    660);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (919, '2016-02-25', '2016-02-27', 1014, 707, 
+  VALUES (919, DATE '2016-02-25', DATE '2016-02-27', 1014, 707, 
    7496.37);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (920, '2016-02-26', '2016-03-01', 1008, 708, 
+  VALUES (920, DATE '2016-02-26', DATE '2016-03-01', 1008, 708, 
    36.15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (921, '2016-02-26', '2016-02-26', 1018, 702, 
+  VALUES (921, DATE '2016-02-26', DATE '2016-02-26', 1018, 702, 
    6582);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (922, '2016-02-26', '2016-02-27', 1004, 706, 
+  VALUES (922, DATE '2016-02-26', DATE '2016-02-27', 1004, 706, 
    6475.58);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (923, '2016-02-26', '2016-03-01', 1009, 707, 
+  VALUES (923, DATE '2016-02-26', DATE '2016-03-01', 1009, 707, 
    1229.3);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (924, '2016-02-26', '2016-03-01', 1002, 704, 
+  VALUES (924, DATE '2016-02-26', DATE '2016-03-01', 1002, 704, 
    3775);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (925, '2016-02-26', '2016-02-26', 1025, 702, 
+  VALUES (925, DATE '2016-02-26', DATE '2016-02-26', 1025, 702, 
    2907.63);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (926, '2016-02-26', '2016-02-27', 1005, 701, 
+  VALUES (926, DATE '2016-02-26', DATE '2016-02-27', 1005, 701, 
    8638.13);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (927, '2016-02-27', '2016-02-28', 1007, 704, 
+  VALUES (927, DATE '2016-02-27', DATE '2016-02-28', 1007, 704, 
    1452.61);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (928, '2016-02-27', '2016-03-02', 1017, 706, 
+  VALUES (928, DATE '2016-02-27', DATE '2016-03-02', 1017, 706, 
    1444.08);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (929, '2016-02-27', '2016-02-27', 1020, 705, 
+  VALUES (929, DATE '2016-02-27', DATE '2016-02-27', 1020, 705, 
    4700.25);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (930, '2016-02-27', '2016-03-01', 1023, 701, 
+  VALUES (930, DATE '2016-02-27', DATE '2016-03-01', 1023, 701, 
    15);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (931, '2016-02-27', '2016-02-27', 1001, 707, 
+  VALUES (931, DATE '2016-02-27', DATE '2016-02-27', 1001, 707, 
    225);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (932, '2016-02-27', '2016-02-27', 1012, 704, 
+  VALUES (932, DATE '2016-02-27', DATE '2016-02-27', 1012, 704, 
    1470);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (933, '2016-02-27', '2016-02-27', 1026, 705, 
+  VALUES (933, DATE '2016-02-27', DATE '2016-02-27', 1026, 705, 
    7032);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (934, '2016-02-27', '2016-02-28', 1021, 705, 
+  VALUES (934, DATE '2016-02-27', DATE '2016-02-28', 1021, 705, 
    915.04);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (935, '2016-02-27', '2016-03-02', 1020, 702, 
+  VALUES (935, DATE '2016-02-27', DATE '2016-03-02', 1020, 702, 
    5510);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (936, '2016-02-28', '2016-03-01', 1025, 704, 
+  VALUES (936, DATE '2016-02-28', DATE '2016-03-01', 1025, 704, 
    6190);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (937, '2016-02-28', '2016-03-04', 1014, 706, 
+  VALUES (937, DATE '2016-02-28', DATE '2016-03-04', 1014, 706, 
    7500.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (938, '2016-02-28', '2016-02-28', 1011, 705, 
+  VALUES (938, DATE '2016-02-28', DATE '2016-02-28', 1011, 705, 
    6463.54);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (939, '2016-02-28', '2016-02-28', 1021, 701, 
+  VALUES (939, DATE '2016-02-28', DATE '2016-02-28', 1021, 701, 
    1906.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (940, '2016-02-28', '2016-03-04', 1007, 702, 
+  VALUES (940, DATE '2016-02-28', DATE '2016-03-04', 1007, 702, 
    12273.89);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (941, '2016-02-28', '2016-02-28', 1019, 702, 
+  VALUES (941, DATE '2016-02-28', DATE '2016-02-28', 1019, 702, 
    7395.75);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (942, '2016-02-28', '2016-03-01', 1002, 706, 
+  VALUES (942, DATE '2016-02-28', DATE '2016-03-01', 1002, 706, 
    3878.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (943, '2016-02-28', '2016-03-01', 1026, 707, 
+  VALUES (943, DATE '2016-02-28', DATE '2016-03-01', 1026, 707, 
    2059.5);
 INSERT INTO Orders
   (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, 
    OrderTotal)
-  VALUES (944, '2016-02-28', '2016-03-03', 1020, 702, 
+  VALUES (944, DATE '2016-02-28', DATE '2016-03-03', 1020, 702, 
    7768.9);
-
+ 
 INSERT INTO Order_Details
   (OrderNumber, ProductNumber, QuotedPrice, QuantityOrdered)
   VALUES (1, 1, 1200, 2);
@@ -17371,8 +17428,1161 @@ INSERT INTO Product_Vendors
 INSERT INTO Product_Vendors
   (ProductNumber, VendorID, WholesalePrice, DaysToDeliver)
   VALUES (40, 9, 136.35, 14);
+
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (1, 4, DATE '2015-08-02', DATE '2015-08-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (2, 8, DATE '2015-08-04', DATE '2015-08-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (3, 1, DATE '2015-08-04', DATE '2015-08-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (4, 6, DATE '2015-08-04', DATE '2015-09-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (5, 5, DATE '2015-08-06', DATE '2015-08-31');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (6, 10, DATE '2015-08-06', DATE '2015-08-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (7, 10, DATE '2015-08-08', DATE '2015-08-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (8, 10, DATE '2015-08-09', DATE '2015-08-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (9, 6, DATE '2015-08-09', DATE '2015-08-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (10, 6, DATE '2015-08-11', DATE '2015-09-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (11, 2, DATE '2015-08-13', DATE '2015-08-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (12, 10, DATE '2015-08-13', DATE '2015-08-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (13, 10, DATE '2015-08-14', DATE '2015-08-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (14, 8, DATE '2015-08-16', DATE '2015-08-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (15, 10, DATE '2015-08-16', DATE '2015-09-02');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (16, 4, DATE '2015-08-16', DATE '2015-09-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (17, 5, DATE '2015-08-17', DATE '2015-08-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (18, 3, DATE '2015-08-17', DATE '2015-09-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (19, 5, DATE '2015-08-17', DATE '2015-09-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (20, 1, DATE '2015-08-18', DATE '2015-09-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (21, 9, DATE '2015-08-18', DATE '2015-08-29');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (22, 6, DATE '2015-08-19', DATE '2015-09-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (23, 4, DATE '2015-08-19', DATE '2015-08-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (24, 8, DATE '2015-08-20', DATE '2015-09-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (25, 3, DATE '2015-08-21', DATE '2015-09-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (26, 4, DATE '2015-08-21', DATE '2015-09-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (27, 2, DATE '2015-08-22', DATE '2015-09-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (28, 3, DATE '2015-08-22', DATE '2015-08-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (29, 2, DATE '2015-08-23', DATE '2015-08-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (30, 7, DATE '2015-08-24', DATE '2015-09-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (31, 10, DATE '2015-08-24', DATE '2015-09-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (32, 10, DATE '2015-08-25', DATE '2015-09-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (33, 8, DATE '2015-08-30', DATE '2015-09-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (34, 2, DATE '2015-08-30', DATE '2015-09-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (35, 1, DATE '2015-08-31', DATE '2015-09-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (36, 8, DATE '2015-08-31', DATE '2015-09-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (37, 7, DATE '2015-08-31', DATE '2015-09-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (38, 2, DATE '2015-09-01', DATE '2015-09-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (39, 10, DATE '2015-09-03', DATE '2015-09-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (40, 7, DATE '2015-09-05', DATE '2015-09-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (41, 4, DATE '2015-09-06', DATE '2015-09-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (42, 3, DATE '2015-09-07', DATE '2015-10-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (43, 10, DATE '2015-09-08', DATE '2015-09-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (44, 8, DATE '2015-09-08', DATE '2015-09-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (45, 1, DATE '2015-09-10', DATE '2015-09-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (46, 1, DATE '2015-09-12', DATE '2015-09-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (47, 1, DATE '2015-09-13', DATE '2015-09-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (48, 3, DATE '2015-09-13', DATE '2015-09-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (49, 9, DATE '2015-09-14', DATE '2015-10-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (50, 6, DATE '2015-09-14', DATE '2015-09-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (51, 9, DATE '2015-09-15', DATE '2015-09-29');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (52, 3, DATE '2015-09-15', DATE '2015-09-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (53, 3, DATE '2015-09-16', DATE '2015-09-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (54, 3, DATE '2015-09-16', DATE '2015-09-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (55, 5, DATE '2015-09-16', DATE '2015-09-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (56, 3, DATE '2015-09-17', DATE '2015-09-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (57, 5, DATE '2015-09-19', DATE '2015-10-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (58, 9, DATE '2015-09-20', DATE '2015-10-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (59, 4, DATE '2015-09-21', DATE '2015-10-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (60, 8, DATE '2015-09-21', DATE '2015-10-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (61, 9, DATE '2015-09-23', DATE '2015-09-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (62, 2, DATE '2015-09-24', DATE '2015-10-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (63, 7, DATE '2015-09-24', DATE '2015-10-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (64, 9, DATE '2015-09-24', DATE '2015-10-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (65, 9, DATE '2015-09-26', DATE '2015-10-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (66, 6, DATE '2015-09-27', DATE '2015-10-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (67, 6, DATE '2015-09-27', DATE '2015-09-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (68, 5, DATE '2015-09-27', DATE '2015-10-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (69, 5, DATE '2015-09-28', DATE '2015-10-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (70, 8, DATE '2015-09-28', DATE '2015-10-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (71, 7, DATE '2015-09-28', DATE '2015-10-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (72, 7, DATE '2015-09-28', DATE '2015-10-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (73, 3, DATE '2015-09-29', DATE '2015-10-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (74, 1, DATE '2015-09-29', DATE '2015-10-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (75, 10, DATE '2015-09-30', DATE '2015-10-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (76, 2, DATE '2015-10-03', DATE '2015-10-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (77, 4, DATE '2015-10-05', DATE '2015-10-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (78, 4, DATE '2015-10-06', DATE '2015-10-31');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (79, 9, DATE '2015-10-07', DATE '2015-11-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (80, 3, DATE '2015-10-07', DATE '2015-10-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (81, 8, DATE '2015-10-08', DATE '2015-10-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (82, 1, DATE '2015-10-09', DATE '2015-10-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (83, 2, DATE '2015-10-11', DATE '2015-11-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (84, 2, DATE '2015-10-12', DATE '2015-10-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (85, 5, DATE '2015-10-13', DATE '2015-10-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (86, 6, DATE '2015-10-14', DATE '2015-10-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (87, 1, DATE '2015-10-15', DATE '2015-10-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (88, 8, DATE '2015-10-16', DATE '2015-11-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (89, 1, DATE '2015-10-16', DATE '2015-11-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (90, 6, DATE '2015-10-17', DATE '2015-10-29');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (91, 6, DATE '2015-10-17', DATE '2015-10-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (92, 7, DATE '2015-10-18', DATE '2015-10-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (93, 1, DATE '2015-10-18', DATE '2015-10-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (94, 9, DATE '2015-10-18', DATE '2015-10-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (95, 9, DATE '2015-10-19', DATE '2015-10-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (96, 10, DATE '2015-10-19', DATE '2015-11-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (97, 7, DATE '2015-10-19', DATE '2015-10-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (98, 8, DATE '2015-10-19', DATE '2015-11-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (99, 8, DATE '2015-10-20', DATE '2015-11-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (100, 10, DATE '2015-10-20', DATE '2015-11-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (101, 8, DATE '2015-10-21', DATE '2015-10-31');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (102, 7, DATE '2015-10-21', DATE '2015-10-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (103, 7, DATE '2015-10-22', DATE '2015-11-02');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (104, 4, DATE '2015-10-22', DATE '2015-11-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (105, 9, DATE '2015-10-23', DATE '2015-11-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (106, 9, DATE '2015-10-23', DATE '2015-11-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (107, 9, DATE '2015-10-24', DATE '2015-10-29');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (108, 2, DATE '2015-10-24', DATE '2015-10-31');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (109, 8, DATE '2015-10-25', DATE '2015-11-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (110, 4, DATE '2015-10-27', DATE '2015-11-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (111, 2, DATE '2015-10-27', DATE '2015-11-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (112, 7, DATE '2015-10-27', DATE '2015-11-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (113, 2, DATE '2015-10-27', DATE '2015-11-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (114, 10, DATE '2015-10-29', DATE '2015-11-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (115, 8, DATE '2015-10-29', DATE '2015-11-05');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (116, 6, DATE '2015-10-30', DATE '2015-11-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (117, 6, DATE '2015-10-30', DATE '2015-11-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (118, 3, DATE '2015-10-31', DATE '2015-11-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (119, 10, DATE '2015-11-01', DATE '2015-11-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (120, 1, DATE '2015-11-01', DATE '2015-11-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (121, 8, DATE '2015-11-03', DATE '2015-11-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (122, 2, DATE '2015-11-03', DATE '2015-11-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (123, 4, DATE '2015-11-03', DATE '2015-11-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (124, 4, DATE '2015-11-04', DATE '2015-11-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (125, 6, DATE '2015-11-04', DATE '2015-11-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (126, 2, DATE '2015-11-05', DATE '2015-11-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (127, 5, DATE '2015-11-06', DATE '2015-12-05');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (128, 4, DATE '2015-11-06', DATE '2015-11-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (129, 4, DATE '2015-11-06', DATE '2015-11-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (130, 7, DATE '2015-11-07', DATE '2015-11-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (131, 4, DATE '2015-11-07', DATE '2015-11-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (132, 5, DATE '2015-11-07', DATE '2015-11-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (133, 4, DATE '2015-11-08', DATE '2015-11-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (134, 9, DATE '2015-11-11', DATE '2015-11-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (135, 8, DATE '2015-11-11', DATE '2015-11-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (136, 4, DATE '2015-11-13', DATE '2015-11-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (137, 9, DATE '2015-11-13', DATE '2015-11-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (138, 9, DATE '2015-11-15', DATE '2015-11-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (139, 8, DATE '2015-11-15', DATE '2015-12-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (140, 4, DATE '2015-11-15', DATE '2015-11-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (141, 7, DATE '2015-11-16', DATE '2015-11-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (142, 2, DATE '2015-11-16', DATE '2015-11-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (143, 2, DATE '2015-11-16', DATE '2015-11-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (144, 2, DATE '2015-11-17', DATE '2015-11-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (145, 2, DATE '2015-11-17', DATE '2015-12-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (146, 9, DATE '2015-11-17', DATE '2015-12-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (147, 1, DATE '2015-11-19', DATE '2015-11-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (148, 10, DATE '2015-11-20', DATE '2015-11-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (149, 5, DATE '2015-11-21', DATE '2015-11-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (150, 10, DATE '2015-11-22', DATE '2015-12-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (151, 6, DATE '2015-11-23', DATE '2015-12-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (152, 4, DATE '2015-11-24', DATE '2015-12-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (153, 4, DATE '2015-11-24', DATE '2015-11-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (154, 1, DATE '2015-11-26', DATE '2015-12-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (155, 5, DATE '2015-11-28', DATE '2015-12-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (156, 8, DATE '2015-11-28', DATE '2015-12-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (157, 4, DATE '2015-11-28', DATE '2015-12-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (158, 10, DATE '2015-11-29', DATE '2015-12-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (159, 3, DATE '2015-12-04', DATE '2015-12-31');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (160, 8, DATE '2015-12-04', DATE '2015-12-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (161, 8, DATE '2015-12-04', DATE '2015-12-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (162, 5, DATE '2015-12-06', DATE '2015-12-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (163, 7, DATE '2015-12-06', DATE '2015-12-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (164, 10, DATE '2015-12-08', DATE '2015-12-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (165, 1, DATE '2015-12-09', DATE '2015-12-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (166, 4, DATE '2015-12-10', DATE '2016-01-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (167, 3, DATE '2015-12-12', DATE '2016-01-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (168, 9, DATE '2015-12-13', DATE '2016-01-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (169, 8, DATE '2015-12-13', DATE '2016-01-05');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (170, 10, DATE '2015-12-13', DATE '2015-12-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (171, 8, DATE '2015-12-13', DATE '2015-12-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (172, 6, DATE '2015-12-14', DATE '2016-01-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (173, 5, DATE '2015-12-15', DATE '2016-01-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (174, 8, DATE '2015-12-15', DATE '2015-12-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (175, 8, DATE '2015-12-16', DATE '2015-12-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (176, 3, DATE '2015-12-16', DATE '2015-12-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (177, 7, DATE '2015-12-17', DATE '2015-12-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (178, 7, DATE '2015-12-17', DATE '2015-12-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (179, 8, DATE '2015-12-18', DATE '2015-12-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (180, 3, DATE '2015-12-18', DATE '2016-01-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (181, 8, DATE '2015-12-19', DATE '2016-01-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (182, 1, DATE '2015-12-20', DATE '2016-01-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (183, 10, DATE '2015-12-21', DATE '2015-12-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (184, 7, DATE '2015-12-21', DATE '2016-01-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (185, 10, DATE '2015-12-24', DATE '2015-12-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (186, 10, DATE '2015-12-25', DATE '2015-12-31');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (187, 7, DATE '2015-12-25', DATE '2016-01-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (188, 4, DATE '2015-12-26', DATE '2016-01-18');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (189, 5, DATE '2015-12-26', DATE '2016-01-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (190, 2, DATE '2015-12-27', DATE '2015-12-28');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (191, 2, DATE '2015-12-28', DATE '2016-01-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (192, 1, DATE '2015-12-29', DATE '2016-01-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (193, 7, DATE '2015-12-31', DATE '2016-01-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (194, 4, DATE '2016-01-01', DATE '2016-01-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (195, 6, DATE '2016-01-02', DATE '2016-01-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (196, 4, DATE '2016-01-02', DATE '2016-01-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (197, 10, DATE '2016-01-02', DATE '2016-01-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (198, 4, DATE '2016-01-03', DATE '2016-01-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (199, 2, DATE '2016-01-04', DATE '2016-01-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (200, 3, DATE '2016-01-05', DATE '2016-01-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (201, 9, DATE '2016-01-06', DATE '2016-01-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (202, 2, DATE '2016-01-08', DATE '2016-02-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (203, 5, DATE '2016-01-08', DATE '2016-01-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (204, 4, DATE '2016-01-08', DATE '2016-01-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (205, 4, DATE '2016-01-08', DATE '2016-01-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (206, 2, DATE '2016-01-08', DATE '2016-01-19');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (207, 7, DATE '2016-01-10', DATE '2016-01-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (208, 3, DATE '2016-01-10', DATE '2016-02-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (209, 5, DATE '2016-01-11', DATE '2016-01-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (210, 3, DATE '2016-01-12', DATE '2016-01-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (211, 10, DATE '2016-01-13', DATE '2016-01-25');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (212, 7, DATE '2016-01-13', DATE '2016-01-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (213, 5, DATE '2016-01-14', DATE '2016-01-17');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (214, 1, DATE '2016-01-16', DATE '2016-01-30');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (215, 7, DATE '2016-01-16', DATE '2016-02-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (216, 6, DATE '2016-01-16', DATE '2016-01-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (217, 7, DATE '2016-01-17', DATE '2016-02-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (218, 5, DATE '2016-01-18', DATE '2016-02-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (219, 8, DATE '2016-01-19', DATE '2016-02-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (220, 2, DATE '2016-01-19', DATE '2016-02-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (221, 3, DATE '2016-01-19', DATE '2016-02-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (222, 10, DATE '2016-01-20', DATE '2016-02-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (223, 7, DATE '2016-01-20', DATE '2016-02-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (224, 5, DATE '2016-01-20', DATE '2016-02-02');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (225, 6, DATE '2016-01-20', DATE '2016-01-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (226, 10, DATE '2016-01-22', DATE '2016-02-02');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (227, 8, DATE '2016-01-22', DATE '2016-02-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (228, 3, DATE '2016-01-23', DATE '2016-02-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (229, 6, DATE '2016-01-23', DATE '2016-02-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (230, 7, DATE '2016-01-24', DATE '2016-02-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (231, 10, DATE '2016-01-26', DATE '2016-02-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (232, 8, DATE '2016-01-26', DATE '2016-02-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (233, 10, DATE '2016-01-26', DATE '2016-02-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (234, 7, DATE '2016-01-27', DATE '2016-02-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (235, 1, DATE '2016-01-27', DATE '2016-02-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (236, 3, DATE '2016-01-27', DATE '2016-02-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (237, 6, DATE '2016-01-28', DATE '2016-02-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (238, 10, DATE '2016-01-29', DATE '2016-02-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (239, 1, DATE '2016-01-30', DATE '2016-02-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (240, 4, DATE '2016-01-31', DATE '2016-02-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (241, 6, DATE '2016-02-01', DATE '2016-02-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (242, 1, DATE '2016-02-02', DATE '2016-02-21');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (243, 9, DATE '2016-02-02', DATE '2016-02-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (244, 3, DATE '2016-02-02', DATE '2016-02-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (245, 7, DATE '2016-02-02', DATE '2016-02-29');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (246, 8, DATE '2016-02-02', DATE '2016-02-22');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (247, 5, DATE '2016-02-03', DATE '2016-03-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (248, 10, DATE '2016-02-04', DATE '2016-03-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (249, 6, DATE '2016-02-04', DATE '2016-02-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (250, 3, DATE '2016-02-05', DATE '2016-02-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (251, 10, DATE '2016-02-08', DATE '2016-03-04');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (252, 3, DATE '2016-02-09', DATE '2016-02-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (253, 4, DATE '2016-02-09', DATE '2016-02-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (254, 10, DATE '2016-02-10', DATE '2016-02-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (255, 7, DATE '2016-02-10', DATE '2016-02-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (256, 3, DATE '2016-02-11', DATE '2016-02-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (257, 2, DATE '2016-02-11', DATE '2016-02-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (258, 7, DATE '2016-02-12', DATE '2016-02-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (259, 4, DATE '2016-02-12', DATE '2016-03-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (260, 1, DATE '2016-02-14', DATE '2016-03-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (261, 10, DATE '2016-02-14', DATE '2016-03-02');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (262, 1, DATE '2016-02-14', DATE '2016-03-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (263, 8, DATE '2016-02-14', DATE '2016-02-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (264, 8, DATE '2016-02-15', DATE '2016-03-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (265, 10, DATE '2016-02-15', DATE '2016-03-14');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (266, 10, DATE '2016-02-15', DATE '2016-03-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (267, 5, DATE '2016-02-15', DATE '2016-03-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (268, 8, DATE '2016-02-16', DATE '2016-03-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (269, 7, DATE '2016-02-16', DATE '2016-03-15');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (270, 2, DATE '2016-02-18', DATE '2016-03-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (271, 8, DATE '2016-02-18', DATE '2016-03-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (272, 6, DATE '2016-02-20', DATE '2016-02-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (273, 7, DATE '2016-02-20', DATE '2016-03-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (274, 10, DATE '2016-02-20', DATE '2016-03-05');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (275, 5, DATE '2016-02-21', DATE '2016-03-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (276, 8, DATE '2016-02-21', DATE '2016-03-06');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (277, 6, DATE '2016-02-21', DATE '2016-03-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (278, 9, DATE '2016-02-22', DATE '2016-03-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (279, 2, DATE '2016-02-22', DATE '2016-03-20');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (280, 1, DATE '2016-02-23', DATE '2016-02-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (281, 4, DATE '2016-02-23', DATE '2016-02-26');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (282, 4, DATE '2016-02-23', DATE '2016-03-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (283, 3, DATE '2016-02-23', DATE '2016-03-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (284, 8, DATE '2016-02-24', DATE '2016-03-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (285, 4, DATE '2016-02-24', DATE '2016-03-09');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (286, 8, DATE '2016-02-25', DATE '2016-03-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (287, 4, DATE '2016-02-25', DATE '2016-03-07');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (288, 3, DATE '2016-02-25', DATE '2016-03-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (289, 8, DATE '2016-02-26', DATE '2016-03-23');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (290, 6, DATE '2016-02-26', DATE '2016-03-08');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (291, 2, DATE '2016-02-26', DATE '2016-03-12');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (292, 5, DATE '2016-02-27', DATE '2016-03-11');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (293, 10, DATE '2016-02-27', DATE '2016-03-13');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (294, 8, DATE '2016-02-28', DATE '2016-03-16');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (295, 9, DATE '2016-02-28', DATE '2016-03-27');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (296, 3, DATE '2016-02-28', DATE '2016-03-24');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (297, 6, DATE '2016-02-29', DATE '2016-03-01');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (298, 3, DATE '2016-03-01', DATE '2016-03-10');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (299, 4, DATE '2016-03-01', DATE '2016-03-03');
+INSERT INTO PurchaseOrders
+  (PurchaseID, VendorID, OrderDate, DeliveryDate)
+  VALUES (300, 10, DATE '2016-03-01', DATE '2016-03-18');
+   
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('January 2015', 2015, 1, DATE '2015-01-01', DATE '2015-01-31', 
+   1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('February 2015', 2015, 2, DATE '2015-02-01', DATE '2015-02-28', 
+   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('March 2015', 2015, 3, DATE '2015-03-01', DATE '2015-03-31', 
+   0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('April 2015', 2015, 4, DATE '2015-04-01', DATE '2015-04-30', 
+   0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('May 2015', 2015, 5, DATE '2015-05-01', DATE '2015-05-31', 
+   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('June 2015', 2015, 6, DATE '2015-06-01', DATE '2015-06-30', 
+   0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('July 2015', 2015, 7, DATE '2015-07-01', DATE '2015-07-31', 
+   0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('August 2015', 2015, 8, DATE '2015-08-01', DATE '2015-08-31', 
+   0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('September 2015', 2015, 9, DATE '2015-09-01', 
+   DATE '2015-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('October 2015', 2015, 10, DATE '2015-10-01', DATE '2015-10-31', 
+   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('November 2015', 2015, 11, DATE '2015-11-01', 
+   DATE '2015-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('December 2015', 2015, 12, DATE '2015-12-01', 
+   DATE '2015-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('January 2016', 2016, 1, DATE '2016-01-01', DATE '2016-01-31', 
+   1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('February 2016', 2016, 2, DATE '2016-02-01', DATE '2016-02-28', 
+   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('March 2016', 2016, 3, DATE '2016-03-01', DATE '2016-03-31', 
+   0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('April 2016', 2016, 4, DATE '2016-04-01', DATE '2016-04-30', 
+   0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('May 2016', 2016, 5, DATE '2016-05-01', DATE '2016-05-31', 
+   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('June 2016', 2016, 6, DATE '2016-06-01', DATE '2016-06-30', 
+   0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('July 2016', 2016, 7, DATE '2016-07-01', DATE '2016-07-31', 
+   0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('August 2016', 2016, 8, DATE '2016-08-01', DATE '2016-08-31', 
+   0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('September 2016', 2016, 9, DATE '2016-09-01', 
+   DATE '2016-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('October 2016', 2016, 10, DATE '2016-10-01', DATE '2016-10-31', 
+   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('November 2016', 2016, 11, DATE '2016-11-01', 
+   DATE '2016-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('December 2016', 2016, 12, DATE '2016-12-01', 
+   DATE '2016-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('January 2017', 2017, 1, DATE '2017-01-01', DATE '2017-01-31', 
+   1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('February 2017', 2017, 2, DATE '2017-02-01', DATE '2017-02-28', 
+   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('March 2017', 2017, 3, DATE '2017-03-01', DATE '2017-03-31', 
+   0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('April 2017', 2017, 4, DATE '2017-04-01', DATE '2017-04-30', 
+   0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('May 2017', 2017, 5, DATE '2017-05-01', DATE '2017-05-31', 
+   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('June 2017', 2017, 6, DATE '2017-06-01', DATE '2017-06-30', 
+   0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('July 2017', 2017, 7, DATE '2017-07-01', DATE '2017-07-31', 
+   0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('August 2017', 2017, 8, DATE '2017-08-01', DATE '2017-08-31', 
+   0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('September 2017', 2017, 9, DATE '2017-09-01', 
+   DATE '2017-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('October 2017', 2017, 10, DATE '2017-10-01', DATE '2017-10-31', 
+   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('November 2017', 2017, 11, DATE '2017-11-01', 
+   DATE '2017-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
+INSERT INTO ztblMonths
+  (MonthYear, YearNumber, MonthNumber, MonthStart, 
+   MonthEnd, January, February, March, April, May, 
+   June, July, August, September, October, November, 
+   December)
+  VALUES ('December 2017', 2017, 12, DATE '2017-12-01', 
+   DATE '2017-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
  
-INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('January 2015', 2015, 1, '2015-01-01', '2015-01-31',    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('February 2015', 2015, 2, '2015-02-01', '2015-02-28',    0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('March 2015', 2015, 3, '2015-03-01', '2015-03-31',    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('April 2015', 2015, 4, '2015-04-01', '2015-04-30',    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('May 2015', 2015, 5, '2015-05-01', '2015-05-31',    0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('June 2015', 2015, 6, '2015-06-01', '2015-06-30',    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('July 2015', 2015, 7, '2015-07-01', '2015-07-31',    0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('August 2015', 2015, 8, '2015-08-01', '2015-08-31',    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('September 2015', 2015, 9, '2015-09-01',    '2015-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('October 2015', 2015, 10, '2015-10-01', '2015-10-31',    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('November 2015', 2015, 11, '2015-11-01',    '2015-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('December 2015', 2015, 12, '2015-12-01',    '2015-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('January 2016', 2016, 1, '2016-01-01', '2016-01-31',    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('February 2016', 2016, 2, '2016-02-01', '2016-02-28',    0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('March 2016', 2016, 3, '2016-03-01', '2016-03-31',    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('April 2016', 2016, 4, '2016-04-01', '2016-04-30',    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('May 2016', 2016, 5, '2016-05-01', '2016-05-31',    0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('June 2016', 2016, 6, '2016-06-01', '2016-06-30',    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('July 2016', 2016, 7, '2016-07-01', '2016-07-31',    0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('August 2016', 2016, 8, '2016-08-01', '2016-08-31',    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('September 2016', 2016, 9, '2016-09-01',    '2016-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('October 2016', 2016, 10, '2016-10-01', '2016-10-31',    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('November 2016', 2016, 11, '2016-11-01',    '2016-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('December 2016', 2016, 12, '2016-12-01',    '2016-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('January 2017', 2017, 1, '2017-01-01', '2017-01-31',    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('February 2017', 2017, 2, '2017-02-01', '2017-02-28',    0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('March 2017', 2017, 3, '2017-03-01', '2017-03-31',    0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('April 2017', 2017, 4, '2017-04-01', '2017-04-30',    0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('May 2017', 2017, 5, '2017-05-01', '2017-05-31',    0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('June 2017', 2017, 6, '2017-06-01', '2017-06-30',    0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('July 2017', 2017, 7, '2017-07-01', '2017-07-31',    0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('August 2017', 2017, 8, '2017-08-01', '2017-08-31',    0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('September 2017', 2017, 9, '2017-09-01',    '2017-09-30', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('October 2017', 2017, 10, '2017-10-01', '2017-10-31',    0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('November 2017', 2017, 11, '2017-11-01',    '2017-11-30', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);INSERT INTO ztblMonths  (MonthYear, YearNumber, MonthNumber, MonthStart,    MonthEnd, January, February, March, April, May,    June, July, August, September, October, November,    December)  VALUES ('December 2017', 2017, 12, '2017-12-01',    '2017-12-31', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);  
 INSERT INTO ztblPriceRanges
   (PriceCategory, LowPrice, HighPrice)
   VALUES ('Affordable', 15.01, 50);
@@ -17585,4 +18795,3 @@ INSERT INTO ztblSeqNumbers
 INSERT INTO ztblSeqNumbers
   (Sequence)
   VALUES (60);
- 
