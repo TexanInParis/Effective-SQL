@@ -4,13 +4,9 @@ EntertainmentAgencySample
 Item02Example
 Item03Example
 Item04Example
-Item11Example
-Item13Example
 Item18Example
 Item19Example
 Item21Example
-Item27Example
-Item28Example
 Item30Example
 Item33Example
 Item36Example
@@ -18,7 +14,6 @@ Item39Example
 Item44Example
 Item52Example
 Item55Example
-Item56Example
 RecipesSample
 SalesOrderSample
 StudentGradesExample
