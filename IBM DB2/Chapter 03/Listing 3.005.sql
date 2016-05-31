@@ -1,5 +1,5 @@
--- Ensure you've run Ch03.20.01Structure.sql
--- and Ch03.20.01Data.sql in the Sample Databases folder
+-- Ensure you've run Item19Structure.sql
+-- and Item19Data.sql in the Sample Databases folder
 -- in order to run this example. 
 
 SET SCHEMA Item19Example;
