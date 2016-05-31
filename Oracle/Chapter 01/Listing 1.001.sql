@@ -1,3 +1,8 @@
+-- Ensure you've run Item02StructureAndData.sql
+-- in the Sample Databases folder in order to run this example. 
+
+SET SCHEMA Item02Example;
+
 SELECT ST.SalesID, C.CustFirstName, C.CustLastName, C.Address, C.City, C.Phone, 
        ST.PurchaseDate, M.ModelYear, M.Model, E.SalesPerson
   FROM SalesTransactions ST, Employees E, Customers C, AutomobileModels M
