@@ -1,5 +1,7 @@
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 CREATE TRIGGER updateOrdersOrderTotalsTrig AFTER INSERT OR DELETE OR UPDATE 
-ON Order_Details REFERENCING OLD AS deleted NEW AS inserted
+ON Order_Details
 FOR EACH ROW
 BEGIN
   UPDATE Orders
@@ -9,11 +11,11 @@ BEGIN
     WHERE OD.OrderNumber = Orders.OrderNumber
   )
   WHERE Orders.OrderNumber IN (
-    SELECT deleted.OrderNumber --FROM deleted
-    FROM (VALUES(''))
+    SELECT :old.OrderNumber
+    FROM dual
     UNION
-    SELECT inserted.OrderNumber --FROM inserted
-    FROM (VALUES(''))
+    SELECT :new.OrderNumber
+    FROM dual
   );	
 END;
 

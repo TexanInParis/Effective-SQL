@@ -1,7 +1,11 @@
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 CREATE TRIGGER DelCascadeTrig AFTER DELETE
-ON Orders REFERENCING OLD AS O 
+ON Orders 
 FOR EACH ROW
-DELETE FROM Order_Details
-WHERE Order_Details.OrderNumber = O.OrderNumber;
+BEGIN
+  DELETE FROM Order_Details
+  WHERE Order_Details.OrderNumber = :old.OrderNumber;
+END;
 
 DROP TRIGGER DelCascadeTrig;

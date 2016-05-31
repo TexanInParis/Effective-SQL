@@ -1,3 +1,5 @@
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 CREATE TABLE Customers (
 	CustomerID int PRIMARY KEY ,
 	CustFirstName varchar (25) NULL ,

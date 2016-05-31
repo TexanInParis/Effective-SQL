@@ -1,3 +1,5 @@
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 ALTER TABLE Order_Details
 DROP CONSTRAINT Order_Details_FK00;
 
