@@ -5,10 +5,10 @@ This folder contains samples and scripts for chapter 8.
 8-002 -- Contained as query Listing 8-002 in SalesOrdersSample.accdb (in the Sample Databases folder)
 8-003 -- Contained as query Listing 8-003 in SalesOrdersSample.accdb (in the Sample Databases folder)
 8-004 -- Contained as query Listing 8-004 in SalesOrdersSample.accdb (in the Sample Databases folder)
-8-005
-8-006
-8-007
-8-008
+8-005 -- Contained as query Listing 8-004 in SalesOrdersSample.accdb (in the Sample Databases folder)
+8-006 -- NOT included: Access does not support Common Table Expressions.
+8-007 -- Contained as query Listing 8-007 in BowlingLeagueSample.accdb (in the Sample Databases folder)
+8-008 -- Contained as query Listing 8-008 in BowlingLeagueSample.accdb (in the Sample Databases folder)
 8-009
 8-010
 8-011

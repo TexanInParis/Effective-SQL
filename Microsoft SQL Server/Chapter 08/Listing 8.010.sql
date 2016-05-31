@@ -16,12 +16,12 @@ WITH TeamPairs AS
 
 SELECT TeamPairs.GameSeq,
     CASE ROW_NUMBER() OVER (PARTITION BY TeamPairs.Team1ID 
-        ORDER BY GameSeq) MOD 2 
+        ORDER BY GameSeq) % 2 
     WHEN 0 THEN 
-        CASE RANK() OVER (ORDER BY TeamPairs.Team1ID) MOD 3 
+        CASE RANK() OVER (ORDER BY TeamPairs.Team1ID) % 3 
         WHEN 0 THEN 'Home' ELSE 'Away' END
     ELSE 
-    CASE RANK() OVER (ORDER BY TeamPairs.Team1ID) MOD 3 
+    CASE RANK() OVER (ORDER BY TeamPairs.Team1ID) % 3 
     WHEN 0 THEN 'Away' ELSE 'Home' END
     END AS Team1PlayingAt,
     TeamPairs.Team1ID, TeamPairs.Team1Name, 
