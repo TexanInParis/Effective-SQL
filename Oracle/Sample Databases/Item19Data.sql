@@ -1,3 +1,5 @@
+ALTER SESSION SET CURRENT_SCHEMA = ITEM19EXAMPLE;
+
 INSERT INTO tblPostSales
   (Product, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, 
    Sep, Oct, Nov, Dec)

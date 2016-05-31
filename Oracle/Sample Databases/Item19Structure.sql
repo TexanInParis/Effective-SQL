@@ -1,4 +1,11 @@
-CREATE DATABASE Item19Example;
+-- Create a new schema, to make it easier to cleanup afterwards.
+CREATE USER Item19Example
+IDENTIFIED BY example
+DEFAULT TABLESPACE USERS
+TEMPORARY TABLESPACE TEMP
+QUOTA 20M on USERS;
+
+ALTER SESSION SET CURRENT_SCHEMA = ITEM19EXAMPLE;
 
 CREATE TABLE tblPostSales(
     Product varchar (255), 
@@ -13,5 +20,4 @@ CREATE TABLE tblPostSales(
     Sep decimal(19,4), 
     Oct decimal(19,4), 
     Nov decimal(19,4), 
-    Dec decimal(19,4)
-);   
+    Dec decimal(19,4));   
