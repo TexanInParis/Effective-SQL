@@ -21,12 +21,12 @@ This folder contains samples and scripts for chapter 5.
 5-018 -- Contained as query Listing 5-018 in Item33Example.accdb (in the Sample Databases folder)
 5-019 -- Contained as query Listing 5-019 in Item33Example.accdb (in the Sample Databases folder)
 5-020 -- Contained as query Listing 5-020 in Item33Example.accdb (in the Sample Databases folder)
-5-021
-5-022
-5-023
-5-024
-5-025
-5-026
+5-021 -- Contained as query Listing 5-021 in RecipesSample.accdb (in the Sample Databases folder)
+5-022 -- Contained as query Listing 5-022 in RecipesSample.accdb (in the Sample Databases folder)
+5-023 -- Contained as query Listing 5-023 in RecipesSample.accdb (in the Sample Databases folder)
+5-024 -- Contained as query Listing 5-024 in RecipesSample.accdb (in the Sample Databases folder)
+5-025 -- Contained as query Listing 5-025 in RecipesSample.accdb (in the Sample Databases folder)
+5-026 -- Contained as query Listing 5-026 in RecipesSample.accdb (in the Sample Databases folder)
 5-027 -- Contained as query Listing 5-027 in Item36Example.accdb (in the Sample Databases folder)
 5-028 -- Contained as query Listing 5-030 in Item36Example.accdb  (in the Sample Databases folder)
          (but not all of the calculations are possible in Access)
