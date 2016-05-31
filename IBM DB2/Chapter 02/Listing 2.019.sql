@@ -1,3 +1,8 @@
+-- Ensure you've run SalesOrdersStructure.sql and SalesOrdersData.sql 
+-- in the Sample Databases folder in order to run this example. 
+
+SET SCHEMA SalesOrdersSample;
+
 CREATE TRIGGER updateOrdersOrderTotalsTrig AFTER INSERT OR DELETE OR UPDATE 
 ON Order_Details REFERENCING OLD AS deleted NEW AS inserted
 FOR EACH ROW
