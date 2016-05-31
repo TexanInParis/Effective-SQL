@@ -1,3 +1,5 @@
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 ALTER TABLE Employees
 ADD EmpDOB date;
 

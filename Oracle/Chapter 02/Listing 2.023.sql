@@ -1,3 +1,5 @@
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 CREATE TABLE DocumentStatus (
   DocumentNumber int NOT NULL PRIMARY KEY,
   Status varchar(20) NOT NULL
