@@ -21,7 +21,7 @@ WITH CustDecPurch AS
    ztblPurchaseCoupons.LowSpend AND 
    ztblPurchaseCoupons.HighSpend)
 
- SELECT C.CustFirstName, C.CustLastName, C.CustStreetAddress, 
+SELECT C.CustFirstName, C.CustLastName, C.CustStreetAddress, 
      C.CustCity, C.CustState, C.CustZipCode, CP.NumCoupons
 FROM Coupons AS CP INNER JOIN Customers AS C
   ON CP.CustomerID = C.CustomerID
