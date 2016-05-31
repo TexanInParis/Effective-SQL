@@ -1,3 +1,8 @@
+-- Not available on Oracle Express edition as this requires advanced replication feature. The script is untested. Note also that materialized view logs might need to be 
+-- created on table(s) in order to create the materialized view.
+
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 CREATE TABLE Sales (
   SalesId int PRIMARY KEY,
   RetailerId int NULL,
@@ -49,7 +54,6 @@ CREATE TABLE ProductType (
   ProductTypeCode varchar(15)
 );
 
-
 CREATE MATERIALIZED VIEW SalesSummary
   BUILD IMMEDIATE
   REFRESH FAST ON DEMAND 
@@ -90,5 +94,3 @@ DROP TABLE datTime;
 DROP TABLE Region;
 
 DROP TABLE ProductType;
-
-
