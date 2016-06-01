@@ -22,15 +22,15 @@ RETURN (
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
 WHERE C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Skateboard')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Skateboard')))
 AND C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Helmet')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Helmet')))
 AND C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Knee Pads')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Knee Pads')))
 AND C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Gloves')));
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Gloves')));
 
-DROP FUNCTION CustProd
+DROP FUNCTION CustProd;
 
 -- Sample query that returns results:
 CREATE FUNCTION CustProd(ProdName varchar(50)) 
@@ -44,18 +44,18 @@ RETURN (
 		ON Orders.OrderNumber = Order_Details.OrderNumber 
 	INNER JOIN Products 
 		ON Products.ProductNumber = Order_Details.ProductNumbeR
-	WHERE ProductName LIKE CONCAT('%', CONCAT(ProdName, '%'));
+	WHERE ProductName LIKE ('%' CONCAT ProdName CONCAT '%'));
 
 --Schema must be included for function invocation to work
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
 WHERE C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Skateboard')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Skateboard')))
 AND C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Helmet')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Helmet')))
 AND C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Knee Pads')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Knee Pads')))
 AND C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Gloves')));
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Gloves')));
 
-DROP FUNCTION CustProd
+DROP FUNCTION CustProd;

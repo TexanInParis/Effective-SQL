@@ -1,11 +1,17 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
-FROM Customers AS C INNER JOIN
+FROM Customers C INNER JOIN
   (SELECT DISTINCT Orders.CustomerID
   FROM Orders INNER JOIN Order_Details
   ON Orders.OrderNumber = Order_Details.OrderNumber
   INNER JOIN Products 
   ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName = 'Skateboard') AS OSk
+  WHERE Products.ProductName = 'Skateboard') OSk
 ON C.CustomerID = OSk.CustomerID
 INNER JOIN
   (SELECT DISTINCT Orders.CustomerID
@@ -13,7 +19,7 @@ INNER JOIN
   ON Orders.OrderNumber = Order_Details.OrderNumber
   INNER JOIN Products 
   ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName = 'Helmet') AS OHel
+  WHERE Products.ProductName = 'Helmet') OHel
 ON C.CustomerID = OHel.CustomerID
 INNER JOIN
   (SELECT DISTINCT Orders.CustomerID
@@ -21,7 +27,7 @@ INNER JOIN
   ON Orders.OrderNumber = Order_Details.OrderNumber
   INNER JOIN Products 
   ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName = 'Knee Pads') AS OKn
+  WHERE Products.ProductName = 'Knee Pads') OKn
 ON C.CustomerID = OKn.CustomerID
 INNER JOIN
   (SELECT DISTINCT Orders.CustomerID
@@ -29,5 +35,41 @@ INNER JOIN
   ON Orders.OrderNumber = Order_Details.OrderNumber
   INNER JOIN Products 
   ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName = 'Gloves') AS OGl
+  WHERE Products.ProductName = 'Gloves') OGl
 ON C.CustomerID = OGl.CustomerID;
+
+-- Sample query that returns results:
+SELECT C.CustomerID, C.CustFirstName, C.CustLastName
+FROM Customers C INNER JOIN
+  (SELECT DISTINCT Orders.CustomerID
+  FROM Orders INNER JOIN Order_Details
+  ON Orders.OrderNumber = Order_Details.OrderNumber
+  INNER JOIN Products 
+  ON Products.ProductNumber = Order_Details.ProductNumber
+  WHERE Products.ProductName LIKE '%Skateboard%') OSk
+ON C.CustomerID = OSk.CustomerID
+INNER JOIN
+  (SELECT DISTINCT Orders.CustomerID
+  FROM Orders INNER JOIN Order_Details
+  ON Orders.OrderNumber = Order_Details.OrderNumber
+  INNER JOIN Products 
+  ON Products.ProductNumber = Order_Details.ProductNumber
+  WHERE Products.ProductName LIKE '%Helmet%') OHel
+ON C.CustomerID = OHel.CustomerID
+INNER JOIN
+  (SELECT DISTINCT Orders.CustomerID
+  FROM Orders INNER JOIN Order_Details
+  ON Orders.OrderNumber = Order_Details.OrderNumber
+  INNER JOIN Products 
+  ON Products.ProductNumber = Order_Details.ProductNumber
+  WHERE Products.ProductName LIKE '%Knee Pads%') OKn
+ON C.CustomerID = OKn.CustomerID
+INNER JOIN
+  (SELECT DISTINCT Orders.CustomerID
+  FROM Orders INNER JOIN Order_Details
+  ON Orders.OrderNumber = Order_Details.OrderNumber
+  INNER JOIN Products 
+  ON Products.ProductNumber = Order_Details.ProductNumber
+  WHERE Products.ProductName LIKE '%Gloves%') OGl
+ON C.CustomerID = OGl.CustomerID;
+

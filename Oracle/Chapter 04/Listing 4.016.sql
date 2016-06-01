@@ -1,19 +1,80 @@
-CREATE FUNCTION CustProd(@ProdName VarChar(50)) RETURNS Table
-AS 
-RETURN (SELECT Orders.CustomerID AS CustID
-FROM Orders INNER JOIN Order_Details
-ON Orders.OrderNumber = Order_Details.OrderNumber
-INNER JOIN Products
-ON Products.ProductNumber = Order_Details.ProductNumber
-WHERE ProductName = @ProdName);
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+
+CREATE TYPE CustIDRowType AS OBJECT(CustID int);
+
+CREATE TYPE CustIDTableType IS TABLE OF CustIDRowType;
+
+CREATE FUNCTION CustProd(ProdName IN varchar) 
+RETURN CustIDTableType
+AS CustIDTable CustIDTableType;
+BEGIN
+	SELECT CustIDRow
+	BULK COLLECT INTO CustIDTable
+	FROM (
+	  SELECT CustIDRowType(Orders.CustomerID) AS CustIDRow
+	  FROM Orders 
+	  INNER JOIN Order_Details 
+		  ON Orders.OrderNumber = Order_Details.OrderNumber 
+	  INNER JOIN Products 
+  		ON Products.ProductNumber = Order_Details.ProductNumber
+	  WHERE ProductName = ProdName
+	);
+	RETURN CustIDTable;
+END;
 
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
-FROM Customers AS C 
+FROM Customers C 
 WHERE C.CustomerID IN
-  (SELECT CustID FROM CustProd('Skateboard'))
+  (SELECT CustID FROM TABLE(CustProd('Skateboard')))
 AND (C.CustomerID NOT IN 
-  (SELECT CustID FROM CustProd('Helmet'))
+  (SELECT CustID FROM TABLE(CustProd('Helmet')))
 OR C.CustomerID NOT IN
-  (SELECT CustID FROM CustProd('Gloves'))
+  (SELECT CustID FROM TABLE(CustProd('Gloves')))
 OR C.CustomerID NOT IN
-  (SELECT CustID FROM CustProd('Knee Pads')));
+  (SELECT CustID FROM TABLE(CustProd('Knee Pads'))));
+
+DROP FUNCTION CustProd;
+DROP TYPE CustIDTableType;
+DROP TYPE CustIDRowType;
+
+-- Sample query that searches products correctly:
+CREATE TYPE CustIDRowType AS OBJECT(CustID int);
+
+CREATE TYPE CustIDTableType IS TABLE OF CustIDRowType;
+
+CREATE FUNCTION CustProd(ProdName IN varchar) 
+RETURN CustIDTableType
+AS CustIDTable CustIDTableType;
+BEGIN
+	SELECT CustIDRow
+	BULK COLLECT INTO CustIDTable
+	FROM (
+	  SELECT CustIDRowType(Orders.CustomerID) AS CustIDRow
+	  FROM Orders 
+	  INNER JOIN Order_Details 
+		  ON Orders.OrderNumber = Order_Details.OrderNumber 
+	  INNER JOIN Products 
+  		ON Products.ProductNumber = Order_Details.ProductNumber
+	  WHERE ProductName LIKE '%' || ProdName || '%'
+	);
+	RETURN CustIDTable;
+END;
+
+SELECT C.CustomerID, C.CustFirstName, C.CustLastName
+FROM Customers C 
+WHERE C.CustomerID IN
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Skateboard')))
+AND (C.CustomerID NOT IN 
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Helmet')))
+OR C.CustomerID NOT IN
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Gloves')))
+OR C.CustomerID NOT IN
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Knee Pads'))));
+
+DROP FUNCTION CustProd;
+DROP TYPE CustIDTableType;
+DROP TYPE CustIDRowType;

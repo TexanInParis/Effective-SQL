@@ -2,10 +2,10 @@
 -- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
-SET SCHEMA SalesOrdersSample;
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
 SELECT C.CustFirstName, C.CustLastName
-FROM Customers AS C
+FROM Customers C
 WHERE C.CustomerID IN
   (SELECT CustomerID FROM Orders
   INNER JOIN Order_Details
@@ -15,7 +15,7 @@ WHERE C.CustomerID IN
   WHERE Products.ProductName = 'Skateboard')
 EXCEPT
 SELECT C2.CustFirstName, C2.CustLastName
-FROM Customers AS C2
+FROM Customers C2
 WHERE C2.CustomerID IN
   (SELECT CustomerID FROM Orders
   INNER JOIN Order_Details
@@ -26,7 +26,7 @@ WHERE C2.CustomerID IN
 
 -- Sample query that returns results:
 SELECT C.CustFirstName, C.CustLastName
-FROM Customers AS C
+FROM Customers C
 WHERE C.CustomerID IN
   (SELECT CustomerID FROM Orders
   INNER JOIN Order_Details
@@ -36,7 +36,7 @@ WHERE C.CustomerID IN
   WHERE Products.ProductName LIKE '%Skateboard%')
 EXCEPT
 SELECT C2.CustFirstName, C2.CustLastName
-FROM Customers AS C2
+FROM Customers C2
 WHERE C2.CustomerID IN
   (SELECT CustomerID FROM Orders
   INNER JOIN Order_Details

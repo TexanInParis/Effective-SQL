@@ -21,13 +21,13 @@ RETURN (
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
 WHERE C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Skateboard')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Skateboard')))
 AND (C.CustomerID NOT IN 
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Helmet')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Helmet')))
 OR C.CustomerID NOT IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Gloves')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Gloves')))
 OR C.CustomerID NOT IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Knee Pads'))));
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Knee Pads'))));
 
 DROP FUNCTION CustProd;
 
@@ -49,12 +49,12 @@ RETURN (
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
 WHERE C.CustomerID IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Skateboard')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Skateboard')))
 AND (C.CustomerID NOT IN 
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Helmet')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Helmet')))
 OR C.CustomerID NOT IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Gloves')))
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Gloves')))
 OR C.CustomerID NOT IN
-  (SELECT CustID FROM TABLE(SalesOrder.CustProd('Knee Pads'))));
+  (SELECT CustID FROM TABLE(SalesOrdersSample.CustProd('Knee Pads'))));
 
 DROP FUNCTION CustProd;

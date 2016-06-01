@@ -26,15 +26,14 @@ DROP TABLE Students;
 -- in order to run this example. 
 
 SET SCHEMA SalesOrdersSample;
-GO
 
 SELECT Employees.EmployeeID, Employees.EmpLastName, Employees.EmpFirstName,
-   (YEAR(GETDATE()) - YEAR(Employees.EmpDOB)) -
-    (CASE WHEN MONTH(Employees.EmpDOB) < MONTH(GETDATE()) 
+   (YEAR(CURRENT DATE) - YEAR(Employees.EmpDOB)) -
+    (CASE WHEN MONTH(Employees.EmpDOB) < MONTH(CURRENT DATE) 
     THEN 0 
-    WHEN MONTH(Employees.EmpDOB) > MONTH(GETDATE()) 
+    WHEN MONTH(Employees.EmpDOB) > MONTH(CURRENT DATE) 
     THEN 1 
-    WHEN DAY(Employees.EmpDOB) > DAY(GETDATE()) 
+    WHEN DAY(Employees.EmpDOB) > DAY(CURRENT DATE) 
     THEN 1  
     ELSE 0 END) AS Age 
   FROM Employees;
