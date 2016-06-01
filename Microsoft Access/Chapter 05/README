@@ -9,10 +9,10 @@ This folder contains samples and scripts for chapter 5.
 5-007 -- Contained as query Listing 5-007 in Item30Example.accdb (in the Sample Databases folder)
 5-008 -- Contained as query Listing 5-008 in Item30Example.accdb (in the Sample Databases folder)
 5-009 -- Contained as query Listing 5-009 in Item30Example.accdb (in the Sample Databases folder)
-5-010
-5-011
-5-012
-5-013
+5-010 -- Contained as query Listing 5-010 in SalesOrdersSample.accdb (in the Sample Databases folder)
+5-011 -- Not supported in Access
+5-012 -- Contained as query Listing 5-012 in SalesOrdersSample.accdb (in the Sample Databases folder)
+5-013 -- Not included: not an SQL statement
 5-014 -- Contained as query Listing 5-014 in SalesOrdersSample.accdb (in the Sample Databases folder)
 5-015 -- Contained as queries Listing 5-015a, Listing 5-015b, and Listing 5-015 in 
           SalesOrdersSample.accdb (in the Sample Databases folder)
@@ -30,10 +30,10 @@ This folder contains samples and scripts for chapter 5.
 5-027 -- Contained as query Listing 5-027 in Item36Example.accdb (in the Sample Databases folder)
 5-028 -- Contained as query Listing 5-030 in Item36Example.accdb  (in the Sample Databases folder)
          (but not all of the calculations are possible in Access)
-5-029
-5-030
-5-031
-5-032
-5-033
-5-034
+5-029 -- Not supported in Access
+5-030 -- Not supported in Access
+5-031 -- Not supported in Access
+5-032 -- Not supported in Access
+5-033 -- Not supported in Access
+5-034 -- Not supported in Access
 

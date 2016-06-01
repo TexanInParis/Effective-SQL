@@ -3,8 +3,8 @@ This folder contains samples and scripts for chapter 9.
 9-001
 9-002
 9-003
-9-004
-9-005
+9-004 -- Not supported by Access
+9-005 -- Not executable SQL
 9-006
 9-007
 9-008
@@ -12,13 +12,13 @@ This folder contains samples and scripts for chapter 9.
 9-010 -- Contained as query Listing 9-010 in StudentGradesSample.accdb (in the Sample Databases folder)
 9-011 -- Contained as query Listing 9-011 in StudentGradesSample.accdb (in the Sample Databases folder)
 9-012 -- Contained as query Listing 9-012 in StudentGradesSample.accdb (in the Sample Databases folder)
-9-013
-9-014
-9-015
-9-016
-9-017
-9-018
-9-019
+9-013 -- Contained as query Listing 9-013 in Item55Example.accdb (in the Sample Databases folder)
+9-014 -- Contained as query Listing 9-014 in Item55Example.accdb (in the Sample Databases folder)
+9-015 -- Contained as query Listing 9-015 in Item55Example.accdb (in the Sample Databases folder)
+9-016 -- Contained as query Listing 9-016 in Item55Example.accdb (in the Sample Databases folder)
+9-017 -- Contained as query Listing 9-017 in Item55Example.accdb (in the Sample Databases folder)
+9-018 -- Contained as query Listing 9-018 in Item55Example.accdb (in the Sample Databases folder)
+9-019 -- Contained as query Listing 9-019 in Item55Example.accdb (in the Sample Databases folder)
 9-020 -- Contained as query Listing 9-020 in Item56Example.accdb (in the Sample Databases folder)
 9-021 -- Contained as queries 
             Listing 9-021a: CREATE TABLE

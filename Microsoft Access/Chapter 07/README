@@ -28,8 +28,8 @@ This folder contains samples and scripts for chapter 7.
 7-018 -- Not included: seemed pointless, since none of the other listings for Item 45 were included
 7-019 -- Not included: Listing is SQL Server specific
 7-020 -- Not included: Listing is SQL Server specific
-7-021
-7-022
-7-023
-7-024
-7-025
+7-021 -- Contained as query Listing 7-021 in SalesOrdersSample.accdb (in the Sample Databases folder)
+7-022 -- Contained as query Listing 7-022 in SalesOrdersSample.accdb (in the Sample Databases folder)
+7-023 -- Contained as query Listing 7-023 in SalesOrdersSample.accdb (in the Sample Databases folder)
+7-024 -- Contained as query Listing 7-024 in SalesOrdersSample.accdb (in the Sample Databases folder)
+7-025 -- Contained as query Listing 7-025 in SalesOrdersSample.accdb (in the Sample Databases folder)
