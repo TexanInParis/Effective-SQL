@@ -4,6 +4,10 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
--- Listing 7.10 Displaying the last execution plan explained in the current Oracle database session
-
-SELECT * FROM TABLE(dbms_xplan.display);
+SELECT p.*
+FROM Products p
+WHERE NOT EXISTS (
+    SELECT NULL
+    FROM Order_Details d
+    WHERE p.ProductNumber = d.ProductNumber
+);

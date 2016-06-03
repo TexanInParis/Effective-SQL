@@ -4,6 +4,11 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
--- Listing 7.10 Displaying the last execution plan explained in the current Oracle database session
+CREATE INDEX IX_Customers_CustArea
+ON Customers (CustAreaCode, CustCity);
 
-SELECT * FROM TABLE(dbms_xplan.display);
+SELECT CustCity
+FROM Customers
+WHERE CustAreaCode = 530;
+
+DROP INDEX IX_Customers_CustArea;
