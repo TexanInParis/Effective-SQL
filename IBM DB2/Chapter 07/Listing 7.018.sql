@@ -1,3 +1,7 @@
+-- Ensure you've run BeerStylesStructure.sql
+-- and BeerStylesData.sql in the Sample Databases folder
+-- in order to run this example. 
+
 -- Listing 7.18 CREATE VIEW statement 
 SET SCHEMA BeerStylesExample;
 
