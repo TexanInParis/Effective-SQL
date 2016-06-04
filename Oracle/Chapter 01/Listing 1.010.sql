@@ -7,7 +7,7 @@ ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 -- The Orders table already exists, so you will get an
 --  error if you try to run the following.
 -- Included as comments for reference.
--- CREATE TABLE Orders1 (
+-- CREATE TABLE Orders (
 --   OrderNumber int NOT NULL PRIMARY KEY ,
 --   OrderDate date NULL ,
 --   ShipDate date NULL ,

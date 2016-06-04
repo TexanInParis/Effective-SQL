@@ -1,15 +1,20 @@
-SELECT ID AS DrawingID, [Predecessor 1] AS Predecessor
-FROM Assignments WHERE [Predecessor 1] IS NOT NULL
+-- Ensure you've run Item03StructureAndData.sql
+-- in the Sample Databases folder in order to run this example. 
+
+SET search_path = Item03Example;
+
+SELECT ID AS DrawingID, Predecessor_1 AS Predecessor
+FROM Assignments WHERE Predecessor_1 IS NOT NULL
 UNION
-SELECT ID AS DrawingID, [Predecessor 2] AS Predecessor
-FROM Assignments WHERE [Predecessor 2] IS NOT NULL
+SELECT ID AS DrawingID, Predecessor_2 AS Predecessor
+FROM Assignments WHERE Predecessor_2 IS NOT NULL
 UNION
-SELECT ID AS DrawingID, [Predecessor 3] AS Predecessor
-FROM Assignments WHERE [Predecessor 3] IS NOT NULL
+SELECT ID AS DrawingID, Predecessor_3 AS Predecessor
+FROM Assignments WHERE Predecessor_3 IS NOT NULL
 UNION
-SELECT ID AS DrawingID, [Predecessor 4] AS Predecessor
-FROM Assignments WHERE [Predecessor 4] IS NOT NULL
+SELECT ID AS DrawingID, Predecessor_4 AS Predecessor
+FROM Assignments WHERE Predecessor_4 IS NOT NULL
 UNION
-SELECT ID AS DrawingID, [Predecessor 5] AS Predecessor
-FROM Assignments WHERE [Predecessor 5] IS NOT NULL
-ORDER BY DrawingID, PredecessorNo;
+SELECT ID AS DrawingID, Predecessor_5 AS Predecessor
+FROM Assignments WHERE Predecessor_5 IS NOT NULL
+ORDER BY DrawingID, Predecessor;
