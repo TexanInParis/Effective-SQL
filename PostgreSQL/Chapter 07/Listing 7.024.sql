@@ -4,8 +4,10 @@
 
 SET search_path = SalesOrdersSample;
 
--- Listing 7.11 Creating an Execution Plan in PostgreSQL
+SELECT o.OrderNumber, o.CustomerID
+FROM Orders AS o
+WHERE EmployeeID = 751;
 
-EXPLAIN SELECT CustomerID, Sum(OrderTotal)
-FROM Orders
-GROUP BY CustomerID;
+SELECT o.OrderNumber, o.CustomerID
+FROM Orders AS o
+WHERE EmployeeID = 708;
