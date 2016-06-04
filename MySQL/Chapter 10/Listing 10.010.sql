@@ -1,10 +1,8 @@
-﻿CREATE DATABASE Item61Example;
-
-GO
+CREATE DATABASE Item61Example
+	DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_unicode_ci;
 
 USE Item61Example;
-
-GO
 
 CREATE TABLE Employees (
   EmployeeID int NOT NULL PRIMARY KEY,
@@ -33,8 +31,6 @@ ALTER TABLE EmployeesAncestry
 ADD CONSTRAINT FK_EmployeesAncestry_SupervisedEmployeeID
 FOREIGN KEY (SupervisedEmployeeID)
 REFERENCES Employees (EmployeeID);
-
-GO
 
 INSERT INTO Employees (EmployeeID, EmpName, EmpPosition, SupervisorID)
 VALUES

@@ -3,5 +3,4 @@ The folder contains samples and scripts for chapter 9.
 Listing 9.001 not included - MySQL does not support Common Table Expressions (CTE)
 Listing 9.003 not included - MySQL does not support Functions that return Tables
 Listing 9.006, 7, and 8 not included - MySQL does not support CTE
-Listing 9.013 - specific to SQL Server
 
