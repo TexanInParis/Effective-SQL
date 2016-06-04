@@ -1,0 +1,13 @@
+-- Ensure you've run Listing 10.010.sql
+-- in order to run this example. 
+
+ALTER SESSION SET CURRENT_SCHEMA = Item61Example;
+
+--SET EmployeeID = 3;
+
+SELECT e.*
+FROM Employees e
+INNER JOIN EmployeesAncestry a
+  ON e.EmployeeID = a.SupervisingEmployeeID
+WHERE a.SupervisedEmployeeID = :EmployeeID
+  AND a.Distance > 0;
