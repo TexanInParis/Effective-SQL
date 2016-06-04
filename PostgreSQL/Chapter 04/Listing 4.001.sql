@@ -2,7 +2,7 @@
 -- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
-SET SCHEMA SalesOrdersSample;
+SET search_path = SalesOrdersSample;
 
 SELECT C.CustFirstName, C.CustLastName
 FROM Customers AS C
