@@ -1,3 +1,9 @@
+-- Create a schema to make clean-up easier
+
+CREATE SCHEMA Item20DB2Example;
+
+SET SCHEMA Item20DB2Example;
+
 CREATE TABLE Sales (
   SalesId int PRIMARY KEY NOT NULL,
   RetailerId int NULL,

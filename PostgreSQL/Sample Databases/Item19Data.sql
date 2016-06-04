@@ -1,4 +1,4 @@
-SET SCHEMA Item19Example;
+SET search_path = Item19Example;
 
 INSERT INTO tblPostSales
   (Product, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, 

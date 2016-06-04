@@ -1,6 +1,8 @@
--- Ensure you've run Ch03.20.01Structure.sql
--- and Ch03.20.01Data.sql in the Sample Databases folder
+-- Ensure you've run Item19Structure.sql
+-- and Item19Data.sql in the Sample Databases folder
 -- in order to run this example. 
+
+SET search_path = Item19Example;
 
 SELECT CAST('2015-01-01' AS Date) AS SalesMonth, Product, Jan AS SalesAmt
   FROM tblPostSales
@@ -35,5 +37,5 @@ UNION ALL
 SELECT CAST('2015-11-01' AS Date) AS SalesMonth, Product, Nov AS SalesAmt
   FROM tblPostSales
 UNION ALL
-SELECT CAST('2015-12-01' AS Date) AS SalesMonth, Product, Decm AS SalesAmt
+SELECT CAST('2015-12-01' AS Date) AS SalesMonth, Product, Dec AS SalesAmt
   FROM tblPostSales;

@@ -1,7 +1,14 @@
 -- Not available on Oracle Express edition as this requires advanced replication feature. The script is untested. Note also that materialized view logs might need to be 
 -- created on table(s) in order to create the materialized view.
 
-ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+-- Create a schema to make it easier to clean up.
+CREATE USER Item20OracleExample
+IDENTIFIED BY example
+DEFAULT TABLESPACE USERS
+TEMPORARY TABLESPACE TEMP
+QUOTA 20M on USERS;
+
+ALTER SESSION SET CURRENT_SCHEMA = Item20OracleExample;
 
 CREATE TABLE Sales (
   SalesId int PRIMARY KEY,
