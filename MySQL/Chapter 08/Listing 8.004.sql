@@ -1,5 +1,5 @@
--- Ensure you've run SalesOrdersStructureMY.sql
--- and SalesOrdersDataMY.sql in the Sample Databases folder
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
 USE SalesOrdersSample;

@@ -1,4 +1,4 @@
--- Ensure you've run SalesOrdersStructureMy.sql
+-- Ensure you've run SalesOrdersStructure.sql
 -- and SalesOrdersDataMy.sql in the Sample Databases folder
 -- in order to run this example. 
 

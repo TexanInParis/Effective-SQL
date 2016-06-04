@@ -1,5 +1,5 @@
 
--- Ensure you've run Item33StructureAndDataMY.sql in the Sample Databases folder
+-- Ensure you've run Item33StructureAndData.sql in the Sample Databases folder
 -- in order to create the Inventory table
 
 USE Item33Example;

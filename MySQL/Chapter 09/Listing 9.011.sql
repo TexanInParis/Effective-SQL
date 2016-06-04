@@ -1,4 +1,4 @@
--- Ensure you've run StudentGradesStructureMY.sql and StudentGradesDataMY.sql in order to run this example. 
+-- Ensure you've run StudentGradesStructure.sql and StudentGradesData.sql in order to run this example. 
 
 USE StudentGradesExample;
 

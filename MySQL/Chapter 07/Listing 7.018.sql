@@ -1,4 +1,4 @@
--- This view was already created by Item44StructureMY.sql
+-- This view was already created by Item44Structure.sql
 
 -- Listing 7.18 CREATE VIEW statement 
 

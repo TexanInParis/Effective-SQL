@@ -1,4 +1,4 @@
--- Ensure Item44StructureMY.sql has been run first to be consistent with answers in the book.
+-- Ensure Item44Structure.sql has been run first to be consistent with answers in the book.
 
 -- Listing 7.15 Get a list of constraints
 

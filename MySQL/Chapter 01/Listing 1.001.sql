@@ -1,4 +1,4 @@
--- Ensure you've run Item02StructureAndDataMY.sql
+-- Ensure you've run Item02StructureAndData.sql
 -- in the Sample Databases folder in order to run this example. 
 
 USE Item02Example;
