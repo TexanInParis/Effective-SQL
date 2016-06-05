@@ -3,6 +3,6 @@ The folder contains samples and scripts for the specific vendor's implementation
 REMINDER:
 Use CREATE DATABASE to create a new container for tables and other objects.
 USE CREATE SCHEMA to create a subset container for tables and other objects 
-within the current or default database.  We chose to use SET SCHEMA to make 
+within the current or default database.  We chose to use CREATE SCHEMA to make 
 it possible to point to the set of tables we need to use for a particular 
-batch of SQL commands in the listings. 
+batch of SQL commands in the listings using the SET search_path within the SQL script. 
