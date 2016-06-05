@@ -7,4 +7,3 @@ The following listings are NOT included:
 5.003 -- Not an SQL statement
 5.005 -- MySQL does not support GROUP BY CUBE
 5.006 -- MySQL does not support GROUP BY GROUPING SETS
-5.016 -- MySQL does not support Common Table Expressions

@@ -1,7 +1,4 @@
 The folder contains samples and scripts for chapter 8.
 
-Listing 8.006 not included - MySQL does not support Common Table Expressions
+Listing 8.006 not included - MySQL does not support Common Table Expressions or Window functions
 Listing 8.010 not included - MySQL does not support Common Table Expressions or Window functions
-Listing 8.012 not included - MySQL does not support Common Table Expressions
-Listing 8.013 not included - MySQL does not support Common Table Expressions
-
