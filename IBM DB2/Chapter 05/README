@@ -6,4 +6,3 @@ The following listings are NOT included:
 5.002 -- Not executable SQL
 5.003 -- Not executable SQL
 5.011 -- Not valid in IBM DB2, Microsoft Access, Microsoft SQL Server, Oracle Database
-5.013 -- Not executable SQL

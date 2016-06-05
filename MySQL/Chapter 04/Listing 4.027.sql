@@ -1,7 +1,12 @@
--- Note that this is simply a WHERE clause. You cannot run this code as-is!
+-- Ensure you've run Listing 4.021.sql to create the ProgramLogs table
 
--- Listing 4.27 Advancing the end date provided by user’s input
+USE Item27Example;
 
-WHERE L.LogDate >= CONVERT(@startDate, datetime) 
-AND L.LogDate < CONVERT(DATE_ADD(@endDate, INTERVAL 1 DAY) datetime);
+-- Listing 4.27 Paramterized version of Listing 4.26
+SET @startDate = DATE '2016-07-04';
+SET @endDate = DATE '2016-07-04';
 
+SELECT L.LogUserID, L.Logger, L.LogLevel, L.LogMessage, L.LogDate
+FROM ProgramLogs AS L
+WHERE L.LogDate >= @startDate
+  AND L.LogDate < (@endDate + INTERVAL 1 DAY );  
