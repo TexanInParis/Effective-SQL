@@ -1,1 +1,5 @@
 The folder contains samples and scripts for the specific vendor's implementation.
+
+REMINDER:
+MySQL uses CREATE SCHEMA and CREATE DATABASE interchangebly.  Use either to create 
+a new database that contains tables and other objects.

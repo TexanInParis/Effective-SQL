@@ -1,1 +1,9 @@
 The folder contains samples and scripts for the specific vendor's implementation.
+
+REMINDER:
+Microsoft Office Access supports neither CREATE DATABASE nor CREATE SCHEMA.
+To create a new database file (that contains tables and other objects),
+you must use the Access user interface, or the CreateDatabase method of
+the Workspace object in VBA code using Data Access Objecs (DAO), or the
+CreateObject("ADOX.Catalog") and Catalog.Create commands in VBA code 
+using Access Database Objects Extensions (ADOX).

@@ -1,1 +1,7 @@
 The folder contains samples and scripts for the specific vendor's implementation.
+
+REMINDER:
+In SQL Server, use CREATE DATABASE to create a new database that contains tables
+and other objects (Views, Functions, etc.).  Use CREATE SCHEMA to create a named
+subset of tables and other objects with a database.  This allows you to define 
+security for a subset of objects within a database.
