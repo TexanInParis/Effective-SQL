@@ -1,0 +1,10 @@
+Root folder of samples for EFFECTIVE SQL (ISBN-10: 0134578899)
+
+See Master Database List.txt for a summary of all the sample databases used.
+
+See Listings.xlsx for a complete list of all listings used in the book and 
+the status of each.  Green indicates the listing exists.  Yellow indicates
+the listing exists, but was modified substantially from what is in the book
+in order to work on a particular database system.  Red indicates that the 
+sample does not exist for that database system.  You can find comments in 
+all yellow and red boxes explaining the situation.
