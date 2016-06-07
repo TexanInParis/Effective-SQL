@@ -14,8 +14,8 @@ This folder contains samples and scripts for chapter 1.
             Listing 1-004a  (Drop table)
 1-005 -- Contained as query Listing 1-005 in the SalesOrdersSample.accdb file (in the Sample Databases folder)
 1-006 -- NOT included - specific to SQL Server
-1-007 -- NOT included - specific to DB2
-1-008 -- NOT included - specific to Oracle
+1-007 -- NOT included - indexing on calculated column is not supported
+1-008 -- NOT included - indexing on calculated column is not supported
 1-009 -- Contained as query Listing 1-009 in the SalesOrdersSample.accdb file (in the Sample Databases folder)
 1-010 -- Contained as queries in the SalesOrdersSample.accdb file (in the Sample Databases folder)
             Listing 1-010a  (Create Orders table)
