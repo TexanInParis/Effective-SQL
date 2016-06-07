@@ -13,6 +13,7 @@ AS
   DELETE Order_Details
     FROM Order_Details, deleted
    WHERE Order_Details.OrderNumber = deleted.OrderNumber;
+GO
 
 -- Run the following if you do not wish to keep the trigger in the database.
 -- DROP TRIGGER DelCascadeTrig;
