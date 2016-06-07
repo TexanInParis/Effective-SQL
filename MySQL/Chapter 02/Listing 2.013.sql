@@ -5,7 +5,7 @@
 -- Listing 2.13 Sample table creation SQL
  
 CREATE TABLE Orders (
-	OrderNumber int IDENTITY (1, 1) NOT NULL ,
+	OrderNumber int NOT NULL AUTO_INCREMENT ,
 	OrderDate date NULL ,
 	ShipDate date NULL ,
 	CustomerID int NULL ,
