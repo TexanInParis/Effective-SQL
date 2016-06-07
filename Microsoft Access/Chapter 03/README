@@ -17,7 +17,7 @@ This folder contains samples and scripts for chapter 3.
 3-004 -- Contained as query Listing 3-004 in Item18Example.accdb (in the Sample Databases folder)
 3-005 -- Contained as query Listing 3-005 in Item19Example.accdb (in the Sample Databases folder)
 3-006 -- Not included: listing is DB2 specific
-3-007 -- Not included: listing is Oracle specific
+3-007 -- Not included: Access does not support materialized view
 3-008 -- Contained as query Listing 3-008 in Item 21.accdb (in the Sample Databases folder)
 3-009 -- Contained as query Listing 3-009 in Item 21.accdb (in the Sample Databases folder)
 3-010 -- Contained as query Listing 3-010 in Item 21.accdb (in the Sample Databases folder)
