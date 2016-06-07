@@ -9,5 +9,5 @@ ALTER TABLE Order_Details
   ADD CONSTRAINT fkOrder FOREIGN KEY (OrderNumber) REFERENCES Orders (OrderNumber) ON DELETE CASCADE;
 
 -- Run the following if you do not wish to keep the constraint in the database.
--- ALTER TABLE Order_Details DROP CONSTRAINT fkOrder;
+-- ALTER TABLE Order_Details DROP FOREIGN KEY fkOrder;
 
