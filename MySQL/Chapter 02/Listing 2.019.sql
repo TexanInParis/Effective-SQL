@@ -4,6 +4,8 @@
 
 USE SalesOrdersSample;
 
+DELIMITER $$
+
 CREATE PROCEDURE UpdateOrdersOrderTotalProc (
 	IN NewOrderNumber int,
 	IN OldOrderNumber int
@@ -19,6 +21,9 @@ BEGIN
      OR (Orders.OrderNumber = NewOrderNumber AND NewOrderNumber IS NOT NULL)
   ;
 END;
+$$
+
+DELIMITER ;
 
 CREATE TRIGGER updateOrdersOrderTotalsTrigInsert AFTER INSERT  
 ON Order_Details 
@@ -39,4 +44,4 @@ CALL UpdateOrdersOrderTotalProc(NULL, OLD.OrderNumber);
 DROP TRIGGER updateOrdersOrderTotalsTrigDelete;
 DROP TRIGGER updateOrdersOrderTotalsTrigUpdate;
 DROP TRIGGER updateOrdersOrderTotalsTrigInsert;
-DROP PROCEDURE UpdateOrdersOrderTotalProc
+DROP PROCEDURE UpdateOrdersOrderTotalProc;
