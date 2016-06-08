@@ -19,6 +19,8 @@ FROM Entertainers AS E INNER JOIN Entertainer_Styles AS ES
 INNER JOIN Musical_Styles AS MS
   ON ES.StyleID = MS.StyleID;
 
+-- NOTE: The following returns the WRONG answer 
+--       because of a bug in MySQL
 SELECT CustStyles.CustomerID, CustStyles.CustFirstName, 
     CustStyles.CustLastName, EntStyles.EntStageName
 FROM CustStyles INNER JOIN EntStyles
@@ -29,6 +31,18 @@ HAVING COUNT(EntStyles.StyleName) =
   (SELECT COUNT(StyleName) 
    FROM CustStyles AS CS1
    WHERE CS1.CustomerID = CustStyles.CustomerID)
+ORDER BY CustStyles.CustomerID;
+
+-- By forcing the count in the outer SELECT clause, we
+-- get the correct answer:
+SELECT CustStyles.CustomerID, CustStyles.CustFirstName, 
+    CustStyles.CustLastName, EntStyles.EntStageName, COUNT(EntStyles.StyleName) As EntCount,
+    (SELECT COUNT(StyleName) FROM CustStyles AS CS2 WHERE CS2.CustomerID = CustStyles.CustomerID) AS CustCount
+FROM CustStyles INNER JOIN EntStyles
+  ON CustStyles.StyleName = EntStyles.StyleName
+GROUP BY CustStyles.CustomerID, CustStyles.CustFirstName,
+     CustStyles.CustLastName, EntStyles.EntStageName
+HAVING COUNT(EntStyles.StyleName) = CustCount
 ORDER BY CustStyles.CustomerID;
 
 DROP VIEW EntStyles;
