@@ -7,7 +7,7 @@ GO
 
 -- Listing 2.19 SQL for sample trigger to maintain computed value
 CREATE TRIGGER updateOrdersOrderTotalsTrig
-<<<<<<< HEAD
+-- <<<<<<< HEAD
  ON Orders AFTER INSERT, UPDATE, DELETE AS
 BEGIN
   UPDATE Orders
@@ -20,7 +20,7 @@ BEGIN
     SELECT OrderNumber FROM deleted
     UNION
     SELECT OrderNumber FROM inserted
-=======
+-- =======
  ON Order_Details AFTER INSERT, UPDATE, DELETE 
  AS
  BEGIN
@@ -36,15 +36,15 @@ BEGIN
     SELECT OrderNumber FROM deleted
 	UNION
 	SELECT OrderNumber FROM inserted
->>>>>>> origin/master
+-- >>>>>>> origin/master
   );
 END;
 
-<<<<<<< HEAD
+-- <<<<<<< HEAD
 DROP TRIGGER updateOrdersOrderTotalsTrig;
-=======
+-- =======
 
 -- Run the following if you do not wish to keep the trigger in the database.
 --DROP TRIGGER updateOrdersOrderTotalsTrig;
->>>>>>> origin/master
+-- >>>>>>> origin/master
 
