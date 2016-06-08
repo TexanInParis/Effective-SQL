@@ -30,8 +30,8 @@ SELECT Students.StudentID, Students.LastName, Students.FirstName,
   FROM Students;
 GO
 
--- Dummy USE to free up StudentsTest so it can be deleted.
-USE SalesOrdersSample;
+-- Disconnect from the current database in order to be able to drop the sample database.
+USE master;
 GO
 
 DROP DATABASE StudentsTest;
