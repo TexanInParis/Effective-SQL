@@ -3,6 +3,7 @@
 -- in order to run this example. 
 
 USE SalesOrdersSample;
+GO
 
 CREATE INDEX Orders_OrderDate_ShipDate
 ON Orders (OrderDate, ShipDate);

@@ -1,4 +1,10 @@
---NOTE: This is already created if you run the Item55StructureAndData in the sample database folder.
+-- Ensure you've run Item55StructureAndData.sql
+-- in the Sample Databases folder
+-- in order to run this example. 
+
+USE Item55Example;
+
+-- NOTE: This is already created if you run the Item55StructureAndData in the sample database folder.
 
 CREATE TABLE DimDate (
   DateKey int NOT NULL,

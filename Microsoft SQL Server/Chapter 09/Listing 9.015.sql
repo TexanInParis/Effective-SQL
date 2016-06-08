@@ -3,6 +3,7 @@
 -- in order to run this example. 
 
 USE SalesOrdersSample;
+GO
 
 SELECT od.WeekDayNameLong AS OrderDateWeekDay, 
   o.OrderDate,

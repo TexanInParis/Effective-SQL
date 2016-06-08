@@ -3,7 +3,7 @@
 
 USE Item60Example;
 
-SET @Nodepath '/1/2/5' COLLATE utf8_unicode_ci;
+SET @Nodepath = '/1/2/5' COLLATE utf8_unicode_ci;
 
 SELECT e.*
 FROM Employees AS e
