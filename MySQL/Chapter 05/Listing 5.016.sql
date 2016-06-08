@@ -35,7 +35,8 @@ INNER JOIN Categories AS C
 INNER JOIN Orders AS O
   ON O.OrderNumber = OD.OrderNumber
 WHERE O.OrderDate BETWEEN DATE '2015-10-01' AND DATE '2015-12-31';
-	
+
+-- Original query that returns wrong answer:
 SELECT D.CategoryDescription, D.ProductName, 
   SUM(D.QuotedPrice * D.QuantityOrdered) AS TotalSales
 FROM CatProdData AS D
@@ -46,6 +47,17 @@ HAVING SUM(D.QuotedPrice * D.QuantityOrdered) >
 	FROM AveragePerCategory AS a 
 	WHERE a.CategoryID = D.CategoryID
 );
+
+-- NOTE: Bug in MySQL 5.7 returns wrong answer when using the original
+-- SQL. Workaround is to do a JOIN and include tha category average in
+-- the output.  This query returns the correct answer:
+SELECT D.CategoryDescription, D.ProductName, 
+  SUM(D.QuotedPrice * D.QuantityOrdered) AS TotalSales, a.AverageOfCategory
+FROM CatProdData AS D INNER JOIN AveragePerCategory AS a
+ON D.CategoryID = A.CategoryID 
+GROUP BY D.CategoryID, D.CategoryDescription, D.ProductName
+HAVING SUM(D.QuotedPrice * D.QuantityOrdered) > 
+  a.AverageOfCategory;
 
 DROP VIEW CatProdData;
 DROP VIEW AveragePerCategory;
