@@ -1,11 +1,11 @@
 -- NOTE that some are code snippets that are not executable.
 
---(Generate a salutation based on gender and marital status.)
+-- (Generate a salutation based on gender and marital status.)
 CASE WHEN Students.Gender = 'M' THEN 'Mr.'
   WHEN Students.MaritalStatus = 'S' THEN 'Ms.'
     ELSE 'Mrs.' END
 
---(Rate sales based by Product on quantity sold.)
+-- (Rate sales based by Product on quantity sold.)
 Use Salesorderssample;
 
 SELECT Products.ProductNumber, Products.ProductName,
@@ -27,7 +27,7 @@ CASE WHEN (SELECT SUM(QuantityOrdered)
   ELSE 'Excellent' END
 FROM Products;
 
---(Calculate raises based on position.)
+-- (Calculate raises based on position.)
 CASE Staff.Title 
 WHEN 'Instructor' 
 THEN ROUND(Salary * 1.05, 0) 

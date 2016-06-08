@@ -1,6 +1,7 @@
 -- Ensure you've run Ch03.20.01Structure.sql
 -- and Ch03.20.01Data.sql in the Sample Databases folder
 -- in order to run this example. 
+-- NOTE: MySQL doesn't allow "Dec" as a column name; Used "Decm" instead.
 
 USE Item19Example;
 

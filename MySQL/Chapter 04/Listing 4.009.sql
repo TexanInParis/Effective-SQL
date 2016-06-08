@@ -1,5 +1,11 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
 -- NOTE: Sample table Students does not exist.
 CREATE DATABASE StudentsTest;
+
+USE StudentsTest;
 
 CREATE TABLE Students (
 	StudentID int PRIMARY KEY NOT NULL,
@@ -7,8 +13,6 @@ CREATE TABLE Students (
 	FirstName varchar(50),
 	BirthDate date
 );
-
-USE StudentsTest;
 
 SELECT Students.StudentID, Students.LastName, Students.FirstName, 
    YEAR(CURDATE()) - YEAR(Students.BirthDate) - 

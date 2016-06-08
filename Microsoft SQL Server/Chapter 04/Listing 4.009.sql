@@ -1,6 +1,13 @@
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
+
 -- NOTE: Sample table Students does not exist.
 
 CREATE DATABASE StudentsTest;
+GO
+
+USE StudentsTest;
 GO
 
 CREATE TABLE Students (
@@ -9,9 +16,6 @@ CREATE TABLE Students (
 	FirstName varchar(50),
 	BirthDate date
 );
-GO
-
-USE StudentsTest;
 GO
 
 SELECT Students.StudentID, Students.LastName, Students.FirstName, 
@@ -24,9 +28,15 @@ SELECT Students.StudentID, Students.LastName, Students.FirstName,
     THEN 1  
     ELSE 0 END) AS Age
   FROM Students;
-  
+GO
+
+-- Dummy USE to free up StudentsTest so it can be deleted.
+USE SalesOrdersSample;
+GO
+
 DROP DATABASE StudentsTest;
-  
+GO
+
 --Similar code using EmpDOB in the Employees table in SalesOrdersSample
 -- Ensure you've run SalesOrdersStructure.sql
 -- and SalesOrdersData.sql in the Sample Databases folder
