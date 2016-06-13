@@ -1,3 +1,5 @@
+﻿-- This requires that the tables from RecipesStructure.sql be created first.
+
 ALTER SESSION SET CURRENT_SCHEMA = RECIPESSAMPLE;
 
 INSERT INTO Ingredient_Classes

@@ -1,3 +1,5 @@
+-- This requires that the tables from Item19Structure.sql be created first.
+
 Use Item19Example;
 
 INSERT INTO tblPostSales

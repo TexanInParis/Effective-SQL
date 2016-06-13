@@ -1,3 +1,5 @@
+-- This requires that the tables from BowlingLeagueStructure.sql be created first. 
+
 Use BowlingLeagueSample;
 
 INSERT INTO Tournaments

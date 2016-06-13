@@ -1,3 +1,5 @@
+-- This requires that the tables from BowlingLeagueStructure.sql be created first.
+
 ALTER SESSION SET CURRENT_SCHEMA = BOWLINGLEAGUESAMPLE;
 
 INSERT INTO Tournaments

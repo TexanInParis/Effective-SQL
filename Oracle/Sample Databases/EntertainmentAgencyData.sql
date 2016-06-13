@@ -1,3 +1,5 @@
+-- This requires that the tables from EntertainmentAgencyStructure.sql be created first.
+
 ALTER SESSION SET CURRENT_SCHEMA = ENTERTAINMENTAGENCYSAMPLE;
 
 INSERT INTO Customers

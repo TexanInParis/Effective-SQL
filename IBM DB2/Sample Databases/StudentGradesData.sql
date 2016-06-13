@@ -1,4 +1,5 @@
 -- This requires that the tables from StudentsGradesStructure.sql be created first.
+
 SET SCHEMA StudentGradesExample;
 
 INSERT INTO Students (StudentID, StudentFirstNM, StudentLastNM) VALUES (1, 'Ben', 'Clothier');

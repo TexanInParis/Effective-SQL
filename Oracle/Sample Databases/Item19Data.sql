@@ -1,3 +1,5 @@
+-- This requires that the tables from Item19Structure.sql be created first.
+
 ALTER SESSION SET CURRENT_SCHEMA = ITEM19EXAMPLE;
 
 INSERT INTO tblPostSales

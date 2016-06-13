@@ -1,3 +1,5 @@
+-- This requires that the tables from BowlingLeagueStructure.sql be created first.
+
 SET search_path TO BowlingLeagueSample;
 
 INSERT INTO Tournaments

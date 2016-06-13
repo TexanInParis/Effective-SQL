@@ -1,3 +1,5 @@
+-- This requires that the tables from SalesOrdersStructure.sql be created first.
+
 SET search_path TO SalesOrdersSample;
 
 INSERT INTO Customers

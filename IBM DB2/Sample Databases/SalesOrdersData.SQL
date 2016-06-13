@@ -1,3 +1,5 @@
+-- This requires that the tables from SalesOrdersStructure.sql be created first.
+
 SET SCHEMA SalesOrdersSample;
 
 INSERT INTO Customers

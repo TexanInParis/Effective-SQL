@@ -1,3 +1,5 @@
+-- This requires that the tables from SalesOrdersStructure.sql be created first.
+
 ALTER SESSION SET CURRENT_SCHEMA = SALESORDERSSAMPLE;
 
 INSERT INTO Customers

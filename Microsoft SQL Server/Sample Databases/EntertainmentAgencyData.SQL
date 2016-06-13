@@ -1,3 +1,5 @@
+-- This requires that the tables from EntertainmentAgencyStructure.sql be created first.
+
 USE EntertainmentAgencySample;
 SET IDENTITY_INSERT Customers ON
 GO

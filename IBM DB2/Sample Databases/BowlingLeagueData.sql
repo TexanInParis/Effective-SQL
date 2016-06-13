@@ -1,3 +1,5 @@
+-- This requires that the tables from BowlingLeagueData.sql be created first.
+
 SET SCHEMA BowlingLeagueSample;
 
 INSERT INTO Tournaments
