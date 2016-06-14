@@ -4,7 +4,7 @@
 
 SET search_path = SalesOrdersSample;
 
--- The Customerss table already exists, so you will get an
+-- The Customers table already exists, so you will get an
 --  error if you try to run the following.
 -- Included as comments for reference.
 -- CREATE TABLE Customers (
