@@ -1,5 +1,5 @@
 -- Ensure you've run Item02StructureAndData.sql
--- in the Sample Databases folder in order to run this example. 
+--  in the Sample Databases folder in order to run this example. 
 
 SET SCHEMA Item02Example;
 

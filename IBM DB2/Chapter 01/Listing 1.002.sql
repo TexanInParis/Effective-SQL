@@ -1,3 +1,6 @@
+-- Ensure you've run Item03StructureAndData.sql
+-- in the Sample Databases folder in order to run this example. 
+
 SET SCHEMA Item03Example;
 
 SELECT ID AS DrawingID, Predecessor_1 AS Predecessor

@@ -1,4 +1,5 @@
--- Ensure you've run Item04StructureAndData.sql in the Sample Databases folder in order to run this example.
+-- Ensure you've run Item04StructureAndData.sql in the 
+-- Sample Databases folder in order to run this example.
 
 SET SCHEMA Item04Example;
 
