@@ -20,3 +20,4 @@ BEGIN
 END;
 
 DROP TRIGGER updateOrdersOrderTotalsTrig;
+
