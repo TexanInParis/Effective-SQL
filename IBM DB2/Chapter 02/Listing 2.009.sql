@@ -1,6 +1,5 @@
--- Ensure you've run SalesOrdersStructure.sql and SalesOrdersData.sql 
--- in the Sample Databases folder in order to run this example. 
+-- Ensure you've run Listing 2.008.sql to create the Customers table
 
-SET SCHEMA SalesOrdersSample;
+SET SCHEMA Item11Example;
 
 CREATE INDEX CustName ON Customers(CustLastName, CustFirstName);

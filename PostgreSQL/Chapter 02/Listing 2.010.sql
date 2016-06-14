@@ -1,6 +1,5 @@
--- Ensure you've run SalesOrdersStructure.sql and SalesOrdersData.sql 
--- in the Sample Databases folder in order to run this example. 
+-- Ensure you've run Listing 2.008.sql to create the Customers table
 
-SET search_path = SalesOrdersSample;
+SET search_path = Item11Example;
 
 CREATE INDEX CustName ON Customers(CustFirstName, CustLastName);

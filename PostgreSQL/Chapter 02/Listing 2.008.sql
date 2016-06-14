@@ -1,7 +1,10 @@
--- Ensure you've run SalesOrdersStructure.sql and SalesOrdersData.sql 
--- in the Sample Databases folder in order to run this example. 
+-- Create a new database, to make it easier to cleanup afterwards.
 
-SET search_path = SalesOrdersSample;
+CREATE SCHEMA Item11Example;
+
+SET search_path = Item11Example;
+
+-- Listing 2.8 Table Creation SQL
 
 CREATE TABLE Customers (
 	CustomerID int PRIMARY KEY ,

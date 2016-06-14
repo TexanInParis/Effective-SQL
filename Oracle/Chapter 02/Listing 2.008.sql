@@ -1,8 +1,13 @@
--- Ensure you've run SalesOrdersStructure.sql
--- and SalesOrdersData.sql in the Sample Databases folder
--- in order to run this example. 
+-- Create a new database, to make it easier to cleanup afterwards.
+CREATE USER Item11Example
+IDENTIFIED BY example
+DEFAULT TABLESPACE USERS
+TEMPORARY TABLESPACE TEMP
+QUOTA 20M on USERS;
 
-ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+ALTER SESSION SET CURRENT_SCHEMA = Item11Example;
+
+-- Listing 2.8 Table Creation SQL
 
 CREATE TABLE Customers (
 	CustomerID int PRIMARY KEY ,
