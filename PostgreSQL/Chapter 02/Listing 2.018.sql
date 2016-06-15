@@ -11,7 +11,7 @@ BEGIN
 	DELETE FROM Order_Details
 	WHERE Order_Details.OrderNumber = OLD.OrderNumber;
 END;
-$BODY$
+$BODY$;
 
 CREATE TRIGGER DelCascadeTrig AFTER DELETE
 ON Orders 
@@ -19,4 +19,5 @@ FOR EACH ROW
 EXECUTE PROCEDURE DelCascadeTrig_Function();
 
 DROP TRIGGER DelCascadeTrig ON Orders;
+DROP FUNCTION DelCascadeTrig_Function();
 DROP FUNCTION DelCascadeTrig_Function();

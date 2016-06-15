@@ -3,29 +3,20 @@
 
 SET search_path = SalesOrdersSample;
 
-CREATE FUNCTION UpdateOrdersOrderTotals() 
+CREATE FUNCTION DelCascadeTrig_Function()
 RETURNS trigger
-LANGUAGE plpgsql AS 
+LANGUAGE plpgsql AS
 $BODY$
-    BEGIN
-	  UPDATE  Orders
-	  SET OrderTotals = (
-	      SELECT SUM(Quantity * Price) 
-		FROM Order_Details OD
-	       WHERE OD.OrderNumber = O.OrderNumber
-	  )
-	  WHERE O.OrderNumber IN (
-	    SELECT OrderNumber FROM OLD
-	    UNION
-	    SELECT OrderNumber FROM NEW
-	  );
-    END;
-$BODY$
+BEGIN
+	DELETE FROM Order_Details
+	WHERE Order_Details.OrderNumber = OLD.OrderNumber;
+END;
+$BODY$;
 
-CREATE TRIGGER updateOrdersOrderTotalsTrig AFTER INSERT OR UPDATE OR DELETE
+CREATE TRIGGER DelCascadeTrig AFTER DELETE
 ON Orders 
-FOR EACH STATEMENT
-EXECUTE PROCEDURE updateOrdersOrderTotals();
+FOR EACH ROW
+EXECUTE PROCEDURE DelCascadeTrig_Function();
 
-DROP TRIGGER updateOrdersOrderTotalsTrig ON Orders;
-DROP FUNCTION updateOrdersOrderTotals();
+DROP TRIGGER DelCascadeTrig ON Orders;
+DROP FUNCTION DelCascadeTrig_Function();
