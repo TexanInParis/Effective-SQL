@@ -6,4 +6,4 @@ SET search_path = SalesOrdersSample;
 SELECT EmployeeID, EmpFirstName, EmpLastName
 FROM Employees
 WHERE EmpState = 'WA'
-AND EmpCity LIKE '%ELLE%';
+AND EmpCity LIKE '%elle%';
