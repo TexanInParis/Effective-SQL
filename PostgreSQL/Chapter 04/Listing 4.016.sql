@@ -18,7 +18,7 @@ BEGIN
 		ON Products.ProductNumber = Order_Details.ProductNumbeR
 	WHERE ProductName = ProdName;
 END;
-$BODY$
+$BODY$;
 
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
@@ -48,7 +48,7 @@ BEGIN
 		ON Products.ProductNumber = Order_Details.ProductNumbeR
 	WHERE ProductName LIKE CONCAT('%', ProdName, '%');
 END;
-$BODY$
+$BODY$;
 
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers AS C 
