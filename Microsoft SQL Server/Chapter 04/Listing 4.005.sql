@@ -12,4 +12,4 @@ FROM Products AS P
 WHERE NOT EXISTS 
   (SELECT * 
    FROM Order_Details AS OD 
-   WHERE OD.ProductNumber = P.ProductNumber)
+   WHERE OD.ProductNumber = P.ProductNumber);
