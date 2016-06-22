@@ -7,5 +7,5 @@ USE Item27Example;
 SELECT L.LogUserID, L.Logger, L.LogLevel, L.LogMessage
 FROM ProgramLogs AS L
 WHERE L.LogDate BETWEEN CONVERT('2016-07-04', datetime) 
-                AND CONVERT('2016-07-05', datetime)
+                AND CONVERT('2016-07-05', datetime);
 

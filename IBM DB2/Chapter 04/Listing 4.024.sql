@@ -7,5 +7,5 @@ SET SCHEMA Item27Example;
 SELECT L.LogUserID, L.Logger, L.LogLevel, L.LogMessage
 FROM ProgramLogs AS L
 WHERE L.LogDate BETWEEN CAST('2016-07-04' AS timestamp) 
-                AND CAST('2016-07-05' AS timestamp)
+                AND CAST('2016-07-05' AS timestamp);
 
