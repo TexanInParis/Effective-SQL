@@ -22,7 +22,7 @@ BEGIN
 	       AS CustCityState, C.CustZipCode
 	FROM Customers AS C;
 END;
-$BODY$
+$BODY$;
 
 SELECT * FROM SalesOrdersSample.MailingLabels(5)
 ORDER BY CustZipCode;
