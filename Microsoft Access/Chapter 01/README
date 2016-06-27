@@ -21,4 +21,4 @@ This folder contains samples and scripts for chapter 1.
             Listing 1-010a  (Create Orders table)
 			Listing 1-010b  (Define FOREIGN KEY constraint)
 1-011 -- NOT included - Access does not support defining a FOREIGN KEY constraint in a CREATE TABLE statement.
-1-012 -- Contained as query Listing 1-012 in the SalesOrdersSample.accdb file (in the Sample Databases folder)
+1-012 -- Contained as queries in the Item07Example.accdb file (in the Sample Databases folder)
