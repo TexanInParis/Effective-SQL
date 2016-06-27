@@ -8,8 +8,8 @@ SET search_path = Item56Example;
 
 SELECT D.FullDate, 
   A.ApptDescription ,
-  CAST(A.ApptStartDate AS timestamp) + SECOND(A.ApptStartTime) SECONDS AS ApptStart ,
-  CAST(A.ApptEndDate AS timestamp) + SECOND(A.ApptEndTime) SECONDS AS ApptEnd
+  CAST(A.ApptStartDate AS timestamp) + SECOND(A.ApptStartTime) AS ApptStart ,
+  CAST(A.ApptEndDate AS timestamp) + SECOND(A.ApptEndTime) AS ApptEnd
 FROM DimDate AS D LEFT JOIN Appointments AS A
   ON D.FullDate = A.ApptStartDate
 ORDER BY D.FullDate;
