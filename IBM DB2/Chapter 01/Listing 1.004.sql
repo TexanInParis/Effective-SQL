@@ -7,11 +7,13 @@ SELECT AuthorID AS AuthID, CONCAT(AuthFirst,
   CASE 
     WHEN AuthMid IS NULL
     THEN ' '
-    ELSE CONCAT(' ', AuthMid, ' ')
+    ELSE CONCAT(' ', CONCAT(AuthMid, ' '))
   END, AuthLast) AS AuthName,
-  CONCAT(AuthStNum, ' ', AuthStreet, ' ', 
-      AuthCity, ', ', AuthStProv, ' ', 
-      AuthPostal, ', ', AuthCountry) 
+  CONCAT(AuthStNum, CONCAT(' ', CONCAT(AuthStreet, 
+      CONCAT(' ', CONCAT(AuthCity, 
+	  CONCAT(', ', CONCAT(AuthStProv, 
+	  CONCAT(' ', CONCAT(AuthPostal, 
+	  CONCAT(', ', AuthCountry)))))))))) 
     AS AuthAddress
 FROM Authors;
 
