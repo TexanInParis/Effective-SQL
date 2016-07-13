@@ -9,4 +9,6 @@ BEGIN
 	RETURN(TRUNC((SYSDATE - Date_of_Birth) / 365));	
 END;
 
-DROP FUNCTION CalculateAge;
+-- Execute the following only if you do not intend
+--  to run Listing 2.030.
+-- DROP FUNCTION CalculateAge;

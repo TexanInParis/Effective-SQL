@@ -12,4 +12,6 @@ BEGIN
 END;
 $BODY$;
 
-DROP FUNCTION CalculateAge(Date_of_Birth DATE);
+-- Execute the following only if you do not intend
+--  to run Listing 2.030.
+-- DROP FUNCTION CalculateAge(Date_of_Birth DATE);

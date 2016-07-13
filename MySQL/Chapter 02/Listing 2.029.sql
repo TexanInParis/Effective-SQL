@@ -11,5 +11,6 @@ CREATE FUNCTION CalculateAge(Date_of_Birth date)
 RETURNS int
 RETURN (DATEDIFF(CURRENT_DATE, Date_of_Birth) / 365);
 
--- Run the following if you do not wish to keep the function in the database.
+-- Execute the following only if you do not intend
+--  to run Listing 2.030.
 -- DROP FUNCTION CalculateAge;
