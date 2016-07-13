@@ -3,7 +3,7 @@
 
 SET SCHEMA SalesOrdersSample;
 
-SELECT CustomerID, Sum(OrderTotal)
+SELECT CustomerID, Sum(OrderTotal) AS SumOrderTotal
 FROM Orders
 GROUP BY CustomerID;
 
