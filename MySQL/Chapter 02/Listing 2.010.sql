@@ -9,3 +9,7 @@ DROP INDEX CustName ON Customers;
 
 -- Listing 2.10 Less appropriate Index Creation SQL
 CREATE INDEX CustName ON Customers(CustFirstName, CustLastName);
+
+-- Run the following if you do not want to keep the index.
+-- DROP INDEX CustName ON Customers;
+
