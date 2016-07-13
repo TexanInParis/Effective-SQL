@@ -6,7 +6,7 @@ USE Item11Example;
 
 -- Listing 2.8 Table Creation SQL
 CREATE TABLE Customers (
-	CustomerID int PRIMARY KEY ,
+	CustomerID int PRIMARY KEY NOT NULL ,
 	CustFirstName varchar (25) NULL ,
 	CustLastName varchar (25) NULL ,
 	CustStreetAddress varchar (50) NULL ,
