@@ -6,5 +6,5 @@ ALTER SESSION SET CURRENT_SCHEMA = Item27Example;
 SELECT L.LogUserID, L.Logger, L.LogLevel, L.LogMessage
 FROM ProgramLogs L
 WHERE L.LogDate BETWEEN DATE '2016-07-04' 
-                AND TIMESTAMP '2016-07-04 23:59:59.999'
+                AND TIMESTAMP '2016-07-04 23:59:59.999';
 
