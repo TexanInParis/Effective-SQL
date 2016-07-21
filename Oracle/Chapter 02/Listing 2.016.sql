@@ -4,7 +4,7 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
-SELECT CustomerID, Sum(OrderTotal)
+SELECT CustomerID, Sum(OrderTotal) AS SumOrderTotal
 FROM Orders
 WHERE OrderDate > DATE '2015-12-01'
 GROUP BY CustomerID;

@@ -6,7 +6,7 @@ USE SalesOrdersSample;
 GO
 
 -- Listing 2.16 Sample query SQL with WHERE clause
-SELECT CustomerID, Sum(OrderTotal)
+SELECT CustomerID, Sum(OrderTotal) AS SumOrderTotal
 FROM Orders
 WHERE OrderDate > '2015-12-01'
 GROUP BY CustomerID;
