@@ -8,5 +8,5 @@ ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
 SELECT P.ProductNumber, P.ProductName
 FROM Products P
-WHERE P.ProductNumber NOT IN (SELECT DISTINCT ProductNumber FROM Order_Details);
+WHERE P.ProductNumber NOT IN (SELECT ProductNumber FROM Order_Details);
 
