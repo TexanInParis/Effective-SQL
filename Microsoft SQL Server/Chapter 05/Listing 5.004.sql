@@ -5,6 +5,6 @@ USE Item30Example;
 GO
 
 -- Listing 5.4 ROLLUP sample query
-SELECT Color, Size, SUM(Quantity) AS TotalQuantity
+SELECT Color, Dimension, SUM(Quantity) AS TotalQuantity
 FROM Inventory 
-GROUP BY ROLLUP (Color, Size);
+GROUP BY ROLLUP (Color, Dimension);

@@ -4,7 +4,7 @@
 ALTER SESSION SET CURRENT_SCHEMA = Item30Example;
 
 -- Listing 5.6 GROUPING SETS sample query
-SELECT Color, "Size", SUM(Quantity) AS TotalQuantity
+SELECT Color, Dimension, SUM(Quantity) AS TotalQuantity
 FROM Inventory 
-GROUP BY GROUPING SETS ((Color), ("Size"), ());
+GROUP BY GROUPING SETS ((Color), (Dimension), ());
 

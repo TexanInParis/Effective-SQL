@@ -4,7 +4,7 @@
 SET SCHEMA Item30Example;
 
 -- Listing 5.5 CUBE sample query
-SELECT Color, Size, SUM(Quantity) AS TotalQuantity
+SELECT Color, Dimension, SUM(Quantity) AS TotalQuantity
 FROM Inventory 
-GROUP BY CUBE (Color, Size);
+GROUP BY CUBE (Color, Dimension);
 
