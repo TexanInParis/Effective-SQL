@@ -9,6 +9,6 @@ SELECT COUNT(*) AS TotalRows,
   COUNT(EmployeeID) AS TotalOrdersWithEmployees,
   COUNT(DISTINCT CustomerID) AS TotalUniqueCustomers,
   COUNT(CASE WHEN OrderTotal > 1000 THEN CustomerID END) AS TotalLargeOrders,
-  COUNT(DISTINCT CASE WHEN OrderTotal > 1000 THEN CustomerID END) AS TotalUniqueCustomersWithLargeOrders
+  COUNT(DISTINCT CASE WHEN OrderTotal > 1000 THEN CustomerID END) AS TotalUniqueCust_LargeOrders
 FROM OrdersTable;
 
