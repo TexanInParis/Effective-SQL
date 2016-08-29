@@ -39,8 +39,14 @@ GO
 
 -- Sample query that searches products correctly:
 CREATE VIEW CustomerProducts AS
-SELECT DISTINCT Customers.CustomerID, Customers.CustFirstName, 
-  Customers.CustLastName, Products.ProductName
+SELECT DISTINCT Customers.CustomerID, Customers.CustFirstName,
+  Customers.CustLastName,
+       CASE WHEN Products.ProductName LIKE '%Skateboard%' THEN 'Skateboard'
+              WHEN Products.ProductName LIKE '%Helmet%' THEN 'Helmet'
+              WHEN Products.ProductName LIKE '%Knee Pads%' THEN 'Knee Pads'
+              WHEN Products.ProductName LIKE '%Gloves%' THEN 'Gloves'
+              ELSE NULL
+       END AS ProductCategory
 FROM Customers INNER JOIN Orders
   ON Customers.CustomerID = Orders.CustomerID
 INNER JOIN Order_Details
@@ -50,20 +56,26 @@ INNER JOIN Products
 GO
 
 CREATE VIEW ProdsOfInterest AS
-SELECT Products.ProductName
+SELECT Products.ProductName,
+       CASE WHEN Products.ProductName LIKE '%Skateboard%' THEN 'Skateboard'
+              WHEN Products.ProductName LIKE '%Helmet%' THEN 'Helmet'
+              WHEN Products.ProductName LIKE '%Knee Pads%' THEN 'Knee Pads'
+              WHEN Products.ProductName LIKE '%Gloves%' THEN 'Gloves'
+              ELSE NULL
+       END AS ProductCategory
 FROM Products
 WHERE ProductName LIKE '%Skateboard%'
-   OR ProductName LIKE '%Helmet%' 
-   OR ProductName LIKE '%Knee Pads%' 
+   OR ProductName LIKE '%Helmet%'
+   OR ProductName LIKE '%Knee Pads%'
    OR ProductName LIKE '%Gloves%';
 GO
 
 SELECT CP.CustomerID, CP.CustFirstName, CP.CustLastName
-FROM CustomerProducts AS CP CROSS JOIN ProdsOfInterest AS PofI
-WHERE CP.ProductName = PofI.ProductName
+FROM CustomerProducts CP, ProdsOfInterest PofI
+WHERE CP.ProductCategory = PofI.ProductCategory
 GROUP BY CP.CustomerID, CP.CustFIrstName, CP.CustLastName
-HAVING COUNT(CP.ProductName) = 
-  (SELECT COUNT(ProductName) FROM ProdsOfInterest);
+HAVING COUNT(CP.ProductCategory) =
+  (SELECT COUNT(ProductCategory) FROM ProdsOfInterest);
 GO
 
 DROP VIEW CustomerProducts;
