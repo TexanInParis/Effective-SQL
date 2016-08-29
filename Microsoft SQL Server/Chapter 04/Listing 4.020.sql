@@ -56,7 +56,7 @@ INNER JOIN Products
 GO
 
 CREATE VIEW ProdsOfInterest AS
-SELECT Products.ProductName,
+SELECT DISTINCT 
        CASE WHEN Products.ProductName LIKE '%Skateboard%' THEN 'Skateboard'
               WHEN Products.ProductName LIKE '%Helmet%' THEN 'Helmet'
               WHEN Products.ProductName LIKE '%Knee Pads%' THEN 'Knee Pads'
