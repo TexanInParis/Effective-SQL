@@ -1,19 +1,20 @@
 -- Ensure you've run Item04StructureAndData.sql in the 
--- Sample Databases folder in order to run this example.
+-- Sample Databases folder and Listing 1.003.sql in order 
+-- to run this example.
 
 SET SCHEMA Item04Example;
 
-SELECT AuthorID AS AuthID, CONCAT(AuthFirst, 
+SELECT AuthorID AS AuthID, AuthFirst || 
   CASE 
     WHEN AuthMid IS NULL
     THEN ' '
-    ELSE CONCAT(' ', CONCAT(AuthMid, ' '))
-  END, AuthLast) AS AuthName,
-  CONCAT(AuthStNum, CONCAT(' ', CONCAT(AuthStreet, 
-      CONCAT(' ', CONCAT(AuthCity, 
-	  CONCAT(', ', CONCAT(AuthStProv, 
-	  CONCAT(' ', CONCAT(AuthPostal, 
-	  CONCAT(', ', AuthCountry)))))))))) 
+    ELSE ' ' || AuthMid || ' '
+  END || AuthLast AS AuthName,
+  AuthStNum || ' ' || AuthStreet 
+            || ' ' || AuthCity 
+	  		|| ', ' || AuthStProv 
+	  		|| ' ' || AuthPostal 
+	  		|| ', ' || AuthCountry 
     AS AuthAddress
 FROM Authors;
 

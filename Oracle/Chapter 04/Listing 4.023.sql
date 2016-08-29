@@ -7,6 +7,6 @@ ALTER SESSION SET CURRENT_SCHEMA = Item27Example;
 
 SELECT L.LogUserID, L.Logger, L.LogLevel, L.LogMessage
 FROM ProgramLogs L
-WHERE L.LogDate = CAST('2016-07-04' AS timestamp);
+WHERE L.LogDate = CAST(DATE '2016-07-04' AS timestamp);
 
 

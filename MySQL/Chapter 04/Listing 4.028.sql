@@ -8,8 +8,8 @@ USE Item28Example;
 
 CREATE TABLE Employees (
   EmployeeID int NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-  EmpFirstName nvarchar (25) NULL ,
-  EmpLastName nvarchar (25) NULL ,
+  EmpFirstName varchar (25) NULL ,
+  EmpLastName varchar (25) NULL ,
   EmpDOB date NULL ,
   EmpSalary decimal (15,2) NULL 
 );

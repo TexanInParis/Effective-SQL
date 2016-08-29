@@ -7,10 +7,10 @@ SET SCHEMA Item20DB2Example;
 CREATE TABLE Sales (
   SalesId int PRIMARY KEY NOT NULL,
   RetailerId int NULL,
-  Sales int NULL,
-  Cost float NULL,
-  Quantity int NULL,
-  GrossProfit float NULL,
+  Sales int NOT NULL,
+  Cost float NOT NULL,
+  Quantity int NOT NULL,
+  GrossProfit float NOT NULL,
   ProductId int NULL,
   OrderDay date NULL
 );
@@ -57,32 +57,34 @@ CREATE TABLE ProductType (
 );
 
 CREATE SUMMARY TABLE SalesSummary AS (
-SELECT SUM(T1.Sales) AS Sales,
-  SUM(T1.Cost * T1.Quantity) AS Cost,
-  SUM(T1.Quantity) AS Quantity,
-  SUM(T1.GrossProfit) AS GrossProfit,
+SELECT 
   T5.RegionName AS RegionName,
   T5.CountryCode AS CountryCode,
   T6.ProductTypeCode AS ProductTypeCode,
   T4.CurrentYear AS CurrentYear,
   T4.CurrentQuarter AS CurrentQuarter,
-  T4.CurrentMonth AS CurrentMonth
-FROM Sales AS T1 
-INNER JOIN Retailer AS T2
-  ON T1.RetailerId = T2.RetailerId 
-INNER JOIN Product AS T3
-  ON T1.ProductId = T3.ProductId
-INNER JOIN datTime AS T4
-  ON T1.OrderDay = T4.DayKey 
-INNER JOIN Region AS T5
-  ON T2.RetailerCountryCode = T5.CountryCode
-INNER JOIN ProductType AS T6
-  ON T3.ProductTypeId = T6.ProductTypeId 
+  T4.CurrentMonth AS CurrentMonth,
+  COUNT(*) AS RowCount,
+  SUM(T1.Sales) AS Sales,
+  SUM(T1.Cost * T1.Quantity) AS Cost,
+  SUM(T1.Quantity) AS Quantity,
+  SUM(T1.GrossProfit) AS GrossProfit
+FROM Sales AS T1, 
+	 Retailer AS T2,
+	 Product AS T3,
+	 datTime AS T4, 
+	 Region AS T5,
+	 ProductType AS T6
+WHERE T1.RetailerId = T2.RetailerId
+  AND T1.ProductId = T3.ProductId
+  AND T1.OrderDay = T4.DayKey
+  AND T2.RetailerCountryCode = T5.CountryCode
+  AND T3.ProductTypeId = T6.ProductTypeId
 GROUP BY T5.RegionName, T5.CountryCode, T6.ProductTypeCode,
   T4.CurrentYear, T4.CurrentQuarter, T4.CurrentMonth
 )
 DATA INITIALLY DEFERRED
-REFRESH DEFERRED
+REFRESH IMMEDIATE
 ENABLE QUERY OPTIMIZATION
 MAINTAINED BY SYSTEM
 NOT LOGGED INITIALLY;

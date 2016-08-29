@@ -10,8 +10,8 @@ GO
 
 CREATE TABLE Employees (
   EmployeeID int IDENTITY (1, 1) PRIMARY KEY ,
-  EmpFirstName nvarchar (25) NULL ,
-  EmpLastName nvarchar (25) NULL ,
+  EmpFirstName varchar (25) NULL ,
+  EmpLastName varchar (25) NULL ,
   EmpDOB date NULL ,
   EmpSalary money NULL 
 );

@@ -4,24 +4,24 @@ SET SCHEMA RecipesSample;
 
 CREATE TABLE Ingredient_Classes (
 	IngredientClassID smallint NOT NULL DEFAULT 0 ,
-	IngredientClassDescription nvarchar (255) NULL 
+	IngredientClassDescription varchar (255) NULL 
 );
 
 CREATE TABLE Ingredients (
 	IngredientID int NOT NULL DEFAULT 0 ,
-	IngredientName nvarchar (255) NULL ,
+	IngredientName varchar (255) NULL ,
 	IngredientClassID smallint NULL DEFAULT 0 ,
 	MeasureAmountID smallint NULL DEFAULT 0 
 );
 
 CREATE TABLE Measurements (
 	MeasureAmountID smallint NOT NULL DEFAULT 0,
-	MeasurementDescription nvarchar (255) NULL 
+	MeasurementDescription varchar (255) NULL 
 );
 
 CREATE TABLE Recipe_Classes (
 	RecipeClassID smallint NOT NULL DEFAULT 0 ,
-	RecipeClassDescription nvarchar (255) NULL 
+	RecipeClassDescription varchar (255) NULL 
 );
 
 CREATE TABLE Recipe_Ingredients (
@@ -34,7 +34,7 @@ CREATE TABLE Recipe_Ingredients (
 	
 CREATE TABLE Recipes (
 	RecipeID int NOT NULL DEFAULT 0 ,
-	RecipeTitle nvarchar (255) NULL ,
+	RecipeTitle varchar (255) NULL ,
 	RecipeClassID smallint NULL DEFAULT 0,
 	Preparation clob NULL ,
 	Notes clob NULL

@@ -8,15 +8,15 @@ CREATE TABLE Students (
 );
 
 SELECT Students.StudentID, Students.LastName, Students.FirstName, 
-   YEAR(SYSDATE) - YEAR(Students.BirthDate) - 
-    (CASE WHEN MONTH(Students.BirthDate) < MONTH(SYSDATE) 
+   EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM Students.BirthDate) - 
+    (CASE WHEN EXTRACT(MONTH FROM Students.BirthDate) < EXTRACT(MONTH FROM SYSDATE) 
     THEN 0 
-    WHEN MONTH(Students.BirthDate) > MONTH(SYSDATE) 
+    WHEN EXTRACT(MONTH FROM Students.BirthDate) > EXTRACT(MONTH FROM SYSDATE) 
     THEN 1 
-    WHEN DAY(Students.BirthDate) > DAY(SYSDATE) 
+    WHEN EXTRACT(DAY FROM Students.BirthDate) > EXTRACT(DAY FROM SYSDATE) 
     THEN 1  
     ELSE 0 END) AS Age
-  FROM Students;
+FROM Students;  
   
 DROP TABLE Students;
 
@@ -25,15 +25,15 @@ DROP TABLE Students;
 -- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
-ALTER SESSION SET CURRENT_SCHEMA SalesOrdersSample;
+ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
 SELECT Employees.EmployeeID, Employees.EmpLastName, Employees.EmpFirstName,
-   (YEAR(GETDATE()) - YEAR(Employees.EmpDOB)) -
-    (CASE WHEN MONTH(Employees.EmpDOB) < MONTH(GETDATE()) 
+   EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM Employees.EmpDOB) -
+    (CASE WHEN EXTRACT(MONTH FROM Employees.EmpDOB) < EXTRACT(MONTH FROM SYSDATE) 
     THEN 0 
-    WHEN MONTH(Employees.EmpDOB) > MONTH(GETDATE()) 
+    WHEN EXTRACT(MONTH FROM Employees.EmpDOB) > EXTRACT(MONTH FROM SYSDATE) 
     THEN 1 
-    WHEN DAY(Employees.EmpDOB) > DAY(GETDATE()) 
+    WHEN EXTRACT(DAY FROM Employees.EmpDOB) > EXTRACT(DAY FROM SYSDATE) 
     THEN 1  
     ELSE 0 END) AS Age 
-  FROM Employees;
+FROM Employees;

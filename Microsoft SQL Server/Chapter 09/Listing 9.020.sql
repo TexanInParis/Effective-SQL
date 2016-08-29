@@ -13,7 +13,7 @@ CREATE TABLE Appointments (
   ApptStartTime time NOT NULL ,
   ApptEndDate date NOT NULL ,
   ApptEndTime time NOT NULL ,
-  ApptDescription nvarchar (50) NULL 
+  ApptDescription varchar (50) NULL 
 );
 GO
 

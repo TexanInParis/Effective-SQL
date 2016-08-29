@@ -1,9 +1,15 @@
--- Ensure you've run SalesOrdersStructure.sql
--- and SalesOrdersData.sql in the Sample Databases folder
--- in order to run this example. 
+-- There should be no need to run this CREATE TABLE statement.
+-- It was included in SalesOrdersStructure.sql, which 
+-- presumably you've already run. 
 
-ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
-SELECT CustomerID, Sum(OrderTotal)
-FROM Orders
-GROUP BY CustomerID;
+-- Listing 2.13 Sample table creation SQL
+ 
+CREATE TABLE Orders (
+	OrderNumber int NOT NULL ,
+	OrderDate date NULL ,
+	ShipDate date NULL ,
+	CustomerID int NULL ,
+	EmployeeID int NULL ,
+	OrderTotal decimal(15,4) NULL 
+);

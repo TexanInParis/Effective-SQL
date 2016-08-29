@@ -5,7 +5,7 @@ USE Item19Example;
 GO
 
 CREATE TABLE tblPostSales(
-    Product nvarchar (255), 
+    Product varchar (255), 
     Jan money, 
     Feb money, 
     Mar money, 

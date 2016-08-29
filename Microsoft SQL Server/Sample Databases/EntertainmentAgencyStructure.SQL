@@ -6,13 +6,13 @@ GO
 
 CREATE TABLE Agents (
 	AgentID int IDENTITY (1, 1) NOT NULL ,
-	AgtFirstName nvarchar (25) NULL ,
-	AgtLastName nvarchar (25) NULL ,
-	AgtStreetAddress nvarchar (50) NULL ,
-	AgtCity nvarchar (30) NULL ,
-	AgtState nvarchar (2) NULL ,
-	AgtZipCode nvarchar (10) NULL ,
-	AgtPhoneNumber nvarchar (15) NULL ,
+	AgtFirstName varchar (25) NULL ,
+	AgtLastName varchar (25) NULL ,
+	AgtStreetAddress varchar (50) NULL ,
+	AgtCity varchar (30) NULL ,
+	AgtState varchar (2) NULL ,
+	AgtZipCode varchar (10) NULL ,
+	AgtPhoneNumber varchar (15) NULL ,
 	DateHired date NULL ,
 	Salary money NULL ,
 	CommissionRate float(24) NULL ,
@@ -21,13 +21,13 @@ GO
 
 CREATE TABLE Customers (
 	CustomerID int IDENTITY (1, 1) NOT NULL ,
-	CustFirstName nvarchar (25) NULL ,
-	CustLastName nvarchar (25) NULL ,
-	CustStreetAddress nvarchar (50) NULL ,
-	CustCity nvarchar (30) NULL ,
-	CustState nvarchar (2) NULL ,
-	CustZipCode nvarchar (10) NULL ,
-	CustPhoneNumber nvarchar (15) NULL 
+	CustFirstName varchar (25) NULL ,
+	CustLastName varchar (25) NULL ,
+	CustStreetAddress varchar (50) NULL ,
+	CustCity varchar (30) NULL ,
+	CustState varchar (2) NULL ,
+	CustZipCode varchar (10) NULL ,
+	CustPhoneNumber varchar (15) NULL 
 )
 GO
 
@@ -60,15 +60,15 @@ GO
 
 CREATE TABLE Entertainers (
 	EntertainerID int IDENTITY (1, 1) NOT NULL ,
-	EntStageName nvarchar (50) NULL ,
-	EntSSN nvarchar (12) NULL ,
-	EntStreetAddress nvarchar (50) NULL ,
-	EntCity nvarchar (30) NULL ,
-	EntState nvarchar (2) NULL ,
-	EntZipCode nvarchar (10) NULL ,
-	EntPhoneNumber nvarchar (15) NULL ,
-	EntWebPage nvarchar (50) NULL ,
-	EntEMailAddress nvarchar (50) NULL ,
+	EntStageName varchar (50) NULL ,
+	EntSSN varchar (12) NULL ,
+	EntStreetAddress varchar (50) NULL ,
+	EntCity varchar (30) NULL ,
+	EntState varchar (2) NULL ,
+	EntZipCode varchar (10) NULL ,
+	EntPhoneNumber varchar (15) NULL ,
+	EntWebPage varchar (50) NULL ,
+	EntEMailAddress varchar (50) NULL ,
 	DateEntered date NULL ,
 	EntPricePerDay money NULL 
 )
@@ -76,10 +76,10 @@ GO
 
 CREATE TABLE Members (
 	MemberID int IDENTITY (1, 1) NOT NULL ,
-	MbrFirstName nvarchar (25) NULL ,
-	MbrLastName nvarchar (25) NULL ,
-	MbrPhoneNumber nvarchar (15) NULL ,
-	Gender nvarchar (2) NULL 
+	MbrFirstName varchar (25) NULL ,
+	MbrLastName varchar (25) NULL ,
+	MbrPhoneNumber varchar (15) NULL ,
+	Gender varchar (2) NULL 
 )
 GO
 
@@ -92,7 +92,7 @@ GO
 
 CREATE TABLE Musical_Styles (
 	StyleID int IDENTITY (1, 1) NOT NULL ,
-	StyleName nvarchar (75) NULL 
+	StyleName varchar (75) NULL 
 )
 GO
 
@@ -102,7 +102,7 @@ CREATE TABLE ztblDays (
 GO
 
 CREATE TABLE ztblMonths ( 
-        MonthYear nvarchar (15) NULL ,
+        MonthYear varchar (15) NULL ,
         YearNumber smallint NOT NULL ,
         MonthNumber smallint NOT NULL ,
         MonthStart date NULL ,
@@ -123,7 +123,7 @@ CREATE TABLE ztblMonths (
 GO
 
 CREATE TABLE ztblQuarters ( 
-        QuarterYear nvarchar (15) NULL ,
+        QuarterYear varchar (15) NULL ,
         YearNumber smallint NOT NULL ,
         QuarterNumber smallint NOT NULL ,
         QuarterStart date NULL ,
