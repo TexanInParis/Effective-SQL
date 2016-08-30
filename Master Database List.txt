@@ -4,16 +4,33 @@ EntertainmentAgencySample
 Item02Example
 Item03Example
 Item04Example
+Item11Example *
+Item13Example *
+Item14Example *
 Item18Example
 Item19Example
+Item20DB2Example *
+Item20MSSQLExample *
 Item21Example
+Item27Example *
+Item28Example *
 Item30Example
 Item33Example
 Item36Example
+Item37Example *
 Item39Example
 Item44Example
 Item52Example
 Item55Example
+Item56Example *
+Item58Example *
+Item59Example *
+Item60Example *
+Item61Example *
 RecipesSample
 SalesOrderSample
 StudentGradesExample
+
+* Created in a listing for the Item.
+All other databases are in the Sample Databases
+  folder for each database system.
