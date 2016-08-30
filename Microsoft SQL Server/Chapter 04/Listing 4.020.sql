@@ -27,7 +27,7 @@ SELECT CP.CustomerID, CP.CustFirstName, CP.CustLastName
 FROM CustomerProducts AS CP CROSS JOIN ProdsOfInterest AS PofI
 WHERE CP.ProductName = PofI.ProductName
 GROUP BY CP.CustomerID, CP.CustFIrstName, CP.CustLastName
-HAVING COUNT(DISTINCT CP.ProductName) = 
+HAVING COUNT(CP.ProductName) = 
   (SELECT COUNT(ProductName) FROM ProdsOfInterest);
 GO
 
