@@ -3,7 +3,7 @@
 -- in order to run this example. 
 
 USE SalesOrdersSample;
-GO
+GO 
 
 CREATE VIEW CustomerProducts AS
 SELECT DISTINCT Customers.CustomerID, Customers.CustFirstName, 
