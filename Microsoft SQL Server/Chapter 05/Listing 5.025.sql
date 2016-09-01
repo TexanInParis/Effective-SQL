@@ -21,7 +21,7 @@ FROM (Recipe_Classes
           ON Ingredients.IngredientClassID = 
          Ingredient_Classes.IngredientClassID) AS RI
     ON Recipes.RecipeID = RI.RecipeID 
-WHERE Recipe_Classes.RecipeClassDescription = 'Main Course' 
+WHERE Recipe_Classes.RecipeClassDescription = 'Main course' 
   AND RI.IngredientClassDescription = 'Spice'
 GROUP BY Recipes.RecipeTitle
 HAVING COUNT(RI.RecipeID) < 3;

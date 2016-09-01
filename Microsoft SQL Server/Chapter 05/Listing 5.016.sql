@@ -5,17 +5,17 @@
 USE SalesOrdersSample;
 GO
 
-WITH CatProdData AS
-(SELECT C.CategoryID, C.CategoryDescription, P.ProductName, OD.QuotedPrice, OD.QuantityOrdered
-FROM Products AS P 
-   INNER JOIN Order_Details AS OD 
-     ON P.ProductNumber=OD.ProductNumber
-   INNER JOIN Categories AS C
-     ON C.CategoryID = P.CategoryID
-   INNER JOIN Orders AS O
-     ON O.OrderNumber = OD.OrderNumber
-WHERE O.OrderDate BETWEEN '2015-10-01' AND '2015-12-31')
-
+WITH CatProdData AS (
+	SELECT C.CategoryID, C.CategoryDescription, P.ProductName, OD.QuotedPrice, OD.QuantityOrdered
+	FROM Products AS P 
+	   INNER JOIN Order_Details AS OD 
+	     ON P.ProductNumber=OD.ProductNumber
+	   INNER JOIN Categories AS C
+	     ON C.CategoryID = P.CategoryID
+	   INNER JOIN Orders AS O
+	     ON O.OrderNumber = OD.OrderNumber
+	WHERE O.OrderDate BETWEEN '2015-10-01' AND '2015-12-31'
+)
 SELECT D.CategoryDescription, D.ProductName, 
   SUM(D.QuotedPrice * D.QuantityOrdered) AS TotalSales
 FROM CatProdData AS D
@@ -29,4 +29,5 @@ HAVING SUM(D.QuotedPrice * D.QuantityOrdered) >
      FROM CatProdData AS D2
      WHERE D2.CategoryID = D.CategoryID
      GROUP BY D2.CategoryID, D2.ProductName) AS S 
-GROUP BY CategoryID);
+GROUP BY CategoryID)
+ORDER BY CategoryDescription, ProductName;

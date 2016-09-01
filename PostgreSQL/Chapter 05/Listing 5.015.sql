@@ -29,4 +29,5 @@ HAVING SUM(OD.QuotedPrice * OD.QuantityOrdered) >
       WHERE P2.CategoryID = P.CategoryID
       AND O2.OrderDate BETWEEN '2015-10-01' AND '2015-12-31'
       GROUP BY P2.CategoryID, P2.ProductNumber) AS S 
-GROUP BY CategoryID);
+GROUP BY CategoryID)
+ORDER BY CategoryDescription, ProductName;

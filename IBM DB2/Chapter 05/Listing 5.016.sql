@@ -40,4 +40,5 @@ HAVING SUM(D.QuotedPrice * D.QuantityOrdered) >
 	SELECT a.AverageOfCategory 
 	FROM AveragePerCategory AS a 
 	WHERE a.CategoryID = D.CategoryID
-);
+)
+ORDER BY CategoryDescription, ProductName;
