@@ -15,3 +15,22 @@ INNER JOIN Products
   ON Products.ProductNumber = Order_Details.ProductNumber;
 
 DROP VIEW CustomerProducts;
+
+-- Sample query that searches products correctly:
+CREATE VIEW CustomerProducts AS
+SELECT DISTINCT Customers.CustomerID, Customers.CustFirstName,
+  Customers.CustLastName,
+       CASE WHEN Products.ProductName LIKE '%Skateboard%' THEN 'Skateboard'
+              WHEN Products.ProductName LIKE '%Helmet%' THEN 'Helmet'
+              WHEN Products.ProductName LIKE '%Knee Pads%' THEN 'Knee Pads'
+              WHEN Products.ProductName LIKE '%Gloves%' THEN 'Gloves'
+              ELSE NULL
+       END AS ProductCategory
+FROM Customers INNER JOIN Orders
+  ON Customers.CustomerID = Orders.CustomerID
+INNER JOIN Order_Details
+  ON Orders.OrderNumber = Order_Details.OrderNumber
+INNER JOIN Products
+  ON Products.ProductNumber = Order_Details.ProductNumber;
+
+DROP VIEW CustomerProducts;
