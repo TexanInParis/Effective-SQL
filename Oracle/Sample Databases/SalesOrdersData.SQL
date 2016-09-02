@@ -18797,3 +18797,5 @@ INSERT INTO ztblSeqNumbers
 INSERT INTO ztblSeqNumbers
   (Sequence)
   VALUES (60);
+  
+COMMIT;

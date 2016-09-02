@@ -109,4 +109,5 @@ INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, Colour
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (88, 4, 9, 'Imperial and Hyper Beers', 8, 55, 7, 40, 30, 100);
 INSERT INTO Styles (StyleID, CategoryFK, CountryFK, StyleNm, ColourLowNb, ColourHighNb, ABVLowNb, ABVHighNb, IBULowNb, IBUHighNb) VALUES (89, 4, 9, 'American Stout', 30, 40, 5, 12, 35, 75);
 
+COMMIT;
 

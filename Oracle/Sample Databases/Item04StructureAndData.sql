@@ -37,3 +37,5 @@ VALUES ('Ben Clothier', '2015 Monterey St, San Antonio, TX 78207, USA');
 
 INSERT INTO AuthorsUnnormalized (AuthName, AuthAddress)
 VALUES ('Tom Wickerath', '2317 185th Place NE, Redmond, WA 98052, USA');
+
+COMMIT;

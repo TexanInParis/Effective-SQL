@@ -28,3 +28,5 @@ INSERT INTO ProgramLogs (LogID, LogUserID, LogDate, Logger, LogLevel, LogMessage
 INSERT INTO ProgramLogs (LogID, LogUserID, LogDate, Logger, LogLevel, LogMessage) VALUES (8, 'Ben', TIMESTAMP '2016-07-05 00:03:35', 'EFG', '4', 'User error. Please replace user.');
 INSERT INTO ProgramLogs (LogID, LogUserID, LogDate, Logger, LogLevel, LogMessage) VALUES (9, 'John',TIMESTAMP '2016-07-05 08:10:02', 'EFG', '3', 'An unknown error has occurred. The error is unknown because the guy who wrote this part of the code quit a while back and he was like real real smart and the rest of us aren''t sure how it works.');
 INSERT INTO ProgramLogs (LogID, LogUserID, LogDate, Logger, LogLevel, LogMessage) VALUES (10, 'Doug', TIMESTAMP '2016-07-05 12:32:01', 'XYZ', '4', 'User error. It''s not our fault!');
+
+COMMIT;

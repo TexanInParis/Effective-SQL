@@ -553,3 +553,4 @@ INSERT INTO Recipe_Ingredients
 INSERT INTO Recipe_Ingredients
   VALUES (15, 2, 80, 4, 2);
  
+COMMIT;

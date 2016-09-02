@@ -100,3 +100,5 @@ INSERT INTO SalesTransactions (SalesID, CustomerID, ModelID, SalesPersonID, Purc
 VALUES (5, 5, 5, 1, DATE '2015-11-10');
 INSERT INTO SalesTransactions (SalesID, CustomerID, ModelID, SalesPersonID, PurchaseDate)
 VALUES (6, 2, 6, 4, DATE '2015-05-25');
+
+COMMIT;

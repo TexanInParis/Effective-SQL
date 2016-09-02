@@ -42,3 +42,4 @@ INSERT INTO OrdersTable (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeI
 INSERT INTO OrdersTable (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, OrderTotal) VALUES (22, DATE '2012-09-03', DATE '2012-09-07', 1026, 702, 6456.16);
 INSERT INTO OrdersTable (OrderNumber, OrderDate, ShipDate, CustomerID, EmployeeID, OrderTotal) VALUES (19, DATE '2012-09-02', DATE '2012-09-06', 1027, 707, 15278.98);
 
+COMMIT;

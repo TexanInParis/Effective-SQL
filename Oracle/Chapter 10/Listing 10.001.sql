@@ -42,3 +42,4 @@ VALUES (11, 'Mariam Davis', 'Developer', 8);
 INSERT INTO Employees (EmployeeID, EmpName, EmpPosition, SupervisorID)
 VALUES (12, 'Jessica Yosef', 'Developer', 8);
 
+COMMIT;

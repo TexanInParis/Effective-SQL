@@ -63,4 +63,4 @@ INSERT INTO Predecessors (PredecessorID, DrawingID, PredecessorNo, Predecessor) 
 INSERT INTO Predecessors (PredecessorID, DrawingID, PredecessorNo, Predecessor) VALUES (18, 6, 1, 'LS02388421');
 INSERT INTO Predecessors (PredecessorID, DrawingID, PredecessorNo, Predecessor) VALUES (19, 6, 2, 'LS02769390');
 
-
+COMMIT;

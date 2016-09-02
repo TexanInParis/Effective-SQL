@@ -38,4 +38,4 @@ VALUES (Authors_Sequence.NEXTVAL, 'Ben', NULL, 'Clothier', '2015', 'Monterey St.
 INSERT INTO Authors ( AuthorID, AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
 VALUES (Authors_Sequence.NEXTVAL, 'Tom', NULL, 'Wickerath', '2317', '185th Place NE', 'Redmond', 'WA', '98052', 'USA');
 
-
+COMMIT;

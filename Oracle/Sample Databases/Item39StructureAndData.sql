@@ -10026,3 +10026,5 @@ INSERT INTO Purchases (PurchaseID, CustomerID, PurchaseDate, PurchaseAmount) VAL
 INSERT INTO Purchases (PurchaseID, CustomerID, PurchaseDate, PurchaseAmount) VALUES (9998, 10, DATE '2015-08-13', 929.2459);
 INSERT INTO Purchases (PurchaseID, CustomerID, PurchaseDate, PurchaseAmount) VALUES (9999, 6, DATE '2014-12-28', 997.4141);
 INSERT INTO Purchases (PurchaseID, CustomerID, PurchaseDate, PurchaseAmount) VALUES (10000, 6, DATE '2012-08-08', 106.7603);
+
+COMMIT;
