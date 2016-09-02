@@ -7,5 +7,5 @@ GO
 
 SELECT S.StyleNm
 FROM Styles AS S
-WHERE EXISTS (SELECT 1 FROM Countries WHERE CountryNM = 'Belgium' 
+WHERE EXISTS (SELECT NULL FROM Countries WHERE CountryNM = 'Belgium' 
   AND Countries.CountryID = S.CountryFK);
