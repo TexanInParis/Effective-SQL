@@ -4,6 +4,11 @@
 
 USE SalesOrdersSample;
 
+CREATE INDEX IX_Customers_CustArea
+ON Customers (CustAreaCode, CustCity);
+
 SELECT CustCity
 FROM Customers
 WHERE CustAreaCode = 530;
+
+DROP INDEX IX_Customers_CustArea ON Customers;

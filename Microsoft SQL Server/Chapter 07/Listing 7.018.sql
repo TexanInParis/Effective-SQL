@@ -1,10 +1,10 @@
--- This view was already created by Item44Structure.sql
+-- Ensure Item44Structure.sql has been run first to be consistent with answers in the book.
 
--- Listing 7.18 CREATE VIEW statement 
+USE Item44Example;
+GO
 
---CREATE VIEW BeerStyles AS
---SELECT Cat.CategoryDS AS Category, Cou.CountryNM AS Country, Sty.StyleNM AS Style, Sty.ABVHighNb AS MaxABV
---FROM Styles AS Sty INNER JOIN Categories AS Cat
---  ON Sty.CategoryFK = Cat.CategoryID
---INNER JOIN Countries AS Cou
---  ON Sty.CountryFK = Cou.CountryID;
+-- Listing 7.19 Get a list of tables and views using SQL Server system tables
+
+SELECT name, type_desc
+FROM sys.objects
+WHERE type_desc IN ('USER_TABLE', 'VIEW');

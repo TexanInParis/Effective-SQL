@@ -1,9 +1,10 @@
--- Ensure Item44Structure.sql has been run first to be consistent with answers in the book.
+-- This view was already created by Item44Structure.sql
 
-USE Item44Example;
-GO
+-- Listing 7.18 CREATE VIEW statement 
 
--- Listing 7.17 Get a list of all tables and columns used in any view
-
-SELECT VCU.VIEW_NAME, VCU.TABLE_NAME, VCU.COLUMN_NAME
-FROM INFORMATION_SCHEMA.VIEW_COLUMN_USAGE AS VCU;
+--CREATE VIEW BeerStyles AS
+--SELECT Cat.CategoryDS AS Category, Cou.CountryNM AS Country, Sty.StyleNM AS Style, Sty.ABVHighNb AS MaxABV
+--FROM Styles AS Sty INNER JOIN Categories AS Cat
+--  ON Sty.CategoryFK = Cat.CategoryID
+--INNER JOIN Countries AS Cou
+--  ON Sty.CountryFK = Cou.CountryID;

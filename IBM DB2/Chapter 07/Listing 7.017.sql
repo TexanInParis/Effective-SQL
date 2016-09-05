@@ -1,5 +1,13 @@
--- Listing 7.17 Get a list of all tables and columns used in any view
+-- Ensure you've run BeerStylesStructure.sql
+-- and BeerStylesData.sql in the Sample Databases folder
+-- in order to run this example. 
 
--- Not supported on DB2 For Linux, Unix, and Windows; only on DB2 for i Series. Untested.
-SELECT VCU.VIEW_NAME, VCU.TABLE_NAME, VCU.COLUMN_NAME
-FROM INFORMATION_SCHEMA.VIEW_COLUMN_USAGE AS VCU;
+-- Listing 7.18 CREATE VIEW statement 
+SET SCHEMA BeerStylesExample;
+
+CREATE VIEW BeerStyles AS
+SELECT Cat.CategoryDS AS Category, Cou.CountryNM AS Country, Sty.StyleNM AS Style, Sty.ABVHighNb AS MaxABV
+FROM Styles AS Sty INNER JOIN Categories AS Cat
+  ON Sty.CategoryFK = Cat.CategoryID
+INNER JOIN Countries AS Cou
+  ON Sty.CountryFK = Cou.CountryID;

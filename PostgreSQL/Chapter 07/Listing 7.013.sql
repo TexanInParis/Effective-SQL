@@ -1,5 +1,7 @@
--- Listing 7.13 Explaining a prepared SQL statement in PostgreSQL. You should first execute the listing 7.12 before running this.
+-- Listing 7.14 Get a list of tables and views
+SET search_path = Item44Example;
 
-SET search_path = SalesOrdersSample;
-
-EXPLAIN EXECUTE stmt(1001);
+SELECT T.TABLE_NAME, T.TABLE_TYPE, T.TABLE_SCHEMA
+FROM INFORMATION_SCHEMA.TABLES AS T
+WHERE T.TABLE_SCHEMA = 'item44example'
+  AND T.TABLE_TYPE IN ('BASE TABLE', 'VIEW');

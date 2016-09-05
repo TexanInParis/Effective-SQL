@@ -3,8 +3,10 @@
 USE Item44Example;
 GO
 
--- Listing 7.19 Get a list of tables and views using SQL Server system tables
+-- Listing 7.20 Get a list of tables and views using different SQL Server system tables
 
 SELECT name, type_desc
-FROM sys.objects
-WHERE type_desc IN ('USER_TABLE', 'VIEW');
+FROM sys.tables
+UNION
+SELECT name, type_desc
+FROM sys.views;

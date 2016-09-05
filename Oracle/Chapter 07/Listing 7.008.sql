@@ -4,11 +4,8 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
-CREATE INDEX IX_Customers_CustArea
-ON Customers (CustAreaCode, CustCity);
+-- Listing 7.9 Creating an Execution Plan in Oracle
 
-SELECT CustCity
-FROM Customers
-WHERE CustAreaCode = 530;
-
-DROP INDEX IX_Customers_CustArea;
+EXPLAIN PLAN FOR SELECT CustomerID, Sum(OrderTotal)
+FROM Orders
+GROUP BY CustomerID;

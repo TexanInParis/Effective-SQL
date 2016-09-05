@@ -2,10 +2,10 @@
 -- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
-USE SalesOrdersSample;
+SET search_path = SalesOrdersSample;
 
--- Listing 7.8 Creating an extended Execution Plan in MySQL
+-- Listing 7.11 Creating an Execution Plan in PostgreSQL
 
-EXPLAIN EXTENDED SELECT CustomerID, Sum(OrderTotal)
+EXPLAIN SELECT CustomerID, Sum(OrderTotal)
 FROM Orders
 GROUP BY CustomerID;

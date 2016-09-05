@@ -1,10 +1,8 @@
 -- Ensure Item44Structure.sql has been run first to be consistent with answers in the book.
 
-USE Item44Example;
+-- Listing 7.15 Get a list of constraints
 
--- Listing 7.14 Get a list of tables and views
+SELECT TC.CONSTRAINT_NAME, TC.TABLE_NAME, TC.CONSTRAINT_TYPE
+FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS AS TC
+WHERE TC.TABLE_SCHEMA = 'Item44Example';
 
-SELECT T.TABLE_NAME, T.TABLE_TYPE
-FROM INFORMATION_SCHEMA.TABLES AS T
-WHERE T.TABLE_SCHEMA = 'Item44Example'
-  AND T.TABLE_TYPE IN ('BASE TABLE', 'VIEW');

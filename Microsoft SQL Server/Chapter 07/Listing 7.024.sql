@@ -5,6 +5,11 @@
 USE SalesOrdersSample;
 GO
 
+CREATE INDEX IX_Orders_EmployeeID_Included
+ON Orders (EmployeeID)
+INCLUDE (OrderNumber, CustomerID);
+GO
+
 SELECT o.OrderNumber, o.CustomerID
 FROM Orders AS o
 WHERE EmployeeID = 751;
@@ -12,3 +17,6 @@ WHERE EmployeeID = 751;
 SELECT o.OrderNumber, o.CustomerID
 FROM Orders AS o
 WHERE EmployeeID = 708;
+
+DROP INDEX IX_Orders_EmployeeID_Included ON Orders;
+GO

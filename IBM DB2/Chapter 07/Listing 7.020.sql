@@ -2,13 +2,8 @@
 -- and SalesOrdersData.sql in the Sample Databases folder
 -- in order to run this example. 
 
-ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
-
-CREATE INDEX IX_Customers_CustArea
-ON Customers (CustAreaCode, CustCity);
+SET SCHEMA SalesOrdersSample;
 
 SELECT CustCity
 FROM Customers
 WHERE CustAreaCode = 530;
-
-DROP INDEX IX_Customers_CustArea;

@@ -5,10 +5,10 @@
 USE SalesOrdersSample;
 GO
 
-SELECT p.*
-FROM Products AS p
-WHERE NOT EXISTS (
-    SELECT NULL
-    FROM Order_Details AS d
-    WHERE p.ProductNumber = d.ProductNumber
-);
+SELECT o.OrderNumber, o.CustomerID
+FROM Orders AS o
+WHERE EmployeeID = 751;
+
+SELECT o.OrderNumber, o.CustomerID
+FROM Orders AS o
+WHERE EmployeeID = 708;

@@ -4,8 +4,6 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
--- Listing 7.9 Creating an Execution Plan in Oracle
+-- Listing 7.10 Displaying the last execution plan explained in the current Oracle database session
 
-EXPLAIN PLAN FOR SELECT CustomerID, Sum(OrderTotal)
-FROM Orders
-GROUP BY CustomerID;
+SELECT * FROM TABLE(dbms_xplan.display);
