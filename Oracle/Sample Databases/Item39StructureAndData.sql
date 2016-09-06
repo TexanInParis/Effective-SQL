@@ -25,6 +25,7 @@ BEGIN
   INTO   :new.PurchaseID
   FROM   dual;
 END;
+/
 
 INSERT INTO Purchases (PurchaseID, CustomerID, PurchaseDate, PurchaseAmount) VALUES (1, 1, DATE '2013-10-05', 74.6495);
 INSERT INTO Purchases (PurchaseID, CustomerID, PurchaseDate, PurchaseAmount) VALUES (2, 9, DATE '2011-11-04', 461.5677);

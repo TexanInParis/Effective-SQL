@@ -11,5 +11,6 @@ BEGIN
   DELETE FROM Order_Details
   WHERE Order_Details.OrderNumber = :old.OrderNumber;
 END;
+/
 
 DROP TRIGGER DelCascadeTrig;

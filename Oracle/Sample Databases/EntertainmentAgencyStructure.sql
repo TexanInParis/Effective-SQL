@@ -31,6 +31,7 @@ BEGIN
   INTO   :new.AgentID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Customers (
 	CustomerID int  NOT NULL ,
@@ -54,6 +55,7 @@ BEGIN
   INTO   :new.CustomerID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Engagements (
 	EngagementNumber int  NOT NULL , 
@@ -78,6 +80,7 @@ BEGIN
   INTO   :new.EngagementNumber
   FROM   dual;
 END;
+/
 
 CREATE TABLE Entertainer_Members (
 	EntertainerID int NOT NULL ,
@@ -117,6 +120,7 @@ BEGIN
   INTO   :new.EntertainerID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Members (
 	MemberID int  NOT NULL , 
@@ -137,6 +141,7 @@ BEGIN
   INTO   :new.MemberID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Musical_Preferences (
 	CustomerID int NOT NULL ,
@@ -160,6 +165,7 @@ BEGIN
   INTO   :new.StyleID
   FROM   dual;
 END;
+/
 
 CREATE TABLE ztblDays (
         DateField date NOT NULL 

@@ -2,6 +2,8 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = ENTERTAINMENTAGENCYSAMPLE;
 
+SET DEFINE OFF;
+
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustPhoneNumber)

@@ -5,8 +5,10 @@
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
 CREATE TYPE CustIDRowType AS OBJECT(CustID int);
+/
 
 CREATE TYPE CustIDTableType IS TABLE OF CustIDRowType;
+/
 
 CREATE FUNCTION CustProd(ProdName IN varchar) 
 RETURN CustIDTableType
@@ -25,6 +27,7 @@ BEGIN
 	);
 	RETURN CustIDTable;
 END;
+/
 
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers C 
@@ -43,8 +46,10 @@ DROP TYPE CustIDRowType;
 
 -- Sample query that returns results:
 CREATE TYPE CustIDRowType AS OBJECT(CustID int);
+/
 
 CREATE TYPE CustIDTableType IS TABLE OF CustIDRowType;
+/
 
 CREATE FUNCTION CustProd(ProdName IN varchar) 
 RETURN CustIDTableType
@@ -63,6 +68,7 @@ BEGIN
 	);
 	RETURN CustIDTable;
 END;
+/
 
 SELECT C.CustomerID, C.CustFirstName, C.CustLastName
 FROM Customers C 

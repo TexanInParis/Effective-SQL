@@ -25,7 +25,8 @@ BEGIN
   INTO   :new.AuthorID
   FROM   dual;
 END;
-  
+/
+
 INSERT INTO Authors ( AuthorID, AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
 VALUES (Authors_Sequence.NEXTVAL, 'John', 'L.', 'Viescas', '1175', '7th Street', 'Austin', 'TX', '78701', 'USA');
 

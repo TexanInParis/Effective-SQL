@@ -24,6 +24,7 @@ BEGIN
   INTO   :new.TransactionID
   FROM   dual;
 END;
+/
 
 INSERT ALL 
 	INTO Transactions (AccountID, Amount) VALUES	(1, 1237.10)
@@ -36,6 +37,8 @@ INSERT ALL
 	INTO Transactions (AccountID, Amount) VALUES	(2, 683.39)
 	INTO Transactions (AccountID, Amount) VALUES	(2, 993.10)
 SELECT 1 FROM dual;
+
+COMMIT;
 
 SELECT 
   t.AccountID, t.Amount,
