@@ -3,8 +3,11 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = Item59Example;
 
---SET lft = 10;
---SET rgt = 23;
+VARIABLE lft NUMBER;
+VARIABLE rgt NUMBER;
+
+EXECUTE :lft := 10;
+EXECUTE :rgt := 23;
 
 SELECT *
 FROM Employees e
