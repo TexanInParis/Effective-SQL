@@ -42,3 +42,5 @@ INSERT INTO Employees (EmployeeID, EmpName, EmpPosition, SupervisorID, Hierarchy
 VALUES (11, 'Mariam Davis', 'Developer', 8, '1/3/8/11');
 INSERT INTO Employees (EmployeeID, EmpName, EmpPosition, SupervisorID, HierarchyPath)
 VALUES (12, 'Jessica Yosef', 'Developer', 8, '1/3/8/12');
+
+COMMIT;

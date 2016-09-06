@@ -6,33 +6,33 @@ GO
 
 CREATE TABLE Categories (
 	CategoryID int IDENTITY (1, 1) NOT NULL ,
-	CategoryDescription nvarchar (75) NULL 
+	CategoryDescription varchar (75) NULL 
 )
 GO
 
 CREATE TABLE Customers (
 	CustomerID int IDENTITY (1, 1) NOT NULL ,
-	CustFirstName nvarchar (25) NULL ,
-	CustLastName nvarchar (25) NULL ,
-	CustStreetAddress nvarchar (50) NULL ,
-	CustCity nvarchar (30) NULL ,
-	CustState nvarchar (2) NULL ,
-	CustZipCode nvarchar (10) NULL ,
+	CustFirstName varchar (25) NULL ,
+	CustLastName varchar (25) NULL ,
+	CustStreetAddress varchar (50) NULL ,
+	CustCity varchar (30) NULL ,
+	CustState varchar (2) NULL ,
+	CustZipCode varchar (10) NULL ,
 	CustAreaCode smallint NULL ,
-	CustPhoneNumber nvarchar (8) NULL 
+	CustPhoneNumber varchar (8) NULL 
 )
 GO
 
 CREATE TABLE Employees (
 	EmployeeID int IDENTITY (1, 1) NOT NULL ,
-	EmpFirstName nvarchar (25) NULL ,
-	EmpLastName nvarchar (25) NULL ,
-	EmpStreetAddress nvarchar (50) NULL ,
-	EmpCity nvarchar (30) NULL ,
-	EmpState nvarchar (2) NULL ,
-	EmpZipCode nvarchar (10) NULL ,
+	EmpFirstName varchar (25) NULL ,
+	EmpLastName varchar (25) NULL ,
+	EmpStreetAddress varchar (50) NULL ,
+	EmpCity varchar (30) NULL ,
+	EmpState varchar (2) NULL ,
+	EmpZipCode varchar (10) NULL ,
 	EmpAreaCode smallint NULL ,
-	EmpPhoneNumber nvarchar (8) NULL ,
+	EmpPhoneNumber varchar (8) NULL ,
 	EmpDOB datetime NULL ,
 	ManagerID int NULL
 )
@@ -68,9 +68,9 @@ GO
 
 CREATE TABLE Products (
 	ProductNumber int IDENTITY (1, 1) NOT NULL ,
-	ProductName nvarchar (50) NULL ,
-	ProductDescription nvarchar (100) NULL ,
-	ProductUPC nvarchar (12) NULL ,
+	ProductName varchar (50) NULL ,
+	ProductDescription varchar (100) NULL ,
+	ProductUPC varchar (12) NULL ,
 	RetailPrice money NULL ,
 	QuantityOnHand smallint NULL ,
 	CategoryID int NULL 
@@ -79,15 +79,15 @@ GO
 
 CREATE TABLE Vendors (
 	VendorID int IDENTITY (1, 1) NOT NULL ,
-	VendName nvarchar (25) NULL ,
-	VendStreetAddress nvarchar (50) NULL ,
-	VendCity nvarchar (30) NULL ,
-	VendState nvarchar (2) NULL ,
-	VendZipCode nvarchar (10) NULL ,
-	VendPhoneNumber nvarchar (15) NULL ,
-	VendFaxNumber nvarchar (15) NULL ,
+	VendName varchar (25) NULL ,
+	VendStreetAddress varchar (50) NULL ,
+	VendCity varchar (30) NULL ,
+	VendState varchar (2) NULL ,
+	VendZipCode varchar (10) NULL ,
+	VendPhoneNumber varchar (15) NULL ,
+	VendFaxNumber varchar (15) NULL ,
 	VendWebPage ntext NULL ,
-	VendEMailAddress nvarchar (50) NULL ,
+	VendEMailAddress varchar (50) NULL ,
 ) 
 GO
 
@@ -100,7 +100,7 @@ CREATE TABLE PurchaseOrders (
 GO
 
 CREATE TABLE ztblMonths (
-	MonthYear nvarchar (15) NOT NULL ,
+	MonthYear varchar (15) NOT NULL ,
         YearNumber smallint NOT NULL ,
         MonthNumber smallint NOT NULL ,
         MonthStart datetime NOT NULL ,
@@ -121,7 +121,7 @@ CREATE TABLE ztblMonths (
 GO
 
 CREATE TABLE ztblPriceRanges ( 
-        PriceCategory nvarchar (20) NOT NULL ,
+        PriceCategory varchar (20) NOT NULL ,
         LowPrice money NULL ,
         HighPrice money NULL
 )

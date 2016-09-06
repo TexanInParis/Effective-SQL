@@ -82,3 +82,5 @@ INSERT INTO EmployeesAncestry (SupervisedEmployeeID, SupervisingEmployeeID, Dist
 INSERT INTO EmployeesAncestry (SupervisedEmployeeID, SupervisingEmployeeID, Distance) VALUES (12, 3, 2);
 INSERT INTO EmployeesAncestry (SupervisedEmployeeID, SupervisingEmployeeID, Distance) VALUES (12, 8, 1);
 INSERT INTO EmployeesAncestry (SupervisedEmployeeID, SupervisingEmployeeID, Distance) VALUES (12, 12, 0);
+
+COMMIT;

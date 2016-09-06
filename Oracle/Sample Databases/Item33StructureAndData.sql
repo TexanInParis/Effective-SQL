@@ -39,3 +39,5 @@ INSERT INTO BeerStyles (Category, Country, Style, MaxABV) VALUES ('American Beer
 INSERT INTO BeerStyles (Category, Country, Style, MaxABV) VALUES ('American Beers', 'United States', 'American Stout', 11.5);
 INSERT INTO BeerStyles (Category, Country, Style, MaxABV) VALUES ('European Ales', 'Germany', 'Dunkelweizen', 6);
 INSERT INTO BeerStyles (Category, Country, Style, MaxABV) VALUES ('European Ales', 'France', 'Bi�re de Garde', 8.5);
+
+COMMIT;

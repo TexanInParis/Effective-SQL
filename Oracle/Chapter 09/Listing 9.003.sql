@@ -5,7 +5,10 @@
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
 CREATE TYPE CustRowType AS OBJECT(CustName varchar(50), CustStreetAddress varchar(50), CustCityState varchar(50), CustZipCode varchar(50));
+/
+
 CREATE TYPE CustTableType IS TABLE OF CustRowType;
+/
 
 CREATE FUNCTION MailingLabels (skip int)
 RETURN CustTableType
@@ -27,6 +30,7 @@ BEGIN
 		);
 		RETURN CustTable;
 END;
+/
 
 SELECT * FROM TABLE(SalesOrdersSample.MailingLabels(5))
 ORDER BY CustZipCode;

@@ -7035,3 +7035,5 @@ INSERT INTO ztblWeeks
 INSERT INTO ztblWeeks
   (WeekStart, WeekEnd)
   VALUES (DATE '2017-12-24', DATE '2017-12-30');
+
+COMMIT;

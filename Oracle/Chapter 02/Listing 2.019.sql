@@ -22,5 +22,6 @@ BEGIN
     FROM dual
   );	
 END;
+/
 
 DROP TRIGGER updateOrdersOrderTotalsTrig;

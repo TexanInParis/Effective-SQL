@@ -5,7 +5,7 @@
 
 CREATE SCHEMA Item44Example;
 
-SET search_path TO Item44Example;
+SET search_path = Item44Example;
 
 CREATE TABLE Categories (
    CategoryID int NOT NULL,

@@ -39,7 +39,8 @@ GROUP BY P.CategoryID, C.CategoryDescription, P.ProductName
 HAVING SUM(OD.QuotedPrice * OD.QuantityOrdered) > 
 	(SELECT a.AverageOfCategory 
 	FROM AveragePerCategory AS a 
-	WHERE a.CategoryID = P.CategoryID);
+	WHERE a.CategoryID = P.CategoryID)
+ORDER BY CategoryDescription, ProductName;
 	
 DROP VIEW AveragePerCategory;
 DROP VIEW TotalPerProduct;

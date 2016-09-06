@@ -1,21 +1,5 @@
--- Ensure you've run SalesOrdersStructure.sql
--- and SalesOrdersData.sql in the Sample Databases folder
--- in order to run this example.
- 
+-- Listing 7.13 Explaining a prepared SQL statement in PostgreSQL. You should first execute the listing 7.12 before running this.
+
 SET search_path = SalesOrdersSample;
 
--- Listing 7.12 Preparing a bound SQL statement in PostgreSQL
-
-PREPARE stmt (int) AS
-SELECT *
-FROM Customers AS c
-WHERE c.CustomerID = $1;
-
-
-PREPARE stmt (int) AS
-  SELECT * FROM users u, logs l WHERE u.usrid=$1 AND u.usrid=l.usrid
-  AND l.date = $2;
-  
-  
-
-EXECUTE stmt(1001);
+EXPLAIN EXECUTE stmt(1001);

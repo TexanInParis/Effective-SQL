@@ -5,5 +5,5 @@
 USE SalesOrdersSample;
 
 SELECT CustomerID, Sum(OrderTotal) AS SumOrderTotal
-  FROM Orders
+FROM Orders
 GROUP BY CustomerID;

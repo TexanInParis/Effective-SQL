@@ -2,6 +2,9 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = ENTERTAINMENTAGENCYSAMPLE;
 
+-- Prevent substitutions when running scripts in SQL*Plus clients. Not applicable with JDBC clients.
+SET DEFINE OFF;
+
 INSERT INTO Customers
   (CustomerID, CustFirstName, CustLastName, CustStreetAddress, 
    CustCity, CustState, CustZipCode, CustPhoneNumber)
@@ -5549,3 +5552,5 @@ INSERT INTO ztblWeeks
 INSERT INTO ztblWeeks
   (WeekStart, WeekEnd)
   VALUES (DATE '2017-12-24', DATE '2017-12-30');
+
+COMMIT;

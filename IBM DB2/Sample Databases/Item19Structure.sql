@@ -3,7 +3,7 @@ CREATE SCHEMA Item19Example;
 SET SCHEMA Item19Example;
 
 CREATE TABLE tblPostSales(
-    Product nvarchar (255), 
+    Product varchar (255), 
     Jan decimal(19,4), 
     Feb decimal(19,4), 
     Mar decimal(19,4), 

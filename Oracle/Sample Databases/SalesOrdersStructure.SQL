@@ -22,6 +22,7 @@ BEGIN
   INTO   :new.CategoryID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Customers (
 	CustomerID int ,
@@ -46,6 +47,7 @@ BEGIN
   INTO   :new.CustomerID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Employees (
 	EmployeeID int ,
@@ -72,6 +74,7 @@ BEGIN
   INTO   :new.EmployeeID
   FROM   dual;
 END;
+/
 
 CREATE TABLE Order_Details (
 	OrderNumber int DEFAULT 0 NOT NULL ,
@@ -100,6 +103,7 @@ BEGIN
   INTO   :new.OrderNumber
   FROM   dual;
 END;
+/
 
 CREATE TABLE Product_Vendors (
 	ProductNumber int DEFAULT 0 NOT NULL ,
@@ -129,6 +133,7 @@ BEGIN
   INTO   :new.ProductNumber
   FROM   dual;
 END;
+/
 
 CREATE TABLE Vendors (
 	VendorID int ,
@@ -154,6 +159,7 @@ BEGIN
   INTO   :new.VendorID
   FROM   dual;
 END;
+/
 
 CREATE TABLE PurchaseOrders (
 	PurchaseID int ,
@@ -173,7 +179,7 @@ BEGIN
   INTO   :new.PurchaseID
   FROM   dual;
 END;
-
+/
 
 CREATE TABLE ztblMonths (
 	MonthYear varchar (15) NOT NULL ,

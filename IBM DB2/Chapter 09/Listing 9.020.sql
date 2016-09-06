@@ -11,7 +11,7 @@ CREATE TABLE Appointments (
   ApptStartTime time NOT NULL ,
   ApptEndDate date NOT NULL ,
   ApptEndTime time NOT NULL ,
-  ApptDescription nvarchar (50) NULL 
+  ApptDescription varchar (50) NULL 
 );
 
 INSERT INTO Appointments (ApptStartDate, ApptStartTime, ApptEndDate, ApptEndTime, ApptDescription) VALUES (DATE '2017-01-03', '10:30', DATE '2017-01-03', '11:00', 'Meet with John');

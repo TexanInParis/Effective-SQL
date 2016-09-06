@@ -13,14 +13,14 @@ CREATE TABLE Bowler_Scores (
 
 CREATE TABLE Bowlers (
 	BowlerID int NOT NULL DEFAULT 0 ,
-	BowlerLastName nvarchar (50) NULL ,
-	BowlerFirstName nvarchar (50) NULL ,
-	BowlerMiddleInit nvarchar (1) NULL ,
-	BowlerAddress nvarchar (50) NULL ,
-	BowlerCity nvarchar (50) NULL ,
-	BowlerState nvarchar (2) NULL ,
-	BowlerZip nvarchar (10) NULL ,
-	BowlerPhoneNumber nvarchar (14) NULL ,
+	BowlerLastName varchar (50) NULL ,
+	BowlerFirstName varchar (50) NULL ,
+	BowlerMiddleInit varchar (1) NULL ,
+	BowlerAddress varchar (50) NULL ,
+	BowlerCity varchar (50) NULL ,
+	BowlerState varchar (2) NULL ,
+	BowlerZip varchar (10) NULL ,
+	BowlerPhoneNumber varchar (14) NULL ,
 	TeamID int NULL 
 );
 	
@@ -32,26 +32,26 @@ CREATE TABLE Match_Games (
 	
 CREATE TABLE Teams (
 	TeamID int NOT NULL DEFAULT 0 ,
-	TeamName nvarchar (50) NOT NULL ,
+	TeamName varchar (50) NOT NULL ,
 	CaptainID int NULL 
 );
 
 CREATE TABLE Tournaments (
 	TourneyID int NOT NULL DEFAULT 0 ,
 	TourneyDate date NULL ,
-	TourneyLocation nvarchar (50) NULL 
+	TourneyLocation varchar (50) NULL 
 );
 
 CREATE TABLE Tourney_Matches (
 	MatchID int NOT NULL DEFAULT 0 ,
 	TourneyID int NULL DEFAULT 0 ,
-	Lanes nvarchar (5) NULL ,
+	Lanes varchar (5) NULL ,
 	OddLaneTeamID int NULL DEFAULT 0 ,
 	EvenLaneTeamID int NULL DEFAULT 0 
 );
 	
 CREATE TABLE ztblBowlerRatings (
-        BowlerRating nvarchar (15) NOT NULL , 
+        BowlerRating varchar (15) NOT NULL , 
         BowlerLowAvg smallint NULL ,
         BowlerHighAvg smallint NULL 
 );

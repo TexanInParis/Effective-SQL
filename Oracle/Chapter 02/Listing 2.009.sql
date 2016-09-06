@@ -3,5 +3,3 @@
 ALTER SESSION SET CURRENT_SCHEMA = Item11Example;
 
 CREATE INDEX CustName ON Customers(CustLastName, CustFirstName);
-
-DROP INDEX CustName;

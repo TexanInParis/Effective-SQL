@@ -29,10 +29,12 @@ BEGIN
   INTO   :new.AppointmentID
   FROM   dual;
 END;
-
+/
 
 INSERT INTO Appointments (ApptStartDate, ApptStartTime, ApptEndDate, ApptEndTime, ApptDescription) VALUES (DATE '2017-01-03', INTERVAL '0 10:30' DAY TO MINUTE, DATE '2017-01-03', INTERVAL '0 11:00' DAY TO MINUTE, 'Meet with John');
 INSERT INTO Appointments (ApptStartDate, ApptStartTime, ApptEndDate, ApptEndTime, ApptDescription) VALUES (DATE '2017-01-03', INTERVAL '0 11:15' DAY TO MINUTE, DATE '2017-01-03', INTERVAL '0 12:00' DAY TO MINUTE, 'Design cover page');
 INSERT INTO Appointments (ApptStartDate, ApptStartTime, ApptEndDate, ApptEndTime, ApptDescription) VALUES (DATE '2017-01-05', INTERVAL '0 09:00' DAY TO MINUTE, DATE '2017-01-05', INTERVAL '0 15:00' DAY TO MINUTE, 'Teach SQL course');
 INSERT INTO Appointments (ApptStartDate, ApptStartTime, ApptEndDate, ApptEndTime, ApptDescription) VALUES (DATE '2017-01-05', INTERVAL '0 15:30' DAY TO MINUTE, DATE '2017-01-05', INTERVAL '0 16:30' DAY TO MINUTE, 'Review with Ben');
 INSERT INTO Appointments (ApptStartDate, ApptStartTime, ApptEndDate, ApptEndTime, ApptDescription) VALUES (DATE '2017-01-06', INTERVAL '0 10:00' DAY TO MINUTE, DATE '2017-01-06', INTERVAL '0 11:30' DAY TO MINUTE, 'Plan for lunch');
+
+COMMIT;

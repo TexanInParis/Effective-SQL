@@ -13,7 +13,7 @@ WHERE C.CustomerID IN
   INNER JOIN Products
     ON Products.ProductNumber = Order_Details.ProductNumber
   WHERE Products.ProductName = 'Skateboard')
-EXCEPT
+MINUS
 SELECT C2.CustFirstName, C2.CustLastName
 FROM Customers C2
 WHERE C2.CustomerID IN
@@ -34,7 +34,7 @@ WHERE C.CustomerID IN
   INNER JOIN Products
     ON Products.ProductNumber = Order_Details.ProductNumber
   WHERE Products.ProductName LIKE '%Skateboard%')
-EXCEPT
+MINUS
 SELECT C2.CustFirstName, C2.CustLastName
 FROM Customers C2
 WHERE C2.CustomerID IN

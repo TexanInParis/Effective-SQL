@@ -7,14 +7,14 @@ ALTER SESSION SET CURRENT_SCHEMA = RecipesSample;
 SELECT Recipes.RecipeTitle
 FROM Recipes
 WHERE EXISTS 
-  (SELECT Recipe_Ingredients.RecipeID
+  (SELECT NULL
    FROM Ingredients INNER JOIN Recipe_Ingredients
      ON Ingredients.IngredientID = 
           Recipe_Ingredients.IngredientID
    WHERE Ingredients.IngredientName = 'Beef'
       AND Recipe_Ingredients.RecipeID = Recipes.RecipeID)
 AND EXISTS 
-  (SELECT Recipe_Ingredients.RecipeID
+  (SELECT NULL
    FROM Ingredients INNER JOIN Recipe_Ingredients
      ON Ingredients.IngredientID = 
           Recipe_Ingredients.IngredientID

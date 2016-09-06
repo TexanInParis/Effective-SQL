@@ -3,7 +3,9 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = Item61Example;
 
---SET EmployeeID = 3;
+VARIABLE EmployeeID NUMBER;
+
+EXECUTE :EmployeeID := 3;
 
 SELECT e.*
 FROM Employees e

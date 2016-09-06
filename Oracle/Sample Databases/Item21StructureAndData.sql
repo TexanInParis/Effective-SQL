@@ -28,3 +28,5 @@ INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales
 INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales, DecQuantity, DecSales, JanQuantity, JanSales, FebQuantity, FebSales) VALUES ('Components', 286, 34228.55, 322, 35451.79, 265, 27480.22, 325, 35151.97, 307, 32828.02);
 INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales, DecQuantity, DecSales, JanQuantity, JanSales, FebQuantity, FebSales) VALUES ('Skateboards', 164, 60530.06, 203, 89040.58, 129, 59377.2, 204, 79461.3, 147, 61125.19);
 INSERT INTO SalesSummary (Category, OctQuantity, OctSales, NovQuantity, NovSales, DecQuantity, DecSales, JanQuantity, JanSales, FebQuantity, FebSales) VALUES ('Tires', 151, 4356.91, 110, 3081.24, 150, 4388.55, 186, 5377.6, 137, 3937.7);
+
+COMMIT;

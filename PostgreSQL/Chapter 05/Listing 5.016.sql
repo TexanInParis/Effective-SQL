@@ -27,4 +27,5 @@ HAVING SUM(D.QuotedPrice * D.QuantityOrdered) >
      FROM CatProdData AS D2
      WHERE D2.CategoryID = D.CategoryID
      GROUP BY D2.CategoryID, D2.ProductName) AS S 
-GROUP BY CategoryID);
+GROUP BY CategoryID)
+ORDER BY CategoryDescription, ProductName;

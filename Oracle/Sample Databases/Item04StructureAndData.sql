@@ -25,7 +25,8 @@ BEGIN
   INTO   :new.AuthID
   FROM   dual;
 END;
-  
+/
+
 INSERT INTO AuthorsUnnormalized (AuthName, AuthAddress)
 VALUES ('John L. Viescas', '1175 7th Street, Austin, TX 78701, USA');
 
@@ -37,3 +38,5 @@ VALUES ('Ben Clothier', '2015 Monterey St, San Antonio, TX 78207, USA');
 
 INSERT INTO AuthorsUnnormalized (AuthName, AuthAddress)
 VALUES ('Tom Wickerath', '2317 185th Place NE, Redmond, WA 98052, USA');
+
+COMMIT;

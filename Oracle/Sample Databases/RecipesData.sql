@@ -1,4 +1,4 @@
-﻿-- This requires that the tables from RecipesStructure.sql be created first.
+-- This requires that the tables from RecipesStructure.sql be created first.
 
 ALTER SESSION SET CURRENT_SCHEMA = RECIPESSAMPLE;
 
@@ -553,3 +553,4 @@ INSERT INTO Recipe_Ingredients
 INSERT INTO Recipe_Ingredients
   VALUES (15, 2, 80, 4, 2);
  
+COMMIT;

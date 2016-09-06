@@ -3,7 +3,7 @@ CREATE DATABASE Item19Example;
 USE Item19Example;
 
 CREATE TABLE tblPostSales(
-    Product nvarchar (255), 
+    Product varchar (255), 
     Jan decimal(15, 2), 
     Feb decimal(15, 2), 
     Mar decimal(15, 2), 

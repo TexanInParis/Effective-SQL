@@ -4,10 +4,13 @@ ALTER SESSION SET CURRENT_SCHEMA = Item27Example;
 
 -- Listing 4.27 Paramterized version of Listing 4.26
 
---SET startDate = DATE '2016-07-04';
---SET endDate = DATE '2016-07-04';
+VARIABLE startDate CHAR(10);
+VARIABLE endDate CHAR(10);
+
+EXECUTE :startDate := '2016-07-04';
+EXECUTE :endDate := '2016-07-04';
 
 SELECT L.LogUserID, L.Logger, L.LogLevel, L.LogMessage
 FROM ProgramLogs L
-WHERE L.LogDate >= :startDate
-  AND L.LogDate < (:endDate + 1);
+WHERE L.LogDate >= TO_DATE(:startDate, 'YYYY-MM-DD')
+  AND L.LogDate < (TO_DATE(:endDate, 'YYYY-MM-DD') + 1);

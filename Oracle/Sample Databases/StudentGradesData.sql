@@ -55,3 +55,5 @@ INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, Hig
 INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (11, 'D-', 60, 63);
 INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (12, 'D+', 67, 70);
 INSERT INTO GradeRangesContinuous (GradeRangeID, LetterGrade, LowGradePoint, HighGradePoint) VALUES (13, 'F', 0, 60);
+
+COMMIT;

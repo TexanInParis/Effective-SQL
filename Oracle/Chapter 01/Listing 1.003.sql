@@ -25,17 +25,18 @@ BEGIN
   INTO   :new.AuthorID
   FROM   dual;
 END;
-  
-INSERT INTO Authors ( AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
-VALUES ('John', 'L.', 'Viescas', '1175', '7th Street', 'Austin', 'TX', '78701', 'USA');
+/
 
-INSERT INTO Authors ( AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
-VALUES ('Douglas', 'J.', 'Steele', '555', 'Sherbourne St.', 'Toronto', 'ON', 'M4X 1W6', 'Canada');
+INSERT INTO Authors ( AuthorID, AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
+VALUES (Authors_Sequence.NEXTVAL, 'John', 'L.', 'Viescas', '1175', '7th Street', 'Austin', 'TX', '78701', 'USA');
 
-INSERT INTO Authors ( AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
-VALUES ('Ben', Null, 'Clothier', '2015', 'Monterey St.', 'San Antonio', 'TX', '78207', 'USA');
+INSERT INTO Authors ( AuthorID, AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
+VALUES (Authors_Sequence.NEXTVAL, 'Douglas', 'J.', 'Steele', '555', 'Sherbourne St.', 'Toronto', 'ON', 'M4X 1W6', 'Canada');
 
-INSERT INTO Authors ( AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
-VALUES ('Tom', Null, 'Wickerath', '2317', '185th Place NE', 'Redmond', 'WA', '98052', 'USA');
+INSERT INTO Authors ( AuthorID, AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
+VALUES (Authors_Sequence.NEXTVAL, 'Ben', NULL, 'Clothier', '2015', 'Monterey St.', 'San Antonio', 'TX', '78207', 'USA');
 
+INSERT INTO Authors ( AuthorID, AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
+VALUES (Authors_Sequence.NEXTVAL, 'Tom', NULL, 'Wickerath', '2317', '185th Place NE', 'Redmond', 'WA', '98052', 'USA');
 
+COMMIT;

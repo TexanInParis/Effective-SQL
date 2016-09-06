@@ -1,12 +1,10 @@
--- Ensure Item44Structure.sql has been run first to be consistent with answers in the book.
+-- Ensure you've run SalesOrdersStructure.sql
+-- and SalesOrdersData.sql in the Sample Databases folder
+-- in order to run this example. 
 
-USE Item44Example;
+USE SalesOrdersSample;
 GO
 
--- Listing 7.20 Get a list of tables and views using different SQL Server system tables
-
-SELECT name, type_desc
-FROM sys.tables
-UNION
-SELECT name, type_desc
-FROM sys.views;
+SELECT CustCity
+FROM Customers
+WHERE CustAreaCode = 530;

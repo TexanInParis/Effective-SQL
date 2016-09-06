@@ -11,7 +11,7 @@ FROM Customers
   INNER JOIN Orders
     ON Customers.CustomerID = Orders.CustomerID
 WHERE EXISTS 
-  (SELECT * 
+  (SELECT NULL 
    FROM (Orders AS O2
       INNER JOIN Order_Details
         ON O2.OrderNumber = Order_Details.OrderNumber)
@@ -20,7 +20,7 @@ WHERE EXISTS
    WHERE Products.ProductName = 'Skateboard' 
     AND O2.OrderNumber = Orders.OrderNumber)
 AND EXISTS 
-  (SELECT * 
+  (SELECT NULL
    FROM (Orders AS O3 
       INNER JOIN Order_Details
         ON O3.OrderNumber = Order_Details.OrderNumber)
@@ -36,7 +36,7 @@ FROM Customers
   INNER JOIN Orders
     ON Customers.CustomerID = Orders.CustomerID
 WHERE EXISTS 
-  (SELECT * 
+  (SELECT NULL
    FROM (Orders AS O2
       INNER JOIN Order_Details
         ON O2.OrderNumber = Order_Details.OrderNumber)
@@ -45,7 +45,7 @@ WHERE EXISTS
    WHERE Products.ProductName LIKE '%Skateboard%' 
     AND O2.OrderNumber = Orders.OrderNumber)
 AND EXISTS 
-  (SELECT * 
+  (SELECT NULL
    FROM (Orders AS O3 
       INNER JOIN Order_Details
         ON O3.OrderNumber = Order_Details.OrderNumber)

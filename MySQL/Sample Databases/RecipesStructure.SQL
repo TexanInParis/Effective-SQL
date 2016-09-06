@@ -4,24 +4,24 @@ USE RecipesSample;
 
 CREATE TABLE Ingredient_Classes (
         IngredientClassID smallint NOT NULL ,
-        IngredientClassDescription nvarchar (255) NULL 
+        IngredientClassDescription varchar (255) NULL 
 );
 
 CREATE TABLE Ingredients (
         IngredientID int NOT NULL ,
-        IngredientName nvarchar (255) NULL ,
+        IngredientName varchar (255) NULL ,
         IngredientClassID smallint NULL ,
         MeasureAmountID smallint NULL 
 );
 
 CREATE TABLE Measurements (
         MeasureAmountID smallint NOT NULL ,
-        MeasurementDescription nvarchar (255) NULL 
+        MeasurementDescription varchar (255) NULL 
 );
 
 CREATE TABLE Recipe_Classes (
         RecipeClassID smallint NOT NULL ,
-        RecipeClassDescription nvarchar (255) NULL 
+        RecipeClassDescription varchar (255) NULL 
 );
 
 CREATE TABLE Recipe_Ingredients (
@@ -34,7 +34,7 @@ CREATE TABLE Recipe_Ingredients (
 
 CREATE TABLE Recipes (
         RecipeID int NOT NULL ,
-        RecipeTitle nvarchar (255) NULL ,
+        RecipeTitle varchar (255) NULL ,
         RecipeClassID smallint NULL ,
         Preparation text NULL ,
         Notes text NULL

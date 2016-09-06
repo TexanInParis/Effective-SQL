@@ -43,3 +43,5 @@ INSERT INTO Assignments (ID, DrawingNumber, Predecessor_1, Predecessor_2, Predec
 INSERT INTO Assignments (ID, DrawingNumber, Predecessor_1, Predecessor_2, Predecessor_3, Predecessor_4, Predecessor_5) VALUES (4, 'LO873W1842-2', 'LS02388419', 'LS02741454', 'LS02741456', 'LS02769388', NULL);
 INSERT INTO Assignments (ID, DrawingNumber, Predecessor_1, Predecessor_2, Predecessor_3, Predecessor_4, Predecessor_5) VALUES (5, 'LO690W1960-1', 'LS02742130', NULL, NULL, NULL, NULL);
 INSERT INTO Assignments (ID, DrawingNumber, Predecessor_1, Predecessor_2, Predecessor_3, Predecessor_4, Predecessor_5) VALUES (6, 'LO217W1855-1', 'LS02388421', 'LS02769390', NULL, NULL, NULL);
+
+COMMIT;

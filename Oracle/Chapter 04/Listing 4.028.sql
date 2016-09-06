@@ -27,6 +27,7 @@ BEGIN
   INTO   :new.EmployeeID
   FROM   dual;
 END;
+/
 
 CREATE INDEX EmpFirstName ON Employees (EmpFirstName ASC);
 

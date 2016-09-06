@@ -4,10 +4,10 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
 
-SELECT p.*
-FROM Products p
-WHERE NOT EXISTS (
-    SELECT NULL
-    FROM Order_Details d
-    WHERE p.ProductNumber = d.ProductNumber
-);
+SELECT o.OrderNumber, o.CustomerID
+FROM Orders o
+WHERE EmployeeID = 751;
+
+SELECT o.OrderNumber, o.CustomerID
+FROM Orders o
+WHERE EmployeeID = 708;

@@ -46,7 +46,8 @@ HAVING SUM(D.QuotedPrice * D.QuantityOrdered) >
 	SELECT a.AverageOfCategory 
 	FROM AveragePerCategory AS a 
 	WHERE a.CategoryID = D.CategoryID
-);
+)
+ORDER BY CategoryDescription, ProductName;
 
 -- NOTE: Bug in MySQL 5.7 returns wrong answer when using the original
 -- SQL. Workaround is to do a JOIN and include tha category average in
@@ -57,7 +58,8 @@ FROM CatProdData AS D INNER JOIN AveragePerCategory AS a
 ON D.CategoryID = A.CategoryID 
 GROUP BY D.CategoryID, D.CategoryDescription, D.ProductName
 HAVING SUM(D.QuotedPrice * D.QuantityOrdered) > 
-  a.AverageOfCategory;
+  a.AverageOfCategory
+ORDER BY CategoryDescription, ProductName;
 
 DROP VIEW CatProdData;
 DROP VIEW AveragePerCategory;
