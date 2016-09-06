@@ -2,6 +2,7 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = ENTERTAINMENTAGENCYSAMPLE;
 
+-- Prevent substitutions when running scripts in SQL*Plus clients. Not applicable with JDBC clients.
 SET DEFINE OFF;
 
 INSERT INTO Customers
