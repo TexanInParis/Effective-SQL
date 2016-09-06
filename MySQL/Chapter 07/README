@@ -9,22 +9,21 @@ Listing 7.004: Microsoft Access
 Listing 7.005: Microsoft SQL Server
 Listing 7.006: Microsoft SQL Server
 Listing 7.007: MySQL
-Listing 7.008: MySQL
+Listing 7.008: Oracle
 Listing 7.009: Oracle
-Listing 7.010: Oracle
+Listing 7.010: PostgreSQL
 Listing 7.011: PostgreSQL
 Listing 7.012: PostgreSQL
-Listing 7.013: PostgreSQL
 
 The listings in Item 45 will not work on all DBMS, since not all support INFORMATION_SCHEMA
 MySQL does not support INFORMATION_SCHEMA.VIEW_COLUMN_USAGE, used in listing 7.17
 
+Listing 7.013: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
 Listing 7.014: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
 Listing 7.015: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
-Listing 7.016: Should work on IBM DB2, Microsoft SQL Server, MySQL and PostgreSQL.
-Listing 7.017: Should work on IBM DB2, Microsoft SQL Server and PostgreSQL.
-Listing 7.018: CREATE VIEW statement should work on all DBMS.
+Listing 7.016: Should work on IBM DB2, Microsoft SQL Server and PostgreSQL.
+Listing 7.017: CREATE VIEW statement should work on all DBMS.
+Listing 7.018: Microsoft SQL Server specific
 Listing 7.019: Microsoft SQL Server specific
-Listing 7.020: Microsoft SQL Server specific
 
-Listing 7.025 not included - MySQL does not support INCLUDE in CREATE INDEX.
+Listing 7.024 not included - MySQL does not support INCLUDE in CREATE INDEX.
