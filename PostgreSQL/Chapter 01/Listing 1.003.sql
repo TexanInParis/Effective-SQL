@@ -16,7 +16,7 @@ CREATE TABLE Authors
 );
   
 INSERT INTO Authors ( AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
-VALUES ('John', 'L.', 'Viescas', '1175', '7th Street', 'Austin', 'TX', '78701', 'USA');
+VALUES ('John', 'L.', 'Viescas', '144', 'Boulevard Saint-Germain', 'Paris', ' ', '75006', 'France');
 
 INSERT INTO Authors ( AuthFirst, AuthMid, AuthLast, AuthStNum, AuthStreet, AuthCity, AuthStProv, AuthPostal, AuthCountry )
 VALUES ('Douglas', 'J.', 'Steele', '555', 'Sherbourne St.', 'Toronto', 'ON', 'M4X 1W6', 'Canada');
