@@ -19,7 +19,7 @@ GO
 -- The Orders table already exists, so you will get an
 --  error if you try to run the following.
 -- Included as comments for reference.
--- CREATE TABLE Orders
+-- CREATE TABLE Orders (
 --   OrderNumber int NOT NULL ,
 --   OrderDate date NULL ,
 --    ShipDate date NULL ,
