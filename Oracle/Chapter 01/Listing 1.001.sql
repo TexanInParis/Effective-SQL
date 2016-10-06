@@ -3,9 +3,13 @@
 
 ALTER SESSION SET CURRENT_SCHEMA = Item02Example;
 
-SELECT ST.SalesID, C.CustFirstName, C.CustLastName, C.Address, C.City, C.Phone, 
-       ST.PurchaseDate, M.ModelYear, M.Model, E.SalesPerson
-  FROM SalesTransactions ST, Employees E, Customers C, AutomobileModels M
- WHERE C.CustomerID = ST.CustomerID
-   AND M.ModelID = ST.ModelID
-   AND E.EmployeeID = ST.SalesPersonID;
+SELECT st.SalesID, c.CustFirstName, c.CustLastName, c.Address, c.City, c.Phone,
+  st.PurchaseDate, m.ModelYear, m.Model, e.SalesPerson
+FROM SalesTransactions st
+  INNER JOIN Customers c
+    ON c.CustomerID = st.CustomerID
+  INNER JOIN Employees e
+    ON e.EmployeeID = st.SalesPersonID
+  INNER JOIN AutomobileModels m
+    ON m.ModelID = st.ModelID;
+

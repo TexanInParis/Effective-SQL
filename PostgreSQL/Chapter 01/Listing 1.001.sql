@@ -3,9 +3,13 @@
 
 SET search_path = Item02Example;
 
-SELECT ST.SalesID, C.CustFirstName, C.CustLastName, C.Address, C.City, C.Phone, 
-       ST.PurchaseDate, M.ModelYear, M.Model, E.SalesPerson
-  FROM SalesTransactions AS ST, Employees AS E, Customers AS C, AutomobileModels AS M
- WHERE C.CustomerID = ST.CustomerID
-   AND M.ModelID = ST.ModelID
-   AND E.EmployeeID = ST.SalesPersonID;
+SELECT st.SalesID, c.CustFirstName, c.CustLastName, c.Address, 
+  c.City, c.Phone, st.PurchaseDate, m.ModelYear, m.Model, 
+  e.SalesPerson
+FROM SalesTransactions AS st
+  INNER JOIN Customers AS c
+    ON c.CustomerID = st.CustomerID
+  INNER JOIN Employees AS e
+    ON e.EmployeeID = st.SalesPersonID
+  INNER JOIN AutomobileModels AS m
+    ON m.ModelID = st.ModelID;
