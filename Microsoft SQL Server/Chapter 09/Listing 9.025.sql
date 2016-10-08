@@ -15,7 +15,6 @@ FROM ztblQuarters AS Z CROSS JOIN
        E.StartDate, E.ContractPrice
    FROM Agents AS A LEFT JOIN Engagements AS E
     ON A.AgentID = E.AgentID) AS AE
-WHERE AE.StartDate BETWEEN Z.QuarterStart AND Z.QuarterEnd
-   OR AE.StartDate IS NULL
-   AND Z.YearNumber = 2015
+WHERE (AE.StartDate BETWEEN Z.QuarterStart AND Z.QuarterEnd)
+   OR (AE.StartDate IS NULL AND Z.YearNumber = 2015)
 GROUP BY AgtFirstName, AgtLastName, YearNumber;
