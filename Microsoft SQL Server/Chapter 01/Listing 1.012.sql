@@ -1,18 +1,25 @@
--- Ensure you've run SalesOrdersStructure.sql
--- and SalesOrdersData.sql in the Sample Databases folder
--- in order to run this example. 
+CREATE DATABASE Item07Example;
+GO
 
-USE SalesOrdersSample;
+USE Item07Example;
+GO
 
--- A constraint already exists between Customers and
--- Orders but has a different name. This will create a
--- duplicate constraint.
-ALTER TABLE Orders ADD 
-    CONSTRAINT Orders_FK97 FOREIGN KEY 
-    (
-        CustomerID
-    ) REFERENCES Customers (
-        CustomerID
-    );
+CREATE TABLE Products ( 
+  ProductNumber int NOT NULL PRIMARY KEY,
+  ProdDescription varchar(255) NOT NULL
+);
+GO
 
+CREATE TABLE ProductAttributes (
+  ProductNumber int NOT NULL,
+  AttributeName varchar(255) NOT NULL,
+  AttributeValue varchar(255) NOT NULL,
+  CONSTRAINT PK_ProductAttributes PRIMARY KEY (ProductNumber, AttributeName)
+);
+GO
 
+ALTER TABLE ProductAttributes
+ADD CONSTRAINT FK_ProductAttributes_ProductNumber
+FOREIGN KEY (ProductNumber) 
+REFERENCES Products (ProductNumber);
+GO

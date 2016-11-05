@@ -1,43 +1,21 @@
--- Ensure you've run SalesOrdersStructure.sql
--- and SalesOrdersData.sql in the Sample Databases folder
--- in order to run this example. 
+-- Create a new schema, to make it easier to cleanup afterwards.
+CREATE SCHEMA Item02Example;
 
-ALTER SESSION SET CURRENT_SCHEMA = SalesOrdersSample;
+SET SCHEMA Item02Example;
 
-SELECT C.CustomerID, C.CustFirstName, C.CustLastName
-FROM Customers C 
-WHERE C.CustomerID IN
-  (SELECT Orders.CustomerID
-  FROM Orders INNER JOIN Order_Details
-  ON Orders.OrderNumber = Order_Details.OrderNumber
-  INNER JOIN Products 
-  ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName = 'Skateboard')
-AND C.CustomerID NOT IN
-  (SELECT Orders.CustomerID
-  FROM Orders INNER JOIN Order_Details
-  ON Orders.OrderNumber = Order_Details.OrderNumber
-  INNER JOIN Products 
-  ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName 
-    IN ('Helmet', 'Gloves', 'Knee Pads'));
+CREATE TABLE Products ( 
+  ProductNumber int NOT NULL PRIMARY KEY,
+  ProdDescription varchar(255) NOT NULL
+);
 
--- Sample query that searches products correctly:
-SELECT C.CustomerID, C.CustFirstName, C.CustLastName
-FROM Customers C 
-WHERE C.CustomerID IN
-  (SELECT Orders.CustomerID
-  FROM Orders INNER JOIN Order_Details
-  ON Orders.OrderNumber = Order_Details.OrderNumber
-  INNER JOIN Products 
-  ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName LIKE '%Skateboard%')
-AND C.CustomerID NOT IN
-  (SELECT Orders.CustomerID
-  FROM Orders INNER JOIN Order_Details
-  ON Orders.OrderNumber = Order_Details.OrderNumber
-  INNER JOIN Products 
-  ON Products.ProductNumber = Order_Details.ProductNumber
-  WHERE Products.ProductName LIKE '%Helmet%'
-     OR Products.ProductName LIKE '%Gloves%'
-     OR Products.ProductName LIKE '%Knee Pads%');
+CREATE TABLE ProductAttributes (
+  ProductNumber int NOT NULL,
+  AttributeName varchar(255) NOT NULL,
+  AttributeValue varchar(255) NOT NULL,
+  CONSTRAINT PK_ProductAttributes PRIMARY KEY (ProductNumber, AttributeName)
+);
+
+ALTER TABLE ProductAttributes
+ADD CONSTRAINT FK_ProductAttributes_ProductNumber
+FOREIGN KEY (ProductNumber) 
+REFERENCES Products (ProductNumber);
