@@ -1,7 +1,7 @@
 -- Create a new schema, to make it easier to cleanup afterwards.
-CREATE SCHEMA Item02Example;
+CREATE SCHEMA Item07Example;
 
-SET SCHEMA Item02Example;
+SET SCHEMA Item07Example;
 
 CREATE TABLE Products ( 
   ProductNumber int NOT NULL PRIMARY KEY,
