@@ -204,7 +204,7 @@ INSERT INTO Recipes
   VALUES (12, 'Asparagus', 2, 'Wash the asparagus and break off the tough part (if any) at the bottom of the stalks.  Arrange on a steaming rack in a large saucepan.  Dab liberally with pats of butter and sprinkle on the chopped garlic.  Steam until just tender -- no more than 5 minutes for large stalks.  Serve immediately.', 
    'You can chill the cooked asparagus and serve with your favorite dip as an appetizer.');
 INSERT INTO Recipes
-  VALUES (13, 'TourtiËre (French-Canadian Pork Pie)', 
+  VALUES (13, 'Tourtière (French-Canadian Pork Pie)', 
    1, 'Brown ground pork and chopped onion, stirring and breaking up pork.  Add spices and salt and pepper.  Simmer, uncovered, for 45 minutes, stirring occasionally.  Preheat oven to 375 degrees.  Prepare pie dough for 2-crust pie.  Line 9" pie plate with half of the rolled-out dough.  Drain pork and stir bread crumbs into pork.  Taste and add more salt and pepper if desired.  Fill pie with pork mixture and top with second half of the rolled-out dough.  Crimp edges of pie and slit the top in several places.  Bake in 375-degree oven for one hour, covering edges of pie crust with foil if necessary.  Serve hot or cold.', 
    'Be sure to use fresh ground pork, not sausage.  Can be made with half ground pork and half ground beef, if desired.');
 INSERT INTO Recipes
