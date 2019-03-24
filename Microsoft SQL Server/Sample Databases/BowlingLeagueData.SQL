@@ -1,8 +1,6 @@
 -- This requires that the tables from BowlingLeagueStructure.sql be created first.
 
 Use BowlingLeagueSample;
-SET IDENTITY_INSERT Tournaments ON
-GO
 INSERT INTO Tournaments
   (TourneyID, TourneyDate, TourneyLocation)
   VALUES (1, '2015-09-04', 'Red Rooster Lanes');
@@ -63,10 +61,7 @@ INSERT INTO Tournaments
 INSERT INTO Tournaments
   (TourneyID, TourneyDate, TourneyLocation)
   VALUES (20, '2016-08-16', 'Totem Lanes');
-SET IDENTITY_INSERT Tournaments OFF
-GO
-SET IDENTITY_INSERT Bowlers ON
-GO
+
 INSERT INTO Bowlers
   (BowlerID, BowlerLastName, BowlerFirstName, BowlerMiddleInit, 
    BowlerAddress, BowlerCity, BowlerState, BowlerZip, 
@@ -263,10 +258,7 @@ INSERT INTO Bowlers
    BowlerPhoneNumber, TeamID)
   VALUES (32, 'Wickerath', 'Tom', NULL, '908 W. Capital Way', 
    'Tacoma', 'WA', '98401', '(206) 555-9482', NULL);
-SET IDENTITY_INSERT Bowlers OFF
-GO
-SET IDENTITY_INSERT Teams ON
-GO
+
 INSERT INTO Teams
   (TeamID, TeamName, CaptainID)
   VALUES (1, 'Marlins', 2);
@@ -297,8 +289,7 @@ INSERT INTO Teams
 INSERT INTO Teams
   (TeamID, TeamName, CaptainID)
   VALUES (10, 'MintJuleps', 22);
-SET IDENTITY_INSERT Teams OFF
-GO
+
 UPDATE Bowlers 
 SET TeamID = 1
 WHERE BowlerID IN (1, 2, 3, 4);
@@ -323,8 +314,7 @@ WHERE BowlerID IN (25, 26, 27, 28);
 UPDATE Bowlers 
 SET TeamID = 8
 WHERE BowlerID IN (29, 30, 31, 32);
-SET IDENTITY_INSERT Tourney_Matches ON
-GO
+
 INSERT INTO Tourney_Matches
   (MatchID, TourneyID, Lanes, OddLaneTeamID, EvenLaneTeamID)
   VALUES (1, 1, '01-02', 1, 2);
@@ -496,8 +486,7 @@ INSERT INTO Tourney_Matches
 INSERT INTO Tourney_Matches
   (MatchID, TourneyID, Lanes, OddLaneTeamID, EvenLaneTeamID)
   VALUES (57, 11, '19-20', 10, 9);
-SET IDENTITY_INSERT Tourney_Matches OFF
-GO
+
 INSERT INTO Match_Games
   (MatchID, GameNumber, WinningTeamID)
   VALUES (1, 1, 1);
